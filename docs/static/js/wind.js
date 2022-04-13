@@ -13,16 +13,16 @@
     // gt, gte, lt, lte, eq breakpoints would have been more simple to write as ['gt','gte','lt','lte','eq']
     // but then we would have had to loop over the collection on each resize() event,
     // a simple object with a direct access to true/false is therefore much more efficient
-    var doc   = win.document,
-        nav   = win.navigator,
-        loc   = win.location,
-        html  = doc.documentElement,
+    var doc = win.document,
+        nav = win.navigator,
+        loc = win.location,
+        html = doc.documentElement,
         klass = [],
-        conf  = {
+        conf = {
             screens: [240, 320, 480, 640, 768, 800, 1024, 1280, 1440, 1680, 1920],
-            screensCss: {"gt": true, "gte": false, "lt": true, "lte": false, "eq": false},
+            screensCss: { "gt": true, "gte": false, "lt": true, "lte": false, "eq": false },
             browsers: [
-                {ie: {min: 6, max: 11}}
+                { ie: { min: 6, max: 11 } }
                 //,{ chrome : { min: 8, max: 33 } }
                 //,{ ff     : { min: 3, max: 26 } }
                 //,{ ios    : { min: 3, max:  7 } }
@@ -30,7 +30,7 @@
                 //,{ webkit : { min: 9, max: 12 } }
                 //,{ opera  : { min: 9, max: 12 } }
             ],
-            browserCss: {"gt": true, "gte": false, "lt": true, "lte": false, "eq": true},
+            browserCss: { "gt": true, "gte": false, "lt": true, "lte": false, "eq": true },
             html5: true,
             page: "-page",
             section: "-section",
@@ -53,7 +53,7 @@
         // need to test for both space and no space
         // https://github.com/headjs/headjs/issues/270
         // https://github.com/headjs/headjs/issues/226
-        var re         = new RegExp(" ?\\b" + name + "\\b");
+        var re = new RegExp(" ?\\b" + name + "\\b");
         html.className = html.className.replace(re, "");
     }
 
@@ -99,7 +99,7 @@
     api.feature("js", true);
 
     // browser type & version
-    var ua     = nav.userAgent.toLowerCase(),
+    var ua = nav.userAgent.toLowerCase(),
         mobile = /mobile|android|kindle|silk|midp|phone|(windows .+arm|touch)/.test(ua);
 
     // useful for enabling/disabling feature (we can consider a desktop navigator to have more cpu/gpu power)
@@ -141,7 +141,7 @@
     }
 
     // Browser vendor and version
-    api.browser          = {
+    api.browser = {
         name: browser,
         version: version
     };
@@ -322,7 +322,7 @@
 (function (win, undefined) {
     "use strict";
 
-    var doc      = win.document,
+    var doc = win.document,
         /*
          To add a new test:
 
@@ -337,12 +337,12 @@
          */
 
         /* CSS modernizer */
-        el       = doc.createElement("i"),
-        style    = el.style,
-        prefs    = " -o- -moz- -ms- -webkit- -khtml- ".split(" "),
+        el = doc.createElement("i"),
+        style = el.style,
+        prefs = " -o- -moz- -ms- -webkit- -khtml- ".split(" "),
         domPrefs = "Webkit Moz O ms Khtml".split(" "),
-        headVar  = win.head_conf && win.head_conf.head || "head",
-        api      = win[headVar];
+        headVar = win.head_conf && win.head_conf.head || "head",
+        api = win[headVar];
 
     // Thanks Paul Irish!
 
@@ -488,24 +488,24 @@
     "use strict";
 
     //#region variables
-    var doc        = win.document,
+    var doc = win.document,
         domWaiters = [],
-        handlers   = {}, // user functions waiting for events
-        assets     = {}, // loadable items in various states
-        isAsync    = "async" in doc.createElement("script") || "MozAppearance" in doc.documentElement.style || win.opera,
+        handlers = {}, // user functions waiting for events
+        assets = {}, // loadable items in various states
+        isAsync = "async" in doc.createElement("script") || "MozAppearance" in doc.documentElement.style || win.opera,
         isDomReady,
 
         /*** public API ***/
-        headVar    = win.head_conf && win.head_conf.head || "Wind",
-        api        = win[headVar] = (win[headVar] || function () {
+        headVar = win.head_conf && win.head_conf.head || "Wind",
+        api = win[headVar] = (win[headVar] || function () {
             api.ready.apply(null, arguments);
         }),
 
         // states
         PRELOADING = 1,
-        PRELOADED  = 2,
-        LOADING    = 3,
-        LOADED     = 4;
+        PRELOADED = 2,
+        LOADING = 3,
+        LOADED = 4;
     //#endregion
 
     //#region PRIVATE functions
@@ -549,8 +549,8 @@
     function toLabel(url) {
         ///<summary>Converts a url to a file label</summary>
         var items = url.split("/"),
-            name  = items[items.length - 1],
-            i     = name.indexOf("?");
+            name = items[items.length - 1],
+            i = name.indexOf("?");
 
         return i !== -1 ? name.substring(0, i) : name;
     }
@@ -679,10 +679,10 @@
     function preLoad(asset, callback) {
         if (asset.state === undefined) {
 
-            asset.state     = PRELOADING;
+            asset.state = PRELOADING;
             asset.onpreload = [];
 
-            loadAsset({url: asset.url, type: "cache"}, function () {
+            loadAsset({ url: asset.url, type: "cache" }, function () {
                 onPreload(asset);
             });
         }
@@ -696,10 +696,10 @@
         /// head.load({ label1: "http://domain.com/file.js" }, { label2: "http://domain.com/file.js" }, callBack)
         /// head.load([{ label1: "http://domain.com/file.js" }, { label2: "http://domain.com/file.js" }], callBack)
         /// </summary>
-        var args     = arguments,
+        var args = arguments,
             callback = args[args.length - 1],
-            rest     = [].slice.call(args, 1),
-            next     = rest[0];
+            rest = [].slice.call(args, 1),
+            next = rest[0];
 
         if (!isFunction(callback)) {
             callback = null;
@@ -717,7 +717,7 @@
         if (!!next) {
             /* Preload with text/cache hack (not good!)
              * http://blog.getify.com/on-script-loaders/
-             * http://www.nczonline.net/blog/2010/12/21/thoughts-on-script-loaders/
+             * http://www.nczonline.net/blog/2010./../../thoughts-on-script-loaders/
              * If caching is not configured correctly on the server, then items could load twice !
              *************************************************************************************/
             each(rest, function (item) {
@@ -749,9 +749,9 @@
         /// head.load({ label1: "http://domain.com/file.js" }, { label2: "http://domain.com/file.js" }, callBack)
         /// head.load([{ label1: "http://domain.com/file.js" }, { label2: "http://domain.com/file.js" }], callBack)
         ///</summary>
-        var args     = arguments,
+        var args = arguments,
             callback = args[args.length - 1],
-            items    = {};
+            items = {};
 
         if (!isFunction(callback)) {
             callback = null;
@@ -771,7 +771,7 @@
         // Issue when lazy loaded, the callback can execute early.
         each(args, function (item, i) {
             if (item !== callback) {
-                item             = getAsset(item);
+                item = getAsset(item);
                 items[item.name] = item;
             }
         });
@@ -927,7 +927,7 @@
                     // do we have a match ?
                     // we need to tests agains ele.href and not asset.url, because a local file will be assigned the full http path on a link element
                     if (doc.styleSheets[i].href === ele.href) {
-                        process({"type": "load"});
+                        process({ "type": "load" });
                         return;
                     }
                 }
@@ -942,9 +942,9 @@
         var ext = getExtension(asset.url);
 
         if (ext === "css") {
-            ele      = doc.createElement("link");
+            ele = doc.createElement("link");
             ele.type = "text/" + (asset.type || "css");
-            ele.rel  = "stylesheet";
+            ele.rel = "stylesheet";
             ele.href = asset.url;
 
             /* onload supported for CSS on unsupported browsers
@@ -956,9 +956,9 @@
             asset.cssTimeout = win.setTimeout(isCssLoaded, 500);
         }
         else {
-            ele      = doc.createElement("script");
+            ele = doc.createElement("script");
             ele.type = "text/" + (asset.type || "javascript");
-            ele.src  = asset.url;
+            ele.src = asset.url;
         }
 
         ele.onload = ele.onreadystatechange = process;
@@ -966,7 +966,7 @@
 
         /* Good read, but doesn't give much hope !
          * http://blog.getify.com/on-script-loaders/
-         * http://www.nczonline.net/blog/2010/12/21/thoughts-on-script-loaders/
+         * http://www.nczonline.net/blog/2010./../../thoughts-on-script-loaders/
          * https://hacks.mozilla.org/2009/06/defer/
          */
 
@@ -977,7 +977,7 @@
 
         // timout for asset loading
         asset.errorTimeout = win.setTimeout(function () {
-            error({type: "timeout"});
+            error({ type: "timeout" });
         }, 7e3);
 
         // use insertBefore to keep IE from throwing Operation Aborted (thx Bryan Forbes!)
@@ -1027,7 +1027,7 @@
         // shift arguments
         if (isFunction(key)) {
             callback = key;
-            key      = "ALL"; // holds all callbacks that where added without labels: ready(callBack)
+            key = "ALL"; // holds all callbacks that where added without labels: ready(callBack)
         }
 
         // queue all items from key and return. The callback will be executed if all items from key are already loaded.
@@ -1167,7 +1167,7 @@
     //#region Public Exports
     // INFO: determine which method to use for loading
     api.load = api.js = isAsync ? apiLoadAsync : apiLoadHack;
-    api.test  = conditional;
+    api.test = conditional;
     api.ready = ready;
     //#endregion
 
@@ -1203,7 +1203,7 @@
  */
 if (!window.console) {
     window.console = {};
-    var funs       = ["profiles", "memory", "_commandLineAPI", "debug", "error", "info", "log", "warn", "dir", "dirxml", "trace", "assert", "count", "markTimeline", "profile", "profileEnd", "time", "timeEnd", "timeStamp", "group", "groupCollapsed", "groupEnd"];
+    var funs = ["profiles", "memory", "_commandLineAPI", "debug", "error", "info", "log", "warn", "dir", "dirxml", "trace", "assert", "count", "markTimeline", "profile", "profileEnd", "time", "timeEnd", "timeStamp", "group", "groupCollapsed", "groupEnd"];
     for (var i = 0; i < funs.length; i++) {
         console[funs[i]] = function () {
         };
@@ -1226,10 +1226,10 @@ Wind.ready(function () {
  *wind core
  */
 (function (win) {
-    var root      = win.GV.WEB_ROOT + win.GV.JS_ROOT || location.origin + '/public/js/', //在wind.js加载之前定义GV.JS_ROOT
-        ver       = '',
+    var root = win.GV.WEB_ROOT + win.GV.JS_ROOT || location.origin + '/public/js/', //在wind.js加载之前定义GV.JS_ROOT
+        ver = '',
         //定义常用JS组件别名，使用别名加载
-        alias     = {
+        alias = {
             datePicker: 'datePicker/datePicker',
             jquery: 'jquery',
             colorPicker: 'colorPicker/colorPicker',
@@ -1251,7 +1251,7 @@ Wind.ready(function () {
             vue: 'vue/vue.min',
             vueScroller: 'vue/vueScroller.min',
             layui: 'layui/layui',
-            
+
             raty: 'raty/jquery.raty.min',
 
             noty: 'noty/noty-2.4.1',
@@ -1264,14 +1264,14 @@ Wind.ready(function () {
 
             echarts: 'echarts/echarts.min',
             viewer: 'viewer/viewer',
-            colorpicker:'colorpicker/js/colorpicker',
+            colorpicker: 'colorpicker/js/colorpicker',
             mousewheel: 'jquery.mousewheel/jquery.mousewheel.min',
             bootstrapDatetimePicker: 'bootstrap-datetimepicker/js/bootstrap-datetimepicker',
             dragula: 'dragula/dragula.min',
             imagesloaded: 'masonry/imagesloaded.pkgd.min',
             masonry: 'masonry/masonry.pkgd.min',
             masonry3: 'masonry/masonry-3.3.2.pkgd',
-            ueditor:'ueditor/ueditor.all.min'
+            ueditor: 'ueditor/ueditor.all.min'
         },
         //CSS路径
         alias_css = {
@@ -1281,7 +1281,7 @@ Wind.ready(function () {
             treeTable: 'treeTable/treeTable',
             jcrop: 'jcrop/css/jquery.Jcrop.min',
             layui: 'layui/css/layui',
-            
+
             layer: 'layer/skin/default/layer',
             viewer: 'viewer/viewer',
             noty3: 'noty3/noty',
@@ -1289,7 +1289,7 @@ Wind.ready(function () {
             animate: 'animate/animate',
             bootstrapDatetimePicker: 'bootstrap-datetimepicker/css/bootstrap-datetimepicker',
             dragula: 'dragula/dragula.min',
-            ueditor:'ueditor/themes/default/css/ueditor'
+            ueditor: 'ueditor/themes/default/css/ueditor'
         };
 
     //add suffix and version
@@ -1309,10 +1309,10 @@ Wind.ready(function () {
     win.Wind = win.Wind || {};
     //!TODO old webkit and old firefox does not support
     Wind.css = function (alias/*alias or path*/, callback) {
-        var url     = alias_css[alias] ? alias_css[alias] : alias
-        var link    = document.createElement('link');
-        link.rel    = 'stylesheet';
-        link.href   = url;
+        var url = alias_css[alias] ? alias_css[alias] : alias
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = url;
         link.onload = link.onreadystatechange = function () {//chrome link无onload事件
             var state = link.readyState;
             if (callback && !callback.done && (!state || /loaded|complete/.test(state))) {
@@ -1366,3 +1366,16 @@ Wind.ready(function () {
     //Wind全局功能函数命名空间
     Wind.Util = {}
 })(window);
+
+$(function () {
+    var isLogin = localStorage.getItem("isLogin");
+    if (!isLogin || isLogin == "false") {
+        $(".offline").show();
+        $(".login").hide();
+        localStorage.setItem("isLogin", false);
+    } else {
+        $(".login").show();
+        $(".offline").hide();
+        localStorage.setItem("isLogin", true);
+    }
+})
