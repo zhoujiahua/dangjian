@@ -1,0 +1,361 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>考试项目 智慧党建云平台</title>
+	<meta name="keywords" content="智慧党建">
+	<meta name="description" content="智慧党建">	
+	<link href="http://at.alicdn.com/t/font_759613_byou54gk0v7.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="../../themes/zqdj_public/public/assets/zqdj_public/css/style.css" />
+<script language="javascript" type="text/javascript" src="../../static/js/jquery.js"></script>
+<script language="javascript" type="text/javascript" src="../../themes/zqdj_public/public/assets/zqdj_public/js/jquery.SuperSlide.js"></script>
+<link rel="stylesheet" href="../../themes/zqdj_public/public/assets/zqdj_public/js/layui/css/layui.css"  media="all">
+<script src="../../themes/zqdj_public/public/assets/zqdj_public/js/layui/layui.js"></script>
+
+<script type="text/javascript">
+//判断是否是手机版访问,跳转到手机版
+var isiPad = navigator.userAgent.match(/iPad|iPhone|Android|Linux|iPod/i) != null;
+if(isiPad){	
+	var wapurl = '/weixin/Index/index.html';
+	window.location.href = wapurl;
+}
+    //全局变量
+    var GV = {
+        ROOT: "/",
+        WEB_ROOT: "/",
+        JS_ROOT: "static/js/",
+        TMPL: "/themes/zqdj_public/"
+    };
+</script>
+</head>
+<body>
+
+<!--top区域 start-->
+<div class="top_x w1min">
+<div class="w1">
+	<div class="topx_left">
+		<div class="topx_logo"><img src="../../themes/zqdj_public/public/assets/zqdj_public/imgs/header_logo.png" /></div>
+		<div class="topx_zi">
+		<h1>智慧党建云平台</h1>
+		</div>
+	</div>
+	<div class="topx_right" id="ucenterlogin">
+		<dl class="login" style="display:none;">
+			你好, <span class="user-nickname"></span>
+			<a href="../../user/profile/center.html"><i class="iconfont icon-user"></i>党员中心</a>
+			<a href="../../user/index/logout.html">&nbsp;&nbsp;退出登录</a>
+		</dl>
+		<dl class="offline" style="display:none;">
+			<a href="../../user/login/index.html" class="signin"><i class="iconfont icon-gongchandang"></i>登录</a>
+		</dl>
+		<div class="top-search">
+			<form method="post" action="http://demo.dangjiancms.com/portal/search/index.html" target="_blank">
+				<input type="text" name="keyword" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+				<button class="layui-btn layui-bg-orange" lay-submit lay-filter="formDemo"><i class="iconfont icon-xiazai15"></i>搜索</button>
+			</form>
+		</div>
+	</div>			
+</div>
+</div>
+<!-- <div class="lang_mu w1min">
+<ul class="layui-nav" lay-filter="">
+	                    <li class="layui-nav-item ">
+                    <a href="/" target="">
+                        <b>首页</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/dongtai.html" target="">
+                        <b>党建动态</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/portal/special/index.html" target="">
+                        <b>专题专栏</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/portal/seritem/index.html" target="">
+                        <b>志愿服务</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/portal/activity/index.html" target="">
+                        <b>组织活动</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/portal/study/index.html" target="">
+                        <b>学习中心</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/portal/sanhui/index.html" target="">
+                        <b>三会一课</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/portal/wenjuan/wenjuanlist.html" target="">
+                        <b>问卷调查</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/portal/score/index.html" target="">
+                        <b>积分统计</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/portal/index/map.html" target="">
+                        <b>党建地图</b>
+                    </a>
+                </li>
+            
+</ul>
+<script>
+//注意：导航 依赖 element 模块，否则无法进行功能性操作
+layui.use('element', function(){
+  var element = layui.element;
+  
+  //…
+});
+</script>
+</div> -->
+<!--top区域 end-->
+<div class="w1 banne1 mgtop-15"><img src="../../upload/admin/20181120/b02187c3e779476c3d555e59ccdcb415.jpg"></div>
+<div class="mgtop-15 background-w1">
+
+	<div class="fdiv mua">
+	<ul><i class="iconfont icon-dangwugongkai"></i><b>考试项目</b></ul>
+	<ol>当前位置：<a href="../../user/index/logout.html">首页</a> >
+		<a href="../study/index.html">学习中心</a> >
+	  	<a href="projectlist.html">考试项目</a>
+	</ol>
+	</div>
+
+	<div class="m_newtu">
+	<ul>
+		
+			<li>
+				<a href="projectview/id/8.html" title="应知应会" target="_blank">
+									<img src="../../upload/admin/20190301/e374f5cf1f72c1a17f7a4e290969edf6_simg.jpg" />
+								<dl>
+					<dt>应知应会</dt>
+					<dd>考试时间: 2019-03-05 10:00:00 ~ 2022-04-01 13:05:22</dd>
+					<dd>考试时限: 30 分钟</dd>
+					<span><cite><i class="iconfont icon-shijian1"></i>2019-03-01</cite></span>
+				</dl>
+				</a>
+			</li>
+		
+
+			<li>
+				<a href="projectview/id/7.html" title="知识考核" target="_blank">
+									<img src="../../upload/admin/20190301/8a6cee6ab3a02dedaf96262cc38a2ab9_simg.jpg" />
+								<dl>
+					<dt>知识考核</dt>
+					<dd>考试时间: 2019-03-01 17:08:48 ~ 2022-03-31 22:50:13</dd>
+					<dd>考试时限: 30 分钟</dd>
+					<span><cite><i class="iconfont icon-shijian1"></i>2019-03-01</cite></span>
+				</dl>
+				</a>
+			</li>
+		
+
+			<li>
+				<a href="projectview/id/6.html" title="海南省党员普法考试" target="_blank">
+									<img src="../../upload/admin/20190301/3496cf730a99a4768249aa2901c55db0_simg.jpg" />
+								<dl>
+					<dt>海南省党员普法考试</dt>
+					<dd>考试时间: 2019-03-01 17:06:07 ~ 2021-12-25 23:55:07</dd>
+					<dd>考试时限: 30 分钟</dd>
+					<span><cite><i class="iconfont icon-shijian1"></i>2019-03-01</cite></span>
+				</dl>
+				</a>
+			</li>
+		
+
+			<li>
+				<a href="projectview/id/5.html" title="两学一做党员在线考试" target="_blank">
+									<img src="../../upload/admin/20190301/373c158fde8bda518143af74ed5c8159_simg.jpg" />
+								<dl>
+					<dt>两学一做党员在线考试</dt>
+					<dd>考试时间: 2019-03-01 17:04:08 ~ 2022-11-16 23:55:08</dd>
+					<dd>考试时限: 30 分钟</dd>
+					<span><cite><i class="iconfont icon-shijian1"></i>2019-03-01</cite></span>
+				</dl>
+				</a>
+			</li>
+		
+
+			<li>
+				<a href="projectview/id/4.html" title="十九大党章学习" target="_blank">
+									<img src="../../upload/admin/20181227/4d338756a94654f76d69f1e2bb9a4255_simg.jpg" />
+								<dl>
+					<dt>十九大党章学习</dt>
+					<dd>考试时间: 2018-12-27 10:05:12 ~ 2021-03-31 10:00:12</dd>
+					<dd>考试时限: 30 分钟</dd>
+					<span><cite><i class="iconfont icon-shijian1"></i>2018-11-21</cite></span>
+				</dl>
+				</a>
+			</li>
+		
+
+			<li>
+				<a href="projectview/id/3.html" title="十九大报告-党员知识考察" target="_blank">
+									<img src="../../upload/admin/20180911/019ed418413b32ae28b0d2ba7ca56a6a_simg.jpg" />
+								<dl>
+					<dt>十九大报告-党员知识考察</dt>
+					<dd>考试时间: 2018-09-11 08:00:00 ~ 2021-07-08 00:00:00</dd>
+					<dd>考试时限: 100 分钟</dd>
+					<span><cite><i class="iconfont icon-shijian1"></i>2018-09-11</cite></span>
+				</dl>
+				</a>
+			</li>
+		
+
+			<li>
+				<a href="projectview/id/2.html" title="“学习十九大，共创未来”知识竞赛复习大纲" target="_blank">
+									<img src="../../upload/admin/20180910/a29533a299350f641289e7631aa6a820_simg.jpg" />
+								<dl>
+					<dt>“学习十九大，共创未来”知识竞赛复习大纲</dt>
+					<dd>考试时间: 2018-09-09 12:00:05 ~ 2020-12-31 22:50:05</dd>
+					<dd>考试时限: 30 分钟</dd>
+					<span><cite><i class="iconfont icon-shijian1"></i>2018-09-10</cite></span>
+				</dl>
+				</a>
+			</li>
+		
+
+			<li>
+				<a href="projectview/id/1.html" title="中旗红智慧党建云平台-党员应知应会" target="_blank">
+									<img src="../../upload/admin/20190301/18a9c98ac1e602ebe5914db4eff5a98e_simg.jpg" />
+								<dl>
+					<dt>中旗红智慧党建云平台-党员应知应会</dt>
+					<dd>考试时间: 2018-08-01 23:55:32 ~ 2021-04-22 14:50:32</dd>
+					<dd>考试时限: 30 分钟</dd>
+					<span><cite><i class="iconfont icon-shijian1"></i>2018-08-21</cite></span>
+				</dl>
+				</a>
+			</li>
+		
+	
+	</ul>	
+	</div>
+	<ul class="xwpages">
+	      	  </ul>
+</div>
+<div class="sr_footer w1min">
+	<div class="w1">
+		<dl class="ft1">
+			<dd><b>智慧党建云平台</b></dd>
+			<dd>版权所有 © 2018 智慧党建云平台主办 All rights reserved. </dd>
+			<dd>咨询专线：  </dd>
+			<dd>地址：海南滨海国际金融中心广场</dd>
+		</dl>
+		<!-- <dl class="ft2">
+			<a href="http://wpa.qq.com/msgrd?v=3&uin=34147588&site=qq&menu=yes" target="_blank" rel="nofollow" class="layui-btn layui-btn-danger layui-btn-radius"><i class="iconfont icon-qq"></i>在线咨询</a>
+		</dl> -->
+		<dl class="ft4">
+			<dd>
+				    		                     <a href="../../about.html" title="关于我们" target="">
+		                             <i class="iconfont icon-dangwugongkai"></i>关于我们		                         </a>
+		                 		                     <a href="../../statement.html" title="网站声明" target="">
+		                             <i class="iconfont icon-dangwugongkai"></i>网站声明		                         </a>
+		                 		                     <a href="../../contact.html" title="联系我们" target="">
+		                             <i class="iconfont icon-dangwugongkai"></i>联系我们		                         </a>
+		                 
+			</dd>	
+		</dl>
+		<dl class="ft3"><img src="../../upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg" border="0" /></dl>
+	</div>
+</div>
+<ul class="g-navFloat">
+	<!-- <li>
+		<a href="http://www.dangjiancms.com/" target="_blank" class="u-tiyan">
+		<p>立</p><p>即</p><p>体</p><p>验</p>
+		</a>
+	</li> -->
+	<li>
+		<a href="http://wpa.qq.com/msgrd?v=3&uin=123&site=qq&menu=yes" target="_blank"><i class="iconfont icon-qq"></i></a>
+	</li>
+	<li>
+		<div class="u-contents content-qr">
+			<img src="../../upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg">
+			<p>智慧党建云平台</p>
+		</div>
+		<a href="javascript:void(0);"><i class="iconfont icon-weixin"></i></a>
+	</li>
+	<li>
+		<div class="u-contents content-tel">
+			<p>咨询专线：</p>
+			<p><br /></p>
+		</div>
+		<a href="javascript:void(0);"><i class="iconfont icon-dianhua"></i></a>
+	</li>
+</ul>
+<div style="display:none;"></div>
+<script type="text/javascript">
+	jQuery(".index2_6_con").slide({
+		delayTime: 500,
+		effect: "left",
+		autoPlay: true,
+	});
+	$(".clearfix01 .bj_tab ul li").hover(function(){
+		$(this).find(".icon_bj").removeClass("transform0");
+		$(this).find(".icon_bj").addClass("transform1");
+		
+	},function(){
+		$(this).find(".icon_bj").removeClass("transform1");
+		$(this).find(".icon_bj").addClass("transform0");
+		
+	});
+	$(".bj_img_buttm").find("span").hover(function(){
+		var a=$(this).attr("class");
+		$(".bj01").removeClass("cut");
+		$("#"+a).addClass("cut");
+	});
+</script>
+
+<script src="../../static/js/wind.js"></script>
+<script src="../../themes/zqdj_public/public/assets/simpleboot3/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../static/js/frontend.js"></script>
+<!--gotop start-->
+<script>	
+	$(function(){		
+		$.post("/user/index/islogin.html",{},function(data){
+			if(data.code==1){
+				$("#ucenterlogin .user-nickname").text(data.data.user.user_login);
+				$("#ucenterlogin .login").show();
+                $("#ucenterlogin .offline").hide();
+			}
+			if(data.code==0){
+                $("#ucenterlogin .login").hide();
+				$("#ucenterlogin .offline").show();
+			}
+		});
+	});
+</script> 
+<!--gotop end--> 
+<!-- 
+<ul id="side-bar" class="side-pannel side-bar">
+  <span><img src="/upload/imgs/djwx.jpg"><i>党建小程序</i></span>
+  <span><img src="/upload/imgs/djapp.jpg"><i>党建APP</i></span>
+  <span><img src="/upload/imgs/djvideo.jpg"><i>视频介绍</i></span>
+</ul> -->
+<script>
+	$(function(){
+		$(window).scroll(function(){
+			if($(window).scrollTop()>100){  //距顶部多少像素时，出现返回顶部按钮
+				$("#side-bar .gotop").fadeIn();	
+			}
+			else{
+				$("#side-bar .gotop").hide();
+			}
+		});
+		$("#side-bar .gotop").click(function(){
+			$('html,body').animate({'scrollTop':0},500); //返回顶部动画 数值越小时间越短
+		});
+	});
+</script>
+</body>
+</html>

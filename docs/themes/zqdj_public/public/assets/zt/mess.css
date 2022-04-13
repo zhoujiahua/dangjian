@@ -1,0 +1,98 @@
+h3, .h3 {
+    font-size: 24px;
+	margin-top: 20px;
+    margin-bottom: 10px;
+	font-family: "Source Sans Pro",Calibri,Candara,Arial,sans-serif;
+    font-weight: 300;
+    line-height: 1.1;
+    color: inherit;
+}
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.fa-comment-o:before {
+    content: "\f0e5";
+}
+
+.btn-primary {
+	color:#fff;
+	background-color:#b7372d;
+	border-color:#b7372d
+}
+.btn-primary:focus,.btn-primary.focus {
+	color:#fff;
+	background-color:#E74C3C;
+	border-color:#000000
+}
+.btn-primary:hover {
+	color:#fff;
+	background-color:#E74C3C;
+	border-color:#E74C3C
+}
+.btn-primary:active,.btn-primary.active,.open>.dropdown-toggle.btn-primary {
+	color:#fff;
+	background-color:#b7372d;
+	border-color:#b7372d
+}
+.btn-primary:active:hover,.btn-primary.active:hover,.open>.dropdown-toggle.btn-primary:hover,.btn-primary:active:focus,.btn-primary.active:focus,.open>.dropdown-toggle.btn-primary:focus,.btn-primary:active.focus,.btn-primary.active.focus,.open>.dropdown-toggle.btn-primary.focus {
+	color:#fff;
+	background-color:#b7372d;
+	border-color:#000000
+}
+.btn-primary:active,.btn-primary.active,.open>.dropdown-toggle.btn-primary {
+	background-image:none
+}
+.btn-primary.disabled:hover,.btn-primary[disabled]:hover,fieldset[disabled] .btn-primary:hover,.btn-primary.disabled:focus,.btn-primary[disabled]:focus,fieldset[disabled] .btn-primary:focus,.btn-primary.disabled.focus,.btn-primary[disabled].focus,fieldset[disabled] .btn-primary.focus {
+	background-color:#b7372d;
+	border-color:#b7372d
+}
+.btn-primary .badge {
+	color:#2C3E50;
+	background-color:#fff
+}
+
+.comment-body .comment-content p{
+	margin: 0 0 10px;
+}
+
+.comment{
+    font-family: "Source Sans Pro",Calibri,Candara,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #2C3E50;
+    background-color: #fff;
+}
+
+.comment a{
+	color: #18BC9C;
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 5px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.pull-right {
+    float: right;
+}

@@ -1,0 +1,344 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>三生三世_智慧党建云平台</title>
+	<link href="http://at.alicdn.com/t/font_759613_byou54gk0v7.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="../../../../themes/zqdj_public/public/assets/zqdj_public/css/style.css" />
+<script language="javascript" type="text/javascript" src="../../../../static/js/jquery.js"></script>
+<script language="javascript" type="text/javascript" src="../../../../themes/zqdj_public/public/assets/zqdj_public/js/jquery.SuperSlide.js"></script>
+<link rel="stylesheet" href="../../../../themes/zqdj_public/public/assets/zqdj_public/js/layui/css/layui.css"  media="all">
+<script src="../../../../themes/zqdj_public/public/assets/zqdj_public/js/layui/layui.js"></script>
+
+<script type="text/javascript">
+//判断是否是手机版访问,跳转到手机版
+var isiPad = navigator.userAgent.match(/iPad|iPhone|Android|Linux|iPod/i) != null;
+if(isiPad){	
+	var wapurl = '/weixin/Index/index.html';
+	window.location.href = wapurl;
+}
+    //全局变量
+    var GV = {
+        ROOT: "/",
+        WEB_ROOT: "/",
+        JS_ROOT: "static/js/",
+        TMPL: "/themes/zqdj_public/"
+    };
+</script>
+	<link href="../../../../static/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	
+<script type="text/html" id="photos-item-tpl">
+    <li id="saved-image{id}">
+        <input id="photo-{id}" type="hidden" name="photo_urls[]" value="{filepath}">
+        <img id="photo-{id}-preview" src="{url}.html" onclick="imagePreviewDialog(this.src);">
+        <a href="javascript:uploadOneImage('图片上传','#photo-{id}');">替换</a>
+        <a href="javascript:(function(){$('#saved-image{id}').remove();})();">移除</a>
+    </li>
+</script>
+<style type="text/css">
+#photos{clear: both;width:100%;height: auto; border: none; }
+#photos li{float:left;margin: 5px; padding-bottom: 10px;width: 106px;height: 136px;border-bottom:none;text-align: center;}
+#photos li img{width: 100px;height: 100px;border: 1px solid #ccc;padding: 2px;}
+#photos li a{padding: 2px;}
+.table-w2 ul{line-height:100%;}
+.anniu_1{width: 100%; text-align: center;}
+.anniu_1 i{margin-right:10px;font-size:16px;float:none;}
+</style>
+</head>
+<body>
+
+<!--top区域 start-->
+<div class="top_x w1min">
+<div class="w1">
+	<div class="topx_left">
+		<div class="topx_logo"><img src="../../../../themes/zqdj_public/public/assets/zqdj_public/imgs/header_logo.png" /></div>
+		<div class="topx_zi">
+		<h1>智慧党建云平台</h1>
+		</div>
+	</div>
+	<div class="topx_right" id="ucenterlogin">
+		<dl class="login" style="display:none;">
+			你好, <span class="user-nickname"></span>
+			<a href="../../../../user/profile/center.html"><i class="iconfont icon-user"></i>党员中心</a>
+			<a href="../../../../user/index/logout.html">&nbsp;&nbsp;退出登录</a>
+		</dl>
+		<dl class="offline" style="display:none;">
+			<a href="../../../../user/login/index.html" class="signin"><i class="iconfont icon-gongchandang"></i>登录</a>
+		</dl>
+		<div class="top-search">
+			<form method="post" action="http://demo.dangjiancms.com/portal/search/index.html" target="_blank">
+				<input type="text" name="keyword" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+				<button class="layui-btn layui-bg-orange" lay-submit lay-filter="formDemo"><i class="iconfont icon-xiazai15"></i>搜索</button>
+			</form>
+		</div>
+	</div>			
+</div>
+</div>
+<!-- <div class="lang_mu w1min">
+<ul class="layui-nav" lay-filter="">
+	                    <li class="layui-nav-item ">
+                    <a href="/" target="">
+                        <b>首页</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/dongtai.html" target="">
+                        <b>党建动态</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/portal/special/index.html" target="">
+                        <b>专题专栏</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/portal/seritem/index.html" target="">
+                        <b>志愿服务</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/portal/activity/index.html" target="">
+                        <b>组织活动</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/portal/study/index.html" target="">
+                        <b>学习中心</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/portal/sanhui/index.html" target="">
+                        <b>三会一课</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/portal/wenjuan/wenjuanlist.html" target="">
+                        <b>问卷调查</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/portal/score/index.html" target="">
+                        <b>积分统计</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/portal/index/map.html" target="">
+                        <b>党建地图</b>
+                    </a>
+                </li>
+            
+</ul>
+<script>
+//注意：导航 依赖 element 模块，否则无法进行功能性操作
+layui.use('element', function(){
+  var element = layui.element;
+  
+  //…
+});
+</script>
+</div> -->
+<!--top区域 end-->
+<div class="w1 banne1 mgtop-15"><img src="../../../../upload/admin/20181120/b02187c3e779476c3d555e59ccdcb415.jpg"></div>
+<div class="mgtop-15 background-w1">
+
+	<div class="fdiv mua"><ul><i class="iconfont icon-dangwugongkai"></i><b>话题主题</b></ul>
+	<ol>
+		当前位置：<a href="../../../../user/index/logout.html">首页</a> >
+		<a href="../../index.html">话题主题</a> >
+		话题详细
+	</ol>	
+	</div>
+
+	<div class="lnmu">
+		<ul>三生三世</ul>
+		<ol>发布时间：2019-11-07 08:22:43 点击数量:<span id="hits">147</span></ol>
+	</div>
+	<div class="listn imgk">
+		顶顶顶顶	</div>
+	
+	<div class="mgtop-15 anniu_1">
+		<a href="../../favoritepost/id/51.html" rel="nofollow" class="layui-btn layui-btn-danger js-ajax-btn"><i class="fa fa-star-o"></i>收藏</a>
+					<a href="../../likepost/id/51/yes/1.html" rel="nofollow" class="layui-btn layui-btn-danger js-ajax-btn"><i class="fa fa-thumbs-o-up"></i>点赞</a>
+				<a href="51.html#comment" rel="nofollow" class="layui-btn layui-btn-danger"><i class="fa fa-comments-o"></i>评论</a>
+	</div>
+	
+	<div class="bookmu mgtop-15">
+		<fieldset class="layui-elem-field layui-field-title"><legend><i class="iconfont icon-dangzuhuiyitishenqing"></i><b>评论信息</b></legend></fieldset>
+	</div>
+
+	<div class="booking link2">
+					<dl>
+				<dt>
+											<img src="../../../../upload/mobile/20191120/60c2404ddff2255e1667e36da8f28a9e.png" />
+									</dt>
+				<dd >
+					<span><i class="iconfont icon-user"></i><b><a href="51.html#">jovem</a></b><i class="iconfont icon-shijian1"></i><cite>2019-11-14 11:27:54</cite></span>
+					<em>自己😄</em>
+					<div>
+											</div>
+				</dd>
+			</dl>
+					<dl>
+				<dt>
+											<img src="../../../../upload/mobile/20200325/ce83bbc3317e61148c5b2c7c05b60c6d.png" />
+									</dt>
+				<dd >
+					<span><i class="iconfont icon-user"></i><b><a href="51.html#">JAY</a></b><i class="iconfont icon-shijian1"></i><cite>2019-11-13 16:54:11</cite></span>
+					<em>我来啦哈哈哈</em>
+					<div>
+											</div>
+				</dd>
+			</dl>
+			</div>
+	
+	<div class="bookmu mgtop-15">
+		<a name="comment"></a>
+		<fieldset class="layui-elem-field layui-field-title"><legend><i class="iconfont icon-dangzuhuiyitishenqing"></i><b>我要评论</b></legend></fieldset>
+	</div>
+	<form class="layui-form layui-form-pane js-ajax-form" action="http://demo.dangjiancms.com/portal/forum/commentpost.html" method="post">
+		<input type="hidden" name="forum_id" value="51" />
+		<div class="table-w2">
+		<table class="layui-table">
+			<colgroup>
+			  <col width="150">
+			  <col>
+			  <col>
+			</colgroup>
+			<tbody>
+			  <tr>
+				<td><i class="iconfont icon-liuyan"></i>内容</td>
+				<td><textarea placeholder="请输入内容" name="info" required class="layui-textarea"></textarea></td>
+			  </tr>
+			   <tr>
+				<td><i class="iconfont icon-shangchuan"></i>图片</td>
+				<td>
+				<ul id="photos" class="pic-list list-unstyled form-inline"></ul>
+				<button class="layui-btn layui-bg-blue" type="button" onclick="uploadMultiImage('图片上传','#photos','photos-item-tpl')">开始上传</button>
+				</td>
+			  </tr>
+			</tbody>
+		  </table>
+		</div>  
+		<div class="mgtop-15 anniu_2">
+		<button class="layui-btn layui-btn-danger layui-btn-lg js-ajax-submit" type="submit" lay-filter="demo1"><i class="iconfont icon-tianxie1"></i>确定提交</button>
+		<button type="reset" class="layui-btn layui-btn-primary layui-btn-lg"><i class="iconfont icon-011caozuo_zhongzhi"></i>重置</button>
+		</div>
+	</form>
+
+
+</div>
+<div class="sr_footer w1min">
+	<div class="w1">
+		<dl class="ft1">
+			<dd><b>智慧党建云平台</b></dd>
+			<dd>版权所有 © 2018 智慧党建云平台主办 All rights reserved. </dd>
+			<dd>咨询专线：  </dd>
+			<dd>地址：海南滨海国际金融中心广场</dd>
+		</dl>
+		<!-- <dl class="ft2">
+			<a href="http://wpa.qq.com/msgrd?v=3&uin=34147588&site=qq&menu=yes" target="_blank" rel="nofollow" class="layui-btn layui-btn-danger layui-btn-radius"><i class="iconfont icon-qq"></i>在线咨询</a>
+		</dl> -->
+		<dl class="ft4">
+			<dd>
+				    		                     <a href="../../../../about.html" title="关于我们" target="">
+		                             <i class="iconfont icon-dangwugongkai"></i>关于我们		                         </a>
+		                 		                     <a href="../../../../statement.html" title="网站声明" target="">
+		                             <i class="iconfont icon-dangwugongkai"></i>网站声明		                         </a>
+		                 		                     <a href="../../../../contact.html" title="联系我们" target="">
+		                             <i class="iconfont icon-dangwugongkai"></i>联系我们		                         </a>
+		                 
+			</dd>	
+		</dl>
+		<dl class="ft3"><img src="../../../../upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg" border="0" /></dl>
+	</div>
+</div>
+<ul class="g-navFloat">
+	<!-- <li>
+		<a href="http://www.dangjiancms.com/" target="_blank" class="u-tiyan">
+		<p>立</p><p>即</p><p>体</p><p>验</p>
+		</a>
+	</li> -->
+	<li>
+		<a href="http://wpa.qq.com/msgrd?v=3&uin=123&site=qq&menu=yes" target="_blank"><i class="iconfont icon-qq"></i></a>
+	</li>
+	<li>
+		<div class="u-contents content-qr">
+			<img src="../../../../upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg">
+			<p>智慧党建云平台</p>
+		</div>
+		<a href="javascript:void(0);"><i class="iconfont icon-weixin"></i></a>
+	</li>
+	<li>
+		<div class="u-contents content-tel">
+			<p>咨询专线：</p>
+			<p><br /></p>
+		</div>
+		<a href="javascript:void(0);"><i class="iconfont icon-dianhua"></i></a>
+	</li>
+</ul>
+<div style="display:none;"></div>
+<script type="text/javascript">
+	jQuery(".index2_6_con").slide({
+		delayTime: 500,
+		effect: "left",
+		autoPlay: true,
+	});
+	$(".clearfix01 .bj_tab ul li").hover(function(){
+		$(this).find(".icon_bj").removeClass("transform0");
+		$(this).find(".icon_bj").addClass("transform1");
+		
+	},function(){
+		$(this).find(".icon_bj").removeClass("transform1");
+		$(this).find(".icon_bj").addClass("transform0");
+		
+	});
+	$(".bj_img_buttm").find("span").hover(function(){
+		var a=$(this).attr("class");
+		$(".bj01").removeClass("cut");
+		$("#"+a).addClass("cut");
+	});
+</script>
+
+<script src="../../../../static/js/wind.js"></script>
+<script src="../../../../themes/zqdj_public/public/assets/simpleboot3/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../../../static/js/frontend.js"></script>
+<!--gotop start-->
+<script>	
+	$(function(){		
+		$.post("/user/index/islogin.html",{},function(data){
+			if(data.code==1){
+				$("#ucenterlogin .user-nickname").text(data.data.user.user_login);
+				$("#ucenterlogin .login").show();
+                $("#ucenterlogin .offline").hide();
+			}
+			if(data.code==0){
+                $("#ucenterlogin .login").hide();
+				$("#ucenterlogin .offline").show();
+			}
+		});
+	});
+</script> 
+<!--gotop end--> 
+<!-- 
+<ul id="side-bar" class="side-pannel side-bar">
+  <span><img src="/upload/imgs/djwx.jpg"><i>党建小程序</i></span>
+  <span><img src="/upload/imgs/djapp.jpg"><i>党建APP</i></span>
+  <span><img src="/upload/imgs/djvideo.jpg"><i>视频介绍</i></span>
+</ul> -->
+<script>
+	$(function(){
+		$(window).scroll(function(){
+			if($(window).scrollTop()>100){  //距顶部多少像素时，出现返回顶部按钮
+				$("#side-bar .gotop").fadeIn();	
+			}
+			else{
+				$("#side-bar .gotop").hide();
+			}
+		});
+		$("#side-bar .gotop").click(function(){
+			$('html,body').animate({'scrollTop':0},500); //返回顶部动画 数值越小时间越短
+		});
+	});
+</script>
+</body>
+</html>

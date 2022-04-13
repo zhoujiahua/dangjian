@@ -1,0 +1,416 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title> 智慧党建云平台</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">	
+	<link href="http://at.alicdn.com/t/font_759613_byou54gk0v7.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="themes/zqdj_public/public/assets/zqdj_public/css/style.css" />
+<script language="javascript" type="text/javascript" src="static/js/jquery.js"></script>
+<script language="javascript" type="text/javascript" src="themes/zqdj_public/public/assets/zqdj_public/js/jquery.SuperSlide.js"></script>
+<link rel="stylesheet" href="themes/zqdj_public/public/assets/zqdj_public/js/layui/css/layui.css"  media="all">
+<script src="themes/zqdj_public/public/assets/zqdj_public/js/layui/layui.js"></script>
+
+<script type="text/javascript">
+//判断是否是手机版访问,跳转到手机版
+var isiPad = navigator.userAgent.match(/iPad|iPhone|Android|Linux|iPod/i) != null;
+if(isiPad){	
+	var wapurl = '/weixin/Index/index.html';
+	window.location.href = wapurl;
+}
+    //全局变量
+    var GV = {
+        ROOT: "/",
+        WEB_ROOT: "/",
+        JS_ROOT: "static/js/",
+        TMPL: "/themes/zqdj_public/"
+    };
+</script>
+</head>
+<body>
+
+<!--top区域 start-->
+<div class="top_x w1min">
+<div class="w1">
+	<div class="topx_left">
+		<div class="topx_logo"><img src="themes/zqdj_public/public/assets/zqdj_public/imgs/header_logo.png" /></div>
+		<div class="topx_zi">
+		<h1>智慧党建云平台</h1>
+		</div>
+	</div>
+	<div class="topx_right" id="ucenterlogin">
+		<dl class="login" style="display:none;">
+			你好, <span class="user-nickname"></span>
+			<a href="user/profile/center.html"><i class="iconfont icon-user"></i>党员中心</a>
+			<a href="user/index/logout.html">&nbsp;&nbsp;退出登录</a>
+		</dl>
+		<dl class="offline" style="display:none;">
+			<a href="user/login/index.html" class="signin"><i class="iconfont icon-gongchandang"></i>登录</a>
+		</dl>
+		<div class="top-search">
+			<form method="post" action="http://demo.dangjiancms.com/portal/search/index.html" target="_blank">
+				<input type="text" name="keyword" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+				<button class="layui-btn layui-bg-orange" lay-submit lay-filter="formDemo"><i class="iconfont icon-xiazai15"></i>搜索</button>
+			</form>
+		</div>
+	</div>			
+</div>
+</div>
+<!-- <div class="lang_mu w1min">
+<ul class="layui-nav" lay-filter="">
+	                    <li class="layui-nav-item ">
+                    <a href="/" target="">
+                        <b>首页</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/dongtai.html" target="">
+                        <b>党建动态</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/portal/special/index.html" target="">
+                        <b>专题专栏</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/portal/seritem/index.html" target="">
+                        <b>志愿服务</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/portal/activity/index.html" target="">
+                        <b>组织活动</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/portal/study/index.html" target="">
+                        <b>学习中心</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/portal/sanhui/index.html" target="">
+                        <b>三会一课</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/portal/wenjuan/wenjuanlist.html" target="">
+                        <b>问卷调查</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/portal/score/index.html" target="">
+                        <b>积分统计</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/portal/index/map.html" target="">
+                        <b>党建地图</b>
+                    </a>
+                </li>
+            
+</ul>
+<script>
+//注意：导航 依赖 element 模块，否则无法进行功能性操作
+layui.use('element', function(){
+  var element = layui.element;
+  
+  //…
+});
+</script>
+</div> -->
+<!--top区域 end-->
+<div class="w1 banne1 mgtop-15"><img src="upload/admin/20181120/b02187c3e779476c3d555e59ccdcb415.jpg"></div>
+<div class="mgtop-15 background-w1">
+
+	<div class="fdiv mua">
+	<ul><i class="iconfont icon-dangwugongkai"></i><b>党建动态</b></ul>
+	<ol>当前位置：<a href="user/index/logout.html">首页</a> >
+			  	<a href="dongtai.html">党建动态</a>
+	</ol>
+	</div>
+
+	<div class="m_newtu">
+	<ul>
+		
+           <li>
+									<a href="dongtai/230.html" target="_blank" title="人民日报社论：激发制度活力 凝聚复兴伟力">
+									<img src="upload/portal/20190228/bff3a5236ddd1ddb84336ca5ed877c58.jpg" />
+								<dl>
+					<dt>人民日报社论：激发制度活力 凝聚复兴伟力</dt>
+					<dd>“阳和启蛰，品物皆春。”今天，十三届全国人大二次会议在北京开幕，近3000名全国人大代表齐聚一堂，共商国是、共议大计。</dd>
+					<span><em><i class="iconfont icon-chakan1"></i>813</em><object>
+
+											<a href="dongtai/230.html#comments">
+											
+					<cite><i class="iconfont icon-liuyan"></i>0</cite></a></object><cite><i class="iconfont icon-shijian1"></i>2022-02-10</cite></span>
+				</dl>
+				</a>
+			</li>
+       
+
+           <li>
+									<a href="http://dangjiancms.com/news2/656.html" target="_blank">
+									<img src="themes/zqdj_public/public/assets/zqdj_public/imgs/default_tupian1.png" />
+									<dl>
+					<dt>新时代背景下，智慧党建也要与时俱进、不断创新</dt>
+					<dd></dd>
+					<span><em><i class="iconfont icon-chakan1"></i>74</em><object>
+
+											<a href="http://dangjiancms.com/news2/656.html" target="_blank">
+											
+					<cite><i class="iconfont icon-liuyan"></i>0</cite></a></object><cite><i class="iconfont icon-shijian1"></i>2019-07-16</cite></span>
+				</dl>
+				</a>
+			</li>
+       
+
+           <li>
+									<a href="dongtai/231.html" target="_blank" title="云南富民县1234工作法为机关党建提质增效">
+									<img src="upload/portal/20190227/231bead14a78b18896d0680583a2757a.png" />
+								<dl>
+					<dt>云南富民县1234工作法为机关党建提质增效</dt>
+					<dd>在云南省正式启动的“基层党建巩固年”工作中，富民县直属机关工委围绕组织力提升，强化政治统领，以支部规范化建设为牵引，采取“1234”工作法，着力夯实机关党建基础，提升服务能力，不断推进机关党建工作提质增效。</dd>
+					<span><em><i class="iconfont icon-chakan1"></i>481</em><object>
+
+											<a href="dongtai/231.html#comments">
+											
+					<cite><i class="iconfont icon-liuyan"></i>0</cite></a></object><cite><i class="iconfont icon-shijian1"></i>2019-03-05</cite></span>
+				</dl>
+				</a>
+			</li>
+       
+
+           <li>
+									<a href="dongtai/199.html" target="_blank" title="奋力书写新时代机关党建工作新篇章">
+									<img src="upload/portal/20190227/231bead14a78b18896d0680583a2757a.png" />
+								<dl>
+					<dt>奋力书写新时代机关党建工作新篇章</dt>
+					<dd>018年，在自治区党委正确领导下，区直机关工委紧紧围绕中心、服务大局，主动提高政治站位，不断强化责任担当，举旗亮剑向机关党建“灯下黑”问题宣战，以“三强九严”工程为抓手，持续推进机关党的建设取得新的进展，不断汇聚推动机关党建工作向前的强大合力。</dd>
+					<span><em><i class="iconfont icon-chakan1"></i>551</em><object>
+
+											<a href="dongtai/199.html#comments">
+											
+					<cite><i class="iconfont icon-liuyan"></i>0</cite></a></object><cite><i class="iconfont icon-shijian1"></i>2019-02-28</cite></span>
+				</dl>
+				</a>
+			</li>
+       
+
+           <li>
+									<a href="dongtai/198.html" target="_blank" title="2019年中央和国家机关党的建设主要工作">
+									<img src="upload/portal/20190228/bff3a5236ddd1ddb84336ca5ed877c58.jpg" />
+								<dl>
+					<dt>2019年中央和国家机关党的建设主要工作</dt>
+					<dd></dd>
+					<span><em><i class="iconfont icon-chakan1"></i>530</em><object>
+
+											<a href="dongtai/198.html#comments">
+											
+					<cite><i class="iconfont icon-liuyan"></i>0</cite></a></object><cite><i class="iconfont icon-shijian1"></i>2019-02-28</cite></span>
+				</dl>
+				</a>
+			</li>
+       
+
+           <li>
+									<a href="dongtai/197.html" target="_blank" title="人民日报评论员：把党的政治建设摆在首位">
+									<img src="upload/portal/20190228/74cabf6ad7abf9c309d10ac9b925ae91.jpg" />
+								<dl>
+					<dt>人民日报评论员：把党的政治建设摆在首位</dt>
+					<dd>党的政治建设是党的根本性建设，决定党的建设方向和效果。</dd>
+					<span><em><i class="iconfont icon-chakan1"></i>666</em><object>
+
+											<a href="dongtai/197.html#comments">
+											
+					<cite><i class="iconfont icon-liuyan"></i>0</cite></a></object><cite><i class="iconfont icon-shijian1"></i>2019-02-28</cite></span>
+				</dl>
+				</a>
+			</li>
+       
+
+           <li>
+									<a href="dongtai/196.html" target="_blank" title="以高质量党建工作助推法院高质量发展">
+									<img src="upload/portal/20190228/bff3a5236ddd1ddb84336ca5ed877c58.jpg" />
+								<dl>
+					<dt>以高质量党建工作助推法院高质量发展</dt>
+					<dd>党建工作重心在哪里？党建工作的成效如何？党建工作与中心工作之间的关系处理的怎么样？这些都是各级党组织最紧迫最现实的大问题，也是必须要作答的时代考题。</dd>
+					<span><em><i class="iconfont icon-chakan1"></i>624</em><object>
+
+											<a href="dongtai/196.html#comments">
+											
+					<cite><i class="iconfont icon-liuyan"></i>0</cite></a></object><cite><i class="iconfont icon-shijian1"></i>2019-02-28</cite></span>
+				</dl>
+				</a>
+			</li>
+       
+
+           <li>
+									<a href="dongtai/195.html" target="_blank" title="全面从严治党要强化“六种意识”">
+									<img src="upload/portal/20190228/05d86b5d5f61287783e323574b8c7f0d.jpg" />
+								<dl>
+					<dt>全面从严治党要强化“六种意识”</dt>
+					<dd>近日，习近平总书记在十九届中央纪委三次全会上发表重要讲话强调，要以新时代中国特色社会主义思想为指导，增强“四个意识”、坚定“四个自信”、做到“两个维护”，以党的政治建设为统领全面推进党的建设，取得全面从严治党更大战略性成果。</dd>
+					<span><em><i class="iconfont icon-chakan1"></i>687</em><object>
+
+											<a href="dongtai/195.html#comments">
+											
+					<cite><i class="iconfont icon-liuyan"></i>0</cite></a></object><cite><i class="iconfont icon-shijian1"></i>2019-02-28</cite></span>
+				</dl>
+				</a>
+			</li>
+       
+
+           <li>
+									<a href="dongtai/194.html" target="_blank" title="声音：以斗争精神整顿作风优化环境">
+									<img src="upload/portal/20190228/7c200f37cafe5bde323afdeba2b9591c.png" />
+								<dl>
+					<dt>声音：以斗争精神整顿作风优化环境</dt>
+					<dd>从企业和群众最不满意的地方改起、最受益的事情抓起，让“办事不求人”真正落到实处</dd>
+					<span><em><i class="iconfont icon-chakan1"></i>216</em><object>
+
+											<a href="dongtai/194.html#comments">
+											
+					<cite><i class="iconfont icon-liuyan"></i>0</cite></a></object><cite><i class="iconfont icon-shijian1"></i>2019-02-28</cite></span>
+				</dl>
+				</a>
+			</li>
+       
+
+           <li>
+									<a href="dongtai/193.html" target="_blank" title="如何全面立体考察干部政治表现？天津南开区—— 9种方式擦亮识人“慧眼”">
+									<img src="upload/portal/20190228/f6fa455cc9a552465106a9305deeb7b4.jpg" />
+								<dl>
+					<dt>如何全面立体考察干部政治表现？天津南开区—— 9种方式擦亮识人“慧眼”</dt>
+					<dd>近日，天津市南开区出台《突出政治标准考准考实干部政治表现实施办法（试行）》，加强对处级干部、优秀年轻干部的日常考察和对拟提任或进一步使用的处级人选的任前考察，切实把好政治关、品行关和廉洁关。</dd>
+					<span><em><i class="iconfont icon-chakan1"></i>212</em><object>
+
+											<a href="dongtai/193.html#comments">
+											
+					<cite><i class="iconfont icon-liuyan"></i>0</cite></a></object><cite><i class="iconfont icon-shijian1"></i>2019-02-28</cite></span>
+				</dl>
+				</a>
+			</li>
+       
+		
+	</ul>	
+	</div>
+	<ul class="xwpages">
+	      <li class="page-item disabled"><span class="page-link">共 28 条</span></li> <li class="page-item disabled"><span class="page-link">上一页</span></li> <li class="active page-item disabled" ><span class="page-link">1</span></li><li class="page-item"><a class="page-link" href="dongtai.html%3Fpage=2.html">2</a></li><li class="page-item"><a class="page-link" href="dongtai.html%3Fpage=3.html">3</a></li> <li class="page-item"><a class="page-link" href="dongtai.html%3Fpage=2.html">下一页</a></li>	  </ul>
+</div>
+<div class="sr_footer w1min">
+	<div class="w1">
+		<dl class="ft1">
+			<dd><b>智慧党建云平台</b></dd>
+			<dd>版权所有 © 2018 智慧党建云平台主办 All rights reserved. </dd>
+			<dd>咨询专线：  </dd>
+			<dd>地址：海南滨海国际金融中心广场</dd>
+		</dl>
+		<!-- <dl class="ft2">
+			<a href="http://wpa.qq.com/msgrd?v=3&uin=34147588&site=qq&menu=yes" target="_blank" rel="nofollow" class="layui-btn layui-btn-danger layui-btn-radius"><i class="iconfont icon-qq"></i>在线咨询</a>
+		</dl> -->
+		<dl class="ft4">
+			<dd>
+				    		                     <a href="about.html" title="关于我们" target="">
+		                             <i class="iconfont icon-dangwugongkai"></i>关于我们		                         </a>
+		                 		                     <a href="statement.html" title="网站声明" target="">
+		                             <i class="iconfont icon-dangwugongkai"></i>网站声明		                         </a>
+		                 		                     <a href="contact.html" title="联系我们" target="">
+		                             <i class="iconfont icon-dangwugongkai"></i>联系我们		                         </a>
+		                 
+			</dd>	
+		</dl>
+		<dl class="ft3"><img src="upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg" border="0" /></dl>
+	</div>
+</div>
+<ul class="g-navFloat">
+	<!-- <li>
+		<a href="http://www.dangjiancms.com/" target="_blank" class="u-tiyan">
+		<p>立</p><p>即</p><p>体</p><p>验</p>
+		</a>
+	</li> -->
+	<li>
+		<a href="http://wpa.qq.com/msgrd?v=3&uin=123&site=qq&menu=yes" target="_blank"><i class="iconfont icon-qq"></i></a>
+	</li>
+	<li>
+		<div class="u-contents content-qr">
+			<img src="upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg">
+			<p>智慧党建云平台</p>
+		</div>
+		<a href="javascript:void(0);"><i class="iconfont icon-weixin"></i></a>
+	</li>
+	<li>
+		<div class="u-contents content-tel">
+			<p>咨询专线：</p>
+			<p><br /></p>
+		</div>
+		<a href="javascript:void(0);"><i class="iconfont icon-dianhua"></i></a>
+	</li>
+</ul>
+<div style="display:none;"></div>
+<script type="text/javascript">
+	jQuery(".index2_6_con").slide({
+		delayTime: 500,
+		effect: "left",
+		autoPlay: true,
+	});
+	$(".clearfix01 .bj_tab ul li").hover(function(){
+		$(this).find(".icon_bj").removeClass("transform0");
+		$(this).find(".icon_bj").addClass("transform1");
+		
+	},function(){
+		$(this).find(".icon_bj").removeClass("transform1");
+		$(this).find(".icon_bj").addClass("transform0");
+		
+	});
+	$(".bj_img_buttm").find("span").hover(function(){
+		var a=$(this).attr("class");
+		$(".bj01").removeClass("cut");
+		$("#"+a).addClass("cut");
+	});
+</script>
+
+<script src="static/js/wind.js"></script>
+<script src="themes/zqdj_public/public/assets/simpleboot3/bootstrap/js/bootstrap.min.js"></script>
+<script src="static/js/frontend.js"></script>
+<!--gotop start-->
+<script>	
+	$(function(){		
+		$.post("/user/index/islogin.html",{},function(data){
+			if(data.code==1){
+				$("#ucenterlogin .user-nickname").text(data.data.user.user_login);
+				$("#ucenterlogin .login").show();
+                $("#ucenterlogin .offline").hide();
+			}
+			if(data.code==0){
+                $("#ucenterlogin .login").hide();
+				$("#ucenterlogin .offline").show();
+			}
+		});
+	});
+</script> 
+<!--gotop end--> 
+<!-- 
+<ul id="side-bar" class="side-pannel side-bar">
+  <span><img src="/upload/imgs/djwx.jpg"><i>党建小程序</i></span>
+  <span><img src="/upload/imgs/djapp.jpg"><i>党建APP</i></span>
+  <span><img src="/upload/imgs/djvideo.jpg"><i>视频介绍</i></span>
+</ul> -->
+<script>
+	$(function(){
+		$(window).scroll(function(){
+			if($(window).scrollTop()>100){  //距顶部多少像素时，出现返回顶部按钮
+				$("#side-bar .gotop").fadeIn();	
+			}
+			else{
+				$("#side-bar .gotop").hide();
+			}
+		});
+		$("#side-bar .gotop").click(function(){
+			$('html,body').animate({'scrollTop':0},500); //返回顶部动画 数值越小时间越短
+		});
+	});
+</script>
+</body>
+</html>

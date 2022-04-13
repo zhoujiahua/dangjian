@@ -1,0 +1,416 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title> 智慧党建云平台</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">	
+	<link href="http://at.alicdn.com/t/font_759613_byou54gk0v7.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="themes/zqdj_public/public/assets/zqdj_public/css/style.css" />
+<script language="javascript" type="text/javascript" src="static/js/jquery.js"></script>
+<script language="javascript" type="text/javascript" src="themes/zqdj_public/public/assets/zqdj_public/js/jquery.SuperSlide.js"></script>
+<link rel="stylesheet" href="themes/zqdj_public/public/assets/zqdj_public/js/layui/css/layui.css"  media="all">
+<script src="themes/zqdj_public/public/assets/zqdj_public/js/layui/layui.js"></script>
+
+<script type="text/javascript">
+//判断是否是手机版访问,跳转到手机版
+var isiPad = navigator.userAgent.match(/iPad|iPhone|Android|Linux|iPod/i) != null;
+if(isiPad){	
+	var wapurl = '/weixin/Index/index.html';
+	window.location.href = wapurl;
+}
+    //全局变量
+    var GV = {
+        ROOT: "/",
+        WEB_ROOT: "/",
+        JS_ROOT: "static/js/",
+        TMPL: "/themes/zqdj_public/"
+    };
+</script>
+</head>
+<body>
+
+<!--top区域 start-->
+<div class="top_x w1min">
+<div class="w1">
+	<div class="topx_left">
+		<div class="topx_logo"><img src="themes/zqdj_public/public/assets/zqdj_public/imgs/header_logo.png" /></div>
+		<div class="topx_zi">
+		<h1>智慧党建云平台</h1>
+		</div>
+	</div>
+	<div class="topx_right" id="ucenterlogin">
+		<dl class="login" style="display:none;">
+			你好, <span class="user-nickname"></span>
+			<a href="user/profile/center.html"><i class="iconfont icon-user"></i>党员中心</a>
+			<a href="user/index/logout.html">&nbsp;&nbsp;退出登录</a>
+		</dl>
+		<dl class="offline" style="display:none;">
+			<a href="user/login/index.html" class="signin"><i class="iconfont icon-gongchandang"></i>登录</a>
+		</dl>
+		<div class="top-search">
+			<form method="post" action="http://demo.dangjiancms.com/portal/search/index.html" target="_blank">
+				<input type="text" name="keyword" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+				<button class="layui-btn layui-bg-orange" lay-submit lay-filter="formDemo"><i class="iconfont icon-xiazai15"></i>搜索</button>
+			</form>
+		</div>
+	</div>			
+</div>
+</div>
+<!-- <div class="lang_mu w1min">
+<ul class="layui-nav" lay-filter="">
+	                    <li class="layui-nav-item ">
+                    <a href="/" target="">
+                        <b>首页</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/dongtai.html" target="">
+                        <b>党建动态</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/portal/special/index.html" target="">
+                        <b>专题专栏</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/portal/seritem/index.html" target="">
+                        <b>志愿服务</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/portal/activity/index.html" target="">
+                        <b>组织活动</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/portal/study/index.html" target="">
+                        <b>学习中心</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/portal/sanhui/index.html" target="">
+                        <b>三会一课</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/portal/wenjuan/wenjuanlist.html" target="">
+                        <b>问卷调查</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/portal/score/index.html" target="">
+                        <b>积分统计</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/portal/index/map.html" target="">
+                        <b>党建地图</b>
+                    </a>
+                </li>
+            
+</ul>
+<script>
+//注意：导航 依赖 element 模块，否则无法进行功能性操作
+layui.use('element', function(){
+  var element = layui.element;
+  
+  //…
+});
+</script>
+</div> -->
+<!--top区域 end-->
+<div class="w1 banne1 mgtop-15"><img src="upload/admin/20181120/b02187c3e779476c3d555e59ccdcb415.jpg"></div>
+<div class="mgtop-15 background-w1">
+
+	<div class="fdiv mua">
+	<ul><i class="iconfont icon-dangwugongkai"></i><b>党员队伍建设</b></ul>
+	<ol>当前位置：<a href="user/index/logout.html">首页</a> >
+			  	<a href="dydwjs.html">党员队伍建设</a>
+	</ol>
+	</div>
+
+	<div class="m_newtu">
+	<ul>
+		
+           <li>
+									<a href="dydwjs/169.html" target="_blank" title="广东开平：发挥资源优势打造党员教育精品线路">
+									<img src="upload/portal/20180905/145cf66673e8a2fa61f6287e606e99ad_simg.jpg" />
+								<dl>
+					<dt>广东开平：发挥资源优势打造党员教育精品线路</dt>
+					<dd>近年来，广东省开平市积极探索党员教育培训新模式，将红色教育基地建设打造放在突出位置，在科学选点布局、创新教育载体、丰富文化内涵等方面持续发力，现已形成一条主题鲜明、特色突出、配套完善的红色教育精品线路，在加强党员党性教育，推动全面从严治党方面发挥了重要作用。</dd>
+					<span><em><i class="iconfont icon-chakan1"></i>225</em><object>
+
+											<a href="dydwjs/169.html#comments">
+											
+					<cite><i class="iconfont icon-liuyan"></i>0</cite></a></object><cite><i class="iconfont icon-shijian1"></i>2018-09-21</cite></span>
+				</dl>
+				</a>
+			</li>
+       
+
+           <li>
+									<a href="dydwjs/166.html" target="_blank" title="构建“四大体系”确保党员教育五年规划见实效">
+									<img src="themes/zqdj_public/public/assets/zqdj_public/imgs/default_tupian1.png" />
+									<dl>
+					<dt>构建“四大体系”确保党员教育五年规划见实效</dt>
+					<dd>四川省洪雅县紧紧围绕《2014-2018全国党员教育培训工作规划》要求，积极构建“基础保障、教育培训、示范创建、开放共享”四大体系，确保党员教育五年规划落地见效。</dd>
+					<span><em><i class="iconfont icon-chakan1"></i>261</em><object>
+
+											<a href="dydwjs/166.html#comments">
+											
+					<cite><i class="iconfont icon-liuyan"></i>0</cite></a></object><cite><i class="iconfont icon-shijian1"></i>2018-09-21</cite></span>
+				</dl>
+				</a>
+			</li>
+       
+
+           <li>
+									<a href="dydwjs/168.html" target="_blank" title="黑龙江海林出台党员教育管理20条 为从严治党“上弦加力”​">
+									<img src="upload/portal/20180905/ee7f379ca4bdd66894591d646dc4c89b.jpg" />
+								<dl>
+					<dt>黑龙江海林出台党员教育管理20条 为从严治党“上弦加力”​</dt>
+					<dd>今年以来，黑龙江省海林市在党员教育管理上用真功、使长劲、求实效，严把进口、畅通出口、加强过程管理，制定了20条“硬杠杠”，逐项对标抓落实，为从严治党“上弦加力”。 </dd>
+					<span><em><i class="iconfont icon-chakan1"></i>193</em><object>
+
+											<a href="dydwjs/168.html#comments">
+											
+					<cite><i class="iconfont icon-liuyan"></i>0</cite></a></object><cite><i class="iconfont icon-shijian1"></i>2018-09-21</cite></span>
+				</dl>
+				</a>
+			</li>
+       
+
+           <li>
+									<a href="dydwjs/170.html" target="_blank" title="江苏泗阳：拓展情境资源 破解学习教育瓶颈">
+									<img src="upload/portal/20180905/a9a857593f6265618ee46bc4825b2b5e.jpg" />
+								<dl>
+					<dt>江苏泗阳：拓展情境资源 破解学习教育瓶颈</dt>
+					<dd>目前，全县各基层党组织“新时代学习堂”示范点的建成投用，有效破解了基层党员学习教育中的几个“瓶颈”问题。</dd>
+					<span><em><i class="iconfont icon-chakan1"></i>294</em><object>
+
+											<a href="dydwjs/170.html#comments">
+											
+					<cite><i class="iconfont icon-liuyan"></i>0</cite></a></object><cite><i class="iconfont icon-shijian1"></i>2018-09-21</cite></span>
+				</dl>
+				</a>
+			</li>
+       
+
+           <li>
+									<a href="dydwjs/102.html" target="_blank" title="青岛市城阳区邮政局上马支局投递员张均奎：骑行30年、已56岁的“红色快递大叔”">
+									<img src="upload/portal/20180801/2fcc46a2f79bb64ebf6f283673b390e1.jpg" />
+								<dl>
+					<dt>青岛市城阳区邮政局上马支局投递员张均奎：骑行30年、已56岁的“红色快递大叔”</dt>
+					<dd>上午8点多，第一趟快递包裹送到，完成分拣之后，张均奎接着用黑色粗水笔在每个包裹上写上了收件人的姓名，“党员服务群众，就是要想群众之所想，急群众之所急，这样做大家就方便认领了，原来快递单上的名字太小了。一天下来差不多得送个五六趟吧，下班早的话，回家吃完饭后还能和小孙女一起玩玩儿。但如果碰上‘双11’或</dd>
+					<span><em><i class="iconfont icon-chakan1"></i>312</em><object>
+
+											<a href="dydwjs/102.html#comments">
+											
+					<cite><i class="iconfont icon-liuyan"></i>0</cite></a></object><cite><i class="iconfont icon-shijian1"></i>2018-07-31</cite></span>
+				</dl>
+				</a>
+			</li>
+       
+
+           <li>
+									<a href="dydwjs/103.html" target="_blank" title="红心侠胆跟党走 换来春色满人间 ——记莱西市老党员老八路吕令本">
+									<img src="upload/portal/20180801/8ea4a7953f720cf0d44d6f3642948695.jpg" />
+								<dl>
+					<dt>红心侠胆跟党走 换来春色满人间 ——记莱西市老党员老八路吕令本</dt>
+					<dd>1924年吕令本出生在原莱阳县水集镇沽河头村（今属莱西市水集街道）。如今，虽然已到风烛残年，但是，每当回顾在抗日战争、解放战争和保卫祖国南疆海防中的战斗经历，吕令本仍然心潮澎湃，感到无比的自豪和荣耀。吕令本经常回顾许多牺牲了的领导和战友，他们为了民族的解放和中华人民共和国的诞生献出了自己年轻的生命，</dd>
+					<span><em><i class="iconfont icon-chakan1"></i>232</em><object>
+
+											<a href="dydwjs/103.html#comments">
+											
+					<cite><i class="iconfont icon-liuyan"></i>0</cite></a></object><cite><i class="iconfont icon-shijian1"></i>2018-07-31</cite></span>
+				</dl>
+				</a>
+			</li>
+       
+
+           <li>
+									<a href="dydwjs/104.html" target="_blank" title="青岛西海岸新区真情巴士集团有限公司马波：诚实守信 做平凡岗位的先锋">
+									<img src="upload/portal/20180801/de355bd21b0f0da24186df85b03a1214.jpg" />
+								<dl>
+					<dt>青岛西海岸新区真情巴士集团有限公司马波：诚实守信 做平凡岗位的先锋</dt>
+					<dd>“做好人、开好车”是基层党员马波简单的人生信条。2013年从事公交驾驶员以来，马波一直以党员的标准严格要求自己，他爱岗敬业，优质服务，成为群众的贴心人；他诚实守信，捡到乘客的6千多元现金和苹果iPad主动寄回；他乐于助人，行车中路遇撒落的钞票如数归还；他奉献爱心，默默资助春蕾女童；他热衷公益，带动身</dd>
+					<span><em><i class="iconfont icon-chakan1"></i>308</em><object>
+
+											<a href="dydwjs/104.html#comments">
+											
+					<cite><i class="iconfont icon-liuyan"></i>0</cite></a></object><cite><i class="iconfont icon-shijian1"></i>2018-07-31</cite></span>
+				</dl>
+				</a>
+			</li>
+       
+
+           <li>
+									<a href="dydwjs/105.html" target="_blank" title="从“二嫚”到娄玉芬 巾帼不让须眉 ——记莱西市建国前老党员娄玉芬">
+									<img src="upload/portal/20180801/9db0b23a5117aea08310479fb9e2e752.jpg" />
+								<dl>
+					<dt>从“二嫚”到娄玉芬 巾帼不让须眉 ——记莱西市建国前老党员娄玉芬</dt>
+					<dd>娄玉芬，今年90岁，解放前家里穷，父母逃荒到了长山岛（现长岛县），13岁时，母亲连病带饿去世，父亲一人养家拉扯4个孩子。家里没有粮食，只能上山挖山菜、赶海捞海菜，有时候娄玉芬还领着弟弟出去要饭，让别人家的狗撵着跑。为了填饱肚子，他们去田埂边撸树叶吃，让地主家的狗腿子差点把腿打断。看到别人家的孩子能上</dd>
+					<span><em><i class="iconfont icon-chakan1"></i>268</em><object>
+
+											<a href="dydwjs/105.html#comments">
+											
+					<cite><i class="iconfont icon-liuyan"></i>0</cite></a></object><cite><i class="iconfont icon-shijian1"></i>2018-07-31</cite></span>
+				</dl>
+				</a>
+			</li>
+       
+
+           <li>
+									<a href="dydwjs/106.html" target="_blank" title="宁津县十佳优秀共产党员贾东梅：初心为终 匠心为用">
+									<img src="upload/portal/20180801/02b16abef0925064cfe1036a773cc985.jpg" />
+								<dl>
+					<dt>宁津县十佳优秀共产党员贾东梅：初心为终 匠心为用</dt>
+					<dd>2011年，到文化艺术中心办公室工作，作为一名普通工作人员，贾东梅做到了对领导安排的事情不折不扣执行、对协调服务的业务踏实勤勉地完成，切实在全体干部职工中起到了示范和表率作用。2014年5月，经过单位推荐，组织考察，贾东梅加入中国共产党，从此贾东梅已更加严格的标准要求自己，自觉遵守党章对党员的基本要</dd>
+					<span><em><i class="iconfont icon-chakan1"></i>307</em><object>
+
+											<a href="dydwjs/106.html#comments">
+											
+					<cite><i class="iconfont icon-liuyan"></i>0</cite></a></object><cite><i class="iconfont icon-shijian1"></i>2018-07-31</cite></span>
+				</dl>
+				</a>
+			</li>
+       
+
+           <li>
+									<a href="dydwjs/107.html" target="_blank" title="济宁市任城区安居街道史海村党支部书记史衍辉：担当实干的“带头人”">
+									<img src="upload/portal/20180801/1ece2eab528acc2d4e962b8e1d25d1fc.jpg" />
+								<dl>
+					<dt>济宁市任城区安居街道史海村党支部书记史衍辉：担当实干的“带头人”</dt>
+					<dd>村看村，户看户，群众看着党支部。作为一名农村党支部书记，在扶贫攻坚路上，如何精准识别扶贫户是检验党支部书记是否合格的重要标准之一。“当好书记，必须要有一颗公平公正的心”。开展扶贫工作，史衍辉带领村“两委”成员走村入户，到了贫困户家中，史衍辉会坐下来，认真倾听、嘘寒问暖，积极为群众排忧解难，每家每户的</dd>
+					<span><em><i class="iconfont icon-chakan1"></i>303</em><object>
+
+											<a href="dydwjs/107.html#comments">
+											
+					<cite><i class="iconfont icon-liuyan"></i>0</cite></a></object><cite><i class="iconfont icon-shijian1"></i>2018-07-31</cite></span>
+				</dl>
+				</a>
+			</li>
+       
+		
+	</ul>	
+	</div>
+	<ul class="xwpages">
+	      <li class="page-item disabled"><span class="page-link">共 56 条</span></li> <li class="page-item"><a class="page-link" href="dydwjs.html%3Fpage=1.html">上一页</a></li> <li class="page-item"><a class="page-link" href="dydwjs.html%3Fpage=1.html">1</a></li><li class="active page-item disabled" ><span class="page-link">2</span></li><li class="page-item"><a class="page-link" href="dydwjs.html%3Fpage=3.html">3</a></li><li class="page-item"><a class="page-link" href="dydwjs.html%3Fpage=4.html">4</a></li><li class="page-item"><a class="page-link" href="dydwjs.html%3Fpage=5.html">5</a></li><li class="page-item"><a class="page-link" href="dydwjs.html%3Fpage=6.html">6</a></li> <li class="page-item"><a class="page-link" href="dydwjs.html%3Fpage=3.html">下一页</a></li>	  </ul>
+</div>
+<div class="sr_footer w1min">
+	<div class="w1">
+		<dl class="ft1">
+			<dd><b>智慧党建云平台</b></dd>
+			<dd>版权所有 © 2018 智慧党建云平台主办 All rights reserved. </dd>
+			<dd>咨询专线：  </dd>
+			<dd>地址：海南滨海国际金融中心广场</dd>
+		</dl>
+		<!-- <dl class="ft2">
+			<a href="http://wpa.qq.com/msgrd?v=3&uin=34147588&site=qq&menu=yes" target="_blank" rel="nofollow" class="layui-btn layui-btn-danger layui-btn-radius"><i class="iconfont icon-qq"></i>在线咨询</a>
+		</dl> -->
+		<dl class="ft4">
+			<dd>
+				    		                     <a href="about.html" title="关于我们" target="">
+		                             <i class="iconfont icon-dangwugongkai"></i>关于我们		                         </a>
+		                 		                     <a href="statement.html" title="网站声明" target="">
+		                             <i class="iconfont icon-dangwugongkai"></i>网站声明		                         </a>
+		                 		                     <a href="contact.html" title="联系我们" target="">
+		                             <i class="iconfont icon-dangwugongkai"></i>联系我们		                         </a>
+		                 
+			</dd>	
+		</dl>
+		<dl class="ft3"><img src="upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg" border="0" /></dl>
+	</div>
+</div>
+<ul class="g-navFloat">
+	<!-- <li>
+		<a href="http://www.dangjiancms.com/" target="_blank" class="u-tiyan">
+		<p>立</p><p>即</p><p>体</p><p>验</p>
+		</a>
+	</li> -->
+	<li>
+		<a href="http://wpa.qq.com/msgrd?v=3&uin=123&site=qq&menu=yes" target="_blank"><i class="iconfont icon-qq"></i></a>
+	</li>
+	<li>
+		<div class="u-contents content-qr">
+			<img src="upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg">
+			<p>智慧党建云平台</p>
+		</div>
+		<a href="javascript:void(0);"><i class="iconfont icon-weixin"></i></a>
+	</li>
+	<li>
+		<div class="u-contents content-tel">
+			<p>咨询专线：</p>
+			<p><br /></p>
+		</div>
+		<a href="javascript:void(0);"><i class="iconfont icon-dianhua"></i></a>
+	</li>
+</ul>
+<div style="display:none;"></div>
+<script type="text/javascript">
+	jQuery(".index2_6_con").slide({
+		delayTime: 500,
+		effect: "left",
+		autoPlay: true,
+	});
+	$(".clearfix01 .bj_tab ul li").hover(function(){
+		$(this).find(".icon_bj").removeClass("transform0");
+		$(this).find(".icon_bj").addClass("transform1");
+		
+	},function(){
+		$(this).find(".icon_bj").removeClass("transform1");
+		$(this).find(".icon_bj").addClass("transform0");
+		
+	});
+	$(".bj_img_buttm").find("span").hover(function(){
+		var a=$(this).attr("class");
+		$(".bj01").removeClass("cut");
+		$("#"+a).addClass("cut");
+	});
+</script>
+
+<script src="static/js/wind.js"></script>
+<script src="themes/zqdj_public/public/assets/simpleboot3/bootstrap/js/bootstrap.min.js"></script>
+<script src="static/js/frontend.js"></script>
+<!--gotop start-->
+<script>	
+	$(function(){		
+		$.post("/user/index/islogin.html",{},function(data){
+			if(data.code==1){
+				$("#ucenterlogin .user-nickname").text(data.data.user.user_login);
+				$("#ucenterlogin .login").show();
+                $("#ucenterlogin .offline").hide();
+			}
+			if(data.code==0){
+                $("#ucenterlogin .login").hide();
+				$("#ucenterlogin .offline").show();
+			}
+		});
+	});
+</script> 
+<!--gotop end--> 
+<!-- 
+<ul id="side-bar" class="side-pannel side-bar">
+  <span><img src="/upload/imgs/djwx.jpg"><i>党建小程序</i></span>
+  <span><img src="/upload/imgs/djapp.jpg"><i>党建APP</i></span>
+  <span><img src="/upload/imgs/djvideo.jpg"><i>视频介绍</i></span>
+</ul> -->
+<script>
+	$(function(){
+		$(window).scroll(function(){
+			if($(window).scrollTop()>100){  //距顶部多少像素时，出现返回顶部按钮
+				$("#side-bar .gotop").fadeIn();	
+			}
+			else{
+				$("#side-bar .gotop").hide();
+			}
+		});
+		$("#side-bar .gotop").click(function(){
+			$('html,body').animate({'scrollTop':0},500); //返回顶部动画 数值越小时间越短
+		});
+	});
+</script>
+</body>
+</html>

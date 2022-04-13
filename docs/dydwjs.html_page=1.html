@@ -1,0 +1,416 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title> 智慧党建云平台</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">	
+	<link href="http://at.alicdn.com/t/font_759613_byou54gk0v7.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="themes/zqdj_public/public/assets/zqdj_public/css/style.css" />
+<script language="javascript" type="text/javascript" src="static/js/jquery.js"></script>
+<script language="javascript" type="text/javascript" src="themes/zqdj_public/public/assets/zqdj_public/js/jquery.SuperSlide.js"></script>
+<link rel="stylesheet" href="themes/zqdj_public/public/assets/zqdj_public/js/layui/css/layui.css"  media="all">
+<script src="themes/zqdj_public/public/assets/zqdj_public/js/layui/layui.js"></script>
+
+<script type="text/javascript">
+//判断是否是手机版访问,跳转到手机版
+var isiPad = navigator.userAgent.match(/iPad|iPhone|Android|Linux|iPod/i) != null;
+if(isiPad){	
+	var wapurl = '/weixin/Index/index.html';
+	window.location.href = wapurl;
+}
+    //全局变量
+    var GV = {
+        ROOT: "/",
+        WEB_ROOT: "/",
+        JS_ROOT: "static/js/",
+        TMPL: "/themes/zqdj_public/"
+    };
+</script>
+</head>
+<body>
+
+<!--top区域 start-->
+<div class="top_x w1min">
+<div class="w1">
+	<div class="topx_left">
+		<div class="topx_logo"><img src="themes/zqdj_public/public/assets/zqdj_public/imgs/header_logo.png" /></div>
+		<div class="topx_zi">
+		<h1>智慧党建云平台</h1>
+		</div>
+	</div>
+	<div class="topx_right" id="ucenterlogin">
+		<dl class="login" style="display:none;">
+			你好, <span class="user-nickname"></span>
+			<a href="user/profile/center.html"><i class="iconfont icon-user"></i>党员中心</a>
+			<a href="user/index/logout.html">&nbsp;&nbsp;退出登录</a>
+		</dl>
+		<dl class="offline" style="display:none;">
+			<a href="user/login/index.html" class="signin"><i class="iconfont icon-gongchandang"></i>登录</a>
+		</dl>
+		<div class="top-search">
+			<form method="post" action="http://demo.dangjiancms.com/portal/search/index.html" target="_blank">
+				<input type="text" name="keyword" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+				<button class="layui-btn layui-bg-orange" lay-submit lay-filter="formDemo"><i class="iconfont icon-xiazai15"></i>搜索</button>
+			</form>
+		</div>
+	</div>			
+</div>
+</div>
+<!-- <div class="lang_mu w1min">
+<ul class="layui-nav" lay-filter="">
+	                    <li class="layui-nav-item ">
+                    <a href="/" target="">
+                        <b>首页</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/dongtai.html" target="">
+                        <b>党建动态</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/portal/special/index.html" target="">
+                        <b>专题专栏</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/portal/seritem/index.html" target="">
+                        <b>志愿服务</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/portal/activity/index.html" target="">
+                        <b>组织活动</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/portal/study/index.html" target="">
+                        <b>学习中心</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/portal/sanhui/index.html" target="">
+                        <b>三会一课</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/portal/wenjuan/wenjuanlist.html" target="">
+                        <b>问卷调查</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/portal/score/index.html" target="">
+                        <b>积分统计</b>
+                    </a>
+                </li>
+                            <li class="layui-nav-item ">
+                    <a href="/portal/index/map.html" target="">
+                        <b>党建地图</b>
+                    </a>
+                </li>
+            
+</ul>
+<script>
+//注意：导航 依赖 element 模块，否则无法进行功能性操作
+layui.use('element', function(){
+  var element = layui.element;
+  
+  //…
+});
+</script>
+</div> -->
+<!--top区域 end-->
+<div class="w1 banne1 mgtop-15"><img src="upload/admin/20181120/b02187c3e779476c3d555e59ccdcb415.jpg"></div>
+<div class="mgtop-15 background-w1">
+
+	<div class="fdiv mua">
+	<ul><i class="iconfont icon-dangwugongkai"></i><b>党员队伍建设</b></ul>
+	<ol>当前位置：<a href="user/index/logout.html">首页</a> >
+			  	<a href="dydwjs.html">党员队伍建设</a>
+	</ol>
+	</div>
+
+	<div class="m_newtu">
+	<ul>
+		
+           <li>
+									<a href="dydwjs/222.html" target="_blank" title="把监督触角伸到每个角落——河北廊坊探索构建“四位一体”监督格局">
+									<img src="upload/default/20190301/aa33affdcd35742befb3860bf35f0d84.jpg" />
+								<dl>
+					<dt>把监督触角伸到每个角落——河北廊坊探索构建“四位一体”监督格局</dt>
+					<dd>河北廊坊市纪委监委立足实际，积极打造纪律、监察、派驻、巡察“四位一体”监督模式，大力推进纪律监督、监察监督、派驻监督、巡察监督“四个全覆盖”，着力构建权责清晰、衔接顺畅、协同高效监督机制，力求实现常态化、近距离、可视化、全天候监督。</dd>
+					<span><em><i class="iconfont icon-chakan1"></i>382</em><object>
+
+											<a href="dydwjs/222.html#comments">
+											
+					<cite><i class="iconfont icon-liuyan"></i>0</cite></a></object><cite><i class="iconfont icon-shijian1"></i>2019-03-01</cite></span>
+				</dl>
+				</a>
+			</li>
+       
+
+           <li>
+									<a href="dydwjs/221.html" target="_blank" title="先锋足印：列车上的临时党支部">
+									<img src="upload/default/20190301/de0c690d9f8556e8320b1ee3e799f5a1.jpg" />
+								<dl>
+					<dt>先锋足印：列车上的临时党支部</dt>
+					<dd>2月14日15时，九江至广州东K4265次列车11号车厢突然一阵喧闹。江西上饶籍旅客朱艳梅抱着一岁多的女儿求助：“救救我女儿！”列车长、党支部书记张爱闻讯赶来。</dd>
+					<span><em><i class="iconfont icon-chakan1"></i>299</em><object>
+
+											<a href="dydwjs/221.html#comments">
+											
+					<cite><i class="iconfont icon-liuyan"></i>0</cite></a></object><cite><i class="iconfont icon-shijian1"></i>2019-03-01</cite></span>
+				</dl>
+				</a>
+			</li>
+       
+
+           <li>
+									<a href="dydwjs/220.html" target="_blank" title="最美国网人：王娅用生命之火点亮寒门学子求学之路">
+									<img src="upload/caiji/20190301/a2642463b65003487e66c9b38cf70b15.jpg" />
+								<dl>
+					<dt>最美国网人：王娅用生命之火点亮寒门学子求学之路</dt>
+					<dd>一位普普通通的国家电网退休职工，用她的善举诠释了生命意义、人生的价值。</dd>
+					<span><em><i class="iconfont icon-chakan1"></i>326</em><object>
+
+											<a href="dydwjs/220.html#comments">
+											
+					<cite><i class="iconfont icon-liuyan"></i>0</cite></a></object><cite><i class="iconfont icon-shijian1"></i>2019-03-01</cite></span>
+				</dl>
+				</a>
+			</li>
+       
+
+           <li>
+									<a href="dydwjs/219.html" target="_blank" title="赴汤蹈火保民安——追记合肥消防救援支队肥东中队副班长孟鸣之">
+									<img src="upload/caiji/20190301/4d914fbaf56fcd050269eb4303b74113.jpg" />
+								<dl>
+					<dt>赴汤蹈火保民安——追记合肥消防救援支队肥东中队副班长孟鸣之</dt>
+					<dd>面对肆虐的火魔，他奋勇当先、身负重伤，经全力抢救不幸牺牲。1月18日，合肥消防救援支队肥东中队副班长孟鸣之的年龄永远定格在22岁。从事消防救援4年间，他始终牢记使命，恪尽职守，无私奉献，用生命守护平安，践行了对党忠诚、纪律严明、赴汤蹈火、竭诚为民的铮铮誓言。</dd>
+					<span><em><i class="iconfont icon-chakan1"></i>333</em><object>
+
+											<a href="dydwjs/219.html#comments">
+											
+					<cite><i class="iconfont icon-liuyan"></i>0</cite></a></object><cite><i class="iconfont icon-shijian1"></i>2019-03-01</cite></span>
+				</dl>
+				</a>
+			</li>
+       
+
+           <li>
+									<a href="dydwjs/218.html" target="_blank" title="诚信为本谋民富——记北京市平谷区峪口镇胡家营村党支部书记方户生">
+									<img src="upload/caiji/20190301/c21fa40d1358607df189237ea3aaed2b.jpg" />
+								<dl>
+					<dt>诚信为本谋民富——记北京市平谷区峪口镇胡家营村党支部书记方户生</dt>
+					<dd>一个村支书就应该有这样的诚信</dd>
+					<span><em><i class="iconfont icon-chakan1"></i>282</em><object>
+
+											<a href="dydwjs/218.html#comments">
+											
+					<cite><i class="iconfont icon-liuyan"></i>0</cite></a></object><cite><i class="iconfont icon-shijian1"></i>2019-03-01</cite></span>
+				</dl>
+				</a>
+			</li>
+       
+
+           <li>
+									<a href="dydwjs/217.html" target="_blank" title="“好日子就是我的长寿秘诀”——记翻身农奴、拉萨市曲水县三有村桑珠卓玛">
+									<img src="upload/caiji/20190301/0aa2e33795cd355c7b0f12df937faf2a.jpg" />
+								<dl>
+					<dt>“好日子就是我的长寿秘诀”——记翻身农奴、拉萨市曲水县三有村桑珠卓玛</dt>
+					<dd>翻身农奴、拉萨市曲水县三有村桑珠卓玛</dd>
+					<span><em><i class="iconfont icon-chakan1"></i>328</em><object>
+
+											<a href="dydwjs/217.html#comments">
+											
+					<cite><i class="iconfont icon-liuyan"></i>0</cite></a></object><cite><i class="iconfont icon-shijian1"></i>2019-03-01</cite></span>
+				</dl>
+				</a>
+			</li>
+       
+
+           <li>
+									<a href="dydwjs/216.html" target="_blank" title="全国人大代表、广西苍梧县山坪村党支部书记祝雪兰：咬定青山谋发展 生态红利惠瑶民">
+									<img src="upload/caiji/20190301/954b27844b7b02e15fc300a76dd720fd.jpg" />
+								<dl>
+					<dt>全国人大代表、广西苍梧县山坪村党支部书记祝雪兰：咬定青山谋发展 生态红利惠瑶民</dt>
+					<dd></dd>
+					<span><em><i class="iconfont icon-chakan1"></i>320</em><object>
+
+											<a href="dydwjs/216.html#comments">
+											
+					<cite><i class="iconfont icon-liuyan"></i>0</cite></a></object><cite><i class="iconfont icon-shijian1"></i>2019-03-01</cite></span>
+				</dl>
+				</a>
+			</li>
+       
+
+           <li>
+									<a href="dydwjs/215.html" target="_blank" title="社区有个“秀书记”——记全国十大“最美城乡社区工作者”付秀秀">
+									<img src="upload/portal/20190301/676bca1dfa3057dc6033026b2b441768.jpg" />
+								<dl>
+					<dt>社区有个“秀书记”——记全国十大“最美城乡社区工作者”付秀秀</dt>
+					<dd>1998年，25岁的付秀秀来到高安市筠阳街道筠泉社区，开始为社区居民服务，在平凡的岗位上兢兢业业，一干就是20年。</dd>
+					<span><em><i class="iconfont icon-chakan1"></i>325</em><object>
+
+											<a href="dydwjs/215.html#comments">
+											
+					<cite><i class="iconfont icon-liuyan"></i>0</cite></a></object><cite><i class="iconfont icon-shijian1"></i>2019-03-01</cite></span>
+				</dl>
+				</a>
+			</li>
+       
+
+           <li>
+									<a href="dydwjs/214.html" target="_blank" title="这个扶贫干部是好娃">
+									<img src="upload/default/20190301/58f4fd4db287da30567bece4307a6b66.jpg" />
+								<dl>
+					<dt>这个扶贫干部是好娃</dt>
+					<dd>柴晓飞是个“90后”，工作单位为闻喜县国税局，2015年他在后川村担任扶贫工作队队员，2017年挑起了第一书记的担子。</dd>
+					<span><em><i class="iconfont icon-chakan1"></i>229</em><object>
+
+											<a href="dydwjs/214.html#comments">
+											
+					<cite><i class="iconfont icon-liuyan"></i>0</cite></a></object><cite><i class="iconfont icon-shijian1"></i>2019-03-01</cite></span>
+				</dl>
+				</a>
+			</li>
+       
+
+           <li>
+									<a href="dydwjs/167.html" target="_blank" title="新疆伊犁昭苏县发挥远教优势 实现精准服务">
+									<img src="upload/portal/20180905/32aeab2f75bb1e2ca04ae08f26615c63.jpg" />
+								<dl>
+					<dt>新疆伊犁昭苏县发挥远教优势 实现精准服务</dt>
+					<dd>为进一步拓展远教阵地的党员服务、学习提质等功，新疆伊犁市昭苏县着力发挥党员教育阵地作用，依托远程教育优势，积极创新远程教育扶智，拓宽思路方法，努力搭建为民服务平台，为扎实开展群众工作、精准服务基层党建奠定良好基础。</dd>
+					<span><em><i class="iconfont icon-chakan1"></i>284</em><object>
+
+											<a href="dydwjs/167.html#comments">
+											
+					<cite><i class="iconfont icon-liuyan"></i>0</cite></a></object><cite><i class="iconfont icon-shijian1"></i>2018-09-21</cite></span>
+				</dl>
+				</a>
+			</li>
+       
+		
+	</ul>	
+	</div>
+	<ul class="xwpages">
+	      <li class="page-item disabled"><span class="page-link">共 56 条</span></li> <li class="page-item disabled"><span class="page-link">上一页</span></li> <li class="active page-item disabled" ><span class="page-link">1</span></li><li class="page-item"><a class="page-link" href="dydwjs.html%3Fpage=2.html">2</a></li><li class="page-item"><a class="page-link" href="dydwjs.html%3Fpage=3.html">3</a></li><li class="page-item"><a class="page-link" href="dydwjs.html%3Fpage=4.html">4</a></li><li class="page-item"><a class="page-link" href="dydwjs.html%3Fpage=5.html">5</a></li><li class="page-item"><a class="page-link" href="dydwjs.html%3Fpage=6.html">6</a></li> <li class="page-item"><a class="page-link" href="dydwjs.html%3Fpage=2.html">下一页</a></li>	  </ul>
+</div>
+<div class="sr_footer w1min">
+	<div class="w1">
+		<dl class="ft1">
+			<dd><b>智慧党建云平台</b></dd>
+			<dd>版权所有 © 2018 智慧党建云平台主办 All rights reserved. </dd>
+			<dd>咨询专线：  </dd>
+			<dd>地址：海南滨海国际金融中心广场</dd>
+		</dl>
+		<!-- <dl class="ft2">
+			<a href="http://wpa.qq.com/msgrd?v=3&uin=34147588&site=qq&menu=yes" target="_blank" rel="nofollow" class="layui-btn layui-btn-danger layui-btn-radius"><i class="iconfont icon-qq"></i>在线咨询</a>
+		</dl> -->
+		<dl class="ft4">
+			<dd>
+				    		                     <a href="about.html" title="关于我们" target="">
+		                             <i class="iconfont icon-dangwugongkai"></i>关于我们		                         </a>
+		                 		                     <a href="statement.html" title="网站声明" target="">
+		                             <i class="iconfont icon-dangwugongkai"></i>网站声明		                         </a>
+		                 		                     <a href="contact.html" title="联系我们" target="">
+		                             <i class="iconfont icon-dangwugongkai"></i>联系我们		                         </a>
+		                 
+			</dd>	
+		</dl>
+		<dl class="ft3"><img src="upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg" border="0" /></dl>
+	</div>
+</div>
+<ul class="g-navFloat">
+	<!-- <li>
+		<a href="http://www.dangjiancms.com/" target="_blank" class="u-tiyan">
+		<p>立</p><p>即</p><p>体</p><p>验</p>
+		</a>
+	</li> -->
+	<li>
+		<a href="http://wpa.qq.com/msgrd?v=3&uin=123&site=qq&menu=yes" target="_blank"><i class="iconfont icon-qq"></i></a>
+	</li>
+	<li>
+		<div class="u-contents content-qr">
+			<img src="upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg">
+			<p>智慧党建云平台</p>
+		</div>
+		<a href="javascript:void(0);"><i class="iconfont icon-weixin"></i></a>
+	</li>
+	<li>
+		<div class="u-contents content-tel">
+			<p>咨询专线：</p>
+			<p><br /></p>
+		</div>
+		<a href="javascript:void(0);"><i class="iconfont icon-dianhua"></i></a>
+	</li>
+</ul>
+<div style="display:none;"></div>
+<script type="text/javascript">
+	jQuery(".index2_6_con").slide({
+		delayTime: 500,
+		effect: "left",
+		autoPlay: true,
+	});
+	$(".clearfix01 .bj_tab ul li").hover(function(){
+		$(this).find(".icon_bj").removeClass("transform0");
+		$(this).find(".icon_bj").addClass("transform1");
+		
+	},function(){
+		$(this).find(".icon_bj").removeClass("transform1");
+		$(this).find(".icon_bj").addClass("transform0");
+		
+	});
+	$(".bj_img_buttm").find("span").hover(function(){
+		var a=$(this).attr("class");
+		$(".bj01").removeClass("cut");
+		$("#"+a).addClass("cut");
+	});
+</script>
+
+<script src="static/js/wind.js"></script>
+<script src="themes/zqdj_public/public/assets/simpleboot3/bootstrap/js/bootstrap.min.js"></script>
+<script src="static/js/frontend.js"></script>
+<!--gotop start-->
+<script>	
+	$(function(){		
+		$.post("/user/index/islogin.html",{},function(data){
+			if(data.code==1){
+				$("#ucenterlogin .user-nickname").text(data.data.user.user_login);
+				$("#ucenterlogin .login").show();
+                $("#ucenterlogin .offline").hide();
+			}
+			if(data.code==0){
+                $("#ucenterlogin .login").hide();
+				$("#ucenterlogin .offline").show();
+			}
+		});
+	});
+</script> 
+<!--gotop end--> 
+<!-- 
+<ul id="side-bar" class="side-pannel side-bar">
+  <span><img src="/upload/imgs/djwx.jpg"><i>党建小程序</i></span>
+  <span><img src="/upload/imgs/djapp.jpg"><i>党建APP</i></span>
+  <span><img src="/upload/imgs/djvideo.jpg"><i>视频介绍</i></span>
+</ul> -->
+<script>
+	$(function(){
+		$(window).scroll(function(){
+			if($(window).scrollTop()>100){  //距顶部多少像素时，出现返回顶部按钮
+				$("#side-bar .gotop").fadeIn();	
+			}
+			else{
+				$("#side-bar .gotop").hide();
+			}
+		});
+		$("#side-bar .gotop").click(function(){
+			$('html,body').animate({'scrollTop':0},500); //返回顶部动画 数值越小时间越短
+		});
+	});
+</script>
+</body>
+</html>
