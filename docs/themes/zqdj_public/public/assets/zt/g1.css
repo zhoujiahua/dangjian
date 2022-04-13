@@ -8,7 +8,7 @@ body {
     position: relative;
     width: 100%;
     background: #f6f0e2 url(bjz.jpg) no-repeat top center;
-    font: 12px/2.0 ËÎÌå;
+    font: 12px/2.0 ï¿½ï¿½ï¿½ï¿½;
 }
 
 div,
@@ -101,7 +101,7 @@ a:hover {
     height: 34px;
     line-height: 34px;
     overflow: hidden;
-    background: url(http://demo.dangjiancms.com/themes/zqdj_public/public/assets/zt/topx.jpg) repeat-x;
+    background: url(/themes/zqdj_public/public/assets/zt/topx.jpg) repeat-x;
 }
 
 .topx ol li {
@@ -126,7 +126,7 @@ a:hover {
     height: 52px
 }
 
-/* ±¾Àý×Ócss */
+/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½css */
 .clearfix:after {
     content: ".";
     display: block;
@@ -169,7 +169,7 @@ a:hover {
     left: 0;
     top: 52px;
     position: absolute;
-    font: 12px/38px Î¢ÈíÑÅºÚ;
+    font: 12px/38px Î¢ï¿½ï¿½ï¿½Åºï¿½;
 }
 
 .nav .sub li {
@@ -195,7 +195,7 @@ a:hover {
     color: #fff;
 }
 
-/*Js»ÃµÆÆ¬ÑùÊ½*/
+/*Jsï¿½Ãµï¿½Æ¬ï¿½ï¿½Ê½*/
 #banner_main {
     position: relative;
     ;
@@ -256,7 +256,7 @@ a:hover {
     height: 10px;
 }
 
-/* ÏÂÃæÊÇÇ°/ºó°´Å¥´úÂë */
+/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°/ï¿½ï¿½Å¥ï¿½ï¿½ï¿½ï¿½ */
 #banner_main .prev,
 #banner_main .next {
     width: 40px;
@@ -298,7 +298,7 @@ a:hover {
     background: url(gunbg.png) no-repeat center;
     text-align: center;
     color: #FFF;
-    font: bold 15px/44px "Î¢ÈíÑÅºÚ", "Arial";
+    font: bold 15px/44px "Î¢ï¿½ï¿½ï¿½Åºï¿½", "Arial";
     text-align: left;
 }
 
@@ -349,7 +349,7 @@ a:hover {
     padding-left: 0px;
     background-color: #033599;
     color: #FFFFFF;
-    font-family: Î¢ÈíÑÅºÚ;
+    font-family: Î¢ï¿½ï¿½ï¿½Åºï¿½;
     text-align: center;
     height: 42px;
     line-height: 42px
@@ -382,7 +382,7 @@ a:hover {
     LIST-STYLE-TYPE: lower-roman;
     HEIGHT: 40px;
     FONT-SIZE: 10.5pt;
-    background-image: url('http://demo.dangjiancms.com/themes/zqdj_public/public/assets/zt/zuolanmubj.png');
+    background-image: url('/themes/zqdj_public/public/assets/zt/zuolanmubj.png');
     text-indent: 15px;
     border-left-width: 0px;
     border-right-width: 0px;
@@ -394,7 +394,7 @@ a:hover {
     border-left: 1px #ebebeb solid;
     border-right: 1px #ebebeb solid;
     border-bottom: 1px #ebebeb solid;
-    background: url('http://demo.dangjiancms.com/themes/zqdj_public/public/assets/zt/d11.png') no-repeat 190px center
+    background: url('/themes/zqdj_public/public/assets/zt/d11.png') no-repeat 190px center
 }
 
 .liebiao1ul a {
@@ -485,12 +485,12 @@ a:hover {
 .mua ul {
     background: url(mu2.jpg) no-repeat;
     padding: 0px 30px 0px 48px;
-    font: bold 16px/38px "Î¢ÈíÑÅºÚ", "Arial";
+    font: bold 16px/38px "Î¢ï¿½ï¿½ï¿½Åºï¿½", "Arial";
 }
 
 .mua ol {
     padding-right: 8px;
-    font: 12px/38px "Î¢ÈíÑÅºÚ", "Arial";
+    font: 12px/38px "Î¢ï¿½ï¿½ï¿½Åºï¿½", "Arial";
 }
 
 .m_new1 {
@@ -527,7 +527,7 @@ a:hover {
 }
 
 .m_new1 a:hover {
-    background: url(http://demo.dangjiancms.com/themes/zqdj_public/public/assets/imgc/lib.gif) no-repeat center left;
+    background: url(/themes/zqdj_public/public/assets/imgc/lib.gif) no-repeat center left;
 }
 
 .m_new1 span {
@@ -551,7 +551,7 @@ a:hover {
 }
 
 .m_lik a:hover {
-    background: url(http://demo.dangjiancms.com/themes/zqdj_public/public/assets/imgc/lib.gif) no-repeat center left;
+    background: url(/themes/zqdj_public/public/assets/imgc/lib.gif) no-repeat center left;
 }
 
 .ht01 {
@@ -608,7 +608,7 @@ a:hover {
 
 
 
-/*Js¹ö¶¯ÐÂÎÅ*/
+/*Jsï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 .banner_x {
     height: 355px;
     clear: both;
@@ -659,7 +659,7 @@ a:hover {
     width: 18px;
     height: 18px;
     line-height: 18px;
-    background: url(http://demo.dangjiancms.com/themes/zqdj_public/public/assets/imgc/slide_trigger.gif) no-repeat;
+    background: url(/themes/zqdj_public/public/assets/imgc/slide_trigger.gif) no-repeat;
     margin-left: 4px;
     overflow: hidden;
     color: #c30500;
@@ -668,7 +668,7 @@ a:hover {
 }
 
 #banner_x .hd ul li.on {
-    background: url(http://demo.dangjiancms.com/themes/zqdj_public/public/assets/imgc/slide_trigger_c.gif) no-repeat;
+    background: url(/themes/zqdj_public/public/assets/imgc/slide_trigger_c.gif) no-repeat;
     color: #FFF;
     font-size: 13px;
     font-weight: bold;
@@ -677,7 +677,7 @@ a:hover {
     line-height: 20px;
 }
 
-/* ÏÂÃæÊÇÇ°/ºó°´Å¥´úÂë */
+/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°/ï¿½ï¿½Å¥ï¿½ï¿½ï¿½ï¿½ */
 #banner_x span {
     position: absolute;
     bottom: 0px;
@@ -686,7 +686,7 @@ a:hover {
     width: 460px;
     height: 40px;
     background: #ededed;
-    font: 14px/40px "Î¢ÈíÑÅºÚ", "Arial";
+    font: 14px/40px "Î¢ï¿½ï¿½ï¿½Åºï¿½", "Arial";
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -753,8 +753,8 @@ a:hover {
     COLOR: #b8010c;
     HEIGHT: 88px;
     TEXT-ALIGN: left;
-    background-image: url('http://demo.dangjiancms.com/themes/zqdj_public/public/assets/zt/0lanmubiaotibj.png');
-    font-family: Î¢ÈíÑÅºÚ;
+    background-image: url('/themes/zqdj_public/public/assets/zt/0lanmubiaotibj.png');
+    font-family: Î¢ï¿½ï¿½ï¿½Åºï¿½;
     border-bottom: 1px #eff0f0 solid;
     overflow: hidden
 }
@@ -778,7 +778,7 @@ a:hover {
     line-height: 40px;
     font-size: 10.5pt;
     padding: 0 0 0 1em;
-    background: url(http://demo.dangjiancms.com/themes/zqdj_public/public/assets/zt/lic.png) no-repeat 0 50%;
+    background: url(/themes/zqdj_public/public/assets/zt/lic.png) no-repeat 0 50%;
     border-bottom: 1px dashed #eff0f0;
 }
 
@@ -797,7 +797,7 @@ a:hover {
     LINE-HEIGHT: 150%;
 }
 
-/* l0UL¿ªÊ¼ */
+/* l0ULï¿½ï¿½Ê¼ */
 .hang5 {
     width: 100%;
     padding: 0px;
@@ -828,10 +828,10 @@ a:hover {
     background-color: #EEEEEE
 }
 
-/* UL½áÊø */
+/* ULï¿½ï¿½ï¿½ï¿½ */
 
 
-/* l0UL¿ªÊ¼ */
+/* l0ULï¿½ï¿½Ê¼ */
 .hang4 {
     width: 100%;
     padding: 0px;
@@ -875,11 +875,11 @@ a:hover {
     HEIGHT: 36px;
     TEXT-ALIGN: left;
     width: 100%;
-    background: #EEEEEE url(http://demo.dangjiancms.com/themes/zqdj_public/public/assets/imgc/b13.gif) no-repeat 12px 11px;
+    background: #EEEEEE url(/themes/zqdj_public/public/assets/imgc/b13.gif) no-repeat 12px 11px;
     margin-top: 10px;
     line-height: 36px;
     text-indent: 10px;
-    font-family: Î¢ÈíÑÅºÚ;
+    font-family: Î¢ï¿½ï¿½ï¿½Åºï¿½;
 }
 
 
@@ -923,7 +923,7 @@ a:hover {
 
 
 
-/* ±¾Àý×Ócss */
+/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½css */
 .picMarquee-left {
     overflow: hidden;
     position: relative;
@@ -1005,7 +1005,7 @@ a:hover {
     height: 60px;
     line-height: 60px;
     clear: both;
-    font-family: Î¢ÈíÑÅºÚ
+    font-family: Î¢ï¿½ï¿½ï¿½Åºï¿½
 }
 
 .mud ul {
@@ -1030,7 +1030,7 @@ a:hover {
 
 .mud li.mudyd {
     display: block;
-    background: url(http://demo.dangjiancms.com/themes/zqdj_public/public/assets/imgc/yd.png) no-repeat left 24px;
+    background: url(/themes/zqdj_public/public/assets/imgc/yd.png) no-repeat left 24px;
     width: 15px;
 }
 
@@ -1056,7 +1056,7 @@ a:hover {
     float: left;
     height: 30px;
     width: 100%;
-    font: 15px/30px "Î¢ÈíÑÅºÚ", "Arial";
+    font: 15px/30px "Î¢ï¿½ï¿½ï¿½Åºï¿½", "Arial";
 }
 
 .m_new2 li a {
@@ -1070,11 +1070,11 @@ a:hover {
 
 .m_new2 li a:link,
 .m_new2 li a:visited {
-    background: url(http://demo.dangjiancms.com/themes/zqdj_public/public/assets/zt/lia.png) no-repeat center left;
+    background: url(/themes/zqdj_public/public/assets/zt/lia.png) no-repeat center left;
 }
 
 .m_new2 li a:hover {
-    background: url(http://demo.dangjiancms.com/themes/zqdj_public/public/assets/zt/lib.png) no-repeat center left;
+    background: url(/themes/zqdj_public/public/assets/zt/lib.png) no-repeat center left;
 }
 
 .m_new2 em {
@@ -1090,7 +1090,7 @@ a:hover {
     float: left;
     height: 40px;
     width: 100%;
-    font: 15px/40px "Î¢ÈíÑÅºÚ", "Arial";
+    font: 15px/40px "Î¢ï¿½ï¿½ï¿½Åºï¿½", "Arial";
     border-bottom: 1px #e6e6e6 dashed;
     margin-bottom: 10px;
 }
@@ -1115,7 +1115,7 @@ a:hover {
     color: #F35B00;
     font-weight: bold;
     text-align: center;
-    font-family: "Î¢ÈíÑÅºÚ", "ËÎÌå";
+    font-family: "Î¢ï¿½ï¿½ï¿½Åºï¿½", "ï¿½ï¿½ï¿½ï¿½";
     float: left;
     width: 100%;
     padding: 45px 0px 35px 0px;
