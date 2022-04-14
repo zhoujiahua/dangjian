@@ -1,355 +1,469 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>习近平谈“一带一路”建设：不是中国一家的独奏 智慧党建平台</title>
 	<meta name="keywords" content="智慧党建">
 	<meta name="description" content="智慧党建">
 	<link href="https://at.alicdn.com/t/font_759613_byou54gk0v7.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" type="text/css" href="./../themes/zqdj_public/public/assets/zqdj_public/css/style.css" />
-<script language="javascript" type="text/javascript" src="/../static/js/jquery.js"></script>
-<script language="javascript" type="text/javascript" src="/../themes/zqdj_public/public/assets/zqdj_public/js/jquery.SuperSlide.js"></script>
-<link rel="stylesheet" href="./../themes/zqdj_public/public/assets/zqdj_public/js/layui/css/layui.css"  media="all">
-<script src="/../themes/zqdj_public/public/assets/zqdj_public/js/layui/layui.js"></script>
+	<link rel="stylesheet" type="text/css" href="./../themes/zqdj_public/public/assets/zqdj_public/css/style.css" />
+	<script src="./../static/js/jquery.js"></script>
+	<script src="./../themes/zqdj_public/public/assets/zqdj_public/js/jquery.SuperSlide.js"></script>
+	<link rel="stylesheet" href="./../themes/zqdj_public/public/assets/zqdj_public/js/layui/css/layui.css" media="all">
+	<script src="./../themes/zqdj_public/public/assets/zqdj_public/js/layui/layui.js"></script>
 
-<script type="text/javascript">
-//判断是否是手机版访问,跳转到手机版
-var isiPad = navigator.userAgent.match(/iPad|iPhone|Android|Linux|iPod/i) != null;
-if(isiPad){	
-	var wapurl = '/weixin/Index/index.html';
-	// window.location.href = wapurl;
-}
-    //全局变量
-    var GV = {
-        ROOT: "/",
-        WEB_ROOT: "/",
-        JS_ROOT: "static/js/",
-        TMPL: "/themes/zqdj_public/"
-    };
-</script>
+	<script type="text/javascript">
+		//判断是否是手机版访问,跳转到手机版
+		var isiPad = navigator.userAgent.match(/iPad|iPhone|Android|Linux|iPod/i) != null;
+		if (isiPad) {
+			var wapurl = '/weixin/Index/index.html';
+			// window.location.href = wapurl;
+		}
+		//全局变量
+		var GV = {
+			ROOT: "/",
+			WEB_ROOT: "/",
+			JS_ROOT: "static/js/",
+			TMPL: "/themes/zqdj_public/"
+		};
+	</script>
 </head>
 
 <body>
 
-<!--top区域 start-->
-<div class="top_x w1min">
-<div class="w1">
-	<div class="topx_left">
-		<div class="topx_logo"><img src="/../themes/zqdj_public/public/assets/zqdj_public/imgs/header_logo.png" /></div>
-		<div class="topx_zi">
-		<h1>陕西交控集团-智慧党建平台</h1>
+	<!--top区域 start-->
+	<div class="top_x w1min">
+		<div class="w1">
+			<div class="topx_left">
+				<div class="topx_logo"><img
+						src="./../themes/zqdj_public/public/assets/zqdj_public/imgs/header_logo.png" /></div>
+				<div class="topx_zi">
+					<h1>陕西交控集团-智慧党建平台</h1>
+				</div>
+			</div>
+			<div class="topx_right" id="ucenterlogin">
+				<dl class="login" style="display:none;">
+					你好,丁俊陶 <span class="user-nickname"></span>
+					<a href="./../user/profile/center.html"><i class="iconfont icon-user"></i>党员中心</a>
+					<a href="./../user/index/logout.html">&nbsp;&nbsp;退出登录</a>
+				</dl>
+				<dl class="offline" style="display:none;">
+					<a href="./../user/login/index.html" class="signin"><i class="iconfont icon-gongchandang"></i>登录</a>
+				</dl>
+				<div class="top-search">
+					<form method="post" action="/portal/search/index.html" target="_blank">
+						<input type="text" name="keyword" required lay-verify="required" placeholder="请输入标题"
+							autocomplete="off" class="layui-input">
+						<button class="layui-btn layui-bg-orange" lay-submit lay-filter="formDemo"><i
+								class="iconfont icon-xiazai15"></i>搜索</button>
+					</form>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div class="topx_right" id="ucenterlogin">
-		<dl class="login" style="display:none;">
-			你好,丁俊陶  <span class="user-nickname"></span>
-			<a href="./../user/profile/center.html"><i class="iconfont icon-user"></i>党员中心</a>
-			<a href="./../user/index/logout.html">&nbsp;&nbsp;退出登录</a>
-		</dl>
-		<dl class="offline" style="display:none;">
-			<a href="./../user/login/index.html" class="signin"><i class="iconfont icon-gongchandang"></i>登录</a>
-		</dl>
-		<div class="top-search">
-			<form method="post" action="/portal/search/index.html" target="_blank">
-				<input type="text" name="keyword" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
-				<button class="layui-btn layui-bg-orange" lay-submit lay-filter="formDemo"><i class="iconfont icon-xiazai15"></i>搜索</button>
-			</form>
-		</div>
-	</div>			
-</div>
-</div>
-<div class="lang_mu w1min">
-<ul class="layui-nav" lay-filter="">
-	                    <li class="layui-nav-item">
-                    <a href="/" target="">
-                        <b>首页</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/dongtai.html" target="">
-                        <b>党建动态</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/special/index.html" target="">
-                        <b>专题专栏</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/seritem/index.html" target="">
-                        <b>志愿服务</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/activity/index.html" target="">
-                        <b>组织活动</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/study/index.html" target="">
-                        <b>学习中心</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/sanhui/index.html" target="">
-                        <b>三会一课</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/wenjuan/wenjuanlist.html" target="">
-                        <b>问卷调查</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/score/index.html" target="">
-                        <b>积分统计</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/index/map.html" target="">
-                        <b>党建地图</b>
-                    </a>
-                </li>
-            
-</ul>
-<script>
-//注意：导航 依赖 element 模块，否则无法进行功能性操作
-layui.use('element', function(){
-  var element = layui.element;
-  
-});
-</script>
-</div>
-<!--top区域 end-->
-<div class="w1 banne1 mgtop-15"><img src="/../upload/admin/20181120/b02187c3e779476c3d555e59ccdcb415.jpg"></div>
-<div class="mgtop-15 background-w1">
-	<div class="fdiv mua"><ul><i class="iconfont icon-dangwugongkai"></i><b>正文</b></ul>
-	<ol>
-		当前位置：<a href="./../user/index/logout.html">首页</a> >
-		    
-			<a href="./../jcdzzjs.html">基层党组织建设</a> >
-		
-		正文
-	</ol>	
-	</div>
+	<div class="lang_mu w1min">
+		<ul class="layui-nav" lay-filter="">
+			<li class="layui-nav-item">
+				<a href="/" target="">
+					<b>首页</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/dongtai.html" target="">
+					<b>党建动态</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/portal/special/index.html" target="">
+					<b>党建专题</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/portal/seritem/index.html" target="">
+					<b>志愿活动</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/portal/activity/index.html" target="">
+					<b>党日活动</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/portal/study/index.html" target="">
+					<b>党建赋能</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/portal/sanhui/index.html" target="">
+					<b>三会一课</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/portal/wenjuan/wenjuanlist.html" target="">
+					<b>问卷调查</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/portal/score/index.html" target="">
+					<b>积分统计</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/jcdzzjs.html" target="">
+					<b>基层党建</b>
+				</a>
+			</li>
 
-	<div class="lnmu">
-		<ul>习近平谈“一带一路”建设：不是中国一家的独奏</ul>
-		<ol>来源：人民网-中国共产党新闻网  发布时间：2019-03-01 08:36:00　点击数量:<span id="hits">292</span></ol>
-	</div>
-		<div class="listn imgk" id="articlePreviewDialog">
-			
-<p style="margin-top: 10px; margin-bottom: 10px; padding: 0px; text-indent: 0em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 16px; line-height: 30px; font-family: SimSun; color: rgb(38, 33, 74); text-align: center; background-color: rgb(248, 248, 248);"><a href="http://cpc.people.com.cn/xuexi/" target="_blank" style="color: rgb(0, 0, 0); text-decoration-line: none;"><img alt="" src="/http://cpc.people.com.cn/NMediaFile/2015/0116/MAIN201501161543000548761529288.jpg" style="border: medium none; height: 282px; width: 550px;"></a></p>
-<p style="margin-top: 10px; margin-bottom: 10px; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 16px; line-height: 30px; font-family: SimSun; color: rgb(38, 33, 74); text-align: center; background-color: rgb(248, 248, 248);"><a href="http://cpc.people.com.cn/xuexi/" target="_blank" style="color: rgb(0, 0, 0); text-decoration-line: none;">“学习路上”大型网络数据库</a>  <a href="http://cpc.people.com.cn/xuexi/" target="_blank" style="color: rgb(0, 0, 0); text-decoration-line: none;">点击进入</a></p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;"><span style="font-family: 楷体; text-indent: 2em; display: block;"><span style="text-indent: 2em; display: block;">党的十八大以来，习近平同志围绕社会主义经济建设发表的一系列重要论述，立意高远，内涵丰富，思想深刻，全面回答了我国经济发展怎么看、怎么干的重大问题，具有十分重要的指导意义。</span></span></p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;"><span style="font-family: 楷体; text-indent: 2em; display: block;"><span style="text-indent: 2em; display: block;">中共中央党史和文献研究院编辑了《习近平关于社会主义经济建设论述摘编》，摘选了习近平同志二〇一二年十一月十五日至二〇一七年三月十二日期间的讲话、报告、指示等一百二十多篇重要文献，分十个专题，共计四百九十四段论述。其中许多论述是第一次公开发表。<span style="text-indent: 2em;">该</span><span style="text-indent: 2em;">书第八篇重点阐述</span><strong><span style="text-indent: 2em;"><a href="http://theory.people.com.cn/n1/2017/0703/c412914-29377905.html" target="_blank" style="color: rgb(0, 0, 0); text-decoration-line: none;">实施“一带一路”建设、京津冀协同发展、长江经济带发展三大战略</a></span></strong><span style="text-indent: 2em;">，部分精彩论</span><span style="text-indent: 2em;">述如下：</span></span></span></p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;"><span style="text-indent: 2em;">规划建设雄安新区要突出七个方面的重点任务：一是建设绿色智慧新城，建成国际一流、绿色、现代、智慧城市。二是打造优美生态环</span><span style="text-indent: 2em;">境，构建蓝绿交织、清新明亮、水城共融的生态城市。三是发展高端高新产业，积极吸纳和集聚创新要素资源，培育新动能。四是提供优质公共服务，建设优质公共设施，创建城市管理新样板。五是构建快捷高效交通网，打造绿色交通体系。六是推进体制机制改革，发</span><span style="text-indent: 2em;">挥市场在资源配置中的决定性作用和更好发挥政府作用，激发市场活力。七是扩大全方位对外开放，打造扩大开放新高地和对外合作新平台。</span></p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;"><span style="color: rgb(178, 34, 34);">——在河北省安新县进行实地考察、主持召开河北雄安新区规划建设工作座谈会时的讲话（2017年2月23日），《人民日报》2017年4月2日</span></p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;"><span style="text-indent: 2em;">切实推进民心相通。“一带一路”建设追求的不是短期效应，而是要为我国发展塑造一个良好外部环境。我讲过，要打造一个“一带一路”建设的“朋友圈”。人文交流是软实力的体现，软实力强大了</span><span style="text-indent: 2em;">，开展政治、外交、经济活动的阻力就会小。人文合作投入小、影响大、管长远，关键是要重视起来，用“随风潜入夜，润物细无声”的方式去做，推进民心相通，发挥文化影响力。</span></p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;"><span style="color: rgb(178, 34, 34);">——《在推进“一带一路”建设工作座谈会上的讲话》（2016年8月17日）</span></p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;"><a href="http://cpc.people.com.cn/n1/2016/0623/c64094-28470783.html" target="_blank" style="color: rgb(0, 0, 0); text-decoration-line: none; text-indent: 2em;">丝绸之路是历史留给我们的伟大财富。“一带一路”倡议是中国根据古丝绸之路留下的宝贵启示，着眼于各国人民追求和平与发展的共同梦想，为世界提供的一项充满东<span style="text-indent: 2em;">方智慧的共同繁荣发展的方案。</span></a></p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;"><span style="color: rgb(178, 34, 34);">——《携手共创丝绸之路新辉煌》（2016年6月22日），《人民日报》2016年6月23日</span></p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;"><a href="http://cpc.people.com.cn/n1/2016/0623/c64094-28470783.html" target="_blank" style="color: rgb(0, 0, 0); text-decoration-line: none;">构建“一带一路”互利合作网络。中国愿同“一带一路”沿线国家一道，顺应时代潮流，弘扬丝绸之路精神，增进互信，巩固友好，深化合作，加大相互支持，在自愿、平等、互利原则基础<span style="text-indent: 2em;">上，携手构建务实进取、包容互鉴、开放创新、共谋发展的“一带一路”互利合作网络，共同致力于重振全球经济。</span></a></p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;"><span style="color: rgb(178, 34, 34);">——《携手共创丝绸之路新辉煌》（2016年6月22日），《人民日报》2016年6月23日</span></p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;"><a href="http://cpc.people.com.cn/n1/2016/0501/c64094-28317430.html" target="_blank" style="color: rgb(0, 0, 0); text-decoration-line: none;">“一带一路”倡议，唤起了沿线国家的历史记忆。古代丝绸之路是一条贸易之路，更是一条友谊之路。在中华民族同其他民族的友好交往中，逐步形成了以和平<span style="text-indent: 2em;">合作、开放包容、互学互鉴、互利共赢为特征的丝绸之路精神。在新的历史条件下，我们提出“一带一路”倡议，就是要继承和发扬丝绸之路精神，把我国发展同沿线国家发展结合起来，把中国梦同沿线各国人民的梦想结合起来，赋予古代丝绸之路以全新的时代内涵。</span></a></p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;"><span style="color: rgb(178, 34, 34);">——在十八届中央政治局第三十一次集体学习时的讲话（2016年4月29日），《人民日报》2016年5月1日</span></p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;"><a href="http://cpc.people.com.cn/n1/2016/0501/c64094-28317430.html" target="_blank" style="color: rgb(0, 0, 0); text-decoration-line: none;">推进“一带一路”建设，既要发挥政府把握方向、统筹协调作用，又要发挥市场作用。政府要在宣传推介、加强协调、建立机制等方面发挥主导性作用，同时要注意构建<span style="text-indent: 2em;">以市场为基础、企业为主体的区域经济合作机制，广泛调动各类企业参与，引导更多社会力量投入“一带一路”建设，努力形成政府、市场、社会有机结合的合作模式，形成政府主导、企业参与、民间促进的立体格局。</span></a></p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;"><span style="color: rgb(178, 34, 34);">——在十八届中央政治局第三十一次集体学习时的讲话（2016年4月29日），《人民日报》2016年5月1日</span></p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;"><a href="http://cpc.people.com.cn/n1/2016/0501/c64094-28317430.html" target="_blank" style="color: rgb(0, 0, 0); text-decoration-line: none;">人文交流合作也是“一带一路”建设的重要内容。真正要建成“一带一路”，必须在沿线国家民众中形成一个相互欣赏、相互理解、相互尊重的人文格局。民心相通是“<span style="text-indent: 2em;">一带一路”建设的重要内容，也是“一带一路”建设的人文基础。要坚持经济合作和人文交流共同推进，注重在人文领域精耕细作，尊重各国人民文化历史、风俗习惯，加强同沿线国家人民的友好往来，为“一带一路”建设打下广泛社会基础。要加强同沿线国家在安全</span><span style="text-indent: 2em;">领域的合作，努力打造利益共同体、责任共同体、命运共同体，共同营造良好环境。要重视和做好舆论引导工作，通过各种方式，讲好“一带一路”故事，传播好“一带一路”声音，为“一带一路”建设营造良好舆论环境。</span></a></p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;"><span style="color: rgb(178, 34, 34);">——在十八届中央政治局第三十一次集体学习时的讲话（2016年4月29日），《人民日报》2016年5月1日</span></p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;"><a href="http://cpc.people.com.cn/n/2015/1022/c64094-27727072.html" target="_blank" style="color: rgb(0, 0, 0); text-decoration-line: none; text-indent: 2em;">新时代需要新思维。“一带一路”建设将为中国和沿线国家共同发展带来巨大机遇。“一带一路”是开放的，是穿越非洲、环连亚欧的广阔“<span style="text-indent: 2em;">朋友圈”，所有感兴趣的国家都可以添加进入“朋友圈”。“一带一路”是多元的，涵盖各个合作领域，合作形式也可以多种多样。“一带一路”是共赢的，各国共同参与，遵循共商共建共享原则，实现共同发展繁荣。这条路不是某一方的私家小路，而是大家携手前进</span><span style="text-indent: 2em;">的阳光大道。</span></a></p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;"><span style="color: rgb(178, 34, 34);">——在英国伦敦金融城举行的中英工商峰会上的致辞（2015年10月21日），《人民日报》2015年10月22日</span></p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;"><a href="http://cpc.people.com.cn/n/2015/0329/c64094-26765899.html" target="_blank" style="color: rgb(0, 0, 0); text-decoration-line: none; text-indent: 2em;">“一带一路”建设秉持的是共商、共建、共享原则，不是封闭的，而是开放包容的；不是中国一家的独奏，而是沿线国家的合唱。“一带一路”建设不是要替代现有地区合作机制和<span style="text-indent: 2em;">倡议，而是要在已有基础上，推动沿线国家实现发展战略相互对接、优势互补。</span></a></p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;"><span style="color: rgb(178, 34, 34);">——《迈向命运共同体，开创亚洲新未来》（2015年3月28日），《人民日报》2015年3月29日</span></p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;"><a href="http://cpc.people.com.cn/n/2014/1112/c64094-26008447.html" target="_blank" style="color: rgb(0, 0, 0); text-decoration-line: none; text-indent: 2em;">互联互通是一条脚下之路，无论是公路、铁路、航路还是网路，路通到哪里，我们的合作就在哪里。互联互通是一条规则之路，多一些<span style="text-indent: 2em;">协调合作，少一些规则障碍，我们的物流就会更畅通、交往就会更便捷。互联互通是一条心灵之路，你了解我，我懂得你，道理就会越讲越明白，事情就会越来越好办。实现亚太全方位互联互通，就是要让脚下之路、规则之路、心灵之路联通太平洋两岸的全体成员，打</span><span style="text-indent: 2em;">通融资贵、融资难的瓶颈，就是要加强公私伙伴关系建设，实现联动式发展。</span></a></p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;"><span style="color: rgb(178, 34, 34);">——《共建面向未来的亚太伙伴关系》（2014年11月11日），《十八大以来重要文献选编》（中），中央文献出版社2016年版，第215-216页</span></p>
-<p>(责编：任一林、谢磊)</p>
-<p><br></p>
-	</div>
-	<div class="xiaz">
-		<ul>
-			<li><strong>上一篇：</strong>
-									<a href="./209.html">王勇：“想着为人民做点事，就没有克服不了的困难”</a>
-							</li>
-			<li><strong>下一篇：</strong>
-							<a href="./211.html">江西全面深化改革 一个个“硬骨头”被砸开</a>
-						</li>
 		</ul>
+		<script>
+			//注意：导航 依赖 element 模块，否则无法进行功能性操作
+			layui.use('element', function () {
+				var element = layui.element;
+
+			});
+		</script>
 	</div>
-		
-<link href="./../static/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-<link href="./../plugins/comment/view/public/aeest/mess.css" rel="stylesheet">
-<style type="text/css">
-    .pic-list li {
-        margin-bottom: 5px;
-    }
-	#edui1_bottombar{display:none;}
-</style>
-<h3>评论</h3>
-<div class="comment-area" id="comments">
-    <form class="comment-form js-ajax-form" action="/plugin/comment/comment/add.html" method="post">
-        <div class="form-group">
-            <div class="comment-postbox-wraper">
-				<script type="text/plain" id="content" name="content" placeholder="Write your comment here" class="comment-postbox"></script>
-            </div>
-        </div>
-        <div class="form-group">
-            <button type="submit" class="btn pull-right btn-primary js-ajax-submit" id="plugin-comment-comment-box-submit-btn"> 
-                <i class="fa fa-comment-o"></i> 发表评论
-            </button>			
-        </div>
-        <input type="hidden" name="object_title" value="习近平谈“一带一路”建设：不是中国一家的独奏"/>
-        <input type="hidden" name="table_name" value="portal_post"/>
-        <input type="hidden" name="object_id" value="210"/>
-        <input type="hidden" name="url" value="eyJhY3Rpb24iOiJwb3J0YWxcL0FydGljbGVcL2luZGV4IiwicGFyYW0iOnsiaWQiOjIxMH19"/>
-		<input type="hidden" name="email" value="">
-		<input type="hidden" name="full_name" value="">
-        <div class="clearfix"></div>
-    </form>
-	<div class="comments">
+	<!--top区域 end-->
+	<div class="w1 banne1 mgtop-15"><img src="/../upload/admin/20181120/b02187c3e779476c3d555e59ccdcb415.jpg"></div>
+	<div class="mgtop-15 background-w1">
+		<div class="fdiv mua">
+			<ul><i class="iconfont icon-dangwugongkai"></i><b>正文</b></ul>
+			<ol>
+				当前位置：<a href="./../user/index/logout.html">首页</a> >
+
+				<a href="./../jcdzzjs.html">基层党组织建设</a> >
+
+				正文
+			</ol>
+		</div>
+
+		<div class="lnmu">
+			<ul>习近平谈“一带一路”建设：不是中国一家的独奏</ul>
+			<ol>来源：人民网-中国共产党新闻网 发布时间：2019-03-01 08:36:00　点击数量:<span id="hits">292</span></ol>
+		</div>
+		<div class="listn imgk" id="articlePreviewDialog">
+
+			<p
+				style="margin-top: 10px; margin-bottom: 10px; padding: 0px; text-indent: 0em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 16px; line-height: 30px; font-family: SimSun; color: rgb(38, 33, 74); text-align: center; background-color: rgb(248, 248, 248);">
+				<a href="http://cpc.people.com.cn/xuexi/" target="_blank"
+					style="color: rgb(0, 0, 0); text-decoration-line: none;"><img alt=""
+						src="/http://cpc.people.com.cn/NMediaFile/2015/0116/MAIN201501161543000548761529288.jpg"
+						style="border: medium none; height: 282px; width: 550px;"></a></p>
+			<p
+				style="margin-top: 10px; margin-bottom: 10px; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 16px; line-height: 30px; font-family: SimSun; color: rgb(38, 33, 74); text-align: center; background-color: rgb(248, 248, 248);">
+				<a href="http://cpc.people.com.cn/xuexi/" target="_blank"
+					style="color: rgb(0, 0, 0); text-decoration-line: none;">“学习路上”大型网络数据库</a>  <a
+					href="http://cpc.people.com.cn/xuexi/" target="_blank"
+					style="color: rgb(0, 0, 0); text-decoration-line: none;">点击进入</a></p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">
+				<span style="font-family: 楷体; text-indent: 2em; display: block;"><span
+						style="text-indent: 2em; display: block;">党的十八大以来，习近平同志围绕社会主义经济建设发表的一系列重要论述，立意高远，内涵丰富，思想深刻，全面回答了我国经济发展怎么看、怎么干的重大问题，具有十分重要的指导意义。</span></span>
+			</p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">
+				<span style="font-family: 楷体; text-indent: 2em; display: block;"><span
+						style="text-indent: 2em; display: block;">中共中央党史和文献研究院编辑了《习近平关于社会主义经济建设论述摘编》，摘选了习近平同志二〇一二年十一月十五日至二〇一七年三月十二日期间的讲话、报告、指示等一百二十多篇重要文献，分十个专题，共计四百九十四段论述。其中许多论述是第一次公开发表。<span
+							style="text-indent: 2em;">该</span><span
+							style="text-indent: 2em;">书第八篇重点阐述</span><strong><span style="text-indent: 2em;"><a
+									href="http://theory.people.com.cn/n1/2017/0703/c412914-29377905.html"
+									target="_blank"
+									style="color: rgb(0, 0, 0); text-decoration-line: none;">实施“一带一路”建设、京津冀协同发展、长江经济带发展三大战略</a></span></strong><span
+							style="text-indent: 2em;">，部分精彩论</span><span
+							style="text-indent: 2em;">述如下：</span></span></span></p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">
+				<span style="text-indent: 2em;">规划建设雄安新区要突出七个方面的重点任务：一是建设绿色智慧新城，建成国际一流、绿色、现代、智慧城市。二是打造优美生态环</span><span
+					style="text-indent: 2em;">境，构建蓝绿交织、清新明亮、水城共融的生态城市。三是发展高端高新产业，积极吸纳和集聚创新要素资源，培育新动能。四是提供优质公共服务，建设优质公共设施，创建城市管理新样板。五是构建快捷高效交通网，打造绿色交通体系。六是推进体制机制改革，发</span><span
+					style="text-indent: 2em;">挥市场在资源配置中的决定性作用和更好发挥政府作用，激发市场活力。七是扩大全方位对外开放，打造扩大开放新高地和对外合作新平台。</span></p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">
+				<span
+					style="color: rgb(178, 34, 34);">——在河北省安新县进行实地考察、主持召开河北雄安新区规划建设工作座谈会时的讲话（2017年2月23日），《人民日报》2017年4月2日</span>
+			</p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">
+				<span
+					style="text-indent: 2em;">切实推进民心相通。“一带一路”建设追求的不是短期效应，而是要为我国发展塑造一个良好外部环境。我讲过，要打造一个“一带一路”建设的“朋友圈”。人文交流是软实力的体现，软实力强大了</span><span
+					style="text-indent: 2em;">，开展政治、外交、经济活动的阻力就会小。人文合作投入小、影响大、管长远，关键是要重视起来，用“随风潜入夜，润物细无声”的方式去做，推进民心相通，发挥文化影响力。</span>
+			</p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">
+				<span style="color: rgb(178, 34, 34);">——《在推进“一带一路”建设工作座谈会上的讲话》（2016年8月17日）</span></p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">
+				<a href="http://cpc.people.com.cn/n1/2016/0623/c64094-28470783.html" target="_blank"
+					style="color: rgb(0, 0, 0); text-decoration-line: none; text-indent: 2em;">丝绸之路是历史留给我们的伟大财富。“一带一路”倡议是中国根据古丝绸之路留下的宝贵启示，着眼于各国人民追求和平与发展的共同梦想，为世界提供的一项充满东<span
+						style="text-indent: 2em;">方智慧的共同繁荣发展的方案。</span></a></p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">
+				<span style="color: rgb(178, 34, 34);">——《携手共创丝绸之路新辉煌》（2016年6月22日），《人民日报》2016年6月23日</span></p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">
+				<a href="http://cpc.people.com.cn/n1/2016/0623/c64094-28470783.html" target="_blank"
+					style="color: rgb(0, 0, 0); text-decoration-line: none;">构建“一带一路”互利合作网络。中国愿同“一带一路”沿线国家一道，顺应时代潮流，弘扬丝绸之路精神，增进互信，巩固友好，深化合作，加大相互支持，在自愿、平等、互利原则基础<span
+						style="text-indent: 2em;">上，携手构建务实进取、包容互鉴、开放创新、共谋发展的“一带一路”互利合作网络，共同致力于重振全球经济。</span></a></p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">
+				<span style="color: rgb(178, 34, 34);">——《携手共创丝绸之路新辉煌》（2016年6月22日），《人民日报》2016年6月23日</span></p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">
+				<a href="http://cpc.people.com.cn/n1/2016/0501/c64094-28317430.html" target="_blank"
+					style="color: rgb(0, 0, 0); text-decoration-line: none;">“一带一路”倡议，唤起了沿线国家的历史记忆。古代丝绸之路是一条贸易之路，更是一条友谊之路。在中华民族同其他民族的友好交往中，逐步形成了以和平<span
+						style="text-indent: 2em;">合作、开放包容、互学互鉴、互利共赢为特征的丝绸之路精神。在新的历史条件下，我们提出“一带一路”倡议，就是要继承和发扬丝绸之路精神，把我国发展同沿线国家发展结合起来，把中国梦同沿线各国人民的梦想结合起来，赋予古代丝绸之路以全新的时代内涵。</span></a>
+			</p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">
+				<span style="color: rgb(178, 34, 34);">——在十八届中央政治局第三十一次集体学习时的讲话（2016年4月29日），《人民日报》2016年5月1日</span></p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">
+				<a href="http://cpc.people.com.cn/n1/2016/0501/c64094-28317430.html" target="_blank"
+					style="color: rgb(0, 0, 0); text-decoration-line: none;">推进“一带一路”建设，既要发挥政府把握方向、统筹协调作用，又要发挥市场作用。政府要在宣传推介、加强协调、建立机制等方面发挥主导性作用，同时要注意构建<span
+						style="text-indent: 2em;">以市场为基础、企业为主体的区域经济合作机制，广泛调动各类企业参与，引导更多社会力量投入“一带一路”建设，努力形成政府、市场、社会有机结合的合作模式，形成政府主导、企业参与、民间促进的立体格局。</span></a>
+			</p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">
+				<span style="color: rgb(178, 34, 34);">——在十八届中央政治局第三十一次集体学习时的讲话（2016年4月29日），《人民日报》2016年5月1日</span></p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">
+				<a href="http://cpc.people.com.cn/n1/2016/0501/c64094-28317430.html" target="_blank"
+					style="color: rgb(0, 0, 0); text-decoration-line: none;">人文交流合作也是“一带一路”建设的重要内容。真正要建成“一带一路”，必须在沿线国家民众中形成一个相互欣赏、相互理解、相互尊重的人文格局。民心相通是“<span
+						style="text-indent: 2em;">一带一路”建设的重要内容，也是“一带一路”建设的人文基础。要坚持经济合作和人文交流共同推进，注重在人文领域精耕细作，尊重各国人民文化历史、风俗习惯，加强同沿线国家人民的友好往来，为“一带一路”建设打下广泛社会基础。要加强同沿线国家在安全</span><span
+						style="text-indent: 2em;">领域的合作，努力打造利益共同体、责任共同体、命运共同体，共同营造良好环境。要重视和做好舆论引导工作，通过各种方式，讲好“一带一路”故事，传播好“一带一路”声音，为“一带一路”建设营造良好舆论环境。</span></a>
+			</p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">
+				<span style="color: rgb(178, 34, 34);">——在十八届中央政治局第三十一次集体学习时的讲话（2016年4月29日），《人民日报》2016年5月1日</span></p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">
+				<a href="http://cpc.people.com.cn/n/2015/1022/c64094-27727072.html" target="_blank"
+					style="color: rgb(0, 0, 0); text-decoration-line: none; text-indent: 2em;">新时代需要新思维。“一带一路”建设将为中国和沿线国家共同发展带来巨大机遇。“一带一路”是开放的，是穿越非洲、环连亚欧的广阔“<span
+						style="text-indent: 2em;">朋友圈”，所有感兴趣的国家都可以添加进入“朋友圈”。“一带一路”是多元的，涵盖各个合作领域，合作形式也可以多种多样。“一带一路”是共赢的，各国共同参与，遵循共商共建共享原则，实现共同发展繁荣。这条路不是某一方的私家小路，而是大家携手前进</span><span
+						style="text-indent: 2em;">的阳光大道。</span></a></p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">
+				<span style="color: rgb(178, 34, 34);">——在英国伦敦金融城举行的中英工商峰会上的致辞（2015年10月21日），《人民日报》2015年10月22日</span></p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">
+				<a href="http://cpc.people.com.cn/n/2015/0329/c64094-26765899.html" target="_blank"
+					style="color: rgb(0, 0, 0); text-decoration-line: none; text-indent: 2em;">“一带一路”建设秉持的是共商、共建、共享原则，不是封闭的，而是开放包容的；不是中国一家的独奏，而是沿线国家的合唱。“一带一路”建设不是要替代现有地区合作机制和<span
+						style="text-indent: 2em;">倡议，而是要在已有基础上，推动沿线国家实现发展战略相互对接、优势互补。</span></a></p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">
+				<span style="color: rgb(178, 34, 34);">——《迈向命运共同体，开创亚洲新未来》（2015年3月28日），《人民日报》2015年3月29日</span></p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">
+				<a href="http://cpc.people.com.cn/n/2014/1112/c64094-26008447.html" target="_blank"
+					style="color: rgb(0, 0, 0); text-decoration-line: none; text-indent: 2em;">互联互通是一条脚下之路，无论是公路、铁路、航路还是网路，路通到哪里，我们的合作就在哪里。互联互通是一条规则之路，多一些<span
+						style="text-indent: 2em;">协调合作，少一些规则障碍，我们的物流就会更畅通、交往就会更便捷。互联互通是一条心灵之路，你了解我，我懂得你，道理就会越讲越明白，事情就会越来越好办。实现亚太全方位互联互通，就是要让脚下之路、规则之路、心灵之路联通太平洋两岸的全体成员，打</span><span
+						style="text-indent: 2em;">通融资贵、融资难的瓶颈，就是要加强公私伙伴关系建设，实现联动式发展。</span></a></p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">
+				<span
+					style="color: rgb(178, 34, 34);">——《共建面向未来的亚太伙伴关系》（2014年11月11日），《十八大以来重要文献选编》（中），中央文献出版社2016年版，第215-216页</span>
+			</p>
+			<p>(责编：任一林、谢磊)</p>
+			<p><br></p>
+		</div>
+		<div class="xiaz">
+			<ul>
+				<li><strong>上一篇：</strong>
+					<a href="./209.html">王勇：“想着为人民做点事，就没有克服不了的困难”</a>
+				</li>
+				<li><strong>下一篇：</strong>
+					<a href="./211.html">江西全面深化改革 一个个“硬骨头”被砸开</a>
+				</li>
+			</ul>
+		</div>
+
+		<link href="./../static/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<link href="./../plugins/comment/view/public/aeest/mess.css" rel="stylesheet">
+		<style type="text/css">
+			.pic-list li {
+				margin-bottom: 5px;
+			}
+
+			#edui1_bottombar {
+				display: none;
+			}
+		</style>
+		<h3>评论</h3>
+		<div class="comment-area" id="comments">
+			<form class="comment-form js-ajax-form" action="/plugin/comment/comment/add.html" method="post">
+				<div class="form-group">
+					<div class="comment-postbox-wraper">
+						<script type="text/plain" id="content" name="content" placeholder="Write your comment here"
+							class="comment-postbox"></script>
+					</div>
+				</div>
+				<div class="form-group">
+					<button type="submit" class="btn pull-right btn-primary js-ajax-submit"
+						id="plugin-comment-comment-box-submit-btn">
+						<i class="fa fa-comment-o"></i> 发表评论
+					</button>
+				</div>
+				<input type="hidden" name="object_title" value="习近平谈“一带一路”建设：不是中国一家的独奏" />
+				<input type="hidden" name="table_name" value="portal_post" />
+				<input type="hidden" name="object_id" value="210" />
+				<input type="hidden" name="url"
+					value="eyJhY3Rpb24iOiJwb3J0YWxcL0FydGljbGVcL2luZGV4IiwicGFyYW0iOnsiaWQiOjIxMH19" />
+				<input type="hidden" name="email" value="">
+				<input type="hidden" name="full_name" value="">
+				<div class="clearfix"></div>
+			</form>
+			<div class="comments">
 				<ul class="pagination">
-					</ul>
-</div>	
-</div>
-<script type="text/javascript">
-    //编辑器路径定义
-    var editorURL = GV.WEB_ROOT;
-</script>
-<script type="text/javascript" src="/../plugins/comment/view/public/aeest/config.js"></script>
-<script type="text/javascript" src="/../static/js/ueditor/ueditor.all.min.js"></script>
-<script type="text/javascript">
-    $(function () {
-        editorcontent = new baidu.editor.ui.Editor();
-        editorcontent.render('content');
-        try {
-            editorcontent.sync();
-        } catch (err) {
-        }
-    });
-</script></div>
-<div class="sr_footer w1min">
-	<div class="w1">
-		<dl class="ft1">
-			<dd><b>陕西交控集团-智慧党建平台</b></dd><dd>企业：陕西交通控股集团有限公司</dd>
-			<dd>电话：029-87832666 传真：029- 87832174</dd><dd>地址：陕西省西安市雁塔区太白南路9号</dd>
-			<dd>陕ICP备2021008491号 陕公网安备 61011302001299号  </dd>
-			<dd>版权所有 © 2021 陕西交通控股集团有限公司 All Rights Reserved</dd>
-		</dl>
-		<!-- <dl class="ft2">
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript">
+			//编辑器路径定义
+			var editorURL = GV.WEB_ROOT;
+		</script>
+		<script type="text/javascript" src="/../plugins/comment/view/public/aeest/config.js"></script>
+		<script type="text/javascript" src="/../static/js/ueditor/ueditor.all.min.js"></script>
+		<script type="text/javascript">
+			$(function () {
+				editorcontent = new baidu.editor.ui.Editor();
+				editorcontent.render('content');
+				try {
+					editorcontent.sync();
+				} catch (err) {
+				}
+			});
+		</script>
+	</div>
+	<div class="sr_footer w1min">
+		<div class="w1">
+			<dl class="ft1">
+				<dd><b>陕西交控集团-智慧党建平台</b></dd>
+				<dd>企业：陕西交通控股集团有限公司</dd>
+				<dd>电话：029-87832666 传真：029- 87832174</dd>
+				<dd>地址：陕西省西安市雁塔区太白南路9号</dd>
+				<dd>陕ICP备2021008491号 陕公网安备 61011302001299号 </dd>
+				<dd>版权所有 © 2021 陕西交通控股集团有限公司 All Rights Reserved</dd>
+			</dl>
+			<!-- <dl class="ft2">
 			<a href="http://wpa.qq.com/msgrd?v=3&uin=34147588&site=qq&menu=yes" target="_blank" rel="nofollow" class="layui-btn layui-btn-danger layui-btn-radius"><i class="iconfont icon-qq"></i>在线咨询</a>
 		</dl> -->
-		<dl class="ft4">
-			<dd>
-				    		                     <a href="./../about.html" title="关于我们" target="">
-		                             <i class="iconfont icon-dangwugongkai"></i>关于我们		                         </a>
-		                 		                     <a href="./../statement.html" title="网站声明" target="">
-		                             <i class="iconfont icon-dangwugongkai"></i>网站声明		                         </a>
-		                 		                     <a href="./../contact.html" title="联系我们" target="">
-		                             <i class="iconfont icon-dangwugongkai"></i>联系我们		                         </a>
-		                 
-			</dd>	
-		</dl>
-		<dl class="ft3"><img src="/../upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg" border="0" /></dl>
+			<dl class="ft4">
+				<dd>
+					<a href="./../about.html" title="关于我们" target="">
+						<i class="iconfont icon-dangwugongkai"></i>关于我们 </a>
+					<a href="./../statement.html" title="网站声明" target="">
+						<i class="iconfont icon-dangwugongkai"></i>网站声明 </a>
+					<a href="./../contact.html" title="联系我们" target="">
+						<i class="iconfont icon-dangwugongkai"></i>联系我们 </a>
+
+				</dd>
+			</dl>
+			<dl class="ft3"><img src="/../upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg" border="0" /></dl>
+		</div>
 	</div>
-</div>
-<ul class="g-navFloat">
-	<!-- <li>
+	<ul class="g-navFloat">
+		<!-- <li>
 		<a href="./https://dj.cnki.io" target="_blank" class="u-tiyan">
 		<p>立</p><p>即</p><p>体</p><p>验</p>
 		</a>
 	</li> -->
-	<li>
-		<a href="http://wpa.qq.com/msgrd?v=3&uin=1151710686&site=qq&menu=yes" target="_blank"><i class="iconfont icon-qq"></i></a>
-	</li>
-	<li>
-		<div class="u-contents content-qr">
-			<img src="/../upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg">
-			<p>智慧党建平台</p>
-		</div>
-		<a href="javascript:void(0);"><i class="iconfont icon-weixin"></i></a>
-	</li>
-	<li>
-		<div class="u-contents content-tel">
-			<p>029-87832666</p>
-			<p><br /></p>
-		</div>
-		<a href="javascript:void(0);"><i class="iconfont icon-dianhua"></i></a>
-	</li>
-</ul>
-<div style="display:none;"></div>
-<script type="text/javascript">
-	jQuery(".index2_6_con").slide({
-		delayTime: 500,
-		effect: "left",
-		autoPlay: true,
-	});
-	$(".clearfix01 .bj_tab ul li").hover(function(){
-		$(this).find(".icon_bj").removeClass("transform0");
-		$(this).find(".icon_bj").addClass("transform1");
-		
-	},function(){
-		$(this).find(".icon_bj").removeClass("transform1");
-		$(this).find(".icon_bj").addClass("transform0");
-		
-	});
-	$(".bj_img_buttm").find("span").hover(function(){
-		var a=$(this).attr("class");
-		$(".bj01").removeClass("cut");
-		$("#"+a).addClass("cut");
-	});
-</script>
-
-<script src="/../static/js/wind.js"></script>
-<script src="/../themes/zqdj_public/public/assets/simpleboot3/bootstrap/js/bootstrap.min.js"></script>
-<script src="/../static/js/frontend.js"></script>
-<!--gotop start-->
-<script>	
-	$(function(){		
-		$.post("/user/index/islogin.html",{},function(data){
-			if(data.code==1){
-				$("#ucenterlogin .user-nickname").text(data.data.user.user_login);
-				$("#ucenterlogin .login").show();
-                $("#ucenterlogin .offline").hide();
-			}
-			if(data.code==0){
-                $("#ucenterlogin .login").hide();
-				$("#ucenterlogin .offline").show();
-			}
+		<li>
+			<a href="http://wpa.qq.com/msgrd?v=3&uin=1151710686&site=qq&menu=yes" target="_blank"><i
+					class="iconfont icon-qq"></i></a>
+		</li>
+		<li>
+			<div class="u-contents content-qr">
+				<img src="/../upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg">
+				<p>智慧党建平台</p>
+			</div>
+			<a href="javascript:void(0);"><i class="iconfont icon-weixin"></i></a>
+		</li>
+		<li>
+			<div class="u-contents content-tel">
+				<p>029-87832666</p>
+				<p><br /></p>
+			</div>
+			<a href="javascript:void(0);"><i class="iconfont icon-dianhua"></i></a>
+		</li>
+	</ul>
+	<div style="display:none;"></div>
+	<script type="text/javascript">
+		jQuery(".index2_6_con").slide({
+			delayTime: 500,
+			effect: "left",
+			autoPlay: true,
 		});
-	});
-</script> 
-<!--gotop end--> 
-<!-- 
+		$(".clearfix01 .bj_tab ul li").hover(function () {
+			$(this).find(".icon_bj").removeClass("transform0");
+			$(this).find(".icon_bj").addClass("transform1");
+
+		}, function () {
+			$(this).find(".icon_bj").removeClass("transform1");
+			$(this).find(".icon_bj").addClass("transform0");
+
+		});
+		$(".bj_img_buttm").find("span").hover(function () {
+			var a = $(this).attr("class");
+			$(".bj01").removeClass("cut");
+			$("#" + a).addClass("cut");
+		});
+	</script>
+
+	<script src="./../static/js/wind.js"></script>
+	<script src="./../themes/zqdj_public/public/assets/simpleboot3/bootstrap/js/bootstrap.min.js"></script>
+	<script src="./../static/js/frontend.js"></script>
+	<!--gotop start-->
+	<script>
+		$(function () {
+			$.post("/user/index/islogin.html", {}, function (data) {
+				if (data.code == 1) {
+					$("#ucenterlogin .user-nickname").text(data.data.user.user_login);
+					$("#ucenterlogin .login").show();
+					$("#ucenterlogin .offline").hide();
+				}
+				if (data.code == 0) {
+					$("#ucenterlogin .login").hide();
+					$("#ucenterlogin .offline").show();
+				}
+			});
+		});
+	</script>
+	<!--gotop end-->
+	<!-- 
 <ul id="side-bar" class="side-pannel side-bar">
   <span><img src="/upload/imgs/djwx.jpg"><i>党建小程序</i></span>
   <span><img src="/upload/imgs/djapp.jpg"><i>党建APP</i></span>
   <span><img src="/upload/imgs/djvideo.jpg"><i>视频介绍</i></span>
 </ul> -->
-<script>
-	$(function(){
-		$(window).scroll(function(){
-			if($(window).scrollTop()>100){  //距顶部多少像素时，出现返回顶部按钮
-				$("#side-bar .gotop").fadeIn();	
-			}
-			else{
-				$("#side-bar .gotop").hide();
-			}
+	<script>
+		$(function () {
+			$(window).scroll(function () {
+				if ($(window).scrollTop() > 100) {  //距顶部多少像素时，出现返回顶部按钮
+					$("#side-bar .gotop").fadeIn();
+				}
+				else {
+					$("#side-bar .gotop").hide();
+				}
+			});
+			$("#side-bar .gotop").click(function () {
+				$('html,body').animate({ 'scrollTop': 0 }, 500); //返回顶部动画 数值越小时间越短
+			});
 		});
-		$("#side-bar .gotop").click(function(){
-			$('html,body').animate({'scrollTop':0},500); //返回顶部动画 数值越小时间越短
+	</script>
+	<script type="text/javascript">
+		Wind.css('layer');
+		Wind.use("layer", function () {
+			layer.ready(function () { //为了layer.ext.js加载完毕再执行
+				layer.photos({
+					photos: '#articlePreviewDialog'
+					, shift: 5 //0-6的选择，指定弹出图片动画类型，默认随机
+				});
+			});
 		});
-	});
-</script>
-<script type="text/javascript">
-Wind.css('layer');
-Wind.use("layer", function () {
-	layer.ready(function(){ //为了layer.ext.js加载完毕再执行
-		  layer.photos({
-		    photos: '#articlePreviewDialog'
-		    ,shift: 5 //0-6的选择，指定弹出图片动画类型，默认随机
-		  });
-		});
-});
-</script>
+	</script>
 </body>
+
 </html>

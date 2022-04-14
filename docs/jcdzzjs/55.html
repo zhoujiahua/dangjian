@@ -1,339 +1,388 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>禹城市政府办公室凝心聚力提升党组织战斗堡垒作用 智慧党建平台</title>
 	<meta name="keywords" content="智慧党建">
 	<meta name="description" content="智慧党建">
 	<link href="https://at.alicdn.com/t/font_759613_byou54gk0v7.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" type="text/css" href="./../themes/zqdj_public/public/assets/zqdj_public/css/style.css" />
-<script language="javascript" type="text/javascript" src="/../static/js/jquery.js"></script>
-<script language="javascript" type="text/javascript" src="/../themes/zqdj_public/public/assets/zqdj_public/js/jquery.SuperSlide.js"></script>
-<link rel="stylesheet" href="./../themes/zqdj_public/public/assets/zqdj_public/js/layui/css/layui.css"  media="all">
-<script src="/../themes/zqdj_public/public/assets/zqdj_public/js/layui/layui.js"></script>
+	<link rel="stylesheet" type="text/css" href="./../themes/zqdj_public/public/assets/zqdj_public/css/style.css" />
+	<script src="./../static/js/jquery.js"></script>
+	<script src="./../themes/zqdj_public/public/assets/zqdj_public/js/jquery.SuperSlide.js"></script>
+	<link rel="stylesheet" href="./../themes/zqdj_public/public/assets/zqdj_public/js/layui/css/layui.css" media="all">
+	<script src="./../themes/zqdj_public/public/assets/zqdj_public/js/layui/layui.js"></script>
 
-<script type="text/javascript">
-//判断是否是手机版访问,跳转到手机版
-var isiPad = navigator.userAgent.match(/iPad|iPhone|Android|Linux|iPod/i) != null;
-if(isiPad){	
-	var wapurl = '/weixin/Index/index.html';
-	// window.location.href = wapurl;
-}
-    //全局变量
-    var GV = {
-        ROOT: "/",
-        WEB_ROOT: "/",
-        JS_ROOT: "static/js/",
-        TMPL: "/themes/zqdj_public/"
-    };
-</script>
+	<script type="text/javascript">
+		//判断是否是手机版访问,跳转到手机版
+		var isiPad = navigator.userAgent.match(/iPad|iPhone|Android|Linux|iPod/i) != null;
+		if (isiPad) {
+			var wapurl = '/weixin/Index/index.html';
+			// window.location.href = wapurl;
+		}
+		//全局变量
+		var GV = {
+			ROOT: "/",
+			WEB_ROOT: "/",
+			JS_ROOT: "static/js/",
+			TMPL: "/themes/zqdj_public/"
+		};
+	</script>
 </head>
 
 <body>
 
-<!--top区域 start-->
-<div class="top_x w1min">
-<div class="w1">
-	<div class="topx_left">
-		<div class="topx_logo"><img src="/../themes/zqdj_public/public/assets/zqdj_public/imgs/header_logo.png" /></div>
-		<div class="topx_zi">
-		<h1>陕西交控集团-智慧党建平台</h1>
+	<!--top区域 start-->
+	<div class="top_x w1min">
+		<div class="w1">
+			<div class="topx_left">
+				<div class="topx_logo"><img
+						src="./../themes/zqdj_public/public/assets/zqdj_public/imgs/header_logo.png" /></div>
+				<div class="topx_zi">
+					<h1>陕西交控集团-智慧党建平台</h1>
+				</div>
+			</div>
+			<div class="topx_right" id="ucenterlogin">
+				<dl class="login" style="display:none;">
+					你好,丁俊陶 <span class="user-nickname"></span>
+					<a href="./../user/profile/center.html"><i class="iconfont icon-user"></i>党员中心</a>
+					<a href="./../user/index/logout.html">&nbsp;&nbsp;退出登录</a>
+				</dl>
+				<dl class="offline" style="display:none;">
+					<a href="./../user/login/index.html" class="signin"><i class="iconfont icon-gongchandang"></i>登录</a>
+				</dl>
+				<div class="top-search">
+					<form method="post" action="/portal/search/index.html" target="_blank">
+						<input type="text" name="keyword" required lay-verify="required" placeholder="请输入标题"
+							autocomplete="off" class="layui-input">
+						<button class="layui-btn layui-bg-orange" lay-submit lay-filter="formDemo"><i
+								class="iconfont icon-xiazai15"></i>搜索</button>
+					</form>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div class="topx_right" id="ucenterlogin">
-		<dl class="login" style="display:none;">
-			你好,丁俊陶  <span class="user-nickname"></span>
-			<a href="./../user/profile/center.html"><i class="iconfont icon-user"></i>党员中心</a>
-			<a href="./../user/index/logout.html">&nbsp;&nbsp;退出登录</a>
-		</dl>
-		<dl class="offline" style="display:none;">
-			<a href="./../user/login/index.html" class="signin"><i class="iconfont icon-gongchandang"></i>登录</a>
-		</dl>
-		<div class="top-search">
-			<form method="post" action="/portal/search/index.html" target="_blank">
-				<input type="text" name="keyword" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
-				<button class="layui-btn layui-bg-orange" lay-submit lay-filter="formDemo"><i class="iconfont icon-xiazai15"></i>搜索</button>
-			</form>
-		</div>
-	</div>			
-</div>
-</div>
-<div class="lang_mu w1min">
-<ul class="layui-nav" lay-filter="">
-	                    <li class="layui-nav-item">
-                    <a href="/" target="">
-                        <b>首页</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/dongtai.html" target="">
-                        <b>党建动态</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/special/index.html" target="">
-                        <b>专题专栏</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/seritem/index.html" target="">
-                        <b>志愿服务</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/activity/index.html" target="">
-                        <b>组织活动</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/study/index.html" target="">
-                        <b>学习中心</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/sanhui/index.html" target="">
-                        <b>三会一课</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/wenjuan/wenjuanlist.html" target="">
-                        <b>问卷调查</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/score/index.html" target="">
-                        <b>积分统计</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/index/map.html" target="">
-                        <b>党建地图</b>
-                    </a>
-                </li>
-            
-</ul>
-<script>
-//注意：导航 依赖 element 模块，否则无法进行功能性操作
-layui.use('element', function(){
-  var element = layui.element;
-  
-});
-</script>
-</div>
-<!--top区域 end-->
-<div class="w1 banne1 mgtop-15"><img src="/../upload/admin/20181120/b02187c3e779476c3d555e59ccdcb415.jpg"></div>
-<div class="mgtop-15 background-w1">
-	<div class="fdiv mua"><ul><i class="iconfont icon-dangwugongkai"></i><b>正文</b></ul>
-	<ol>
-		当前位置：<a href="./../user/index/logout.html">首页</a> >
-		    
-			<a href="./../jcdzzjs.html">基层党组织建设</a> >
-		
-		正文
-	</ol>	
-	</div>
+	<div class="lang_mu w1min">
+		<ul class="layui-nav" lay-filter="">
+			<li class="layui-nav-item">
+				<a href="/" target="">
+					<b>首页</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/dongtai.html" target="">
+					<b>党建动态</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/portal/special/index.html" target="">
+					<b>党建专题</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/portal/seritem/index.html" target="">
+					<b>志愿活动</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/portal/activity/index.html" target="">
+					<b>党日活动</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/portal/study/index.html" target="">
+					<b>党建赋能</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/portal/sanhui/index.html" target="">
+					<b>三会一课</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/portal/wenjuan/wenjuanlist.html" target="">
+					<b>问卷调查</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/portal/score/index.html" target="">
+					<b>积分统计</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/jcdzzjs.html" target="">
+					<b>基层党建</b>
+				</a>
+			</li>
 
-	<div class="lnmu">
-		<ul>禹城市政府办公室凝心聚力提升党组织战斗堡垒作用</ul>
-		<ol>来源：灯塔-党建在线  发布时间：2018-07-30 16:36:00　点击数量:<span id="hits">238</span></ol>
-	</div>
-		<div class="listn imgk" id="articlePreviewDialog">
-			
-<p style='margin-top: 20px; margin-bottom: 10px; padding: 0px; max-height: 999999px; font-size: 18px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; white-space: normal; background-color: rgb(255, 255, 255);'>       今年以来，禹城市政府办公室以创建“三服务 排头兵”过硬党支部为抓手，从四个方面着手，严格要求抓规范、精心组织抓落实，真正使党建工作严起来、实起来、强起来。</p>
-<p style='margin-top: 20px; margin-bottom: 10px; padding: 0px; max-height: 999999px; font-size: 18px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; white-space: normal; background-color: rgb(255, 255, 255);'><strong>　　划定“责任田”，强化党建主体责任。</strong>紧紧牵住责任制这个“牛鼻子”，把党建主体责任放在心上、扛在肩上、抓在手上。一是置于首要位置，找准支部工作与业务工作的对接点，做到“同部署、同落实、同检查、同考核”，确保各项党建工作任务确实落地、确实有招、确实有效。二是当作首要责任，支部书记认真履行“一岗双责”，为办公室党建工作出题目、交任务、压担子，带头参加双重组织生活，主动查摆问题，为党员干部上党课，定期不定期对党支部开展日常工作、推进重点任务和落实党建制度情况进行督查指导，有力推动党建工作规范有序开展。三是作为首要素质，通过集中学习培训、开展党性教育、组织专题研讨等多种形式，不断提升党员干部政治素质和遵规守纪意识，形成比学习、比奉献、守纪律、守规矩的良好风气。</p>
-<center><span style="line-height: normal;"><img alt="" src="/http://www.dtdjzx.gov.cn/u/cms/dtdjzx/201807/131209258e8t.png" style="border: 0px; vertical-align: middle; max-width: 100%; height: 371px; width: 550px;"></span></center>
-<p style='margin-top: 20px; margin-bottom: 10px; padding: 0px; max-height: 999999px; font-size: 18px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; white-space: normal; background-color: rgb(255, 255, 255); text-align: center;'><span style="font-size: 16px;"><span style="font-family: kaiti;">专题研究党建工作</span></span></p>
-<center><p style="margin-top: 20px; margin-bottom: 10px; padding: 0px; max-height: 999999px; font-size: 18px; color: rgb(51, 51, 51); line-height: 32px;"><span style="line-height: normal;"><img alt="" src="/http://www.dtdjzx.gov.cn/u/cms/dtdjzx/201807/13162149ycbw.png" style="border: 0px; vertical-align: middle; max-width: 100%; height: 328px; width: 550px;"></span></p></center>
-<p style='margin-top: 20px; margin-bottom: 10px; padding: 0px; max-height: 999999px; font-size: 18px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; white-space: normal; background-color: rgb(255, 255, 255); text-align: center;'><span style="font-size: 16px;"><span style="font-family: kaiti;">支部书记上党课</span></span></p>
-<p style='margin-top: 20px; margin-bottom: 10px; padding: 0px; max-height: 999999px; font-size: 18px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; white-space: normal; background-color: rgb(255, 255, 255);'><strong>　　扎紧“制度笼”，规范党内政治生活。</strong>坚持把严肃党内政治生活作为强化机关党建的重要途径，固本培元，强筋壮骨。一是完善制度建设，对《市政府办公室工作规范》和《市政府办公室政务服务标准》进行修订，使办文、办会、办事等各项工作有规可循、有制可依。二是落实组织生活制度，从严细化和落实遵守“三会一课”、组织生活会、谈心谈话、民主评议党员和领导干部民主生活会等基本制度，从严管理党员、严肃组织生活、促进作用发挥。三是强化流程指导，结合推进“两学一做”学习教育常态化制度化，明确党员活动日等工作流程，明确时间要求、参加范围、程序步骤、会后落实等规范，建立活动台账，实行痕迹管理，推动各项活动规范化、常态化。</p>
-<p style='margin-top: 20px; margin-bottom: 10px; padding: 0px; max-height: 999999px; font-size: 18px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; white-space: normal; background-color: rgb(255, 255, 255);'><strong>　　拧紧“总开关”，提升党员党性修养。</strong>强化学习教育，拧紧党员干部思想“总开关”，实现补“钙”、提神、正身和聚力。一是抓实学习内容，围绕“学有方向”，制定全年学习配档表；围绕“学有内容”，对十九大报告、党规党纪、重点会议精神深入学习；围绕“学有督促”，定期检查笔记、书面测试、做好考勤记录，确保学习教育融入日常、抓在经常。二是抓活学习形式，严格落实周五集中学习制度，累计组织政治、业务集中学习28次；坚持线下学习与线上学习相结合，组织党员干部赴孟良崮战役纪念馆、焦裕禄同志纪念馆等地学习参观，督促党员不忘初心，履职尽责；赴周边县市区、禹城市经济发展制高点参观学习，进一步自我加压、对标赶超；每位党员干部在认真抓好“灯塔-党建在线”党的十九大精神学习竞赛的同时，充分利用新媒体，推动学习效果“最大化”。三是抓好学用结合，扎实开展“大学习、大调研、大改进”，坚持理论联系实际，完成专题调研课题3个，协助市政府领导同志开展专题调研6个，真正把学习与实践结合起来，转化为分析问题、解决问题的实际本领，转化为围绕中心、服务大局的具体举措。</p>
-<p style='margin-top: 20px; margin-bottom: 10px; padding: 0px; max-height: 999999px; font-size: 18px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; white-space: normal; background-color: rgb(255, 255, 255);'><strong>　　搭建“新载体”，增强组织凝聚力战斗力。</strong>围绕全市发展大局，贴近办公室实际、贴近党员干部意愿，设计新的活动载体，搭建有效平台。一是主题活动凝聚正能量，组织收看《双面人生》《厉害了，我的国》等专题片，扎实开展“乡村振兴”“难忘入党那一天”等主题研讨，联系社区共驻共建，开展“新时代 新担当 新作为”庆祝建党97周年演讲比赛、趣味运动会等活动，提升干部综合素质。二是“业务+”大讲堂提能力，近期计划组织全体政务科室结合岗位职责，围绕业务知识、写作基础、宏观政策、中心工作，自由选题，轮流授课，努力把每位党员培养成“开口能讲、提笔能写、遇事能办、问策能对的“四能”型人才。三是脱贫攻坚暖民心，选好用好管好第一书记、驻村工作队和精准扶贫干部“三支队伍”，开展物资捐助、技能培训、扶智引导等帮扶，助力脱贫攻坚。（中共禹城市委组织部）</p>
-<p><br></p>
-	</div>
-	<div class="xiaz">
-		<ul>
-			<li><strong>上一篇：</strong>
-									<a href="./54.html">临沂市抓党建促乡村振兴暨第一书记工作推进会议召开</a>
-							</li>
-			<li><strong>下一篇：</strong>
-							<a href="./56.html">合作社上建支部 引领山村脱贫致富路 ——诸城市共好榛子种植专业合作社党支部建设侧记</a>
-						</li>
 		</ul>
+		<script>
+			//注意：导航 依赖 element 模块，否则无法进行功能性操作
+			layui.use('element', function () {
+				var element = layui.element;
+
+			});
+		</script>
 	</div>
-		
-<link href="./../static/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-<link href="./../plugins/comment/view/public/aeest/mess.css" rel="stylesheet">
-<style type="text/css">
-    .pic-list li {
-        margin-bottom: 5px;
-    }
-	#edui1_bottombar{display:none;}
-</style>
-<h3>评论</h3>
-<div class="comment-area" id="comments">
-    <form class="comment-form js-ajax-form" action="/plugin/comment/comment/add.html" method="post">
-        <div class="form-group">
-            <div class="comment-postbox-wraper">
-				<script type="text/plain" id="content" name="content" placeholder="Write your comment here" class="comment-postbox"></script>
-            </div>
-        </div>
-        <div class="form-group">
-            <button type="submit" class="btn pull-right btn-primary js-ajax-submit" id="plugin-comment-comment-box-submit-btn"> 
-                <i class="fa fa-comment-o"></i> 发表评论
-            </button>			
-        </div>
-        <input type="hidden" name="object_title" value="禹城市政府办公室凝心聚力提升党组织战斗堡垒作用"/>
-        <input type="hidden" name="table_name" value="portal_post"/>
-        <input type="hidden" name="object_id" value="55"/>
-        <input type="hidden" name="url" value="eyJhY3Rpb24iOiJwb3J0YWxcL0FydGljbGVcL2luZGV4IiwicGFyYW0iOnsiaWQiOjU1fX0="/>
-		<input type="hidden" name="email" value="">
-		<input type="hidden" name="full_name" value="">
-        <div class="clearfix"></div>
-    </form>
-	<div class="comments">
+	<!--top区域 end-->
+	<div class="w1 banne1 mgtop-15"><img src="/../upload/admin/20181120/b02187c3e779476c3d555e59ccdcb415.jpg"></div>
+	<div class="mgtop-15 background-w1">
+		<div class="fdiv mua">
+			<ul><i class="iconfont icon-dangwugongkai"></i><b>正文</b></ul>
+			<ol>
+				当前位置：<a href="./../user/index/logout.html">首页</a> >
+
+				<a href="./../jcdzzjs.html">基层党组织建设</a> >
+
+				正文
+			</ol>
+		</div>
+
+		<div class="lnmu">
+			<ul>禹城市政府办公室凝心聚力提升党组织战斗堡垒作用</ul>
+			<ol>来源：灯塔-党建在线 发布时间：2018-07-30 16:36:00　点击数量:<span id="hits">238</span></ol>
+		</div>
+		<div class="listn imgk" id="articlePreviewDialog">
+
+			<p
+				style='margin-top: 20px; margin-bottom: 10px; padding: 0px; max-height: 999999px; font-size: 18px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; white-space: normal; background-color: rgb(255, 255, 255);'>
+				       今年以来，禹城市政府办公室以创建“三服务 排头兵”过硬党支部为抓手，从四个方面着手，严格要求抓规范、精心组织抓落实，真正使党建工作严起来、实起来、强起来。</p>
+			<p
+				style='margin-top: 20px; margin-bottom: 10px; padding: 0px; max-height: 999999px; font-size: 18px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; white-space: normal; background-color: rgb(255, 255, 255);'>
+				<strong>　　划定“责任田”，强化党建主体责任。</strong>紧紧牵住责任制这个“牛鼻子”，把党建主体责任放在心上、扛在肩上、抓在手上。一是置于首要位置，找准支部工作与业务工作的对接点，做到“同部署、同落实、同检查、同考核”，确保各项党建工作任务确实落地、确实有招、确实有效。二是当作首要责任，支部书记认真履行“一岗双责”，为办公室党建工作出题目、交任务、压担子，带头参加双重组织生活，主动查摆问题，为党员干部上党课，定期不定期对党支部开展日常工作、推进重点任务和落实党建制度情况进行督查指导，有力推动党建工作规范有序开展。三是作为首要素质，通过集中学习培训、开展党性教育、组织专题研讨等多种形式，不断提升党员干部政治素质和遵规守纪意识，形成比学习、比奉献、守纪律、守规矩的良好风气。
+			</p>
+			<center><span style="line-height: normal;"><img alt=""
+						src="/http://www.dtdjzx.gov.cn/u/cms/dtdjzx/201807/131209258e8t.png"
+						style="border: 0px; vertical-align: middle; max-width: 100%; height: 371px; width: 550px;"></span>
+			</center>
+			<p
+				style='margin-top: 20px; margin-bottom: 10px; padding: 0px; max-height: 999999px; font-size: 18px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; white-space: normal; background-color: rgb(255, 255, 255); text-align: center;'>
+				<span style="font-size: 16px;"><span style="font-family: kaiti;">专题研究党建工作</span></span></p>
+			<center>
+				<p
+					style="margin-top: 20px; margin-bottom: 10px; padding: 0px; max-height: 999999px; font-size: 18px; color: rgb(51, 51, 51); line-height: 32px;">
+					<span style="line-height: normal;"><img alt=""
+							src="/http://www.dtdjzx.gov.cn/u/cms/dtdjzx/201807/13162149ycbw.png"
+							style="border: 0px; vertical-align: middle; max-width: 100%; height: 328px; width: 550px;"></span>
+				</p>
+			</center>
+			<p
+				style='margin-top: 20px; margin-bottom: 10px; padding: 0px; max-height: 999999px; font-size: 18px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; white-space: normal; background-color: rgb(255, 255, 255); text-align: center;'>
+				<span style="font-size: 16px;"><span style="font-family: kaiti;">支部书记上党课</span></span></p>
+			<p
+				style='margin-top: 20px; margin-bottom: 10px; padding: 0px; max-height: 999999px; font-size: 18px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; white-space: normal; background-color: rgb(255, 255, 255);'>
+				<strong>　　扎紧“制度笼”，规范党内政治生活。</strong>坚持把严肃党内政治生活作为强化机关党建的重要途径，固本培元，强筋壮骨。一是完善制度建设，对《市政府办公室工作规范》和《市政府办公室政务服务标准》进行修订，使办文、办会、办事等各项工作有规可循、有制可依。二是落实组织生活制度，从严细化和落实遵守“三会一课”、组织生活会、谈心谈话、民主评议党员和领导干部民主生活会等基本制度，从严管理党员、严肃组织生活、促进作用发挥。三是强化流程指导，结合推进“两学一做”学习教育常态化制度化，明确党员活动日等工作流程，明确时间要求、参加范围、程序步骤、会后落实等规范，建立活动台账，实行痕迹管理，推动各项活动规范化、常态化。
+			</p>
+			<p
+				style='margin-top: 20px; margin-bottom: 10px; padding: 0px; max-height: 999999px; font-size: 18px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; white-space: normal; background-color: rgb(255, 255, 255);'>
+				<strong>　　拧紧“总开关”，提升党员党性修养。</strong>强化学习教育，拧紧党员干部思想“总开关”，实现补“钙”、提神、正身和聚力。一是抓实学习内容，围绕“学有方向”，制定全年学习配档表；围绕“学有内容”，对十九大报告、党规党纪、重点会议精神深入学习；围绕“学有督促”，定期检查笔记、书面测试、做好考勤记录，确保学习教育融入日常、抓在经常。二是抓活学习形式，严格落实周五集中学习制度，累计组织政治、业务集中学习28次；坚持线下学习与线上学习相结合，组织党员干部赴孟良崮战役纪念馆、焦裕禄同志纪念馆等地学习参观，督促党员不忘初心，履职尽责；赴周边县市区、禹城市经济发展制高点参观学习，进一步自我加压、对标赶超；每位党员干部在认真抓好“灯塔-党建在线”党的十九大精神学习竞赛的同时，充分利用新媒体，推动学习效果“最大化”。三是抓好学用结合，扎实开展“大学习、大调研、大改进”，坚持理论联系实际，完成专题调研课题3个，协助市政府领导同志开展专题调研6个，真正把学习与实践结合起来，转化为分析问题、解决问题的实际本领，转化为围绕中心、服务大局的具体举措。
+			</p>
+			<p
+				style='margin-top: 20px; margin-bottom: 10px; padding: 0px; max-height: 999999px; font-size: 18px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; white-space: normal; background-color: rgb(255, 255, 255);'>
+				<strong>　　搭建“新载体”，增强组织凝聚力战斗力。</strong>围绕全市发展大局，贴近办公室实际、贴近党员干部意愿，设计新的活动载体，搭建有效平台。一是主题活动凝聚正能量，组织收看《双面人生》《厉害了，我的国》等专题片，扎实开展“乡村振兴”“难忘入党那一天”等主题研讨，联系社区共驻共建，开展“新时代
+				新担当
+				新作为”庆祝建党97周年演讲比赛、趣味运动会等活动，提升干部综合素质。二是“业务+”大讲堂提能力，近期计划组织全体政务科室结合岗位职责，围绕业务知识、写作基础、宏观政策、中心工作，自由选题，轮流授课，努力把每位党员培养成“开口能讲、提笔能写、遇事能办、问策能对的“四能”型人才。三是脱贫攻坚暖民心，选好用好管好第一书记、驻村工作队和精准扶贫干部“三支队伍”，开展物资捐助、技能培训、扶智引导等帮扶，助力脱贫攻坚。（中共禹城市委组织部）
+			</p>
+			<p><br></p>
+		</div>
+		<div class="xiaz">
+			<ul>
+				<li><strong>上一篇：</strong>
+					<a href="./54.html">临沂市抓党建促乡村振兴暨第一书记工作推进会议召开</a>
+				</li>
+				<li><strong>下一篇：</strong>
+					<a href="./56.html">合作社上建支部 引领山村脱贫致富路 ——诸城市共好榛子种植专业合作社党支部建设侧记</a>
+				</li>
+			</ul>
+		</div>
+
+		<link href="./../static/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<link href="./../plugins/comment/view/public/aeest/mess.css" rel="stylesheet">
+		<style type="text/css">
+			.pic-list li {
+				margin-bottom: 5px;
+			}
+
+			#edui1_bottombar {
+				display: none;
+			}
+		</style>
+		<h3>评论</h3>
+		<div class="comment-area" id="comments">
+			<form class="comment-form js-ajax-form" action="/plugin/comment/comment/add.html" method="post">
+				<div class="form-group">
+					<div class="comment-postbox-wraper">
+						<script type="text/plain" id="content" name="content" placeholder="Write your comment here"
+							class="comment-postbox"></script>
+					</div>
+				</div>
+				<div class="form-group">
+					<button type="submit" class="btn pull-right btn-primary js-ajax-submit"
+						id="plugin-comment-comment-box-submit-btn">
+						<i class="fa fa-comment-o"></i> 发表评论
+					</button>
+				</div>
+				<input type="hidden" name="object_title" value="禹城市政府办公室凝心聚力提升党组织战斗堡垒作用" />
+				<input type="hidden" name="table_name" value="portal_post" />
+				<input type="hidden" name="object_id" value="55" />
+				<input type="hidden" name="url"
+					value="eyJhY3Rpb24iOiJwb3J0YWxcL0FydGljbGVcL2luZGV4IiwicGFyYW0iOnsiaWQiOjU1fX0=" />
+				<input type="hidden" name="email" value="">
+				<input type="hidden" name="full_name" value="">
+				<div class="clearfix"></div>
+			</form>
+			<div class="comments">
 				<ul class="pagination">
-					</ul>
-</div>	
-</div>
-<script type="text/javascript">
-    //编辑器路径定义
-    var editorURL = GV.WEB_ROOT;
-</script>
-<script type="text/javascript" src="/../plugins/comment/view/public/aeest/config.js"></script>
-<script type="text/javascript" src="/../static/js/ueditor/ueditor.all.min.js"></script>
-<script type="text/javascript">
-    $(function () {
-        editorcontent = new baidu.editor.ui.Editor();
-        editorcontent.render('content');
-        try {
-            editorcontent.sync();
-        } catch (err) {
-        }
-    });
-</script></div>
-<div class="sr_footer w1min">
-	<div class="w1">
-		<dl class="ft1">
-			<dd><b>陕西交控集团-智慧党建平台</b></dd><dd>企业：陕西交通控股集团有限公司</dd>
-			<dd>电话：029-87832666 传真：029- 87832174</dd><dd>地址：陕西省西安市雁塔区太白南路9号</dd>
-			<dd>陕ICP备2021008491号 陕公网安备 61011302001299号  </dd>
-			<dd>版权所有 © 2021 陕西交通控股集团有限公司 All Rights Reserved</dd>
-		</dl>
-		<!-- <dl class="ft2">
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript">
+			//编辑器路径定义
+			var editorURL = GV.WEB_ROOT;
+		</script>
+		<script type="text/javascript" src="/../plugins/comment/view/public/aeest/config.js"></script>
+		<script type="text/javascript" src="/../static/js/ueditor/ueditor.all.min.js"></script>
+		<script type="text/javascript">
+			$(function () {
+				editorcontent = new baidu.editor.ui.Editor();
+				editorcontent.render('content');
+				try {
+					editorcontent.sync();
+				} catch (err) {
+				}
+			});
+		</script>
+	</div>
+	<div class="sr_footer w1min">
+		<div class="w1">
+			<dl class="ft1">
+				<dd><b>陕西交控集团-智慧党建平台</b></dd>
+				<dd>企业：陕西交通控股集团有限公司</dd>
+				<dd>电话：029-87832666 传真：029- 87832174</dd>
+				<dd>地址：陕西省西安市雁塔区太白南路9号</dd>
+				<dd>陕ICP备2021008491号 陕公网安备 61011302001299号 </dd>
+				<dd>版权所有 © 2021 陕西交通控股集团有限公司 All Rights Reserved</dd>
+			</dl>
+			<!-- <dl class="ft2">
 			<a href="http://wpa.qq.com/msgrd?v=3&uin=34147588&site=qq&menu=yes" target="_blank" rel="nofollow" class="layui-btn layui-btn-danger layui-btn-radius"><i class="iconfont icon-qq"></i>在线咨询</a>
 		</dl> -->
-		<dl class="ft4">
-			<dd>
-				    		                     <a href="./../about.html" title="关于我们" target="">
-		                             <i class="iconfont icon-dangwugongkai"></i>关于我们		                         </a>
-		                 		                     <a href="./../statement.html" title="网站声明" target="">
-		                             <i class="iconfont icon-dangwugongkai"></i>网站声明		                         </a>
-		                 		                     <a href="./../contact.html" title="联系我们" target="">
-		                             <i class="iconfont icon-dangwugongkai"></i>联系我们		                         </a>
-		                 
-			</dd>	
-		</dl>
-		<dl class="ft3"><img src="/../upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg" border="0" /></dl>
+			<dl class="ft4">
+				<dd>
+					<a href="./../about.html" title="关于我们" target="">
+						<i class="iconfont icon-dangwugongkai"></i>关于我们 </a>
+					<a href="./../statement.html" title="网站声明" target="">
+						<i class="iconfont icon-dangwugongkai"></i>网站声明 </a>
+					<a href="./../contact.html" title="联系我们" target="">
+						<i class="iconfont icon-dangwugongkai"></i>联系我们 </a>
+
+				</dd>
+			</dl>
+			<dl class="ft3"><img src="/../upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg" border="0" /></dl>
+		</div>
 	</div>
-</div>
-<ul class="g-navFloat">
-	<!-- <li>
+	<ul class="g-navFloat">
+		<!-- <li>
 		<a href="./https://dj.cnki.io" target="_blank" class="u-tiyan">
 		<p>立</p><p>即</p><p>体</p><p>验</p>
 		</a>
 	</li> -->
-	<li>
-		<a href="http://wpa.qq.com/msgrd?v=3&uin=1151710686&site=qq&menu=yes" target="_blank"><i class="iconfont icon-qq"></i></a>
-	</li>
-	<li>
-		<div class="u-contents content-qr">
-			<img src="/../upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg">
-			<p>智慧党建平台</p>
-		</div>
-		<a href="javascript:void(0);"><i class="iconfont icon-weixin"></i></a>
-	</li>
-	<li>
-		<div class="u-contents content-tel">
-			<p>029-87832666</p>
-			<p><br /></p>
-		</div>
-		<a href="javascript:void(0);"><i class="iconfont icon-dianhua"></i></a>
-	</li>
-</ul>
-<div style="display:none;"></div>
-<script type="text/javascript">
-	jQuery(".index2_6_con").slide({
-		delayTime: 500,
-		effect: "left",
-		autoPlay: true,
-	});
-	$(".clearfix01 .bj_tab ul li").hover(function(){
-		$(this).find(".icon_bj").removeClass("transform0");
-		$(this).find(".icon_bj").addClass("transform1");
-		
-	},function(){
-		$(this).find(".icon_bj").removeClass("transform1");
-		$(this).find(".icon_bj").addClass("transform0");
-		
-	});
-	$(".bj_img_buttm").find("span").hover(function(){
-		var a=$(this).attr("class");
-		$(".bj01").removeClass("cut");
-		$("#"+a).addClass("cut");
-	});
-</script>
-
-<script src="/../static/js/wind.js"></script>
-<script src="/../themes/zqdj_public/public/assets/simpleboot3/bootstrap/js/bootstrap.min.js"></script>
-<script src="/../static/js/frontend.js"></script>
-<!--gotop start-->
-<script>	
-	$(function(){		
-		$.post("/user/index/islogin.html",{},function(data){
-			if(data.code==1){
-				$("#ucenterlogin .user-nickname").text(data.data.user.user_login);
-				$("#ucenterlogin .login").show();
-                $("#ucenterlogin .offline").hide();
-			}
-			if(data.code==0){
-                $("#ucenterlogin .login").hide();
-				$("#ucenterlogin .offline").show();
-			}
+		<li>
+			<a href="http://wpa.qq.com/msgrd?v=3&uin=1151710686&site=qq&menu=yes" target="_blank"><i
+					class="iconfont icon-qq"></i></a>
+		</li>
+		<li>
+			<div class="u-contents content-qr">
+				<img src="/../upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg">
+				<p>智慧党建平台</p>
+			</div>
+			<a href="javascript:void(0);"><i class="iconfont icon-weixin"></i></a>
+		</li>
+		<li>
+			<div class="u-contents content-tel">
+				<p>029-87832666</p>
+				<p><br /></p>
+			</div>
+			<a href="javascript:void(0);"><i class="iconfont icon-dianhua"></i></a>
+		</li>
+	</ul>
+	<div style="display:none;"></div>
+	<script type="text/javascript">
+		jQuery(".index2_6_con").slide({
+			delayTime: 500,
+			effect: "left",
+			autoPlay: true,
 		});
-	});
-</script> 
-<!--gotop end--> 
-<!-- 
+		$(".clearfix01 .bj_tab ul li").hover(function () {
+			$(this).find(".icon_bj").removeClass("transform0");
+			$(this).find(".icon_bj").addClass("transform1");
+
+		}, function () {
+			$(this).find(".icon_bj").removeClass("transform1");
+			$(this).find(".icon_bj").addClass("transform0");
+
+		});
+		$(".bj_img_buttm").find("span").hover(function () {
+			var a = $(this).attr("class");
+			$(".bj01").removeClass("cut");
+			$("#" + a).addClass("cut");
+		});
+	</script>
+
+	<script src="./../static/js/wind.js"></script>
+	<script src="./../themes/zqdj_public/public/assets/simpleboot3/bootstrap/js/bootstrap.min.js"></script>
+	<script src="./../static/js/frontend.js"></script>
+	<!--gotop start-->
+	<script>
+		$(function () {
+			$.post("/user/index/islogin.html", {}, function (data) {
+				if (data.code == 1) {
+					$("#ucenterlogin .user-nickname").text(data.data.user.user_login);
+					$("#ucenterlogin .login").show();
+					$("#ucenterlogin .offline").hide();
+				}
+				if (data.code == 0) {
+					$("#ucenterlogin .login").hide();
+					$("#ucenterlogin .offline").show();
+				}
+			});
+		});
+	</script>
+	<!--gotop end-->
+	<!-- 
 <ul id="side-bar" class="side-pannel side-bar">
   <span><img src="/upload/imgs/djwx.jpg"><i>党建小程序</i></span>
   <span><img src="/upload/imgs/djapp.jpg"><i>党建APP</i></span>
   <span><img src="/upload/imgs/djvideo.jpg"><i>视频介绍</i></span>
 </ul> -->
-<script>
-	$(function(){
-		$(window).scroll(function(){
-			if($(window).scrollTop()>100){  //距顶部多少像素时，出现返回顶部按钮
-				$("#side-bar .gotop").fadeIn();	
-			}
-			else{
-				$("#side-bar .gotop").hide();
-			}
+	<script>
+		$(function () {
+			$(window).scroll(function () {
+				if ($(window).scrollTop() > 100) {  //距顶部多少像素时，出现返回顶部按钮
+					$("#side-bar .gotop").fadeIn();
+				}
+				else {
+					$("#side-bar .gotop").hide();
+				}
+			});
+			$("#side-bar .gotop").click(function () {
+				$('html,body').animate({ 'scrollTop': 0 }, 500); //返回顶部动画 数值越小时间越短
+			});
 		});
-		$("#side-bar .gotop").click(function(){
-			$('html,body').animate({'scrollTop':0},500); //返回顶部动画 数值越小时间越短
+	</script>
+	<script type="text/javascript">
+		Wind.css('layer');
+		Wind.use("layer", function () {
+			layer.ready(function () { //为了layer.ext.js加载完毕再执行
+				layer.photos({
+					photos: '#articlePreviewDialog'
+					, shift: 5 //0-6的选择，指定弹出图片动画类型，默认随机
+				});
+			});
 		});
-	});
-</script>
-<script type="text/javascript">
-Wind.css('layer');
-Wind.use("layer", function () {
-	layer.ready(function(){ //为了layer.ext.js加载完毕再执行
-		  layer.photos({
-		    photos: '#articlePreviewDialog'
-		    ,shift: 5 //0-6的选择，指定弹出图片动画类型，默认随机
-		  });
-		});
-});
-</script>
+	</script>
 </body>
+
 </html>

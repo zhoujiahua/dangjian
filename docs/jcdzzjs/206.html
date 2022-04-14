@@ -1,344 +1,400 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>“李云龙式”的干部为何受关注？ 智慧党建平台</title>
 	<meta name="keywords" content="智慧党建">
 	<meta name="description" content="智慧党建">
 	<link href="https://at.alicdn.com/t/font_759613_byou54gk0v7.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" type="text/css" href="./../themes/zqdj_public/public/assets/zqdj_public/css/style.css" />
-<script language="javascript" type="text/javascript" src="/../static/js/jquery.js"></script>
-<script language="javascript" type="text/javascript" src="/../themes/zqdj_public/public/assets/zqdj_public/js/jquery.SuperSlide.js"></script>
-<link rel="stylesheet" href="./../themes/zqdj_public/public/assets/zqdj_public/js/layui/css/layui.css"  media="all">
-<script src="/../themes/zqdj_public/public/assets/zqdj_public/js/layui/layui.js"></script>
+	<link rel="stylesheet" type="text/css" href="./../themes/zqdj_public/public/assets/zqdj_public/css/style.css" />
+	<script src="./../static/js/jquery.js"></script>
+	<script src="./../themes/zqdj_public/public/assets/zqdj_public/js/jquery.SuperSlide.js"></script>
+	<link rel="stylesheet" href="./../themes/zqdj_public/public/assets/zqdj_public/js/layui/css/layui.css" media="all">
+	<script src="./../themes/zqdj_public/public/assets/zqdj_public/js/layui/layui.js"></script>
 
-<script type="text/javascript">
-//判断是否是手机版访问,跳转到手机版
-var isiPad = navigator.userAgent.match(/iPad|iPhone|Android|Linux|iPod/i) != null;
-if(isiPad){	
-	var wapurl = '/weixin/Index/index.html';
-	// window.location.href = wapurl;
-}
-    //全局变量
-    var GV = {
-        ROOT: "/",
-        WEB_ROOT: "/",
-        JS_ROOT: "static/js/",
-        TMPL: "/themes/zqdj_public/"
-    };
-</script>
+	<script type="text/javascript">
+		//判断是否是手机版访问,跳转到手机版
+		var isiPad = navigator.userAgent.match(/iPad|iPhone|Android|Linux|iPod/i) != null;
+		if (isiPad) {
+			var wapurl = '/weixin/Index/index.html';
+			// window.location.href = wapurl;
+		}
+		//全局变量
+		var GV = {
+			ROOT: "/",
+			WEB_ROOT: "/",
+			JS_ROOT: "static/js/",
+			TMPL: "/themes/zqdj_public/"
+		};
+	</script>
 </head>
 
 <body>
 
-<!--top区域 start-->
-<div class="top_x w1min">
-<div class="w1">
-	<div class="topx_left">
-		<div class="topx_logo"><img src="/../themes/zqdj_public/public/assets/zqdj_public/imgs/header_logo.png" /></div>
-		<div class="topx_zi">
-		<h1>陕西交控集团-智慧党建平台</h1>
+	<!--top区域 start-->
+	<div class="top_x w1min">
+		<div class="w1">
+			<div class="topx_left">
+				<div class="topx_logo"><img
+						src="./../themes/zqdj_public/public/assets/zqdj_public/imgs/header_logo.png" /></div>
+				<div class="topx_zi">
+					<h1>陕西交控集团-智慧党建平台</h1>
+				</div>
+			</div>
+			<div class="topx_right" id="ucenterlogin">
+				<dl class="login" style="display:none;">
+					你好,丁俊陶 <span class="user-nickname"></span>
+					<a href="./../user/profile/center.html"><i class="iconfont icon-user"></i>党员中心</a>
+					<a href="./../user/index/logout.html">&nbsp;&nbsp;退出登录</a>
+				</dl>
+				<dl class="offline" style="display:none;">
+					<a href="./../user/login/index.html" class="signin"><i class="iconfont icon-gongchandang"></i>登录</a>
+				</dl>
+				<div class="top-search">
+					<form method="post" action="/portal/search/index.html" target="_blank">
+						<input type="text" name="keyword" required lay-verify="required" placeholder="请输入标题"
+							autocomplete="off" class="layui-input">
+						<button class="layui-btn layui-bg-orange" lay-submit lay-filter="formDemo"><i
+								class="iconfont icon-xiazai15"></i>搜索</button>
+					</form>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div class="topx_right" id="ucenterlogin">
-		<dl class="login" style="display:none;">
-			你好,丁俊陶  <span class="user-nickname"></span>
-			<a href="./../user/profile/center.html"><i class="iconfont icon-user"></i>党员中心</a>
-			<a href="./../user/index/logout.html">&nbsp;&nbsp;退出登录</a>
-		</dl>
-		<dl class="offline" style="display:none;">
-			<a href="./../user/login/index.html" class="signin"><i class="iconfont icon-gongchandang"></i>登录</a>
-		</dl>
-		<div class="top-search">
-			<form method="post" action="/portal/search/index.html" target="_blank">
-				<input type="text" name="keyword" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
-				<button class="layui-btn layui-bg-orange" lay-submit lay-filter="formDemo"><i class="iconfont icon-xiazai15"></i>搜索</button>
-			</form>
-		</div>
-	</div>			
-</div>
-</div>
-<div class="lang_mu w1min">
-<ul class="layui-nav" lay-filter="">
-	                    <li class="layui-nav-item">
-                    <a href="/" target="">
-                        <b>首页</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/dongtai.html" target="">
-                        <b>党建动态</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/special/index.html" target="">
-                        <b>专题专栏</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/seritem/index.html" target="">
-                        <b>志愿服务</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/activity/index.html" target="">
-                        <b>组织活动</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/study/index.html" target="">
-                        <b>学习中心</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/sanhui/index.html" target="">
-                        <b>三会一课</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/wenjuan/wenjuanlist.html" target="">
-                        <b>问卷调查</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/score/index.html" target="">
-                        <b>积分统计</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/index/map.html" target="">
-                        <b>党建地图</b>
-                    </a>
-                </li>
-            
-</ul>
-<script>
-//注意：导航 依赖 element 模块，否则无法进行功能性操作
-layui.use('element', function(){
-  var element = layui.element;
-  
-});
-</script>
-</div>
-<!--top区域 end-->
-<div class="w1 banne1 mgtop-15"><img src="/../upload/admin/20181120/b02187c3e779476c3d555e59ccdcb415.jpg"></div>
-<div class="mgtop-15 background-w1">
-	<div class="fdiv mua"><ul><i class="iconfont icon-dangwugongkai"></i><b>正文</b></ul>
-	<ol>
-		当前位置：<a href="./../user/index/logout.html">首页</a> >
-		    
-			<a href="./../jcdzzjs.html">基层党组织建设</a> >
-		
-		正文
-	</ol>	
-	</div>
+	<div class="lang_mu w1min">
+		<ul class="layui-nav" lay-filter="">
+			<li class="layui-nav-item">
+				<a href="/" target="">
+					<b>首页</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/dongtai.html" target="">
+					<b>党建动态</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/portal/special/index.html" target="">
+					<b>党建专题</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/portal/seritem/index.html" target="">
+					<b>志愿活动</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/portal/activity/index.html" target="">
+					<b>党日活动</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/portal/study/index.html" target="">
+					<b>党建赋能</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/portal/sanhui/index.html" target="">
+					<b>三会一课</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/portal/wenjuan/wenjuanlist.html" target="">
+					<b>问卷调查</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/portal/score/index.html" target="">
+					<b>积分统计</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/jcdzzjs.html" target="">
+					<b>基层党建</b>
+				</a>
+			</li>
 
-	<div class="lnmu">
-		<ul>“李云龙式”的干部为何受关注？</ul>
-		<ol>来源：人民网-中国共产党新闻网  发布时间：2019-03-01 08:20:00　点击数量:<span id="hits">213</span></ol>
-	</div>
-		<div class="listn imgk" id="articlePreviewDialog">
-			
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">日前，山东省在开年第一个工作日的工作动员大会上，强调“大胆使用‘李云龙式’干部”，将好干部标准进一步具体化，引发众多关注。在全面深化改革进入新阶段的今天，改革将进一步触及深层次利益格局的调整和制度体系的变革，改革的复杂性、敏感性、艰巨性更加突出，在这种形势下，对好干部的需求也更加迫切。如何把“李云龙式”干部选出来、用起来、约束好，是各级党政部门强化干部素质能力、推进全面深化改革、破解发展难题的重要任务。</p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;"><strong>为什么需要“李云龙式”干部</strong></p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">去年中办印发《关于进一步激励广大干部新时代新担当新作为的意见》，对好干部的标准明确提出四个要求：敢于负责、勇于担当、善于作为、实绩突出。强调要树立重实干重实绩的用人导向，并要求坚持全面历史辩证地看待干部，公平公正对待干部，对个性鲜明、坚持原则、敢抓敢管、不怕得罪人的干部，符合条件的要大胆使用。</p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">在工作岗位上，“李云龙式”干部特点鲜明：政治可靠、对党忠诚、能打胜仗，但不见得受个别领导“待见”；敢抓敢管、敢于碰硬，但容易“得罪人”；直来直去、个性鲜明，可能会被认为“不灵活”“不成熟”。对照中央要求，“李云龙式”干部就是新时期需要的好干部，是攻坚克难的闯将、干将。</p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">落实就要担当，干事就会得罪人，如果遇到问题往上交、往下压、往外推、往后拖，那么工作必然“空转”。“干部是要干事的，正如军人要打仗一样，要把敢不敢扛事、愿不愿做事、善不善干事、能不能成事作为识别和使用干部的重要标准。”尤其是在改革攻坚面临的发展环境和形势任务发生了深刻变化之际，更需要“李云龙式”干部，以时不我待、只争朝夕的急迫感，努力改革创新、攻坚克难，不断锐意进取、担当作为。</p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;"><strong>如何选拔“李云龙式”干部</strong></p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">选拔“李云龙式”干部是新形势下干部选拔任用导向转变的重要内容，是“三个区分开来”的生动实践。大胆使用“李云龙式”干部，为那些作风正派又敢作敢为、锐意进取的干部营造干事创业的和谐工作氛围，能够最大限度调动广大干部的积极性、主动性、创造性，激励他们更好带领群众干事创业，确保如期全面建成小康社会，不断开创社会主义现代化建设新局面。</p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">改革攻坚，需要“李云龙式”干部的敢想敢为的冲劲，但这绝不意味着放松对干部选拔的标准，而是对干部选拔和考察方式提出了更高的要求。首先，“李云龙式”干部需要具有过硬的政治素质。“李云龙式”干部往往被任用到改革攻坚的重要岗位，需要具有独当一面、驾驭全局的能力，这就需要这类干部具有超强的政治判断力和优良的品德素养，能够经得起各种风险挑战的考验。德才兼备，方堪重任。其次，“李云龙式”干部需要具有强烈的进取意识。干部干部，“干”字当头。“李云龙式”干部的最突出特点敢于攻坚克难，尤其是在关键时刻、重大任务、突发事件、斗争一线豁得出来、冲得上去，这就需要这类干部在思想上具有强烈的进取意识，在实践工作中勇于探索，面对困难和问题迎难而上，具有创新意识和开拓精神。最后，“李云龙式”干部需要具有敢于担当的勇气。“李云龙式”干部属于积极进取型干部，具有闯劲和冲劲，敢啃硬骨头、敢管烂摊子，因此也面临更多的阻力和压力，这就需要这类干部具有不同于一般干部的超强的抗压能力和敢于担当的勇气，突出政治担当、历史担当和责任担当。</p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">由于特殊的能力和素质要求，“李云龙式”干部在当前阶段属于稀缺性人才，这类干部推荐时即使“得票”不最高，也要为他们撑腰鼓劲，放到重要岗位，让他们脱颖而出，为改革创业多造就一些攻坚克难的“闯将”“干将”。</p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;"><strong>怎样使用好“李云龙式”干部</strong></p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">充分发挥“李云龙式”干部的作用和优势，是“李云龙式”干部管理的重要环节。“鱼不激不跃，人不激不奋”，要鲜明树立重实干重实绩的用人导向，运用科学办法进行管理，切实管到位、管到点子上，保护和调动“李云龙式”干部干事创业的积极性。</p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">要积极发挥“正确用人”的正向激励作用。在选人用人上体现讲担当、重担当的鲜明导向，把敢不敢扛事、愿不愿做事、能不能干事作为识别干部、评判优劣、奖惩升降的重要标准，把干部干了什么事、干了多少事、干的事组织和群众认不认可作为选拔干部的根本依据，选拔任用敢于负责、勇于担当、善于作为、实绩突出的干部。对于那些不敢担当、不抓落实、贻误发展的干部，不换思想就换人，不负责就问责，不担当就挪位，不作为就撤职。</p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">要旗帜鲜明支持和保护那些作风正派又敢作敢为、锐意进取的干部。在深化改革过程中，“李云龙式”干部的工作作风必然是打破常规、敢闯敢试，对现有固化的利益格局和工作中存在的问题矛盾敢于进行大刀阔斧的改革，难免会因缺乏经验、先行先试出现失误和错误，在上级尚无明确限制的探索性试验中发生失误和错误，为推动发展无意过失等等。因此，要建立干部担当作为的责任分担制度，不能搞泛化问责，绝不允许用问责代替管理、以问责推卸责任，避免“干事多出错多、不干事不出事”的逆向惩罚。</p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">同时，要准确把握政策界限，对违纪违法行为必须严肃查处，防止混淆问题性质、拿容错当“保护伞”，搞纪律“松绑”，确保容错在纪律红线、法律底线内进行。</p>
-<p><br></p>
-	</div>
-	<div class="xiaz">
-		<ul>
-			<li><strong>上一篇：</strong>
-									<a href="./205.html">红色影片进课堂 让思政课燃起来</a>
-							</li>
-			<li><strong>下一篇：</strong>
-							<a href="./207.html">共产党人的“心学”，常修方能常新</a>
-						</li>
 		</ul>
+		<script>
+			//注意：导航 依赖 element 模块，否则无法进行功能性操作
+			layui.use('element', function () {
+				var element = layui.element;
+
+			});
+		</script>
 	</div>
-		
-<link href="./../static/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-<link href="./../plugins/comment/view/public/aeest/mess.css" rel="stylesheet">
-<style type="text/css">
-    .pic-list li {
-        margin-bottom: 5px;
-    }
-	#edui1_bottombar{display:none;}
-</style>
-<h3>评论</h3>
-<div class="comment-area" id="comments">
-    <form class="comment-form js-ajax-form" action="/plugin/comment/comment/add.html" method="post">
-        <div class="form-group">
-            <div class="comment-postbox-wraper">
-				<script type="text/plain" id="content" name="content" placeholder="Write your comment here" class="comment-postbox"></script>
-            </div>
-        </div>
-        <div class="form-group">
-            <button type="submit" class="btn pull-right btn-primary js-ajax-submit" id="plugin-comment-comment-box-submit-btn"> 
-                <i class="fa fa-comment-o"></i> 发表评论
-            </button>			
-        </div>
-        <input type="hidden" name="object_title" value="“李云龙式”的干部为何受关注？"/>
-        <input type="hidden" name="table_name" value="portal_post"/>
-        <input type="hidden" name="object_id" value="206"/>
-        <input type="hidden" name="url" value="eyJhY3Rpb24iOiJwb3J0YWxcL0FydGljbGVcL2luZGV4IiwicGFyYW0iOnsiaWQiOjIwNn19"/>
-		<input type="hidden" name="email" value="">
-		<input type="hidden" name="full_name" value="">
-        <div class="clearfix"></div>
-    </form>
-	<div class="comments">
+	<!--top区域 end-->
+	<div class="w1 banne1 mgtop-15"><img src="/../upload/admin/20181120/b02187c3e779476c3d555e59ccdcb415.jpg"></div>
+	<div class="mgtop-15 background-w1">
+		<div class="fdiv mua">
+			<ul><i class="iconfont icon-dangwugongkai"></i><b>正文</b></ul>
+			<ol>
+				当前位置：<a href="./../user/index/logout.html">首页</a> >
+
+				<a href="./../jcdzzjs.html">基层党组织建设</a> >
+
+				正文
+			</ol>
+		</div>
+
+		<div class="lnmu">
+			<ul>“李云龙式”的干部为何受关注？</ul>
+			<ol>来源：人民网-中国共产党新闻网 发布时间：2019-03-01 08:20:00　点击数量:<span id="hits">213</span></ol>
+		</div>
+		<div class="listn imgk" id="articlePreviewDialog">
+
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">
+				日前，山东省在开年第一个工作日的工作动员大会上，强调“大胆使用‘李云龙式’干部”，将好干部标准进一步具体化，引发众多关注。在全面深化改革进入新阶段的今天，改革将进一步触及深层次利益格局的调整和制度体系的变革，改革的复杂性、敏感性、艰巨性更加突出，在这种形势下，对好干部的需求也更加迫切。如何把“李云龙式”干部选出来、用起来、约束好，是各级党政部门强化干部素质能力、推进全面深化改革、破解发展难题的重要任务。
+			</p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">
+				<strong>为什么需要“李云龙式”干部</strong></p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">
+				去年中办印发《关于进一步激励广大干部新时代新担当新作为的意见》，对好干部的标准明确提出四个要求：敢于负责、勇于担当、善于作为、实绩突出。强调要树立重实干重实绩的用人导向，并要求坚持全面历史辩证地看待干部，公平公正对待干部，对个性鲜明、坚持原则、敢抓敢管、不怕得罪人的干部，符合条件的要大胆使用。
+			</p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">
+				在工作岗位上，“李云龙式”干部特点鲜明：政治可靠、对党忠诚、能打胜仗，但不见得受个别领导“待见”；敢抓敢管、敢于碰硬，但容易“得罪人”；直来直去、个性鲜明，可能会被认为“不灵活”“不成熟”。对照中央要求，“李云龙式”干部就是新时期需要的好干部，是攻坚克难的闯将、干将。
+			</p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">
+				落实就要担当，干事就会得罪人，如果遇到问题往上交、往下压、往外推、往后拖，那么工作必然“空转”。“干部是要干事的，正如军人要打仗一样，要把敢不敢扛事、愿不愿做事、善不善干事、能不能成事作为识别和使用干部的重要标准。”尤其是在改革攻坚面临的发展环境和形势任务发生了深刻变化之际，更需要“李云龙式”干部，以时不我待、只争朝夕的急迫感，努力改革创新、攻坚克难，不断锐意进取、担当作为。
+			</p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">
+				<strong>如何选拔“李云龙式”干部</strong></p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">
+				选拔“李云龙式”干部是新形势下干部选拔任用导向转变的重要内容，是“三个区分开来”的生动实践。大胆使用“李云龙式”干部，为那些作风正派又敢作敢为、锐意进取的干部营造干事创业的和谐工作氛围，能够最大限度调动广大干部的积极性、主动性、创造性，激励他们更好带领群众干事创业，确保如期全面建成小康社会，不断开创社会主义现代化建设新局面。
+			</p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">
+				改革攻坚，需要“李云龙式”干部的敢想敢为的冲劲，但这绝不意味着放松对干部选拔的标准，而是对干部选拔和考察方式提出了更高的要求。首先，“李云龙式”干部需要具有过硬的政治素质。“李云龙式”干部往往被任用到改革攻坚的重要岗位，需要具有独当一面、驾驭全局的能力，这就需要这类干部具有超强的政治判断力和优良的品德素养，能够经得起各种风险挑战的考验。德才兼备，方堪重任。其次，“李云龙式”干部需要具有强烈的进取意识。干部干部，“干”字当头。“李云龙式”干部的最突出特点敢于攻坚克难，尤其是在关键时刻、重大任务、突发事件、斗争一线豁得出来、冲得上去，这就需要这类干部在思想上具有强烈的进取意识，在实践工作中勇于探索，面对困难和问题迎难而上，具有创新意识和开拓精神。最后，“李云龙式”干部需要具有敢于担当的勇气。“李云龙式”干部属于积极进取型干部，具有闯劲和冲劲，敢啃硬骨头、敢管烂摊子，因此也面临更多的阻力和压力，这就需要这类干部具有不同于一般干部的超强的抗压能力和敢于担当的勇气，突出政治担当、历史担当和责任担当。
+			</p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">
+				由于特殊的能力和素质要求，“李云龙式”干部在当前阶段属于稀缺性人才，这类干部推荐时即使“得票”不最高，也要为他们撑腰鼓劲，放到重要岗位，让他们脱颖而出，为改革创业多造就一些攻坚克难的“闯将”“干将”。</p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">
+				<strong>怎样使用好“李云龙式”干部</strong></p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">
+				充分发挥“李云龙式”干部的作用和优势，是“李云龙式”干部管理的重要环节。“鱼不激不跃，人不激不奋”，要鲜明树立重实干重实绩的用人导向，运用科学办法进行管理，切实管到位、管到点子上，保护和调动“李云龙式”干部干事创业的积极性。
+			</p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">
+				要积极发挥“正确用人”的正向激励作用。在选人用人上体现讲担当、重担当的鲜明导向，把敢不敢扛事、愿不愿做事、能不能干事作为识别干部、评判优劣、奖惩升降的重要标准，把干部干了什么事、干了多少事、干的事组织和群众认不认可作为选拔干部的根本依据，选拔任用敢于负责、勇于担当、善于作为、实绩突出的干部。对于那些不敢担当、不抓落实、贻误发展的干部，不换思想就换人，不负责就问责，不担当就挪位，不作为就撤职。
+			</p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">
+				要旗帜鲜明支持和保护那些作风正派又敢作敢为、锐意进取的干部。在深化改革过程中，“李云龙式”干部的工作作风必然是打破常规、敢闯敢试，对现有固化的利益格局和工作中存在的问题矛盾敢于进行大刀阔斧的改革，难免会因缺乏经验、先行先试出现失误和错误，在上级尚无明确限制的探索性试验中发生失误和错误，为推动发展无意过失等等。因此，要建立干部担当作为的责任分担制度，不能搞泛化问责，绝不允许用问责代替管理、以问责推卸责任，避免“干事多出错多、不干事不出事”的逆向惩罚。
+			</p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑;">
+				同时，要准确把握政策界限，对违纪违法行为必须严肃查处，防止混淆问题性质、拿容错当“保护伞”，搞纪律“松绑”，确保容错在纪律红线、法律底线内进行。</p>
+			<p><br></p>
+		</div>
+		<div class="xiaz">
+			<ul>
+				<li><strong>上一篇：</strong>
+					<a href="./205.html">红色影片进课堂 让思政课燃起来</a>
+				</li>
+				<li><strong>下一篇：</strong>
+					<a href="./207.html">共产党人的“心学”，常修方能常新</a>
+				</li>
+			</ul>
+		</div>
+
+		<link href="./../static/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<link href="./../plugins/comment/view/public/aeest/mess.css" rel="stylesheet">
+		<style type="text/css">
+			.pic-list li {
+				margin-bottom: 5px;
+			}
+
+			#edui1_bottombar {
+				display: none;
+			}
+		</style>
+		<h3>评论</h3>
+		<div class="comment-area" id="comments">
+			<form class="comment-form js-ajax-form" action="/plugin/comment/comment/add.html" method="post">
+				<div class="form-group">
+					<div class="comment-postbox-wraper">
+						<script type="text/plain" id="content" name="content" placeholder="Write your comment here"
+							class="comment-postbox"></script>
+					</div>
+				</div>
+				<div class="form-group">
+					<button type="submit" class="btn pull-right btn-primary js-ajax-submit"
+						id="plugin-comment-comment-box-submit-btn">
+						<i class="fa fa-comment-o"></i> 发表评论
+					</button>
+				</div>
+				<input type="hidden" name="object_title" value="“李云龙式”的干部为何受关注？" />
+				<input type="hidden" name="table_name" value="portal_post" />
+				<input type="hidden" name="object_id" value="206" />
+				<input type="hidden" name="url"
+					value="eyJhY3Rpb24iOiJwb3J0YWxcL0FydGljbGVcL2luZGV4IiwicGFyYW0iOnsiaWQiOjIwNn19" />
+				<input type="hidden" name="email" value="">
+				<input type="hidden" name="full_name" value="">
+				<div class="clearfix"></div>
+			</form>
+			<div class="comments">
 				<ul class="pagination">
-					</ul>
-</div>	
-</div>
-<script type="text/javascript">
-    //编辑器路径定义
-    var editorURL = GV.WEB_ROOT;
-</script>
-<script type="text/javascript" src="/../plugins/comment/view/public/aeest/config.js"></script>
-<script type="text/javascript" src="/../static/js/ueditor/ueditor.all.min.js"></script>
-<script type="text/javascript">
-    $(function () {
-        editorcontent = new baidu.editor.ui.Editor();
-        editorcontent.render('content');
-        try {
-            editorcontent.sync();
-        } catch (err) {
-        }
-    });
-</script></div>
-<div class="sr_footer w1min">
-	<div class="w1">
-		<dl class="ft1">
-			<dd><b>陕西交控集团-智慧党建平台</b></dd><dd>企业：陕西交通控股集团有限公司</dd>
-			<dd>电话：029-87832666 传真：029- 87832174</dd><dd>地址：陕西省西安市雁塔区太白南路9号</dd>
-			<dd>陕ICP备2021008491号 陕公网安备 61011302001299号  </dd>
-			<dd>版权所有 © 2021 陕西交通控股集团有限公司 All Rights Reserved</dd>
-		</dl>
-		<!-- <dl class="ft2">
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript">
+			//编辑器路径定义
+			var editorURL = GV.WEB_ROOT;
+		</script>
+		<script type="text/javascript" src="/../plugins/comment/view/public/aeest/config.js"></script>
+		<script type="text/javascript" src="/../static/js/ueditor/ueditor.all.min.js"></script>
+		<script type="text/javascript">
+			$(function () {
+				editorcontent = new baidu.editor.ui.Editor();
+				editorcontent.render('content');
+				try {
+					editorcontent.sync();
+				} catch (err) {
+				}
+			});
+		</script>
+	</div>
+	<div class="sr_footer w1min">
+		<div class="w1">
+			<dl class="ft1">
+				<dd><b>陕西交控集团-智慧党建平台</b></dd>
+				<dd>企业：陕西交通控股集团有限公司</dd>
+				<dd>电话：029-87832666 传真：029- 87832174</dd>
+				<dd>地址：陕西省西安市雁塔区太白南路9号</dd>
+				<dd>陕ICP备2021008491号 陕公网安备 61011302001299号 </dd>
+				<dd>版权所有 © 2021 陕西交通控股集团有限公司 All Rights Reserved</dd>
+			</dl>
+			<!-- <dl class="ft2">
 			<a href="http://wpa.qq.com/msgrd?v=3&uin=34147588&site=qq&menu=yes" target="_blank" rel="nofollow" class="layui-btn layui-btn-danger layui-btn-radius"><i class="iconfont icon-qq"></i>在线咨询</a>
 		</dl> -->
-		<dl class="ft4">
-			<dd>
-				    		                     <a href="./../about.html" title="关于我们" target="">
-		                             <i class="iconfont icon-dangwugongkai"></i>关于我们		                         </a>
-		                 		                     <a href="./../statement.html" title="网站声明" target="">
-		                             <i class="iconfont icon-dangwugongkai"></i>网站声明		                         </a>
-		                 		                     <a href="./../contact.html" title="联系我们" target="">
-		                             <i class="iconfont icon-dangwugongkai"></i>联系我们		                         </a>
-		                 
-			</dd>	
-		</dl>
-		<dl class="ft3"><img src="/../upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg" border="0" /></dl>
+			<dl class="ft4">
+				<dd>
+					<a href="./../about.html" title="关于我们" target="">
+						<i class="iconfont icon-dangwugongkai"></i>关于我们 </a>
+					<a href="./../statement.html" title="网站声明" target="">
+						<i class="iconfont icon-dangwugongkai"></i>网站声明 </a>
+					<a href="./../contact.html" title="联系我们" target="">
+						<i class="iconfont icon-dangwugongkai"></i>联系我们 </a>
+
+				</dd>
+			</dl>
+			<dl class="ft3"><img src="/../upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg" border="0" /></dl>
+		</div>
 	</div>
-</div>
-<ul class="g-navFloat">
-	<!-- <li>
+	<ul class="g-navFloat">
+		<!-- <li>
 		<a href="./https://dj.cnki.io" target="_blank" class="u-tiyan">
 		<p>立</p><p>即</p><p>体</p><p>验</p>
 		</a>
 	</li> -->
-	<li>
-		<a href="http://wpa.qq.com/msgrd?v=3&uin=1151710686&site=qq&menu=yes" target="_blank"><i class="iconfont icon-qq"></i></a>
-	</li>
-	<li>
-		<div class="u-contents content-qr">
-			<img src="/../upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg">
-			<p>智慧党建平台</p>
-		</div>
-		<a href="javascript:void(0);"><i class="iconfont icon-weixin"></i></a>
-	</li>
-	<li>
-		<div class="u-contents content-tel">
-			<p>029-87832666</p>
-			<p><br /></p>
-		</div>
-		<a href="javascript:void(0);"><i class="iconfont icon-dianhua"></i></a>
-	</li>
-</ul>
-<div style="display:none;"></div>
-<script type="text/javascript">
-	jQuery(".index2_6_con").slide({
-		delayTime: 500,
-		effect: "left",
-		autoPlay: true,
-	});
-	$(".clearfix01 .bj_tab ul li").hover(function(){
-		$(this).find(".icon_bj").removeClass("transform0");
-		$(this).find(".icon_bj").addClass("transform1");
-		
-	},function(){
-		$(this).find(".icon_bj").removeClass("transform1");
-		$(this).find(".icon_bj").addClass("transform0");
-		
-	});
-	$(".bj_img_buttm").find("span").hover(function(){
-		var a=$(this).attr("class");
-		$(".bj01").removeClass("cut");
-		$("#"+a).addClass("cut");
-	});
-</script>
-
-<script src="/../static/js/wind.js"></script>
-<script src="/../themes/zqdj_public/public/assets/simpleboot3/bootstrap/js/bootstrap.min.js"></script>
-<script src="/../static/js/frontend.js"></script>
-<!--gotop start-->
-<script>	
-	$(function(){		
-		$.post("/user/index/islogin.html",{},function(data){
-			if(data.code==1){
-				$("#ucenterlogin .user-nickname").text(data.data.user.user_login);
-				$("#ucenterlogin .login").show();
-                $("#ucenterlogin .offline").hide();
-			}
-			if(data.code==0){
-                $("#ucenterlogin .login").hide();
-				$("#ucenterlogin .offline").show();
-			}
+		<li>
+			<a href="http://wpa.qq.com/msgrd?v=3&uin=1151710686&site=qq&menu=yes" target="_blank"><i
+					class="iconfont icon-qq"></i></a>
+		</li>
+		<li>
+			<div class="u-contents content-qr">
+				<img src="/../upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg">
+				<p>智慧党建平台</p>
+			</div>
+			<a href="javascript:void(0);"><i class="iconfont icon-weixin"></i></a>
+		</li>
+		<li>
+			<div class="u-contents content-tel">
+				<p>029-87832666</p>
+				<p><br /></p>
+			</div>
+			<a href="javascript:void(0);"><i class="iconfont icon-dianhua"></i></a>
+		</li>
+	</ul>
+	<div style="display:none;"></div>
+	<script type="text/javascript">
+		jQuery(".index2_6_con").slide({
+			delayTime: 500,
+			effect: "left",
+			autoPlay: true,
 		});
-	});
-</script> 
-<!--gotop end--> 
-<!-- 
+		$(".clearfix01 .bj_tab ul li").hover(function () {
+			$(this).find(".icon_bj").removeClass("transform0");
+			$(this).find(".icon_bj").addClass("transform1");
+
+		}, function () {
+			$(this).find(".icon_bj").removeClass("transform1");
+			$(this).find(".icon_bj").addClass("transform0");
+
+		});
+		$(".bj_img_buttm").find("span").hover(function () {
+			var a = $(this).attr("class");
+			$(".bj01").removeClass("cut");
+			$("#" + a).addClass("cut");
+		});
+	</script>
+
+	<script src="./../static/js/wind.js"></script>
+	<script src="./../themes/zqdj_public/public/assets/simpleboot3/bootstrap/js/bootstrap.min.js"></script>
+	<script src="./../static/js/frontend.js"></script>
+	<!--gotop start-->
+	<script>
+		$(function () {
+			$.post("/user/index/islogin.html", {}, function (data) {
+				if (data.code == 1) {
+					$("#ucenterlogin .user-nickname").text(data.data.user.user_login);
+					$("#ucenterlogin .login").show();
+					$("#ucenterlogin .offline").hide();
+				}
+				if (data.code == 0) {
+					$("#ucenterlogin .login").hide();
+					$("#ucenterlogin .offline").show();
+				}
+			});
+		});
+	</script>
+	<!--gotop end-->
+	<!-- 
 <ul id="side-bar" class="side-pannel side-bar">
   <span><img src="/upload/imgs/djwx.jpg"><i>党建小程序</i></span>
   <span><img src="/upload/imgs/djapp.jpg"><i>党建APP</i></span>
   <span><img src="/upload/imgs/djvideo.jpg"><i>视频介绍</i></span>
 </ul> -->
-<script>
-	$(function(){
-		$(window).scroll(function(){
-			if($(window).scrollTop()>100){  //距顶部多少像素时，出现返回顶部按钮
-				$("#side-bar .gotop").fadeIn();	
-			}
-			else{
-				$("#side-bar .gotop").hide();
-			}
+	<script>
+		$(function () {
+			$(window).scroll(function () {
+				if ($(window).scrollTop() > 100) {  //距顶部多少像素时，出现返回顶部按钮
+					$("#side-bar .gotop").fadeIn();
+				}
+				else {
+					$("#side-bar .gotop").hide();
+				}
+			});
+			$("#side-bar .gotop").click(function () {
+				$('html,body').animate({ 'scrollTop': 0 }, 500); //返回顶部动画 数值越小时间越短
+			});
 		});
-		$("#side-bar .gotop").click(function(){
-			$('html,body').animate({'scrollTop':0},500); //返回顶部动画 数值越小时间越短
+	</script>
+	<script type="text/javascript">
+		Wind.css('layer');
+		Wind.use("layer", function () {
+			layer.ready(function () { //为了layer.ext.js加载完毕再执行
+				layer.photos({
+					photos: '#articlePreviewDialog'
+					, shift: 5 //0-6的选择，指定弹出图片动画类型，默认随机
+				});
+			});
 		});
-	});
-</script>
-<script type="text/javascript">
-Wind.css('layer');
-Wind.use("layer", function () {
-	layer.ready(function(){ //为了layer.ext.js加载完毕再执行
-		  layer.photos({
-		    photos: '#articlePreviewDialog'
-		    ,shift: 5 //0-6的选择，指定弹出图片动画类型，默认随机
-		  });
-		});
-});
-</script>
+	</script>
 </body>
+
 </html>

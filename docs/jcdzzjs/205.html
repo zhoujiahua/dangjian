@@ -1,343 +1,397 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>红色影片进课堂 让思政课燃起来 智慧党建平台</title>
 	<meta name="keywords" content="智慧党建">
 	<meta name="description" content="智慧党建">
 	<link href="https://at.alicdn.com/t/font_759613_byou54gk0v7.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" type="text/css" href="./../themes/zqdj_public/public/assets/zqdj_public/css/style.css" />
-<script language="javascript" type="text/javascript" src="/../static/js/jquery.js"></script>
-<script language="javascript" type="text/javascript" src="/../themes/zqdj_public/public/assets/zqdj_public/js/jquery.SuperSlide.js"></script>
-<link rel="stylesheet" href="./../themes/zqdj_public/public/assets/zqdj_public/js/layui/css/layui.css"  media="all">
-<script src="/../themes/zqdj_public/public/assets/zqdj_public/js/layui/layui.js"></script>
+	<link rel="stylesheet" type="text/css" href="./../themes/zqdj_public/public/assets/zqdj_public/css/style.css" />
+	<script src="./../static/js/jquery.js"></script>
+	<script src="./../themes/zqdj_public/public/assets/zqdj_public/js/jquery.SuperSlide.js"></script>
+	<link rel="stylesheet" href="./../themes/zqdj_public/public/assets/zqdj_public/js/layui/css/layui.css" media="all">
+	<script src="./../themes/zqdj_public/public/assets/zqdj_public/js/layui/layui.js"></script>
 
-<script type="text/javascript">
-//判断是否是手机版访问,跳转到手机版
-var isiPad = navigator.userAgent.match(/iPad|iPhone|Android|Linux|iPod/i) != null;
-if(isiPad){	
-	var wapurl = '/weixin/Index/index.html';
-	// window.location.href = wapurl;
-}
-    //全局变量
-    var GV = {
-        ROOT: "/",
-        WEB_ROOT: "/",
-        JS_ROOT: "static/js/",
-        TMPL: "/themes/zqdj_public/"
-    };
-</script>
+	<script type="text/javascript">
+		//判断是否是手机版访问,跳转到手机版
+		var isiPad = navigator.userAgent.match(/iPad|iPhone|Android|Linux|iPod/i) != null;
+		if (isiPad) {
+			var wapurl = '/weixin/Index/index.html';
+			// window.location.href = wapurl;
+		}
+		//全局变量
+		var GV = {
+			ROOT: "/",
+			WEB_ROOT: "/",
+			JS_ROOT: "static/js/",
+			TMPL: "/themes/zqdj_public/"
+		};
+	</script>
 </head>
 
 <body>
 
-<!--top区域 start-->
-<div class="top_x w1min">
-<div class="w1">
-	<div class="topx_left">
-		<div class="topx_logo"><img src="/../themes/zqdj_public/public/assets/zqdj_public/imgs/header_logo.png" /></div>
-		<div class="topx_zi">
-		<h1>陕西交控集团-智慧党建平台</h1>
+	<!--top区域 start-->
+	<div class="top_x w1min">
+		<div class="w1">
+			<div class="topx_left">
+				<div class="topx_logo"><img
+						src="./../themes/zqdj_public/public/assets/zqdj_public/imgs/header_logo.png" /></div>
+				<div class="topx_zi">
+					<h1>陕西交控集团-智慧党建平台</h1>
+				</div>
+			</div>
+			<div class="topx_right" id="ucenterlogin">
+				<dl class="login" style="display:none;">
+					你好,丁俊陶 <span class="user-nickname"></span>
+					<a href="./../user/profile/center.html"><i class="iconfont icon-user"></i>党员中心</a>
+					<a href="./../user/index/logout.html">&nbsp;&nbsp;退出登录</a>
+				</dl>
+				<dl class="offline" style="display:none;">
+					<a href="./../user/login/index.html" class="signin"><i class="iconfont icon-gongchandang"></i>登录</a>
+				</dl>
+				<div class="top-search">
+					<form method="post" action="/portal/search/index.html" target="_blank">
+						<input type="text" name="keyword" required lay-verify="required" placeholder="请输入标题"
+							autocomplete="off" class="layui-input">
+						<button class="layui-btn layui-bg-orange" lay-submit lay-filter="formDemo"><i
+								class="iconfont icon-xiazai15"></i>搜索</button>
+					</form>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div class="topx_right" id="ucenterlogin">
-		<dl class="login" style="display:none;">
-			你好,丁俊陶  <span class="user-nickname"></span>
-			<a href="./../user/profile/center.html"><i class="iconfont icon-user"></i>党员中心</a>
-			<a href="./../user/index/logout.html">&nbsp;&nbsp;退出登录</a>
-		</dl>
-		<dl class="offline" style="display:none;">
-			<a href="./../user/login/index.html" class="signin"><i class="iconfont icon-gongchandang"></i>登录</a>
-		</dl>
-		<div class="top-search">
-			<form method="post" action="/portal/search/index.html" target="_blank">
-				<input type="text" name="keyword" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
-				<button class="layui-btn layui-bg-orange" lay-submit lay-filter="formDemo"><i class="iconfont icon-xiazai15"></i>搜索</button>
-			</form>
-		</div>
-	</div>			
-</div>
-</div>
-<div class="lang_mu w1min">
-<ul class="layui-nav" lay-filter="">
-	                    <li class="layui-nav-item">
-                    <a href="/" target="">
-                        <b>首页</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/dongtai.html" target="">
-                        <b>党建动态</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/special/index.html" target="">
-                        <b>专题专栏</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/seritem/index.html" target="">
-                        <b>志愿服务</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/activity/index.html" target="">
-                        <b>组织活动</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/study/index.html" target="">
-                        <b>学习中心</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/sanhui/index.html" target="">
-                        <b>三会一课</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/wenjuan/wenjuanlist.html" target="">
-                        <b>问卷调查</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/score/index.html" target="">
-                        <b>积分统计</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/index/map.html" target="">
-                        <b>党建地图</b>
-                    </a>
-                </li>
-            
-</ul>
-<script>
-//注意：导航 依赖 element 模块，否则无法进行功能性操作
-layui.use('element', function(){
-  var element = layui.element;
-  
-});
-</script>
-</div>
-<!--top区域 end-->
-<div class="w1 banne1 mgtop-15"><img src="/../upload/admin/20181120/b02187c3e779476c3d555e59ccdcb415.jpg"></div>
-<div class="mgtop-15 background-w1">
-	<div class="fdiv mua"><ul><i class="iconfont icon-dangwugongkai"></i><b>正文</b></ul>
-	<ol>
-		当前位置：<a href="./../user/index/logout.html">首页</a> >
-		    
-			<a href="./../jcdzzjs.html">基层党组织建设</a> >
-		
-		正文
-	</ol>	
-	</div>
+	<div class="lang_mu w1min">
+		<ul class="layui-nav" lay-filter="">
+			<li class="layui-nav-item">
+				<a href="/" target="">
+					<b>首页</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/dongtai.html" target="">
+					<b>党建动态</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/portal/special/index.html" target="">
+					<b>党建专题</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/portal/seritem/index.html" target="">
+					<b>志愿活动</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/portal/activity/index.html" target="">
+					<b>党日活动</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/portal/study/index.html" target="">
+					<b>党建赋能</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/portal/sanhui/index.html" target="">
+					<b>三会一课</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/portal/wenjuan/wenjuanlist.html" target="">
+					<b>问卷调查</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/portal/score/index.html" target="">
+					<b>积分统计</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/jcdzzjs.html" target="">
+					<b>基层党建</b>
+				</a>
+			</li>
 
-	<div class="lnmu">
-		<ul>红色影片进课堂 让思政课燃起来</ul>
-		<ol>来源：人民网-中国共产党新闻网  发布时间：2019-02-28 17:44:00　点击数量:<span id="hits">243</span></ol>
-	</div>
-		<div class="listn imgk" id="articlePreviewDialog">
-			
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);">习近平总书记在全国高校思想政治工作会议上指出，高校思想政治工作关系高校培养什么样的人、如何培养人以及为谁培养人这个根本问题。同时，习近平总书记强调，要坚持把立德树人作为中心环节，把思想政治工作贯穿教育教学全过程，实现全程育人、全方位育人，努力开创我国高等教育事业发展新局面。</p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);">做好高校思想政治工作，要因事而化、因时而进、因势而新。创新“红色教育”模式，可考虑积极开展“红色影片进课堂”活动，使之成为高校思想政治理论教学的有效补充。</p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);"><strong>丰富思政课的内涵和活力</strong></p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);">近年来，作为红色文化重要组成部分的红色经典影片，如《亮剑》《革命家庭》《历史的天空》《激情燃烧的岁月》等，创造了一次又一次的“收视神话”。这些红色影片对在革命战争年代形成的荣辱与共、艰苦奋斗、共渡难关的革命精神，对社会主义建设时期党领导人民探索中国特色社会主义道路的光辉历程作了精彩的演绎，是思想政治教育的生动教材。尤其是在新时期，红色影片更加注重阐释中国特色社会主义理论体系，弘扬以爱国主义为核心的民族精神和以改革创新为核心的时代精神。红色影片进入课堂、服务于教学，不仅可以激发学生的爱国热情，培养健全的审美心理结构，更可以促使学生了解历史、认识国情、开拓视野，激发爱国主义情感和志向，从而实现深化高校政治思想教育的目标。</p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);">多层次、多渠道、经常化、系列化的教育机制，是确保思政课实效的有效保障。红色影片进课堂能丰富思政课的内涵。红色影片在弘扬革命先烈坚定革命信念的同时，也拓展了大学校园文化内涵，成为高校学生们陶冶情操和丰富学校生活的重要载体。让丰富多彩的红色影片进入课堂，将克服过去纯理论教学中存在的思政课缺乏活力、感染力、生动力现象，有效推动社会主义核心价值观进校园、进教材、进课堂“三进活动”。</p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);">课堂讲授是对学生进行红色基因教育的主要窗口。红色影视作品是对历史的艺术表现，更是对历史的敬重。让学生们通过看电影学知识、长见识，从过去单一的理论教育，从“可听”到“可视”，将进一步提高学生接受红色教育的兴趣。</p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);"><strong>把电影美学与思政教育对接起来</strong></p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);">当前，红色影片在思想政治教育中不断发挥作用，在取得成果的同时，也出现了很多误区。比如，有的课堂教育中过度依赖影片，整堂课播放影片，忽视了相关知识的讲解，这种“放任”式的教育导致学生无目的观看，看过后作用不大，使观看红色影片教育失去了意义。</p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);">在“互联网+”时代，红色经典依然是社会发展的永动力，随着社会的不断发展进步，高校学生对红色影片的要求愈来愈高，既要有思想性，又要有娱乐性，只有内容丰厚、主题鲜明、时代感较强的红色影片，才能获得高校学生的认同。为此，在课堂中运用红色影片进行思政教育时，就必须对资源进行合理整合，突破固有模式的藩篱，探索大学生自身需要，运用契合学生心理的红色影片，来展现电影美学，培育大学生对不良影视思想、文化的辨析能力。把历史与现实对接起来，让优秀的传统与时代精神交融起来，使大学生进一步认识到中国共产党在领导人民建立新中国，发展新中国的过程中不可替代的重要作用，使他们坚定信仰，将自身抱负与国家命运相结合，成长为实现中国梦的中坚力量。</p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);"><strong>实现红色教育成果的最大化</strong></p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);">思想政治理论课的教学，既是一门科学，也是一门艺术。近年来，在国家对影视行业进行重点推动的大背景下，我国每年推出的红色影片数量不在少数，但作为课堂思政教育的红色影片，就必须精心选择符合实际需求的电影内容和形式，既要是主旋律故事，有积极向上、令人奋发进取的精神境界，又要有一定的趣味性，能够针对青年特点，吸引广大学生观看。学校不仅可以选择影视片，还可以选择纪录片，选择的影片要“短”而“精”，使学生在观看的过程中，观有所思、思有所得，与教授的理论知识相配合，从而最大限度地发挥影片的政治宣传效果。</p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);">利用红色影片进行思政教育，更要注重做好“转化”环节。首先，要根据政治历史事件选取合理的电影资料，形成一条完整的“故事链”，使学生在“故事”中了解历史与政治，让原先博大精深的理论，转变成为学生感兴趣和易于理解的人物“史话”，层层深入，通俗易懂。其次，在影片播放前，要将影片内容发生的背景向学生进行详细的说明，告诉大家为什么要看这个电影、电影能告诉我们什么、电影里的故事是在什么样的情况下发生的，让学生在看之前，能弄清楚影片的来龙去脉；影片播放后，根据影片内容，结合教学目标，对重点问题进行分析和讲解，有利于消除错误认识，起到纠偏的作用。</p>
-<p style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);">红色影片与思想政治教育融合后具有显著的作用，但仅靠课堂上的教育很难满足思想政治工作推进的需要，应当将其作为一种系统工程进行推进，唯有如此，才能取得更大的效果。抓好红色影片的思政教育，要从大学生入学开始起，充分利用好红色影片这个“武器”，将其与思想政治课程紧密融合，实现对大学生的全过程、全员覆盖，在课堂课余时间，持续不断地选择合适的题材进行红色教育，实现红色教育成果的最大化。</p>
-<p><br></p>
-	</div>
-	<div class="xiaz">
-		<ul>
-			<li><strong>上一篇：</strong>
-									<a href="./204.html">河南召开全省组织部长会议 担当作为 狠抓落实</a>
-							</li>
-			<li><strong>下一篇：</strong>
-							<a href="./206.html">“李云龙式”的干部为何受关注？</a>
-						</li>
 		</ul>
+		<script>
+			//注意：导航 依赖 element 模块，否则无法进行功能性操作
+			layui.use('element', function () {
+				var element = layui.element;
+
+			});
+		</script>
 	</div>
-		
-<link href="./../static/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-<link href="./../plugins/comment/view/public/aeest/mess.css" rel="stylesheet">
-<style type="text/css">
-    .pic-list li {
-        margin-bottom: 5px;
-    }
-	#edui1_bottombar{display:none;}
-</style>
-<h3>评论</h3>
-<div class="comment-area" id="comments">
-    <form class="comment-form js-ajax-form" action="/plugin/comment/comment/add.html" method="post">
-        <div class="form-group">
-            <div class="comment-postbox-wraper">
-				<script type="text/plain" id="content" name="content" placeholder="Write your comment here" class="comment-postbox"></script>
-            </div>
-        </div>
-        <div class="form-group">
-            <button type="submit" class="btn pull-right btn-primary js-ajax-submit" id="plugin-comment-comment-box-submit-btn"> 
-                <i class="fa fa-comment-o"></i> 发表评论
-            </button>			
-        </div>
-        <input type="hidden" name="object_title" value="红色影片进课堂 让思政课燃起来"/>
-        <input type="hidden" name="table_name" value="portal_post"/>
-        <input type="hidden" name="object_id" value="205"/>
-        <input type="hidden" name="url" value="eyJhY3Rpb24iOiJwb3J0YWxcL0FydGljbGVcL2luZGV4IiwicGFyYW0iOnsiaWQiOjIwNX19"/>
-		<input type="hidden" name="email" value="">
-		<input type="hidden" name="full_name" value="">
-        <div class="clearfix"></div>
-    </form>
-	<div class="comments">
+	<!--top区域 end-->
+	<div class="w1 banne1 mgtop-15"><img src="/../upload/admin/20181120/b02187c3e779476c3d555e59ccdcb415.jpg"></div>
+	<div class="mgtop-15 background-w1">
+		<div class="fdiv mua">
+			<ul><i class="iconfont icon-dangwugongkai"></i><b>正文</b></ul>
+			<ol>
+				当前位置：<a href="./../user/index/logout.html">首页</a> >
+
+				<a href="./../jcdzzjs.html">基层党组织建设</a> >
+
+				正文
+			</ol>
+		</div>
+
+		<div class="lnmu">
+			<ul>红色影片进课堂 让思政课燃起来</ul>
+			<ol>来源：人民网-中国共产党新闻网 发布时间：2019-02-28 17:44:00　点击数量:<span id="hits">243</span></ol>
+		</div>
+		<div class="listn imgk" id="articlePreviewDialog">
+
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);">
+				习近平总书记在全国高校思想政治工作会议上指出，高校思想政治工作关系高校培养什么样的人、如何培养人以及为谁培养人这个根本问题。同时，习近平总书记强调，要坚持把立德树人作为中心环节，把思想政治工作贯穿教育教学全过程，实现全程育人、全方位育人，努力开创我国高等教育事业发展新局面。
+			</p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);">
+				做好高校思想政治工作，要因事而化、因时而进、因势而新。创新“红色教育”模式，可考虑积极开展“红色影片进课堂”活动，使之成为高校思想政治理论教学的有效补充。</p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);">
+				<strong>丰富思政课的内涵和活力</strong></p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);">
+				近年来，作为红色文化重要组成部分的红色经典影片，如《亮剑》《革命家庭》《历史的天空》《激情燃烧的岁月》等，创造了一次又一次的“收视神话”。这些红色影片对在革命战争年代形成的荣辱与共、艰苦奋斗、共渡难关的革命精神，对社会主义建设时期党领导人民探索中国特色社会主义道路的光辉历程作了精彩的演绎，是思想政治教育的生动教材。尤其是在新时期，红色影片更加注重阐释中国特色社会主义理论体系，弘扬以爱国主义为核心的民族精神和以改革创新为核心的时代精神。红色影片进入课堂、服务于教学，不仅可以激发学生的爱国热情，培养健全的审美心理结构，更可以促使学生了解历史、认识国情、开拓视野，激发爱国主义情感和志向，从而实现深化高校政治思想教育的目标。
+			</p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);">
+				多层次、多渠道、经常化、系列化的教育机制，是确保思政课实效的有效保障。红色影片进课堂能丰富思政课的内涵。红色影片在弘扬革命先烈坚定革命信念的同时，也拓展了大学校园文化内涵，成为高校学生们陶冶情操和丰富学校生活的重要载体。让丰富多彩的红色影片进入课堂，将克服过去纯理论教学中存在的思政课缺乏活力、感染力、生动力现象，有效推动社会主义核心价值观进校园、进教材、进课堂“三进活动”。
+			</p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);">
+				课堂讲授是对学生进行红色基因教育的主要窗口。红色影视作品是对历史的艺术表现，更是对历史的敬重。让学生们通过看电影学知识、长见识，从过去单一的理论教育，从“可听”到“可视”，将进一步提高学生接受红色教育的兴趣。
+			</p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);">
+				<strong>把电影美学与思政教育对接起来</strong></p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);">
+				当前，红色影片在思想政治教育中不断发挥作用，在取得成果的同时，也出现了很多误区。比如，有的课堂教育中过度依赖影片，整堂课播放影片，忽视了相关知识的讲解，这种“放任”式的教育导致学生无目的观看，看过后作用不大，使观看红色影片教育失去了意义。
+			</p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);">
+				在“互联网+”时代，红色经典依然是社会发展的永动力，随着社会的不断发展进步，高校学生对红色影片的要求愈来愈高，既要有思想性，又要有娱乐性，只有内容丰厚、主题鲜明、时代感较强的红色影片，才能获得高校学生的认同。为此，在课堂中运用红色影片进行思政教育时，就必须对资源进行合理整合，突破固有模式的藩篱，探索大学生自身需要，运用契合学生心理的红色影片，来展现电影美学，培育大学生对不良影视思想、文化的辨析能力。把历史与现实对接起来，让优秀的传统与时代精神交融起来，使大学生进一步认识到中国共产党在领导人民建立新中国，发展新中国的过程中不可替代的重要作用，使他们坚定信仰，将自身抱负与国家命运相结合，成长为实现中国梦的中坚力量。
+			</p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);">
+				<strong>实现红色教育成果的最大化</strong></p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);">
+				思想政治理论课的教学，既是一门科学，也是一门艺术。近年来，在国家对影视行业进行重点推动的大背景下，我国每年推出的红色影片数量不在少数，但作为课堂思政教育的红色影片，就必须精心选择符合实际需求的电影内容和形式，既要是主旋律故事，有积极向上、令人奋发进取的精神境界，又要有一定的趣味性，能够针对青年特点，吸引广大学生观看。学校不仅可以选择影视片，还可以选择纪录片，选择的影片要“短”而“精”，使学生在观看的过程中，观有所思、思有所得，与教授的理论知识相配合，从而最大限度地发挥影片的政治宣传效果。
+			</p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);">
+				利用红色影片进行思政教育，更要注重做好“转化”环节。首先，要根据政治历史事件选取合理的电影资料，形成一条完整的“故事链”，使学生在“故事”中了解历史与政治，让原先博大精深的理论，转变成为学生感兴趣和易于理解的人物“史话”，层层深入，通俗易懂。其次，在影片播放前，要将影片内容发生的背景向学生进行详细的说明，告诉大家为什么要看这个电影、电影能告诉我们什么、电影里的故事是在什么样的情况下发生的，让学生在看之前，能弄清楚影片的来龙去脉；影片播放后，根据影片内容，结合教学目标，对重点问题进行分析和讲解，有利于消除错误认识，起到纠偏的作用。
+			</p>
+			<p
+				style="margin: 10px auto; padding: 0px; text-indent: 2em; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 36px; font-family: 微软雅黑; white-space: normal; background-color: rgb(255, 255, 255);">
+				红色影片与思想政治教育融合后具有显著的作用，但仅靠课堂上的教育很难满足思想政治工作推进的需要，应当将其作为一种系统工程进行推进，唯有如此，才能取得更大的效果。抓好红色影片的思政教育，要从大学生入学开始起，充分利用好红色影片这个“武器”，将其与思想政治课程紧密融合，实现对大学生的全过程、全员覆盖，在课堂课余时间，持续不断地选择合适的题材进行红色教育，实现红色教育成果的最大化。
+			</p>
+			<p><br></p>
+		</div>
+		<div class="xiaz">
+			<ul>
+				<li><strong>上一篇：</strong>
+					<a href="./204.html">河南召开全省组织部长会议 担当作为 狠抓落实</a>
+				</li>
+				<li><strong>下一篇：</strong>
+					<a href="./206.html">“李云龙式”的干部为何受关注？</a>
+				</li>
+			</ul>
+		</div>
+
+		<link href="./../static/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<link href="./../plugins/comment/view/public/aeest/mess.css" rel="stylesheet">
+		<style type="text/css">
+			.pic-list li {
+				margin-bottom: 5px;
+			}
+
+			#edui1_bottombar {
+				display: none;
+			}
+		</style>
+		<h3>评论</h3>
+		<div class="comment-area" id="comments">
+			<form class="comment-form js-ajax-form" action="/plugin/comment/comment/add.html" method="post">
+				<div class="form-group">
+					<div class="comment-postbox-wraper">
+						<script type="text/plain" id="content" name="content" placeholder="Write your comment here"
+							class="comment-postbox"></script>
+					</div>
+				</div>
+				<div class="form-group">
+					<button type="submit" class="btn pull-right btn-primary js-ajax-submit"
+						id="plugin-comment-comment-box-submit-btn">
+						<i class="fa fa-comment-o"></i> 发表评论
+					</button>
+				</div>
+				<input type="hidden" name="object_title" value="红色影片进课堂 让思政课燃起来" />
+				<input type="hidden" name="table_name" value="portal_post" />
+				<input type="hidden" name="object_id" value="205" />
+				<input type="hidden" name="url"
+					value="eyJhY3Rpb24iOiJwb3J0YWxcL0FydGljbGVcL2luZGV4IiwicGFyYW0iOnsiaWQiOjIwNX19" />
+				<input type="hidden" name="email" value="">
+				<input type="hidden" name="full_name" value="">
+				<div class="clearfix"></div>
+			</form>
+			<div class="comments">
 				<ul class="pagination">
-					</ul>
-</div>	
-</div>
-<script type="text/javascript">
-    //编辑器路径定义
-    var editorURL = GV.WEB_ROOT;
-</script>
-<script type="text/javascript" src="/../plugins/comment/view/public/aeest/config.js"></script>
-<script type="text/javascript" src="/../static/js/ueditor/ueditor.all.min.js"></script>
-<script type="text/javascript">
-    $(function () {
-        editorcontent = new baidu.editor.ui.Editor();
-        editorcontent.render('content');
-        try {
-            editorcontent.sync();
-        } catch (err) {
-        }
-    });
-</script></div>
-<div class="sr_footer w1min">
-	<div class="w1">
-		<dl class="ft1">
-			<dd><b>陕西交控集团-智慧党建平台</b></dd><dd>企业：陕西交通控股集团有限公司</dd>
-			<dd>电话：029-87832666 传真：029- 87832174</dd><dd>地址：陕西省西安市雁塔区太白南路9号</dd>
-			<dd>陕ICP备2021008491号 陕公网安备 61011302001299号  </dd>
-			<dd>版权所有 © 2021 陕西交通控股集团有限公司 All Rights Reserved</dd>
-		</dl>
-		<!-- <dl class="ft2">
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript">
+			//编辑器路径定义
+			var editorURL = GV.WEB_ROOT;
+		</script>
+		<script type="text/javascript" src="/../plugins/comment/view/public/aeest/config.js"></script>
+		<script type="text/javascript" src="/../static/js/ueditor/ueditor.all.min.js"></script>
+		<script type="text/javascript">
+			$(function () {
+				editorcontent = new baidu.editor.ui.Editor();
+				editorcontent.render('content');
+				try {
+					editorcontent.sync();
+				} catch (err) {
+				}
+			});
+		</script>
+	</div>
+	<div class="sr_footer w1min">
+		<div class="w1">
+			<dl class="ft1">
+				<dd><b>陕西交控集团-智慧党建平台</b></dd>
+				<dd>企业：陕西交通控股集团有限公司</dd>
+				<dd>电话：029-87832666 传真：029- 87832174</dd>
+				<dd>地址：陕西省西安市雁塔区太白南路9号</dd>
+				<dd>陕ICP备2021008491号 陕公网安备 61011302001299号 </dd>
+				<dd>版权所有 © 2021 陕西交通控股集团有限公司 All Rights Reserved</dd>
+			</dl>
+			<!-- <dl class="ft2">
 			<a href="http://wpa.qq.com/msgrd?v=3&uin=34147588&site=qq&menu=yes" target="_blank" rel="nofollow" class="layui-btn layui-btn-danger layui-btn-radius"><i class="iconfont icon-qq"></i>在线咨询</a>
 		</dl> -->
-		<dl class="ft4">
-			<dd>
-				    		                     <a href="./../about.html" title="关于我们" target="">
-		                             <i class="iconfont icon-dangwugongkai"></i>关于我们		                         </a>
-		                 		                     <a href="./../statement.html" title="网站声明" target="">
-		                             <i class="iconfont icon-dangwugongkai"></i>网站声明		                         </a>
-		                 		                     <a href="./../contact.html" title="联系我们" target="">
-		                             <i class="iconfont icon-dangwugongkai"></i>联系我们		                         </a>
-		                 
-			</dd>	
-		</dl>
-		<dl class="ft3"><img src="/../upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg" border="0" /></dl>
+			<dl class="ft4">
+				<dd>
+					<a href="./../about.html" title="关于我们" target="">
+						<i class="iconfont icon-dangwugongkai"></i>关于我们 </a>
+					<a href="./../statement.html" title="网站声明" target="">
+						<i class="iconfont icon-dangwugongkai"></i>网站声明 </a>
+					<a href="./../contact.html" title="联系我们" target="">
+						<i class="iconfont icon-dangwugongkai"></i>联系我们 </a>
+
+				</dd>
+			</dl>
+			<dl class="ft3"><img src="/../upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg" border="0" /></dl>
+		</div>
 	</div>
-</div>
-<ul class="g-navFloat">
-	<!-- <li>
+	<ul class="g-navFloat">
+		<!-- <li>
 		<a href="./https://dj.cnki.io" target="_blank" class="u-tiyan">
 		<p>立</p><p>即</p><p>体</p><p>验</p>
 		</a>
 	</li> -->
-	<li>
-		<a href="http://wpa.qq.com/msgrd?v=3&uin=1151710686&site=qq&menu=yes" target="_blank"><i class="iconfont icon-qq"></i></a>
-	</li>
-	<li>
-		<div class="u-contents content-qr">
-			<img src="/../upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg">
-			<p>智慧党建平台</p>
-		</div>
-		<a href="javascript:void(0);"><i class="iconfont icon-weixin"></i></a>
-	</li>
-	<li>
-		<div class="u-contents content-tel">
-			<p>029-87832666</p>
-			<p><br /></p>
-		</div>
-		<a href="javascript:void(0);"><i class="iconfont icon-dianhua"></i></a>
-	</li>
-</ul>
-<div style="display:none;"></div>
-<script type="text/javascript">
-	jQuery(".index2_6_con").slide({
-		delayTime: 500,
-		effect: "left",
-		autoPlay: true,
-	});
-	$(".clearfix01 .bj_tab ul li").hover(function(){
-		$(this).find(".icon_bj").removeClass("transform0");
-		$(this).find(".icon_bj").addClass("transform1");
-		
-	},function(){
-		$(this).find(".icon_bj").removeClass("transform1");
-		$(this).find(".icon_bj").addClass("transform0");
-		
-	});
-	$(".bj_img_buttm").find("span").hover(function(){
-		var a=$(this).attr("class");
-		$(".bj01").removeClass("cut");
-		$("#"+a).addClass("cut");
-	});
-</script>
-
-<script src="/../static/js/wind.js"></script>
-<script src="/../themes/zqdj_public/public/assets/simpleboot3/bootstrap/js/bootstrap.min.js"></script>
-<script src="/../static/js/frontend.js"></script>
-<!--gotop start-->
-<script>	
-	$(function(){		
-		$.post("/user/index/islogin.html",{},function(data){
-			if(data.code==1){
-				$("#ucenterlogin .user-nickname").text(data.data.user.user_login);
-				$("#ucenterlogin .login").show();
-                $("#ucenterlogin .offline").hide();
-			}
-			if(data.code==0){
-                $("#ucenterlogin .login").hide();
-				$("#ucenterlogin .offline").show();
-			}
+		<li>
+			<a href="http://wpa.qq.com/msgrd?v=3&uin=1151710686&site=qq&menu=yes" target="_blank"><i
+					class="iconfont icon-qq"></i></a>
+		</li>
+		<li>
+			<div class="u-contents content-qr">
+				<img src="/../upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg">
+				<p>智慧党建平台</p>
+			</div>
+			<a href="javascript:void(0);"><i class="iconfont icon-weixin"></i></a>
+		</li>
+		<li>
+			<div class="u-contents content-tel">
+				<p>029-87832666</p>
+				<p><br /></p>
+			</div>
+			<a href="javascript:void(0);"><i class="iconfont icon-dianhua"></i></a>
+		</li>
+	</ul>
+	<div style="display:none;"></div>
+	<script type="text/javascript">
+		jQuery(".index2_6_con").slide({
+			delayTime: 500,
+			effect: "left",
+			autoPlay: true,
 		});
-	});
-</script> 
-<!--gotop end--> 
-<!-- 
+		$(".clearfix01 .bj_tab ul li").hover(function () {
+			$(this).find(".icon_bj").removeClass("transform0");
+			$(this).find(".icon_bj").addClass("transform1");
+
+		}, function () {
+			$(this).find(".icon_bj").removeClass("transform1");
+			$(this).find(".icon_bj").addClass("transform0");
+
+		});
+		$(".bj_img_buttm").find("span").hover(function () {
+			var a = $(this).attr("class");
+			$(".bj01").removeClass("cut");
+			$("#" + a).addClass("cut");
+		});
+	</script>
+
+	<script src="./../static/js/wind.js"></script>
+	<script src="./../themes/zqdj_public/public/assets/simpleboot3/bootstrap/js/bootstrap.min.js"></script>
+	<script src="./../static/js/frontend.js"></script>
+	<!--gotop start-->
+	<script>
+		$(function () {
+			$.post("/user/index/islogin.html", {}, function (data) {
+				if (data.code == 1) {
+					$("#ucenterlogin .user-nickname").text(data.data.user.user_login);
+					$("#ucenterlogin .login").show();
+					$("#ucenterlogin .offline").hide();
+				}
+				if (data.code == 0) {
+					$("#ucenterlogin .login").hide();
+					$("#ucenterlogin .offline").show();
+				}
+			});
+		});
+	</script>
+	<!--gotop end-->
+	<!-- 
 <ul id="side-bar" class="side-pannel side-bar">
   <span><img src="/upload/imgs/djwx.jpg"><i>党建小程序</i></span>
   <span><img src="/upload/imgs/djapp.jpg"><i>党建APP</i></span>
   <span><img src="/upload/imgs/djvideo.jpg"><i>视频介绍</i></span>
 </ul> -->
-<script>
-	$(function(){
-		$(window).scroll(function(){
-			if($(window).scrollTop()>100){  //距顶部多少像素时，出现返回顶部按钮
-				$("#side-bar .gotop").fadeIn();	
-			}
-			else{
-				$("#side-bar .gotop").hide();
-			}
+	<script>
+		$(function () {
+			$(window).scroll(function () {
+				if ($(window).scrollTop() > 100) {  //距顶部多少像素时，出现返回顶部按钮
+					$("#side-bar .gotop").fadeIn();
+				}
+				else {
+					$("#side-bar .gotop").hide();
+				}
+			});
+			$("#side-bar .gotop").click(function () {
+				$('html,body').animate({ 'scrollTop': 0 }, 500); //返回顶部动画 数值越小时间越短
+			});
 		});
-		$("#side-bar .gotop").click(function(){
-			$('html,body').animate({'scrollTop':0},500); //返回顶部动画 数值越小时间越短
+	</script>
+	<script type="text/javascript">
+		Wind.css('layer');
+		Wind.use("layer", function () {
+			layer.ready(function () { //为了layer.ext.js加载完毕再执行
+				layer.photos({
+					photos: '#articlePreviewDialog'
+					, shift: 5 //0-6的选择，指定弹出图片动画类型，默认随机
+				});
+			});
 		});
-	});
-</script>
-<script type="text/javascript">
-Wind.css('layer');
-Wind.use("layer", function () {
-	layer.ready(function(){ //为了layer.ext.js加载完毕再执行
-		  layer.photos({
-		    photos: '#articlePreviewDialog'
-		    ,shift: 5 //0-6的选择，指定弹出图片动画类型，默认随机
-		  });
-		});
-});
-</script>
+	</script>
 </body>
+
 </html>

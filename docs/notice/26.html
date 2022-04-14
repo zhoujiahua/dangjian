@@ -1,547 +1,970 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html> PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-CN">
+
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>全省拟表彰和宣传的先进典型公示公告 智慧党建平台</title>
 	<meta name="keywords" content="智慧党建">
 	<meta name="description" content="智慧党建">
 	<link href="https://at.alicdn.com/t/font_759613_byou54gk0v7.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" type="text/css" href="./../themes/zqdj_public/public/assets/zqdj_public/css/style.css" />
-<script language="javascript" type="text/javascript" src="/../static/js/jquery.js"></script>
-<script language="javascript" type="text/javascript" src="/../themes/zqdj_public/public/assets/zqdj_public/js/jquery.SuperSlide.js"></script>
-<link rel="stylesheet" href="./../themes/zqdj_public/public/assets/zqdj_public/js/layui/css/layui.css"  media="all">
-<script src="/../themes/zqdj_public/public/assets/zqdj_public/js/layui/layui.js"></script>
+	<link rel="stylesheet" type="text/css" href="./../themes/zqdj_public/public/assets/zqdj_public/css/style.css" />
+	<script src="./../static/js/jquery.js"></script>
+	<script src="./../themes/zqdj_public/public/assets/zqdj_public/js/jquery.SuperSlide.js"></script>
+	<link rel="stylesheet" href="./../themes/zqdj_public/public/assets/zqdj_public/js/layui/css/layui.css" media="all">
+	<script src="./../themes/zqdj_public/public/assets/zqdj_public/js/layui/layui.js"></script>
 
-<script type="text/javascript">
-//判断是否是手机版访问,跳转到手机版
-var isiPad = navigator.userAgent.match(/iPad|iPhone|Android|Linux|iPod/i) != null;
-if(isiPad){	
-	var wapurl = '/weixin/Index/index.html';
-	// window.location.href = wapurl;
-}
-    //全局变量
-    var GV = {
-        ROOT: "/",
-        WEB_ROOT: "/",
-        JS_ROOT: "static/js/",
-        TMPL: "/themes/zqdj_public/"
-    };
-</script>
+	<script type="text/javascript">
+		//判断是否是手机版访问,跳转到手机版
+		var isiPad = navigator.userAgent.match(/iPad|iPhone|Android|Linux|iPod/i) != null;
+		if (isiPad) {
+			var wapurl = '/weixin/Index/index.html';
+			// window.location.href = wapurl;
+		}
+		//全局变量
+		var GV = {
+			ROOT: "/",
+			WEB_ROOT: "/",
+			JS_ROOT: "static/js/",
+			TMPL: "/themes/zqdj_public/"
+		};
+	</script>
 </head>
 
 <body>
 
-<!--top区域 start-->
-<div class="top_x w1min">
-<div class="w1">
-	<div class="topx_left">
-		<div class="topx_logo"><img src="/../themes/zqdj_public/public/assets/zqdj_public/imgs/header_logo.png" /></div>
-		<div class="topx_zi">
-		<h1>陕西交控集团-智慧党建平台</h1>
-		</div>
-	</div>
-	<div class="topx_right" id="ucenterlogin">
-		<dl class="login" style="display:none;">
-			你好,丁俊陶  <span class="user-nickname"></span>
-			<a href="./../user/profile/center.html"><i class="iconfont icon-user"></i>党员中心</a>
-			<a href="./../user/index/logout.html">&nbsp;&nbsp;退出登录</a>
-		</dl>
-		<dl class="offline" style="display:none;">
-			<a href="./../user/login/index.html" class="signin"><i class="iconfont icon-gongchandang"></i>登录</a>
-		</dl>
-		<div class="top-search">
-			<form method="post" action="/portal/search/index.html" target="_blank">
-				<input type="text" name="keyword" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
-				<button class="layui-btn layui-bg-orange" lay-submit lay-filter="formDemo"><i class="iconfont icon-xiazai15"></i>搜索</button>
-			</form>
-		</div>
-	</div>			
-</div>
-</div>
-<div class="lang_mu w1min">
-<ul class="layui-nav" lay-filter="">
-	                    <li class="layui-nav-item">
-                    <a href="/" target="">
-                        <b>首页</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/dongtai.html" target="">
-                        <b>党建动态</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/special/index.html" target="">
-                        <b>专题专栏</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/seritem/index.html" target="">
-                        <b>志愿服务</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/activity/index.html" target="">
-                        <b>组织活动</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/study/index.html" target="">
-                        <b>学习中心</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/sanhui/index.html" target="">
-                        <b>三会一课</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/wenjuan/wenjuanlist.html" target="">
-                        <b>问卷调查</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/score/index.html" target="">
-                        <b>积分统计</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/index/map.html" target="">
-                        <b>党建地图</b>
-                    </a>
-                </li>
-            
-</ul>
-<script>
-//注意：导航 依赖 element 模块，否则无法进行功能性操作
-layui.use('element', function(){
-  var element = layui.element;
-  
-});
-</script>
-</div>
-<!--top区域 end-->
-<div class="w1 banne1 mgtop-15"><img src="/../upload/admin/20181120/b02187c3e779476c3d555e59ccdcb415.jpg"></div>
-<div class="mgtop-15 background-w1">
-	<div class="fdiv mua"><ul><i class="iconfont icon-dangwugongkai"></i><b>正文</b></ul>
-	<ol>
-		当前位置：<a href="./../user/index/logout.html">首页</a> >
-		    
-			<a href="./../notice.html">通知公告</a> >
-		
-		正文
-	</ol>	
-	</div>
-
-	<div class="lnmu">
-		<ul>全省拟表彰和宣传的先进典型公示公告</ul>
-		<ol>来源： 灯塔-党建在线  发布时间：2018-07-30 15:03:00　点击数量:<span id="hits">266</span></ol>
-	</div>
-		<div class="listn imgk" id="articlePreviewDialog">
-			
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>       根据省委常委会会议研究的意见，拟对以下315名同志和310个班子进行表彰和宣传。为增加工作透明度，接受群众监督，现予以公示。</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　<strong>一、拟表彰和宣传的人选</strong></p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　孙 斌 济南市副市长，济阳县委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　宋永祥 济南市市中区委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　包 昆 济南市历下区建筑新村街道党工委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　胡 明 济南市市中区泺源街道党工委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　周宪东 济南市天桥区泺口街道党工委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　刘春强 济南市历城区鲍山街道党工委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　邓洪刚 济南市长清区平安街道党工委书记，济南经济开发区党工委委员、社会事务局党组书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　董 鹏 济南市章丘区明水街道党工委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　贾红霞 平阴县锦水街道党工委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　梁甲猛 商河县玉皇庙镇党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　赵宝胜 济南市市中区十六里河街道大涧沟西村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　李 涛 济南市槐荫区美里湖街道西沙王庄村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　高文勃 济南市历城区彩石街道东泉村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　刘继杰 济南市长清区文昌街道西李村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　肖舒荣 济南市长清区万德街道马套村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　高淑贞 济南市章丘区双山街道三涧溪村党总支书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　沙树星 济南市章丘区枣园街道万新村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　史兴顺 平阴县东阿镇北市村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　孟宪华 济阳县崔寨街道周孟村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　刘官君 商河县龙桑寺镇刘集村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　彭兴明 济南高新技术开发区遥墙街道遥墙村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　江玉东 济南市南部山区高而办事处南邱村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　王建祥 青岛市委常委，黄岛区委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　江敦涛 青岛市崂山区委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　周立文 青岛市市南区珠海路街道党工委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　冷严冰 青岛市市北区镇江路街道党工委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　徐志向 青岛市黄岛区隐珠街道党工委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　李振洪 青岛市李沧区浮山路街道党工委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　刘青梅 青岛市城阳区棘洪滩街道党工委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　周遵贤 青岛市即墨区蓝村镇党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　郭晓钟 胶州市胶东街道党工委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　孙秀泽 平度市旧店镇党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　薛 海 青岛市黄岛区辛安街道薛家泊子社区党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　苏国荣 青岛市黄岛区灵山卫街道北门外村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　李泽兵 青岛市崂山区王哥庄街道晓望社区党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　王芝锐 青岛市城阳区流亭街道红埠社区党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　董其清 青岛市即墨区通济新经济区阎家岭村党总支书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　刘丽亚 青岛市即墨区龙山街道前东葛村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　刘元征 胶州市三里河街道管理村联合党总支书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　相锡存 胶州市洋河镇山相家村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　卢法文 平度市明村镇兰科村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　徐忠军 平度市蓼兰镇许家村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　王桂欣 平度市仁兆镇沙北头村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　姜殿平 莱西市水集街道水集二村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　于乐美 莱西市马连庄镇崔格庄村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　宋振波 淄博市临淄区委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　程 勤 淄博市张店区沣水镇党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　张 涛 淄博市临淄区齐陵街道党工委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　苏瑞刚 淄博市周村区南郊镇党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　于亦恩 桓台县果里镇党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　江贵军 沂源县南麻街道党工委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　李久存 淄博市淄川区双杨镇赵瓦村党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　褚全德 淄博市淄川区龙泉镇韩庄村党总支书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　刘光文 淄博市张店区沣水镇张二村党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　王金成 淄博市博山区博山镇上瓦泉村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　李树滨 淄博市周村区城北路街道南谢村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　王绍滨 桓台县果里镇后鲁村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　刘保吉 沂源县燕崖镇双泉村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　张 华 淄博高新区四宝山街道甘家村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　邵士官 滕州市委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　张衍耀 枣庄市市中区齐村镇党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　王希荣 枣庄市山亭区城头镇党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　秦 魁 滕州市西岗镇党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　姚秀国 枣庄市市中区税郭镇三屯村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　孙中快 枣庄市薛城区周营镇小巩湖村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　杨兆忍 枣庄市峄城区吴林街道苏埠居党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　刘 磊 枣庄市台儿庄区张山子镇耿山子村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　刘德坦 枣庄市山亭区冯卯镇温庄村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　何庆忠 滕州市级索镇水磨庄村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　秦应炼 滕州市南沙河镇北池村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　王乃梅 利津县汀罗镇党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　蒋 峰 广饶县广饶街道党工委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　李连明 东营市东营区龙居镇朱家村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　殷鹏霄 东营市河口区河口街道三合村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　裴洪章 东营市垦利区董集镇七井村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　贾学滨 利津县北宋镇南贾家村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　郭立保 利津县盐窝镇七一村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　于爱莲 广饶县稻庄镇淄河店村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　刘效明 广饶县大码头镇小刘桥村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　李 波 烟台市芝罘区委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　范开玮 烟台市芝罘区幸福街道党工委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　杨文敏 烟台市牟平区大窑街道党工委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　田大中 烟台市莱山区滨海路街道工委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　高经宇 龙口市东莱街道党工委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　李克升 莱阳市龙旺庄街道党工委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　蔡浩礼 蓬莱市登州街道工委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　汪晓刚 招远市辛庄镇党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　林雪梅 长岛县黑山乡党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　杨永亮 烟台市芝罘区只楚街道只楚居民区党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　彭利民 烟台市福山区门楼镇南庄村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　王德东 烟台市牟平区文化街道西桂里村党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　王相泽 烟台市莱山区黄海路街道黄海社区党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　史文超 龙口市徐福街道四农社区党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　战永广 龙口市东江街道九南村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　初鹏飞 莱阳市团旺镇光山村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　高云建 莱阳市姜疃镇濯村党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　滕春竹 莱州市城港路街道朱旺村党总支书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　谢在超 蓬莱市大辛店镇黑岚沟村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　孙发敏 招远市蚕庄镇前孙家村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　陈松海 招远市金岭镇大户陈家村党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　李维记 海阳市东村街道城北村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　顾兆国 长岛县北长山乡北城村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　牟秀松 烟台经济技术开发区福莱山街道胜利东村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　刘永乐 栖霞经济开发区东北桥村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　李兰祥 潍坊市寒亭区委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　李晓明 潍坊市潍城区城关街道党工委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　方有海 诸城市桃林镇党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　张 帅 寿光市侯镇党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　陈 诚 昌邑市围子街道党工委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　吕学志 临朐县五井镇党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　王琪华 昌乐县宝都街道党工委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　孙 波 潍坊光电服务中心党委书记、高新区新城街道党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　季传东 潍坊市潍城区乐埠山生态经济发展区山下于村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　于伟东 潍坊市寒亭区寒亭街道叶家庄子村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　刘向东 潍坊市坊子区坊安街道洼里村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　冯先家 青州市王坟镇侯王村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　刘正光 诸城市枳沟镇乔庄社区党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　鞠新卫 诸城市高新技术产业园西王门社区党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　李新生 寿光市洛城街道东斟灌村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　王乐义 寿光市孙家集街道三元朱村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　孙瑞春 安丘市金冢子镇北南戈庄村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　鲁太湖 安丘市郚山镇鲁家哨村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　张宜宗 高密市夏庄镇张家官庄二村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　尤 玲 高密市姜庄镇莳家庄一村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　徐林收 高密市阚家镇松兴屯村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　付全杰 昌邑市柳疃镇西付村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　赵中伟 昌邑市龙池镇瓦东村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　国成勤 临朐县嵩山生态旅游区黄谷村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　王江堂 昌乐县红河镇埠南头村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　王光奎 潍坊滨海经济技术开发区大家洼街道太平社区党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　柳景武 邹城市委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　孙兴格 济宁市任城区仙营街道党工委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　张建芬 济宁市兖州区新兖镇党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　朱亚峰 曲阜市防山镇党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　曾凡玉 邹城市太平镇党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　李东建 鱼台县张黄镇党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　高 辉 嘉祥县金屯镇党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　刘 峰 汶上县寅寺镇党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　孔令锋 泗水县圣水峪镇党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　李翠玲 济宁高新区黄屯街道党工委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　史衍辉 济宁市任城区安居街道史海村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　牛宜栋 济宁市兖州区新兖镇小马青村党总支书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　张佃壮 曲阜市息陬镇北元疃村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　王思勤 邹城市城前镇孙家厂村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　程学良 邹城市中心店镇东傅村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　孙茂东 微山县高楼乡渭河村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　石信田 鱼台县鱼城镇中东北村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　史一良 金乡县胡集镇后史屯村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　杨连祥 嘉祥县金屯镇贾楼村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　李召林 汶上县郭楼镇古城村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　朱红军 汶上县次邱镇朱庄村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　夏理芳 泗水县星村镇南陈家庄村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　刘 里 泗水县华村镇东庄村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　刘知民 梁山县大路口乡清堂李村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　张明武 济宁高新区王因街道后岗村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　张现海 济宁市太白湖新区许庄街道张堌堆村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　刘钦海 新泰市委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　张 强 泰安市岱岳区天平街道党工委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　史新国 新泰市泉沟镇党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　桑逢智 肥城市边院镇党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　鲍怀东 宁阳县八仙桥街道党工委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　郭吉永 泰安高新区天宝镇党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　杨桂元 泰安市岱岳区夏张镇朱家庄村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　刘方军 新泰市龙廷镇掌平洼村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　王 龙 新泰市西张庄镇西韩村党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　毛传军 肥城市新城街道古店村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　贾爱云 肥城市湖屯镇前兴隆村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　李万海 宁阳县文庙街道吴村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　李 强 东平县接山镇朝阳庄村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　耿进平 东平县银山镇耿山口村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　翟岱民 泰安高新区徂徕镇许家庄村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　傅 逊 威海市委常委、市纪委书记、市监委主任</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　门盛庆 威海市环翠区委常委，张村镇党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　陈 金 威海市文登区米山镇党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　谭常柏 荣成市崖头街道党工委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　沈春升 威海经济技术开发区崮山镇党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　丛荣洲 威海市环翠区温泉镇冶口社区党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　于海峰 威海市文登区米山镇西铺头村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　刘书联 荣成市宁津街道东墩村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　尹昭建 荣成市上庄镇尹家村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　杨秀丽 乳山市南黄镇院后村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　于进路 乳山市乳山口镇西王家庄村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　张亭兰 威海火炬高技术产业开发区双岛街道西马山村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　张培林 日照市副市长，市公安局局长</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　孟 青 莒县县委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　申 洁 日照市东港区秦楼街道党工委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　许京建 五莲县高泽镇党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　邵明法 莒县县委常委、统战部部长，城阳街道党工委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　张 健 日照市东港区石臼街道中盛社区党委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　黄庆林 日照市东港区涛雒镇下元一村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　姜成西 日照市岚山区碑廓镇西辛兴村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　张守英 五莲县洪凝街道红泥崖村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　李花珍 五莲县于里镇李家窑村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　王华山 莒县峤山镇张家阿疃村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　许传江 莒县岳家村社区党委书记，岳家村支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　高加宝 莱芜市钢城区艾山街道党工委书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　郑传尧 莱芜市莱城区口镇下水河村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　邵光才 莱芜市钢城区里辛街道棋山观村党支部书记</p>
-<p style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>　　李永奇 莱芜市钢城区颜庄镇柳桥峪村党支&amp;</p>
-	</div>
-	<div class="xiaz">
-		<ul>
-			<li><strong>上一篇：</strong>
-									<a href="./25.html">关于做好2018年引进顶尖人才“一事一议”申报工作的通知</a>
-							</li>
-			<li><strong>下一篇：</strong>
-							<a href="./27.html">“本色家园”标识、主题歌、主题用语 征集评审结果面向社会公布</a>
-						</li>
-		</ul>
-	</div>
-		
-<link href="./../static/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-<link href="./../plugins/comment/view/public/aeest/mess.css" rel="stylesheet">
-<style type="text/css">
-    .pic-list li {
-        margin-bottom: 5px;
-    }
-	#edui1_bottombar{display:none;}
-</style>
-<h3>评论</h3>
-<div class="comment-area" id="comments">
-    <form class="comment-form js-ajax-form" action="/plugin/comment/comment/add.html" method="post">
-        <div class="form-group">
-            <div class="comment-postbox-wraper">
-				<script type="text/plain" id="content" name="content" placeholder="Write your comment here" class="comment-postbox"></script>
-            </div>
-        </div>
-        <div class="form-group">
-            <button type="submit" class="btn pull-right btn-primary js-ajax-submit" id="plugin-comment-comment-box-submit-btn"> 
-                <i class="fa fa-comment-o"></i> 发表评论
-            </button>			
-        </div>
-        <input type="hidden" name="object_title" value="全省拟表彰和宣传的先进典型公示公告"/>
-        <input type="hidden" name="table_name" value="portal_post"/>
-        <input type="hidden" name="object_id" value="26"/>
-        <input type="hidden" name="url" value="eyJhY3Rpb24iOiJwb3J0YWxcL0FydGljbGVcL2luZGV4IiwicGFyYW0iOnsiaWQiOjI2fX0="/>
-		<input type="hidden" name="email" value="">
-		<input type="hidden" name="full_name" value="">
-        <div class="clearfix"></div>
-    </form>
-	<div class="comments">
-				<hr style="margin: 5px 0;">
-		<div id="comment20" class="comment" data-id="20" data-user_id="16052">
-			<div>
-				<a style="float:left;margin-right:10px;">
-										<img class="media-object avatar" src="/upload/avatar/mobile/20200325/ce83bbc3317e61148c5b2c7c05b60c6d.png?t=1649849761" width="40" height="40">
-									</a>
-				<div>
-					<a>JAY</a><br>
-					<span class="time">11-14 10:16</span>
+	<!--top区域 start-->
+	<div class="top_x w1min">
+		<div class="w1">
+			<div class="topx_left">
+				<div class="topx_logo"><img
+						src="./../themes/zqdj_public/public/assets/zqdj_public/imgs/header_logo.png" /></div>
+				<div class="topx_zi">
+					<h1>陕西交控集团-智慧党建平台</h1>
 				</div>
-				<div class="clearfix"></div>
 			</div>
-			<div class="comment-body">
-				<div class="comment-content">支持党的领导😊 😊</div>
+			<div class="topx_right" id="ucenterlogin">
+				<dl class="login" style="display:none;">
+					你好,丁俊陶 <span class="user-nickname"></span>
+					<a href="./../user/profile/center.html"><i class="iconfont icon-user"></i>党员中心</a>
+					<a href="./../user/index/logout.html">&nbsp;&nbsp;退出登录</a>
+				</dl>
+				<dl class="offline" style="display:none;">
+					<a href="./../user/login/index.html" class="signin"><i class="iconfont icon-gongchandang"></i>登录</a>
+				</dl>
+				<div class="top-search">
+					<form method="post" action="/portal/search/index.html" target="_blank">
+						<input type="text" name="keyword" required lay-verify="required" placeholder="请输入标题"
+							autocomplete="off" class="layui-input">
+						<button class="layui-btn layui-bg-orange" lay-submit lay-filter="formDemo"><i
+								class="iconfont icon-xiazai15"></i>搜索</button>
+					</form>
+				</div>
 			</div>
-			<div class="clearfix"></div>
 		</div>
+	</div>
+	<div class="lang_mu w1min">
+		<ul class="layui-nav" lay-filter="">
+			<li class="layui-nav-item">
+				<a href="/" target="">
+					<b>首页</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/dongtai.html" target="">
+					<b>党建动态</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/portal/special/index.html" target="">
+					<b>党建专题</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/portal/seritem/index.html" target="">
+					<b>志愿活动</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/portal/activity/index.html" target="">
+					<b>党日活动</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/portal/study/index.html" target="">
+					<b>党建赋能</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/portal/sanhui/index.html" target="">
+					<b>三会一课</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/portal/wenjuan/wenjuanlist.html" target="">
+					<b>问卷调查</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/portal/score/index.html" target="">
+					<b>积分统计</b>
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="/jcdzzjs.html" target="">
+					<b>基层党建</b>
+				</a>
+			</li>
+
+		</ul>
+		<script>
+			//注意：导航 依赖 element 模块，否则无法进行功能性操作
+			layui.use('element', function () {
+				var element = layui.element;
+
+			});
+		</script>
+	</div>
+	<!--top区域 end-->
+	<div class="w1 banne1 mgtop-15"><img src="/../upload/admin/20181120/b02187c3e779476c3d555e59ccdcb415.jpg"></div>
+	<div class="mgtop-15 background-w1">
+		<div class="fdiv mua">
+			<ul><i class="iconfont icon-dangwugongkai"></i><b>正文</b></ul>
+			<ol>
+				当前位置：<a href="./../user/index/logout.html">首页</a> >
+
+				<a href="./../notice.html">通知公告</a> >
+
+				正文
+			</ol>
+		</div>
+
+		<div class="lnmu">
+			<ul>全省拟表彰和宣传的先进典型公示公告</ul>
+			<ol>来源： 灯塔-党建在线 发布时间：2018-07-30 15:03:00　点击数量:<span id="hits">266</span></ol>
+		</div>
+		<div class="listn imgk" id="articlePreviewDialog">
+
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				       根据省委常委会会议研究的意见，拟对以下315名同志和310个班子进行表彰和宣传。为增加工作透明度，接受群众监督，现予以公示。</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　<strong>一、拟表彰和宣传的人选</strong></p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　孙 斌 济南市副市长，济阳县委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　宋永祥 济南市市中区委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　包 昆 济南市历下区建筑新村街道党工委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　胡 明 济南市市中区泺源街道党工委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　周宪东 济南市天桥区泺口街道党工委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　刘春强 济南市历城区鲍山街道党工委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　邓洪刚 济南市长清区平安街道党工委书记，济南经济开发区党工委委员、社会事务局党组书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　董 鹏 济南市章丘区明水街道党工委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　贾红霞 平阴县锦水街道党工委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　梁甲猛 商河县玉皇庙镇党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　赵宝胜 济南市市中区十六里河街道大涧沟西村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　李 涛 济南市槐荫区美里湖街道西沙王庄村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　高文勃 济南市历城区彩石街道东泉村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　刘继杰 济南市长清区文昌街道西李村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　肖舒荣 济南市长清区万德街道马套村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　高淑贞 济南市章丘区双山街道三涧溪村党总支书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　沙树星 济南市章丘区枣园街道万新村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　史兴顺 平阴县东阿镇北市村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　孟宪华 济阳县崔寨街道周孟村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　刘官君 商河县龙桑寺镇刘集村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　彭兴明 济南高新技术开发区遥墙街道遥墙村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　江玉东 济南市南部山区高而办事处南邱村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　王建祥 青岛市委常委，黄岛区委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　江敦涛 青岛市崂山区委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　周立文 青岛市市南区珠海路街道党工委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　冷严冰 青岛市市北区镇江路街道党工委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　徐志向 青岛市黄岛区隐珠街道党工委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　李振洪 青岛市李沧区浮山路街道党工委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　刘青梅 青岛市城阳区棘洪滩街道党工委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　周遵贤 青岛市即墨区蓝村镇党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　郭晓钟 胶州市胶东街道党工委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　孙秀泽 平度市旧店镇党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　薛 海 青岛市黄岛区辛安街道薛家泊子社区党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　苏国荣 青岛市黄岛区灵山卫街道北门外村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　李泽兵 青岛市崂山区王哥庄街道晓望社区党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　王芝锐 青岛市城阳区流亭街道红埠社区党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　董其清 青岛市即墨区通济新经济区阎家岭村党总支书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　刘丽亚 青岛市即墨区龙山街道前东葛村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　刘元征 胶州市三里河街道管理村联合党总支书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　相锡存 胶州市洋河镇山相家村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　卢法文 平度市明村镇兰科村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　徐忠军 平度市蓼兰镇许家村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　王桂欣 平度市仁兆镇沙北头村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　姜殿平 莱西市水集街道水集二村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　于乐美 莱西市马连庄镇崔格庄村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　宋振波 淄博市临淄区委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　程 勤 淄博市张店区沣水镇党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　张 涛 淄博市临淄区齐陵街道党工委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　苏瑞刚 淄博市周村区南郊镇党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　于亦恩 桓台县果里镇党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　江贵军 沂源县南麻街道党工委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　李久存 淄博市淄川区双杨镇赵瓦村党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　褚全德 淄博市淄川区龙泉镇韩庄村党总支书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　刘光文 淄博市张店区沣水镇张二村党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　王金成 淄博市博山区博山镇上瓦泉村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　李树滨 淄博市周村区城北路街道南谢村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　王绍滨 桓台县果里镇后鲁村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　刘保吉 沂源县燕崖镇双泉村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　张 华 淄博高新区四宝山街道甘家村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　邵士官 滕州市委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　张衍耀 枣庄市市中区齐村镇党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　王希荣 枣庄市山亭区城头镇党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　秦 魁 滕州市西岗镇党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　姚秀国 枣庄市市中区税郭镇三屯村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　孙中快 枣庄市薛城区周营镇小巩湖村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　杨兆忍 枣庄市峄城区吴林街道苏埠居党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　刘 磊 枣庄市台儿庄区张山子镇耿山子村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　刘德坦 枣庄市山亭区冯卯镇温庄村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　何庆忠 滕州市级索镇水磨庄村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　秦应炼 滕州市南沙河镇北池村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　王乃梅 利津县汀罗镇党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　蒋 峰 广饶县广饶街道党工委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　李连明 东营市东营区龙居镇朱家村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　殷鹏霄 东营市河口区河口街道三合村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　裴洪章 东营市垦利区董集镇七井村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　贾学滨 利津县北宋镇南贾家村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　郭立保 利津县盐窝镇七一村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　于爱莲 广饶县稻庄镇淄河店村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　刘效明 广饶县大码头镇小刘桥村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　李 波 烟台市芝罘区委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　范开玮 烟台市芝罘区幸福街道党工委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　杨文敏 烟台市牟平区大窑街道党工委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　田大中 烟台市莱山区滨海路街道工委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　高经宇 龙口市东莱街道党工委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　李克升 莱阳市龙旺庄街道党工委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　蔡浩礼 蓬莱市登州街道工委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　汪晓刚 招远市辛庄镇党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　林雪梅 长岛县黑山乡党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　杨永亮 烟台市芝罘区只楚街道只楚居民区党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　彭利民 烟台市福山区门楼镇南庄村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　王德东 烟台市牟平区文化街道西桂里村党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　王相泽 烟台市莱山区黄海路街道黄海社区党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　史文超 龙口市徐福街道四农社区党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　战永广 龙口市东江街道九南村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　初鹏飞 莱阳市团旺镇光山村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　高云建 莱阳市姜疃镇濯村党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　滕春竹 莱州市城港路街道朱旺村党总支书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　谢在超 蓬莱市大辛店镇黑岚沟村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　孙发敏 招远市蚕庄镇前孙家村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　陈松海 招远市金岭镇大户陈家村党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　李维记 海阳市东村街道城北村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　顾兆国 长岛县北长山乡北城村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　牟秀松 烟台经济技术开发区福莱山街道胜利东村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　刘永乐 栖霞经济开发区东北桥村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　李兰祥 潍坊市寒亭区委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　李晓明 潍坊市潍城区城关街道党工委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　方有海 诸城市桃林镇党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　张 帅 寿光市侯镇党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　陈 诚 昌邑市围子街道党工委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　吕学志 临朐县五井镇党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　王琪华 昌乐县宝都街道党工委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　孙 波 潍坊光电服务中心党委书记、高新区新城街道党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　季传东 潍坊市潍城区乐埠山生态经济发展区山下于村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　于伟东 潍坊市寒亭区寒亭街道叶家庄子村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　刘向东 潍坊市坊子区坊安街道洼里村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　冯先家 青州市王坟镇侯王村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　刘正光 诸城市枳沟镇乔庄社区党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　鞠新卫 诸城市高新技术产业园西王门社区党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　李新生 寿光市洛城街道东斟灌村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　王乐义 寿光市孙家集街道三元朱村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　孙瑞春 安丘市金冢子镇北南戈庄村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　鲁太湖 安丘市郚山镇鲁家哨村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　张宜宗 高密市夏庄镇张家官庄二村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　尤 玲 高密市姜庄镇莳家庄一村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　徐林收 高密市阚家镇松兴屯村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　付全杰 昌邑市柳疃镇西付村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　赵中伟 昌邑市龙池镇瓦东村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　国成勤 临朐县嵩山生态旅游区黄谷村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　王江堂 昌乐县红河镇埠南头村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　王光奎 潍坊滨海经济技术开发区大家洼街道太平社区党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　柳景武 邹城市委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　孙兴格 济宁市任城区仙营街道党工委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　张建芬 济宁市兖州区新兖镇党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　朱亚峰 曲阜市防山镇党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　曾凡玉 邹城市太平镇党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　李东建 鱼台县张黄镇党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　高 辉 嘉祥县金屯镇党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　刘 峰 汶上县寅寺镇党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　孔令锋 泗水县圣水峪镇党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　李翠玲 济宁高新区黄屯街道党工委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　史衍辉 济宁市任城区安居街道史海村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　牛宜栋 济宁市兖州区新兖镇小马青村党总支书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　张佃壮 曲阜市息陬镇北元疃村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　王思勤 邹城市城前镇孙家厂村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　程学良 邹城市中心店镇东傅村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　孙茂东 微山县高楼乡渭河村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　石信田 鱼台县鱼城镇中东北村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　史一良 金乡县胡集镇后史屯村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　杨连祥 嘉祥县金屯镇贾楼村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　李召林 汶上县郭楼镇古城村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　朱红军 汶上县次邱镇朱庄村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　夏理芳 泗水县星村镇南陈家庄村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　刘 里 泗水县华村镇东庄村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　刘知民 梁山县大路口乡清堂李村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　张明武 济宁高新区王因街道后岗村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　张现海 济宁市太白湖新区许庄街道张堌堆村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　刘钦海 新泰市委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　张 强 泰安市岱岳区天平街道党工委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　史新国 新泰市泉沟镇党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　桑逢智 肥城市边院镇党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　鲍怀东 宁阳县八仙桥街道党工委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　郭吉永 泰安高新区天宝镇党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　杨桂元 泰安市岱岳区夏张镇朱家庄村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　刘方军 新泰市龙廷镇掌平洼村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　王 龙 新泰市西张庄镇西韩村党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　毛传军 肥城市新城街道古店村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　贾爱云 肥城市湖屯镇前兴隆村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　李万海 宁阳县文庙街道吴村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　李 强 东平县接山镇朝阳庄村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　耿进平 东平县银山镇耿山口村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　翟岱民 泰安高新区徂徕镇许家庄村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　傅 逊 威海市委常委、市纪委书记、市监委主任</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　门盛庆 威海市环翠区委常委，张村镇党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　陈 金 威海市文登区米山镇党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　谭常柏 荣成市崖头街道党工委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　沈春升 威海经济技术开发区崮山镇党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　丛荣洲 威海市环翠区温泉镇冶口社区党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　于海峰 威海市文登区米山镇西铺头村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　刘书联 荣成市宁津街道东墩村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　尹昭建 荣成市上庄镇尹家村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　杨秀丽 乳山市南黄镇院后村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　于进路 乳山市乳山口镇西王家庄村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　张亭兰 威海火炬高技术产业开发区双岛街道西马山村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　张培林 日照市副市长，市公安局局长</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　孟 青 莒县县委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　申 洁 日照市东港区秦楼街道党工委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　许京建 五莲县高泽镇党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　邵明法 莒县县委常委、统战部部长，城阳街道党工委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　张 健 日照市东港区石臼街道中盛社区党委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　黄庆林 日照市东港区涛雒镇下元一村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　姜成西 日照市岚山区碑廓镇西辛兴村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　张守英 五莲县洪凝街道红泥崖村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　李花珍 五莲县于里镇李家窑村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　王华山 莒县峤山镇张家阿疃村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　许传江 莒县岳家村社区党委书记，岳家村支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　高加宝 莱芜市钢城区艾山街道党工委书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　郑传尧 莱芜市莱城区口镇下水河村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　邵光才 莱芜市钢城区里辛街道棋山观村党支部书记</p>
+			<p
+				style='padding: 0px; color: rgb(51, 51, 51); line-height: 32px; font-family: "microsoft yahei"; font-size: 18px; margin-top: 20px; margin-bottom: 10px; white-space: normal; max-height: 999999px; background-color: rgb(255, 255, 255);'>
+				　　李永奇 莱芜市钢城区颜庄镇柳桥峪村党支&amp;</p>
+		</div>
+		<div class="xiaz">
+			<ul>
+				<li><strong>上一篇：</strong>
+					<a href="./25.html">关于做好2018年引进顶尖人才“一事一议”申报工作的通知</a>
+				</li>
+				<li><strong>下一篇：</strong>
+					<a href="./27.html">“本色家园”标识、主题歌、主题用语 征集评审结果面向社会公布</a>
+				</li>
+			</ul>
+		</div>
+
+		<link href="./../static/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<link href="./../plugins/comment/view/public/aeest/mess.css" rel="stylesheet">
+		<style type="text/css">
+			.pic-list li {
+				margin-bottom: 5px;
+			}
+
+			#edui1_bottombar {
+				display: none;
+			}
+		</style>
+		<h3>评论</h3>
+		<div class="comment-area" id="comments">
+			<form class="comment-form js-ajax-form" action="/plugin/comment/comment/add.html" method="post">
+				<div class="form-group">
+					<div class="comment-postbox-wraper">
+						<script type="text/plain" id="content" name="content" placeholder="Write your comment here"
+							class="comment-postbox"></script>
+					</div>
+				</div>
+				<div class="form-group">
+					<button type="submit" class="btn pull-right btn-primary js-ajax-submit"
+						id="plugin-comment-comment-box-submit-btn">
+						<i class="fa fa-comment-o"></i> 发表评论
+					</button>
+				</div>
+				<input type="hidden" name="object_title" value="全省拟表彰和宣传的先进典型公示公告" />
+				<input type="hidden" name="table_name" value="portal_post" />
+				<input type="hidden" name="object_id" value="26" />
+				<input type="hidden" name="url"
+					value="eyJhY3Rpb24iOiJwb3J0YWxcL0FydGljbGVcL2luZGV4IiwicGFyYW0iOnsiaWQiOjI2fX0=" />
+				<input type="hidden" name="email" value="">
+				<input type="hidden" name="full_name" value="">
+				<div class="clearfix"></div>
+			</form>
+			<div class="comments">
+				<hr style="margin: 5px 0;">
+				<div id="comment20" class="comment" data-id="20" data-user_id="16052">
+					<div>
+						<a style="float:left;margin-right:10px;">
+							<img class="media-object avatar"
+								src="/upload/avatar/mobile/20200325/ce83bbc3317e61148c5b2c7c05b60c6d.png?t=1649849761"
+								width="40" height="40">
+						</a>
+						<div>
+							<a>JAY</a><br>
+							<span class="time">11-14 10:16</span>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="comment-body">
+						<div class="comment-content">支持党的领导😊 😊</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
 				<ul class="pagination">
-					</ul>
-</div>	
-</div>
-<script type="text/javascript">
-    //编辑器路径定义
-    var editorURL = GV.WEB_ROOT;
-</script>
-<script type="text/javascript" src="/../plugins/comment/view/public/aeest/config.js"></script>
-<script type="text/javascript" src="/../static/js/ueditor/ueditor.all.min.js"></script>
-<script type="text/javascript">
-    $(function () {
-        editorcontent = new baidu.editor.ui.Editor();
-        editorcontent.render('content');
-        try {
-            editorcontent.sync();
-        } catch (err) {
-        }
-    });
-</script></div>
-<div class="sr_footer w1min">
-	<div class="w1">
-		<dl class="ft1">
-			<dd><b>陕西交控集团-智慧党建平台</b></dd><dd>企业：陕西交通控股集团有限公司</dd>
-			<dd>电话：029-87832666 传真：029- 87832174</dd><dd>地址：陕西省西安市雁塔区太白南路9号</dd>
-			<dd>陕ICP备2021008491号 陕公网安备 61011302001299号  </dd>
-			<dd>版权所有 © 2021 陕西交通控股集团有限公司 All Rights Reserved</dd>
-		</dl>
-		<!-- <dl class="ft2">
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript">
+			//编辑器路径定义
+			var editorURL = GV.WEB_ROOT;
+		</script>
+		<script type="text/javascript" src="/../plugins/comment/view/public/aeest/config.js"></script>
+		<script type="text/javascript" src="/../static/js/ueditor/ueditor.all.min.js"></script>
+		<script type="text/javascript">
+			$(function () {
+				editorcontent = new baidu.editor.ui.Editor();
+				editorcontent.render('content');
+				try {
+					editorcontent.sync();
+				} catch (err) {
+				}
+			});
+		</script>
+	</div>
+	<div class="sr_footer w1min">
+		<div class="w1">
+			<dl class="ft1">
+				<dd><b>陕西交控集团-智慧党建平台</b></dd>
+				<dd>企业：陕西交通控股集团有限公司</dd>
+				<dd>电话：029-87832666 传真：029- 87832174</dd>
+				<dd>地址：陕西省西安市雁塔区太白南路9号</dd>
+				<dd>陕ICP备2021008491号 陕公网安备 61011302001299号 </dd>
+				<dd>版权所有 © 2021 陕西交通控股集团有限公司 All Rights Reserved</dd>
+			</dl>
+			<!-- <dl class="ft2">
 			<a href="http://wpa.qq.com/msgrd?v=3&uin=34147588&site=qq&menu=yes" target="_blank" rel="nofollow" class="layui-btn layui-btn-danger layui-btn-radius"><i class="iconfont icon-qq"></i>在线咨询</a>
 		</dl> -->
-		<dl class="ft4">
-			<dd>
-				    		                     <a href="./../about.html" title="关于我们" target="">
-		                             <i class="iconfont icon-dangwugongkai"></i>关于我们		                         </a>
-		                 		                     <a href="./../statement.html" title="网站声明" target="">
-		                             <i class="iconfont icon-dangwugongkai"></i>网站声明		                         </a>
-		                 		                     <a href="./../contact.html" title="联系我们" target="">
-		                             <i class="iconfont icon-dangwugongkai"></i>联系我们		                         </a>
-		                 
-			</dd>	
-		</dl>
-		<dl class="ft3"><img src="/../upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg" border="0" /></dl>
+			<dl class="ft4">
+				<dd>
+					<a href="./../about.html" title="关于我们" target="">
+						<i class="iconfont icon-dangwugongkai"></i>关于我们 </a>
+					<a href="./../statement.html" title="网站声明" target="">
+						<i class="iconfont icon-dangwugongkai"></i>网站声明 </a>
+					<a href="./../contact.html" title="联系我们" target="">
+						<i class="iconfont icon-dangwugongkai"></i>联系我们 </a>
+
+				</dd>
+			</dl>
+			<dl class="ft3"><img src="/../upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg" border="0" /></dl>
+		</div>
 	</div>
-</div>
-<ul class="g-navFloat">
-	<!-- <li>
+	<ul class="g-navFloat">
+		<!-- <li>
 		<a href="./https://dj.cnki.io" target="_blank" class="u-tiyan">
 		<p>立</p><p>即</p><p>体</p><p>验</p>
 		</a>
 	</li> -->
-	<li>
-		<a href="http://wpa.qq.com/msgrd?v=3&uin=1151710686&site=qq&menu=yes" target="_blank"><i class="iconfont icon-qq"></i></a>
-	</li>
-	<li>
-		<div class="u-contents content-qr">
-			<img src="/../upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg">
-			<p>智慧党建平台</p>
-		</div>
-		<a href="javascript:void(0);"><i class="iconfont icon-weixin"></i></a>
-	</li>
-	<li>
-		<div class="u-contents content-tel">
-			<p>029-87832666</p>
-			<p><br /></p>
-		</div>
-		<a href="javascript:void(0);"><i class="iconfont icon-dianhua"></i></a>
-	</li>
-</ul>
-<div style="display:none;"></div>
-<script type="text/javascript">
-	jQuery(".index2_6_con").slide({
-		delayTime: 500,
-		effect: "left",
-		autoPlay: true,
-	});
-	$(".clearfix01 .bj_tab ul li").hover(function(){
-		$(this).find(".icon_bj").removeClass("transform0");
-		$(this).find(".icon_bj").addClass("transform1");
-		
-	},function(){
-		$(this).find(".icon_bj").removeClass("transform1");
-		$(this).find(".icon_bj").addClass("transform0");
-		
-	});
-	$(".bj_img_buttm").find("span").hover(function(){
-		var a=$(this).attr("class");
-		$(".bj01").removeClass("cut");
-		$("#"+a).addClass("cut");
-	});
-</script>
-
-<script src="/../static/js/wind.js"></script>
-<script src="/../themes/zqdj_public/public/assets/simpleboot3/bootstrap/js/bootstrap.min.js"></script>
-<script src="/../static/js/frontend.js"></script>
-<!--gotop start-->
-<script>	
-	$(function(){		
-		$.post("/user/index/islogin.html",{},function(data){
-			if(data.code==1){
-				$("#ucenterlogin .user-nickname").text(data.data.user.user_login);
-				$("#ucenterlogin .login").show();
-                $("#ucenterlogin .offline").hide();
-			}
-			if(data.code==0){
-                $("#ucenterlogin .login").hide();
-				$("#ucenterlogin .offline").show();
-			}
+		<li>
+			<a href="http://wpa.qq.com/msgrd?v=3&uin=1151710686&site=qq&menu=yes" target="_blank"><i
+					class="iconfont icon-qq"></i></a>
+		</li>
+		<li>
+			<div class="u-contents content-qr">
+				<img src="/../upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg">
+				<p>智慧党建平台</p>
+			</div>
+			<a href="javascript:void(0);"><i class="iconfont icon-weixin"></i></a>
+		</li>
+		<li>
+			<div class="u-contents content-tel">
+				<p>029-87832666</p>
+				<p><br /></p>
+			</div>
+			<a href="javascript:void(0);"><i class="iconfont icon-dianhua"></i></a>
+		</li>
+	</ul>
+	<div style="display:none;"></div>
+	<script type="text/javascript">
+		jQuery(".index2_6_con").slide({
+			delayTime: 500,
+			effect: "left",
+			autoPlay: true,
 		});
-	});
-</script> 
-<!--gotop end--> 
-<!-- 
+		$(".clearfix01 .bj_tab ul li").hover(function () {
+			$(this).find(".icon_bj").removeClass("transform0");
+			$(this).find(".icon_bj").addClass("transform1");
+
+		}, function () {
+			$(this).find(".icon_bj").removeClass("transform1");
+			$(this).find(".icon_bj").addClass("transform0");
+
+		});
+		$(".bj_img_buttm").find("span").hover(function () {
+			var a = $(this).attr("class");
+			$(".bj01").removeClass("cut");
+			$("#" + a).addClass("cut");
+		});
+	</script>
+
+	<script src="./../static/js/wind.js"></script>
+	<script src="./../themes/zqdj_public/public/assets/simpleboot3/bootstrap/js/bootstrap.min.js"></script>
+	<script src="./../static/js/frontend.js"></script>
+	<!--gotop start-->
+	<script>
+		$(function () {
+			$.post("/user/index/islogin.html", {}, function (data) {
+				if (data.code == 1) {
+					$("#ucenterlogin .user-nickname").text(data.data.user.user_login);
+					$("#ucenterlogin .login").show();
+					$("#ucenterlogin .offline").hide();
+				}
+				if (data.code == 0) {
+					$("#ucenterlogin .login").hide();
+					$("#ucenterlogin .offline").show();
+				}
+			});
+		});
+	</script>
+	<!--gotop end-->
+	<!-- 
 <ul id="side-bar" class="side-pannel side-bar">
   <span><img src="/upload/imgs/djwx.jpg"><i>党建小程序</i></span>
   <span><img src="/upload/imgs/djapp.jpg"><i>党建APP</i></span>
   <span><img src="/upload/imgs/djvideo.jpg"><i>视频介绍</i></span>
 </ul> -->
-<script>
-	$(function(){
-		$(window).scroll(function(){
-			if($(window).scrollTop()>100){  //距顶部多少像素时，出现返回顶部按钮
-				$("#side-bar .gotop").fadeIn();	
-			}
-			else{
-				$("#side-bar .gotop").hide();
-			}
+	<script>
+		$(function () {
+			$(window).scroll(function () {
+				if ($(window).scrollTop() > 100) {  //距顶部多少像素时，出现返回顶部按钮
+					$("#side-bar .gotop").fadeIn();
+				}
+				else {
+					$("#side-bar .gotop").hide();
+				}
+			});
+			$("#side-bar .gotop").click(function () {
+				$('html,body').animate({ 'scrollTop': 0 }, 500); //返回顶部动画 数值越小时间越短
+			});
 		});
-		$("#side-bar .gotop").click(function(){
-			$('html,body').animate({'scrollTop':0},500); //返回顶部动画 数值越小时间越短
+	</script>
+	<script type="text/javascript">
+		Wind.css('layer');
+		Wind.use("layer", function () {
+			layer.ready(function () { //为了layer.ext.js加载完毕再执行
+				layer.photos({
+					photos: '#articlePreviewDialog'
+					, shift: 5 //0-6的选择，指定弹出图片动画类型，默认随机
+				});
+			});
 		});
-	});
-</script>
-<script type="text/javascript">
-Wind.css('layer');
-Wind.use("layer", function () {
-	layer.ready(function(){ //为了layer.ext.js加载完毕再执行
-		  layer.photos({
-		    photos: '#articlePreviewDialog'
-		    ,shift: 5 //0-6的选择，指定弹出图片动画类型，默认随机
-		  });
-		});
-});
-</script>
+	</script>
 </body>
+
 </html>
