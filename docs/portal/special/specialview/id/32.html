@@ -77,8 +77,8 @@ jQuery("#nav").slide({ type:"menu", titCell:".nLi", targetCell:".sub",delayTime:
     hr{background-color: #e6e6e6;}
 	#edui1_bottombar{display:none;}
 </style>
-<h3>评论</h3>
-<div class="comment-area" id="comments">
+<h3 class="layui-hide">评论</h3>
+<div class="comment-area layui-hide" id="comments">
     <form class="comment-form js-ajax-form" action="/portal/special/specialpost.html" method="post">
     	<input type="hidden" name="id" value="32">
         <div class="form-group">
@@ -93,7 +93,7 @@ jQuery("#nav").slide({ type:"menu", titCell:".nLi", targetCell:".sub",delayTime:
         </div>
         <div class="clearfix"></div>
     </form>
-	<div class="comments">
+	<div class="comments layui-hide">
                 <ul class="pagination">
                     </ul>
 	</div>	
