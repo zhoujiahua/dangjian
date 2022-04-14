@@ -5,14 +5,27 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>随手拍 智慧党建平台</title>
+	<title> 智慧党建平台</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
 	<link href="https://at.alicdn.com/t/font_759613_byou54gk0v7.css" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" type="text/css" href="./../../themes/zqdj_public/public/assets/zqdj_public/css/style.css" />
-	<script src="./../../static/js/jquery.js"></script>
-	<script src="./../../themes/zqdj_public/public/assets/zqdj_public/js/jquery.SuperSlide.js"></script>
-	<link rel="stylesheet" href="./../../themes/zqdj_public/public/assets/zqdj_public/js/layui/css/layui.css"
-		media="all">
-	<script src="./../../themes/zqdj_public/public/assets/zqdj_public/js/layui/layui.js"></script>
+	<link rel="stylesheet" type="text/css" href="./themes/zqdj_public/public/assets/zqdj_public/css/style.css" />
+	<style>
+		.dj-dsj {
+			width: 100%;
+			height: 100%;
+			padding: 15px 0;
+		}
+
+		.dj-dsj img {
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+	<script src="/static/js/jquery.js"></script>
+	<script src="/themes/zqdj_public/public/assets/zqdj_public/js/jquery.SuperSlide.js"></script>
+	<link rel="stylesheet" href="./themes/zqdj_public/public/assets/zqdj_public/js/layui/css/layui.css" media="all">
+	<script src="/themes/zqdj_public/public/assets/zqdj_public/js/layui/layui.js"></script>
 
 	<script type="text/javascript">
 		//判断是否是手机版访问,跳转到手机版
@@ -29,55 +42,6 @@
 			TMPL: "/themes/zqdj_public/"
 		};
 	</script>
-	<link rel="stylesheet" href="./../../static/js/zTree_v3/css/zTreeStyle/zTreeStyle.css">
-	<script type="text/javascript" src="./../../static/js/zTree_v3/js/jquery.ztree.core.min.js"></script>
-	<style type="text/css">
-		.my-2-content span.curr a {
-			background: #e80000;
-			color: #fff;
-		}
-
-		.has-error input,
-		.has-error textarea {
-			border: 1px solid #ff0000;
-		}
-
-		#photos {
-			clear: both;
-			width: 100%;
-			height: auto;
-			border: none;
-		}
-
-		#photos li {
-			float: left;
-			margin: 5px;
-			padding-bottom: 10px;
-			width: 106px;
-			height: 136px;
-			border-bottom: none;
-			text-align: center;
-		}
-
-		#photos li img {
-			width: 100px;
-			height: 100px;
-			border: 1px solid #ccc;
-			padding: 2px;
-		}
-
-		#photos li a {
-			padding: 2px;
-		}
-	</style>
-	<script type="text/html" id="photos-item-tpl">
-    <li id="saved-image{id}">
-        <input id="photo-{id}" type="hidden" name="photo_urls[]" value="{filepath}">
-        <img id="photo-{id}-preview" src="/portal/supervise/{url}" onclick="imagePreviewDialog(this.src);">
-        <a href="javascript:uploadOneImage('图片上传','#photo-{id}');">替换</a>
-        <a href="javascript:(function(){$('#saved-image{id}').remove();})();">移除</a>
-    </li>
-</script>
 </head>
 
 <body>
@@ -86,8 +50,8 @@
 	<div class="top_x w1min">
 		<div class="w1">
 			<div class="topx_left">
-				<div class="topx_logo"><img
-						src="./../../themes/zqdj_public/public/assets/zqdj_public/imgs/header_logo.png" /></div>
+				<div class="topx_logo"><img src="/themes/zqdj_public/public/assets/zqdj_public/imgs/header_logo.png" />
+				</div>
 				<div class="topx_zi">
 					<h1>陕西交控集团-智慧党建平台</h1>
 				</div>
@@ -95,12 +59,11 @@
 			<div class="topx_right" id="ucenterlogin">
 				<dl class="login" style="display:none;">
 					你好,丁俊陶 <span class="user-nickname"></span>
-					<a href="./../../user/profile/center.html"><i class="iconfont icon-user"></i>党员中心</a>
-					<a href="./../../user/index/logout.html">&nbsp;&nbsp;退出登录</a>
+					<a href="/user/profile/center.html"><i class="iconfont icon-user"></i>党员中心</a>
+					<a href="/user/index/logout.html">&nbsp;&nbsp;退出登录</a>
 				</dl>
 				<dl class="offline" style="display:none;">
-					<a href="./../../user/login/index.html" class="signin"><i
-							class="iconfont icon-gongchandang"></i>登录</a>
+					<a href="/user/login/index.html" class="signin"><i class="iconfont icon-gongchandang"></i>登录</a>
 				</dl>
 				<div class="top-search">
 					<form method="post" action="/portal/search/index.html" target="_blank">
@@ -160,7 +123,7 @@
 					<b>积分统计</b>
 				</a>
 			</li>
-			<li class="layui-nav-item">
+			<li class="layui-nav-item layui-this">
 				<a href="/jcdjdsj.html" target="">
 					<b>基层党建</b>
 				</a>
@@ -176,72 +139,20 @@
 		</script>
 	</div>
 	<!--top区域 end-->
-	<div class="w1 banne1 mgtop-15"><img src="./../../upload/admin/20181120/b02187c3e779476c3d555e59ccdcb415.jpg"></div>
-
+	<div class="w1 banne1 mgtop-15"><img src="/upload/admin/20181120/b02187c3e779476c3d555e59ccdcb415.jpg"></div>
 	<div class="mgtop-15 background-w1">
-		<div class="w5-left">
-			<div class="mr-mu">
-				<ul><i class="iconfont icon-tianxie"></i>监督执纪</ul>
-			</div>
-
-			<div class="m_newp3 link2">
-				<ul>
-					<li><span><a href="./index/cid/12.html">随手拍</a></span></li>
-					<li><span><a href="./index/cid/13.html">建言献策</a></span></li>
-					<li><span><a href="./index/cid/14.html">书记信箱</a></span></li>
-					<li><span><a href="./index/cid/15.html">匿名举报</a></span></li>
-				</ul>
-			</div>
+		<div class="fdiv mua">
+			<ul><i class="iconfont icon-dangwugongkai"></i><b>基层党建大数据版</b></ul>
+			<ol>当前位置：<a href="/user/index/logout.html">首页</a> >
+				<a href="./dongtai.html">基层党建大数据版</a>
+			</ol>
 		</div>
-
-		<div class="w5-right">
-			<div class="fdiv mua">
-				<ul><i class="iconfont icon-dangwugongkai"></i><b>随手拍</b></ul>
-				<ol>当前位置：<a href="./../../user/index/logout.html">首页</a> > <a href="./index.html">监督执纪</a> >
-					随手拍</ol>
-			</div>
-
-			<div class="guestbook_table">
-				<form method="post" class="js-ajax-form" action="/portal/supervise/submitpost.html">
-					<input type="hidden" name="group" value=12 />
-					<dl>
-						<dt>标题：<span class="required">*</span></dt>
-						<dd><input style="width:100%;" class="input_h1 layui-input" type="text" required name="title"
-								placeholder="请输入主题"></dd>
-					</dl>
-					<dl>
-						<dt>内容：<span class="required">*</span></dt>
-						<dd><textarea name="details" placeholder="请输入内容" required class="layui-textarea" rows="10"
-								cols="80"></textarea></dd>
-					</dl>
-					<dl>
-						<dt>验证码：<span class="required">*</span></dt>
-						<dd>
-							<input style="float:left;margin:5px 10px 0 0" type="text" name="captcha" captcha required
-								placeholder="验证码" class="input_h1 layui-input">
-							<img src="./../../static/images/v1.png" height="38" width="150" onclick="javascript:void(0);" title="换一张"
-								class="captcha captcha-img verify_img" style="cursor: pointer;" />
-							<input type="hidden" name="_captcha_id" value="">
-						</dd>
-					</dl>
-					<dl>
-						<dt>图片：</dt>
-						<dd>
-							<ul id="photos" class="pic-list list-unstyled form-inline"></ul>
-							<p style="margin: 5px;clear: both;"><button class="layui-btn layui-bg-blue" type="button"
-									onclick="uploadMultiImage('图片上传','#photos','photos-item-tpl')">开始上传</button></p>
-						</dd>
-					</dl>
-					<dl>
-						<dd class="operation">
-							<button class="input_h1 layui-btn layui-bg-red js-ajax-submit" type="submit">确定提交</button>
-						</dd>
-					</dl>
-				</form>
+		<div class="m_newtu">
+			<div class="dj-dsj">
+				<img src="./static/images/dsj.jpg">
 			</div>
 		</div>
 	</div>
-
 	<div class="sr_footer w1min">
 		<div class="w1">
 			<dl class="ft1">
@@ -257,17 +168,16 @@
 		</dl> -->
 			<dl class="ft4">
 				<dd>
-					<a href="./../../about.html" title="关于我们" target="">
+					<a href="./about.html" title="关于我们" target="">
 						<i class="iconfont icon-dangwugongkai"></i>关于我们 </a>
-					<a href="./../../statement.html" title="网站声明" target="">
+					<a href="./statement.html" title="网站声明" target="">
 						<i class="iconfont icon-dangwugongkai"></i>网站声明 </a>
-					<a href="./../../contact.html" title="联系我们" target="">
+					<a href="./contact.html" title="联系我们" target="">
 						<i class="iconfont icon-dangwugongkai"></i>联系我们 </a>
 
 				</dd>
 			</dl>
-			<dl class="ft3"><img src="./../../upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg" border="0" />
-			</dl>
+			<dl class="ft3"><img src="/upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg" border="0" /></dl>
 		</div>
 	</div>
 	<ul class="g-navFloat">
@@ -282,7 +192,7 @@
 		</li>
 		<li>
 			<div class="u-contents content-qr">
-				<img src="./../../upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg">
+				<img src="/upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg">
 				<p>智慧党建平台</p>
 			</div>
 			<a href="javascript:void(0);"><i class="iconfont icon-weixin"></i></a>
@@ -318,9 +228,9 @@
 		});
 	</script>
 
-	<script src="./../../static/js/wind.js"></script>
-	<script src="./../../themes/zqdj_public/public/assets/simpleboot3/bootstrap/js/bootstrap.min.js"></script>
-	<script src="./../../static/js/frontend.js"></script>
+	<script src="/static/js/wind.js"></script>
+	<script src="/themes/zqdj_public/public/assets/simpleboot3/bootstrap/js/bootstrap.min.js"></script>
+	<script src="/static/js/frontend.js"></script>
 	<!--gotop start-->
 	<script>
 		$(function () {
@@ -358,9 +268,6 @@
 				$('html,body').animate({ 'scrollTop': 0 }, 500); //返回顶部动画 数值越小时间越短
 			});
 		});
-	</script>
-	<script type="text/javascript">
-
 	</script>
 </body>
 
