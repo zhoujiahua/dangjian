@@ -5,31 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>三会一课 智慧党建平台</title>
+    <title>民主评议 智慧党建平台</title>
     <link href="https://at.alicdn.com/t/font_759613_byou54gk0v7.css" rel="stylesheet" />
     <link rel="stylesheet" href="./../../themes/zqdj_public/public/assets/zqdj_public/css/style.css" />
-    <script src="./../../static/js/jquery.js"></script>
     <script src="./../../themes/zqdj_public/public/assets/zqdj_public/js/jquery.SuperSlide.js"></script>
     <link rel="stylesheet" href="./../../themes/zqdj_public/public/assets/zqdj_public/js/layui/css/layui.css"
         media="all">
     <link rel="stylesheet" href="/static/css/reset.css">
-    <script src="./../../themes/zqdj_public/public/assets/zqdj_public/js/layui/layui.js"></script>
-
-    <script type="text/javascript">
-        //判断是否是手机版访问,跳转到手机版
-        var isiPad = navigator.userAgent.match(/iPad|iPhone|Android|Linux|iPod/i) != null;
-        if (isiPad) {
-            var wapurl = '/weixin/Index/index.html';
-            // window.location.href = wapurl;
-        }
-        //全局变量
-        var GV = {
-            ROOT: "/",
-            WEB_ROOT: "/",
-            JS_ROOT: "static/js/",
-            TMPL: "/themes/zqdj_public/"
-        };
-    </script>
 </head>
 
 <body>
@@ -98,7 +80,7 @@
                         <b>谈心谈话</b>
                     </a>
                 </li>
-                <li class="layui-nav-item">
+                <li class="layui-nav-item layui-this">
                     <a href="/portal/mzpy/index.html" target="">
                         <b>民主评议</b>
                     </a>
@@ -113,7 +95,7 @@
                         <b>党建赋能</b>
                     </a>
                 </li>
-                <li class="layui-nav-item layui-this">
+                <li class="layui-nav-item">
                     <a href="/portal/sanhui/index.html" target="">
                         <b>三会一课</b>
                     </a>
@@ -134,13 +116,6 @@
                     </a>
                 </li>
             </ul>
-            <script>
-                //注意：导航 依赖 element 模块，否则无法进行功能性操作
-                layui.use('element', function () {
-                    var element = layui.element;
-
-                });
-            </script>
         </div>
         <!--top区域 end-->
         <div class="w1 banne1 mgtop-15"><img src="./../../upload/admin/20181120/b02187c3e779476c3d555e59ccdcb415.jpg">
@@ -149,10 +124,10 @@
         <div class="mgtop-15 background-w1">
             <div class="fdiv mua">
                 <ul><i class="iconfont icon-dangwugongkai"></i>
-                    <b>三会一课</b>
+                    <b>民主评议</b>
                 </ul>
                 <ol>当前位置：<a href="/">首页</a> >
-                    <a href="./wenjuanlist.html">三会一课</a>
+                    <a href="./index.html">民主评议</a>
                 </ol>
             </div>
             <div class="content">
@@ -163,29 +138,7 @@
                                 <form class="layui-form" action="">
                                     <div class="layui-form-item">
                                         <div class="layui-inline">
-                                            <label class="layui-form-label">开展形式</label>
-                                            <div class="layui-input-inline">
-                                                <select name="kzxs" lay-verify="required">
-                                                    <option value="">全部</option>
-                                                    <option value="0">党课</option>
-                                                    <option value="1">支部党员大会</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="layui-inline">
-                                            <label class="layui-form-label">状态</label>
-                                            <div class="layui-input-inline">
-                                                <select name="status" lay-verify="required">
-                                                    <option value="">全部</option>
-                                                    <option value="0">进行中</option>
-                                                    <option value="1">已结束</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="layui-form-item">
-                                        <div class="layui-inline">
-                                            <label class="layui-form-label">发布时间</label>
+                                            <label class="layui-form-label">评议时间</label>
                                             <div class="layui-input-inline" style="width: 100px;">
                                                 <input type="text" name="price_min" autocomplete="off"
                                                     class="layui-input">
@@ -194,6 +147,17 @@
                                             <div class="layui-input-inline" style="width: 100px;">
                                                 <input type="text" name="price_max" autocomplete="off"
                                                     class="layui-input">
+                                            </div>
+                                        </div>
+                                        <div class="layui-inline">
+                                            <label class="layui-form-label">评议状态</label>
+                                            <div class="layui-input-inline">
+                                                <select name="status" lay-verify="required">
+                                                    <option value="">全部</option>
+                                                    <option value="0">进行中</option>
+                                                    <option value="0">未开始</option>
+                                                    <option value="1">已结束</option>
+                                                </select>
                                             </div>
                                         </div>
                                         <div class="layui-inline">
@@ -218,89 +182,71 @@
                                 <table class="layui-table">
                                     <colgroup>
                                         <col width="90">
-                                        <col width="400">
-                                        <col width="120">
+                                        <col width="200">
                                         <col width="90">
-                                        <col width="120">
+                                        <col width="200">
+                                        <col width="200">
+                                        <col width="200">
                                         <col>
                                     </colgroup>
                                     <thead>
                                         <tr>
                                             <th>序号</th>
-                                            <th>主题</th>
-                                            <th>开展形式</th>
-                                            <th>状态</th>
-                                            <th>发表时间</th>
-                                            <th>操作</th>
+                                            <th>姓名</th>
+                                            <th>评议状态</th>
+                                            <th>开始时间</th>
+                                            <th>结束时间</th>
+                                            <th>评议结果</th>
+                                            <th>评议详情</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td>1</td>
-                                            <td>（线上）上党课、讲党情、学党史</td>
-                                            <td>党课</td>
+                                            <td>魏欢</td>
                                             <td>已结束</td>
-                                            <td>2022-01-29</td>
+                                            <td>2022-02-29 14:30:30</td>
+                                            <td>2022-02-29 17:30:20</td>
+                                            <td>优秀</td>
                                             <td>
                                                 <button type="button"
-                                                    class="layui-btn layui-btn layui-btn-danger layui-btn-sm">心得</button>
-                                                <button type="button"
-                                                    class="layui-btn layui-btn layui-btn-danger layui-btn-sm">总结</button>
-                                                <button type="button"
-                                                    class="layui-btn layui-btn layui-btn-danger layui-btn-sm">人员</button>
-                                                <button type="button"
-                                                    class="layui-btn layui-btn layui-btn-danger layui-btn-sm">详情</button>
+                                                    class="layui-btn layui-btn layui-btn-danger layui-btn-sm">谈话详情</button>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
-                                            <td>认真学习贯彻全国两会精神</td>
-                                            <td>支部党员大会</td>
+                                            <td>魏欢</td>
                                             <td>已结束</td>
-                                            <td>2022-02-29</td>
+                                            <td>2022-02-29 14:30:30</td>
+                                            <td>2022-02-29 17:30:20</td>
+                                            <td>优秀</td>
                                             <td>
                                                 <button type="button"
-                                                    class="layui-btn layui-btn layui-btn-danger layui-btn-sm">心得</button>
-                                                <button type="button"
-                                                    class="layui-btn layui-btn layui-btn-danger layui-btn-sm">总结</button>
-                                                <button type="button"
-                                                    class="layui-btn layui-btn layui-btn-danger layui-btn-sm">人员</button>
-                                                <button type="button"
-                                                    class="layui-btn layui-btn layui-btn-danger layui-btn-sm">详情</button>
+                                                    class="layui-btn layui-btn layui-btn-danger layui-btn-sm">谈话详情</button>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
-                                            <td>（线上）上党课、讲党情、学党史</td>
-                                            <td>党课</td>
+                                            <td>魏欢</td>
                                             <td>已结束</td>
-                                            <td>2022-01-29</td>
+                                            <td>2022-02-29 14:30:30</td>
+                                            <td>2022-02-29 17:30:20</td>
+                                            <td>优秀</td>
                                             <td>
                                                 <button type="button"
-                                                    class="layui-btn layui-btn layui-btn-danger layui-btn-sm">心得</button>
-                                                <button type="button"
-                                                    class="layui-btn layui-btn layui-btn-danger layui-btn-sm">总结</button>
-                                                <button type="button"
-                                                    class="layui-btn layui-btn layui-btn-danger layui-btn-sm">人员</button>
-                                                <button type="button"
-                                                    class="layui-btn layui-btn layui-btn-danger layui-btn-sm">详情</button>
+                                                    class="layui-btn layui-btn layui-btn-danger layui-btn-sm">谈话详情</button>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>4</td>
-                                            <td>认真学习贯彻全国两会精神</td>
-                                            <td>支部党员大会</td>
+                                            <td>魏欢</td>
                                             <td>已结束</td>
-                                            <td>2022-02-29</td>
+                                            <td>2022-02-29 14:30:30</td>
+                                            <td>2022-02-29 17:30:20</td>
+                                            <td>优秀</td>
                                             <td>
                                                 <button type="button"
-                                                    class="layui-btn layui-btn layui-btn-danger layui-btn-sm">心得</button>
-                                                <button type="button"
-                                                    class="layui-btn layui-btn layui-btn-danger layui-btn-sm">总结</button>
-                                                <button type="button"
-                                                    class="layui-btn layui-btn layui-btn-danger layui-btn-sm">人员</button>
-                                                <button type="button"
-                                                    class="layui-btn layui-btn layui-btn-danger layui-btn-sm">详情</button>
+                                                    class="layui-btn layui-btn layui-btn-danger layui-btn-sm">评议详情</button>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -310,17 +256,7 @@
                     </div>
                 </div>
             </div>
-            <script>
-                layui.use('form', function () {
-                    var form = layui.form;
 
-                    //监听提交
-                    form.on('submit(formDemo)', function (data) {
-                        layer.msg(JSON.stringify(data.field));
-                        return false;
-                    });
-                });
-            </script>
         </div>
 
         <div class="sr_footer w1min">
@@ -333,9 +269,6 @@
                     <dd>陕ICP备2021008491号 陕公网安备 61011302001299号 </dd>
                     <dd>版权所有 © 2021 陕西交通控股集团有限公司 All Rights Reserved</dd>
                 </dl>
-                <!-- <dl class="ft2">
-			<a href="http://wpa.qq.com/msgrd?v=3&uin=34147588&site=qq&menu=yes" target="_blank" rel="nofollow" class="layui-btn layui-btn-danger layui-btn-radius"><i class="iconfont icon-qq"></i>在线咨询</a>
-		</dl> -->
                 <dl class="ft4">
                     <dd>
                         <a href="./../../about.html" title="关于我们" target="">
@@ -353,11 +286,6 @@
             </div>
         </div>
         <ul class="g-navFloat">
-            <!-- <li>
-		<a href="./https://dj.cnki.io" target="_blank" class="u-tiyan">
-		<p>立</p><p>即</p><p>体</p><p>验</p>
-		</a>
-	</li> -->
             <li>
                 <a href="http://wpa.qq.com/msgrd?v=3&uin=1151710686&site=qq&menu=yes" target="_blank"><i
                         class="iconfont icon-qq"></i></a>
@@ -377,72 +305,26 @@
                 <a href="javascript:void(0);"><i class="iconfont icon-dianhua"></i></a>
             </li>
         </ul>
-        <div style="display:none;"></div>
-        <script type="text/javascript">
-            $(".index2_6_con").slide({
-                delayTime: 500,
-                effect: "left",
-                autoPlay: true,
-            });
-            $(".clearfix01 .bj_tab ul li").hover(function () {
-                $(this).find(".icon_bj").removeClass("transform0");
-                $(this).find(".icon_bj").addClass("transform1");
 
-            }, function () {
-                $(this).find(".icon_bj").removeClass("transform1");
-                $(this).find(".icon_bj").addClass("transform0");
-
-            });
-            $(".bj_img_buttm").find("span").hover(function () {
-                var a = $(this).attr("class");
-                $(".bj01").removeClass("cut");
-                $("#" + a).addClass("cut");
-            });
-        </script>
-
-        <script src="./../../static/js/wind.js"></script>
-        <script src="./../../themes/zqdj_public/public/assets/simpleboot3/bootstrap/js/bootstrap.min.js"></script>
-        <script src="./../../static/js/frontend.js"></script>
-        <!--gotop start-->
-        <script>
-            $(function () {
-                $.post("/user/index/islogin.html", {}, function (data) {
-                    if (data.code == 1) {
-                        $("#ucenterlogin .user-nickname").text(data.data.user.user_login);
-                        $("#ucenterlogin .login").show();
-                        $("#ucenterlogin .offline").hide();
-                    }
-                    if (data.code == 0) {
-                        $("#ucenterlogin .login").hide();
-                        $("#ucenterlogin .offline").show();
-                    }
-                });
-            });
-        </script>
-        <!--gotop end-->
-        <!-- 
-<ul id="side-bar" class="side-pannel side-bar">
-  <span><img src="/upload/imgs/djwx.jpg"><i>党建小程序</i></span>
-  <span><img src="/upload/imgs/djapp.jpg"><i>党建APP</i></span>
-  <span><img src="/upload/imgs/djvideo.jpg"><i>视频介绍</i></span>
-</ul> -->
-        <script>
-            $(function () {
-                $(window).scroll(function () {
-                    if ($(window).scrollTop() > 100) { //距顶部多少像素时，出现返回顶部按钮
-                        $("#side-bar .gotop").fadeIn();
-                    } else {
-                        $("#side-bar .gotop").hide();
-                    }
-                });
-                $("#side-bar .gotop").click(function () {
-                    $('html,body').animate({
-                        'scrollTop': 0
-                    }, 500); //返回顶部动画 数值越小时间越短
-                });
-            });
-        </script>
     </div>
+
+    <!-- JS -->
+    <script src="./../../static/js/jquery.js"></script>
+    <script src="./../../static/js/wind.js"></script>
+    <script src="./../../static/js/frontend.js"></script>
+    <script src="./../../themes/zqdj_public/public/assets/zqdj_public/js/layui/layui.js"></script>
+    <script>
+        layui.use(['form', 'element'], function () {
+            var form = layui.form,
+                element = layui.element;
+
+            //监听提交
+            form.on('submit(formDemo)', function (data) {
+                layer.msg(JSON.stringify(data.field));
+                return false;
+            });
+        });
+    </script>
 </body>
 
 </html>

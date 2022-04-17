@@ -11,11 +11,8 @@
 	<meta name="description" content="智慧党建">
 	<link href="https://at.alicdn.com/t/font_759613_byou54gk0v7.css" rel="stylesheet" />
 	<link rel="stylesheet" href="./themes/zqdj_public/public/assets/zqdj_public/css/style.css" />
-	<script src="/static/js/jquery.js"></script>
-	<script src="/themes/zqdj_public/public/assets/zqdj_public/js/jquery.SuperSlide.js"></script>
 	<link rel="stylesheet" href="./themes/zqdj_public/public/assets/zqdj_public/js/layui/css/layui.css" media="all">
-	<link rel="stylesheet" href="/static/css/reset.css">
-	<script src="/themes/zqdj_public/public/assets/zqdj_public/js/layui/layui.js"></script>
+	<link rel="stylesheet" href="./static/css/reset.css">
 </head>
 
 <body>
@@ -36,7 +33,7 @@
 					<dl class="login" style="display:none;">
 						<span class="user-nickname">你好,丁俊陶</span>
 						<a href="/user/profile/center.html"><i class="iconfont icon-user"></i>党员中心</a>
-						<a href="./user/index/logout.html">&nbsp;&nbsp;退出登录</a>
+						<a href="javascript:void(0);" id="logout">&nbsp;&nbsp;退出登录</a>
 					</dl>
 					<dl class="offline" style="display:none;">
 						<a href="/user/login/index.html" class="signin"><i class="iconfont icon-gongchandang"></i>登录</a>
@@ -75,22 +72,22 @@
 					</a>
 				</li>
 				<li class="layui-nav-item">
-					<a href="/portal/activity/index.html" target="">
+					<a href="/portal/drhd/index.html" target="">
 						<b>党日活动</b>
 					</a>
 				</li>
 				<li class="layui-nav-item">
-					<a href="/portal/activity/index.html" target="">
+					<a href="/portal/txth/index.html" target="">
 						<b>谈心谈话</b>
 					</a>
 				</li>
 				<li class="layui-nav-item">
-					<a href="/portal/activity/index.html" target="">
+					<a href="/portal/mzpy/index.html" target="">
 						<b>民主评议</b>
 					</a>
 				</li>
 				<li class="layui-nav-item">
-					<a href="/portal/activity/index.html" target="">
+					<a href="/portal/dangwu/index.html" target="">
 						<b>换届情况</b>
 					</a>
 				</li>
@@ -120,13 +117,8 @@
 					</a>
 				</li>
 			</ul>
-			<script>
-				//注意：导航 依赖 element 模块，否则无法进行功能性操作
-				layui.use('element', function () {
-					var element = layui.element;
-				});
-			</script>
 		</div>
+
 		<!--top区域 end-->
 		<div class="w1 banne1 mgtop-15"><img src="/upload/admin/20181120/b02187c3e779476c3d555e59ccdcb415.jpg"></div>
 		<div class="mgtop-15 w1 tout link1">
@@ -138,7 +130,6 @@
 			</ol>
 
 		</div>
-
 
 		<div class="mgtop-15 background-w1">
 			<!--左区域_s-->
@@ -179,22 +170,6 @@
 						<a class="next" href="javascript:void(0)"></a>
 					</div>
 				</div>
-				<script>
-					$("#banner_x").hover(function () {
-						$(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.2)
-					}, function () {
-						$(this).find(".prev,.next").fadeOut()
-					});
-					$('#banner_x').slide({
-						titCell: '.hd ul',
-						mainCell: '#banner ul',
-						autoPlay: true,
-						autoPage: true,
-						delayTime: 500,
-						interTime: 6000,
-						effect: 'fold'
-					});
-				</script>
 				<!--JS幻灯片 结束-->
 			</div>
 			<!--右区域_s-->
@@ -435,17 +410,7 @@
 						</div>
 						<a class="next" href="javascript:void(0)"></a>
 					</div>
-					<script type="text/javascript">
-						$(".ladyScroll").slide({
-							mainCell: ".dlList",
-							effect: "leftLoop",
-							vis: 4,
-							scroll: 1,
-							interTime: 10000,
-							delayTime: 1000,
-							autoPlay: true
-						});
-					</script>
+
 				</ol>
 			</div>
 		</div>
@@ -588,14 +553,14 @@
 					<li><a href="./portal/sanhui/index.html"><i
 								class="iconfont icon-sanhuiyike1"></i><span>三会一课</span></a>
 					</li>
-					<li><a href="./dongtai.html"><i class="iconfont icon-dangzuzhihuodong"></i><span>党建活动</span></a>
+					<li><a href="/portal/seritem/index.html"><i class="iconfont icon-dangzuzhihuodong"></i><span>志愿活动</span></a>
 					</li>
 					<li><a href="./portal/study/index.html"><i
 								class="iconfont icon-dangjiandongtai2"></i><span>党建赋能</span></a></li>
 					<li><a href="./portal/kaoshi/projectlist.html"><i
 								class="iconfont icon-kaoshi"></i><span>党建考试</span></a>
 					</li>
-					<li><a href="./portal/forum/index.html"><i
+					<li><a href="./portal/txth/index.html"><i
 								class="iconfont icon-minzhupingyi1"></i><span>谈心谈话</span></a>
 					</li>
 					<li><a href="./portal/vote/votelist.html"><i
@@ -605,7 +570,7 @@
 								class="iconfont icon-dangyuanfuwuguanli"></i><span>积分统计</span></a></li>
 					<li><a href="./portal/special/index.html"><i
 								class="iconfont icon-dangjiandongtai2"></i><span>党建专题</span></a></li>
-					<li><a href="./portal/dangfei/index.html"><i
+					<li><a href="./user/profile/center.html"><i
 								class="iconfont icon-dangfeijiaona1"></i><span>党费缴纳</span></a></li>
 
 					<li><a href="./user/index/userlist.html"><i class="iconfont icon-user"></i><span>党员管理</span></a>
@@ -618,7 +583,7 @@
 								class="iconfont icon-dangdaibiaogongzuoshi"></i><span>党建话题</span></a></li>
 					<li><a href="./dzbyw/index.html"><i class="iconfont icon-dangzuzhihuodong"></i><span>支部业务</span></a>
 					</li>
-					<li><a href="./portal/vote/votelist.html"><i
+					<li><a href="./portal/forum/index.html"><i
 								class="iconfont icon-renwuxian"></i><span>党建述职</span></a>
 					</li>
 				</ul>
@@ -719,20 +684,8 @@
 				</div>
 				<a class="next" href="javascript:void(0)"></a>
 			</div>
-			<script type="text/javascript">
-				$(".ladyDcroll").slide({
-					mainCell: ".dlList",
-					effect: "leftLoop",
-					vis: 5,
-					scroll: 1,
-					interTime: 10000,
-					delayTime: 1000,
-					autoPlay: true
-				});
-			</script>
+
 		</div>
-
-
 
 		<div class="mgtop-15 background-w1">
 			<div class="fdiv mua">
@@ -798,7 +751,6 @@
 								<em></em>
 							</div>
 						</li>
-
 
 						<li class="layui-elem-field">
 							<legend>
@@ -887,17 +839,6 @@
 				</div>
 				<a class="next" href="javascript:void(0)"></a>
 			</div>
-			<script type="text/javascript">
-				$(".ladyTcroll").slide({
-					mainCell: ".dlList",
-					effect: "leftLoop",
-					vis: 5,
-					scroll: 1,
-					interTime: 10000,
-					delayTime: 1000,
-					autoPlay: true
-				});
-			</script>
 		</div>
 
 		<div class="sr_footer w1min">
@@ -953,72 +894,62 @@
 				<a href="javascript:void(0);"><i class="iconfont icon-dianhua"></i></a>
 			</li>
 		</ul>
-		<div style="display:none;"></div>
-		<script type="text/javascript">
-			$(".index2_6_con").slide({
-				delayTime: 500,
-				effect: "left",
-				autoPlay: true,
-			});
-			$(".clearfix01 .bj_tab ul li").hover(function () {
-				$(this).find(".icon_bj").removeClass("transform0");
-				$(this).find(".icon_bj").addClass("transform1");
 
-			}, function () {
-				$(this).find(".icon_bj").removeClass("transform1");
-				$(this).find(".icon_bj").addClass("transform0");
-
-			});
-			$(".bj_img_buttm").find("span").hover(function () {
-				var a = $(this).attr("class");
-				$(".bj01").removeClass("cut");
-				$("#" + a).addClass("cut");
-			});
-		</script>
-
+		<!-- JS -->
+		<script src="./static/js/jquery.js"></script>
 		<script src="/static/js/wind.js"></script>
-		<script src="/themes/zqdj_public/public/assets/simpleboot3/bootstrap/js/bootstrap.min.js"></script>
 		<script src="/static/js/frontend.js"></script>
-		<!--gotop start-->
+		<script src="/themes/zqdj_public/public/assets/zqdj_public/js/jquery.SuperSlide.js"></script>
+		<script src="./themes/zqdj_public/public/assets/zqdj_public/js/layui/layui.js"></script>
 		<script>
-			$(function () {
-				$.post("/user/index/islogin.html", {}, function (data) {
-					if (data.code == 1) {
-						$("#ucenterlogin .user-nickname").text(data.data.user.user_login);
-						$("#ucenterlogin .login").show();
-						$("#ucenterlogin .offline").hide();
-					}
-					if (data.code == 0) {
-						$("#ucenterlogin .login").hide();
-						$("#ucenterlogin .offline").show();
-					}
+			layui.use('element', function () {
+				var element = layui.element;
+				$("#banner_x").hover(function () {
+					$(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.2)
+				}, function () {
+					$(this).find(".prev,.next").fadeOut()
+				});
+				$('#banner_x').slide({
+					titCell: '.hd ul',
+					mainCell: '#banner ul',
+					autoPlay: true,
+					autoPage: true,
+					delayTime: 500,
+					interTime: 6000,
+					effect: 'fold'
+				});
+
+				$(".ladyScroll").slide({
+					mainCell: ".dlList",
+					effect: "leftLoop",
+					vis: 4,
+					scroll: 1,
+					interTime: 10000,
+					delayTime: 1000,
+					autoPlay: true
+				});
+
+				$(".ladyDcroll").slide({
+					mainCell: ".dlList",
+					effect: "leftLoop",
+					vis: 5,
+					scroll: 1,
+					interTime: 10000,
+					delayTime: 1000,
+					autoPlay: true
+				});
+
+				$(".ladyTcroll").slide({
+					mainCell: ".dlList",
+					effect: "leftLoop",
+					vis: 5,
+					scroll: 1,
+					interTime: 10000,
+					delayTime: 1000,
+					autoPlay: true
 				});
 			});
 		</script>
-		<!--gotop end-->
-		<!-- 
-<ul id="side-bar" class="side-pannel side-bar">
-  <span><img src="/upload/imgs/djwx.jpg"><i>党建小程序</i></span>
-  <span><img src="/upload/imgs/djapp.jpg"><i>党建APP</i></span>
-  <span><img src="/upload/imgs/djvideo.jpg"><i>视频介绍</i></span>
-</ul> -->
-		<script>
-			$(function () {
-				$(window).scroll(function () {
-					if ($(window).scrollTop() > 100) { //距顶部多少像素时，出现返回顶部按钮
-						$("#side-bar .gotop").fadeIn();
-					} else {
-						$("#side-bar .gotop").hide();
-					}
-				});
-				$("#side-bar .gotop").click(function () {
-					$('html,body').animate({
-						'scrollTop': 0
-					}, 500); //返回顶部动画 数值越小时间越短
-				});
-			});
-		</script>
-	</div>
 </body>
 
 </html>

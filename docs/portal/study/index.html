@@ -1,587 +1,646 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
 	<meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>学习中心 智慧党建平台</title>
 	<link href="https://at.alicdn.com/t/font_759613_byou54gk0v7.css" rel="stylesheet" />
-<link rel="stylesheet" href="./../../themes/zqdj_public/public/assets/zqdj_public/css/style.css" />
-<script  src="./../../static/js/jquery.js"></script>
-<script  src="./../../themes/zqdj_public/public/assets/zqdj_public/js/jquery.SuperSlide.js"></script>
-<link rel="stylesheet" href="./../../themes/zqdj_public/public/assets/zqdj_public/js/layui/css/layui.css"  media="all"><link rel="stylesheet" href="/static/css/reset.css">
-<script src="./../../themes/zqdj_public/public/assets/zqdj_public/js/layui/layui.js"></script>
+	<link rel="stylesheet" href="./../../themes/zqdj_public/public/assets/zqdj_public/css/style.css" />
+	<script src="./../../static/js/jquery.js"></script>
+	<script src="./../../themes/zqdj_public/public/assets/zqdj_public/js/jquery.SuperSlide.js"></script>
+	<link rel="stylesheet" href="./../../themes/zqdj_public/public/assets/zqdj_public/js/layui/css/layui.css"
+		media="all">
+	<link rel="stylesheet" href="/static/css/reset.css">
+	<script src="./../../themes/zqdj_public/public/assets/zqdj_public/js/layui/layui.js"></script>
 
 
 </head>
-<body><div class="wrapper">
 
-<!--top区域 start-->
-<div class="top_x w1min">
-<div class="w1">
-	<div class="topx_left">
-		<div class="topx_logo"><img src="./../../themes/zqdj_public/public/assets/zqdj_public/imgs/header_logo.png" /></div>
-		<div class="topx_zi">
-		<h1>陕西交控集团-智慧党建平台</h1>
+<body>
+	<div class="wrapper">
+
+		<!--top区域 start-->
+		<div class="top_x w1min">
+			<div class="w1">
+				<div class="topx_left">
+					<div class="topx_logo"><img
+							src="./../../themes/zqdj_public/public/assets/zqdj_public/imgs/header_logo.png" /></div>
+					<div class="topx_zi">
+						<h1>陕西交控集团-智慧党建平台</h1>
+					</div>
+				</div>
+				<div class="topx_right" id="ucenterlogin">
+					<dl class="login" style="display:none;">
+						你好,丁俊陶 <span class="user-nickname"></span>
+						<a href="./../../user/profile/center.html"><i class="iconfont icon-user"></i>党员中心</a>
+						<a href="/">&nbsp;&nbsp;退出登录</a>
+					</dl>
+					<dl class="offline" style="display:none;">
+						<a href="./../../user/login/index.html" class="signin"><i
+								class="iconfont icon-gongchandang"></i>登录</a>
+					</dl>
+					<div class="top-search">
+						<form method="post" action="/portal/search/index.html" target="_blank">
+							<input type="text" name="keyword" required lay-verify="required" placeholder="请输入标题"
+								autocomplete="off" class="layui-input">
+							<button class="layui-btn layui-bg-orange" lay-submit lay-filter="formDemo"><i
+									class="iconfont icon-xiazai15"></i>搜索</button>
+						</form>
+					</div>
+				</div>
+			</div>
 		</div>
-	</div>
-	<div class="topx_right" id="ucenterlogin">
-		<dl class="login" style="display:none;">
-			你好,丁俊陶  <span class="user-nickname"></span>
-			<a href="./../../user/profile/center.html"><i class="iconfont icon-user"></i>党员中心</a>
-			<a href="././">&nbsp;&nbsp;退出登录</a>
-		</dl>
-		<dl class="offline" style="display:none;">
-			<a href="./../../user/login/index.html" class="signin"><i class="iconfont icon-gongchandang"></i>登录</a>
-		</dl>
-		<div class="top-search">
-			<form method="post" action="/portal/search/index.html" target="_blank">
-				<input type="text" name="keyword" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
-				<button class="layui-btn layui-bg-orange" lay-submit lay-filter="formDemo"><i class="iconfont icon-xiazai15"></i>搜索</button>
-			</form>
+		<div class="lang_mu w1min">
+			<ul class="layui-nav w1" lay-filter="">
+				<li class="layui-nav-item">
+					<a href="/" target="">
+						<b>首页</b>
+					</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="/dongtai.html" target="">
+						<b>党建动态</b>
+					</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="/portal/special/index.html" target="">
+						<b>党建专题</b>
+					</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="/portal/seritem/index.html" target="">
+						<b>志愿活动</b>
+					</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="/portal/drhd/index.html" target="">
+						<b>党日活动</b>
+					</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="/portal/txth/index.html" target="">
+						<b>谈心谈话</b>
+					</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="/portal/mzpy/index.html" target="">
+						<b>民主评议</b>
+					</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="/portal/dangwu/index.html" target="">
+						<b>换届情况</b>
+					</a>
+				</li>
+				<li class="layui-nav-item layui-this">
+					<a href="/portal/study/index.html" target="">
+						<b>党建赋能</b>
+					</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="/portal/sanhui/index.html" target="">
+						<b>三会一课</b>
+					</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="/portal/wenjuan/wenjuanlist.html" target="">
+						<b>问卷调查</b>
+					</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="/portal/score/index.html" target="">
+						<b>积分统计</b>
+					</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="/jcdjdsj.html" target="">
+						<b>基层党建</b>
+					</a>
+				</li>
+			</ul>
+			<script>
+				//注意：导航 依赖 element 模块，否则无法进行功能性操作
+				layui.use('element', function () {
+					var element = layui.element;
+
+				});
+			</script>
 		</div>
-	</div>			
-</div>
-</div>
-<div class="lang_mu w1min">
-<ul class="layui-nav w1" lay-filter="">
-	                    <li class="layui-nav-item">
-                    <a href="/" target="">
-                        <b>首页</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/dongtai.html" target="">
-                        <b>党建动态</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/special/index.html" target="">
-                        <b>党建专题</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/seritem/index.html" target="">
-                        <b>志愿活动</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/activity/index.html" target="">
-                        <b>党日活动</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item layui-this">
-                    <a href="/portal/study/index.html" target="">
-                        <b>党建赋能</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/sanhui/index.html" target="">
-                        <b>三会一课</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/wenjuan/wenjuanlist.html" target="">
-                        <b>问卷调查</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/portal/score/index.html" target="">
-                        <b>积分统计</b>
-                    </a>
-                </li>
-                            <li class="layui-nav-item">
-                    <a href="/jcdjdsj.html" target="">
-                        <b>基层党建</b>
-                    </a>
-                </li>
-            
-</ul>
-<script>
-//注意：导航 依赖 element 模块，否则无法进行功能性操作
-layui.use('element', function(){
-  var element = layui.element;
-  
-});
-</script>
-</div>
-<!--top区域 end-->
-<div class="w1 banne1 mgtop-15"><img src="./../../upload/admin/20181120/b02187c3e779476c3d555e59ccdcb415.jpg"></div>
-<div class="mgtop-15 background-w1">
-	<div class="w3-left">
-		<div class="fdiv mua"><ul><i class="iconfont icon-dangwugongkai"></i><b>视频课堂</b></ul><ol><a href="./../live/lists.html"  target="_blank">更多+</a></ol></div>
-		<div class="tu_k link2">
-		<ul>
-			
-				<li>
-											<a href="./../live/view/id/90.html" title="7月党小组会议直播" target="_blank">
-											<img src="./../../upload/admin/20200922/2b93dd5b271716ac2fe7333534c9e0b5.jpg" />
-										<span class="livestatus green">直播中</span>
-										
-					<b>7月党小组会议直播</b>
-					<span><em><i class="iconfont icon-shijian1"></i>时间：2020-08-04</em></span>
-					</a>
-				</li>
-			
-
-				<li>
-											<a href="./../live/view/id/89.html" title="6月党小组会议直播" target="_blank">
-											<img src="./../../upload/admin/20200922/2b93dd5b271716ac2fe7333534c9e0b5.jpg" />
-										<span class="livestatus green">直播中</span>
-										
-					<b>6月党小组会议直播</b>
-					<span><em><i class="iconfont icon-shijian1"></i>时间：2020-08-04</em></span>
-					</a>
-				</li>
-			
-
-				<li>
-											<a href="./../live/view/id/88.html" title="5月党小组会议直播" target="_blank">
-											<img src="./../../upload/admin/20200922/2b93dd5b271716ac2fe7333534c9e0b5.jpg" />
-										<span class="livestatus danger">重播</span>
-										
-					<b>5月党小组会议直播</b>
-					<span><em><i class="iconfont icon-shijian1"></i>时间：2020-08-04</em></span>
-					</a>
-				</li>
-			
-
-				<li>
-											<a href="./../live/view/id/87.html" title="4月党小组会议直播" target="_blank">
-											<img src="./../../upload/admin/20200922/2b93dd5b271716ac2fe7333534c9e0b5.jpg" />
-										<span class="livestatus danger">重播</span>
-										
-					<b>4月党小组会议直播</b>
-					<span><em><i class="iconfont icon-shijian1"></i>时间：2020-07-09</em></span>
-					</a>
-				</li>
-			
-
-				<li>
-											<a href="./../live/view/id/85.html" title="3月党小组会议直播" target="_blank">
-											<img src="./../../upload/admin/20200922/2b93dd5b271716ac2fe7333534c9e0b5.jpg" />
-										<span class="livestatus danger">重播</span>
-										
-					<b>3月党小组会议直播</b>
-					<span><em><i class="iconfont icon-shijian1"></i>时间：2020-05-22</em></span>
-					</a>
-				</li>
-			
-
-				<li>
-											<a href="./../live/view/id/84.html" title="2月党小组会议直播" target="_blank">
-											<img src="./../../upload/admin/20200922/2b93dd5b271716ac2fe7333534c9e0b5.jpg" />
-										<span class="livestatus danger">重播</span>
-										
-					<b>2月党小组会议直播</b>
-					<span><em><i class="iconfont icon-shijian1"></i>时间：2020-05-22</em></span>
-					</a>
-				</li>
-			
-		</ul>
+		<!--top区域 end-->
+		<div class="w1 banne1 mgtop-15"><img src="./../../upload/admin/20181120/b02187c3e779476c3d555e59ccdcb415.jpg">
 		</div>
-	</div>
+		<div class="mgtop-15 background-w1">
+			<div class="w3-left">
+				<div class="fdiv mua">
+					<ul><i class="iconfont icon-dangwugongkai"></i><b>视频课堂</b></ul>
+					<ol><a href="./../live/lists.html" target="_blank">更多+</a></ol>
+				</div>
+				<div class="tu_k link2">
+					<ul>
 
-	<div class="w3-right">
-		<div class="mr-mu"><ul><i class="iconfont icon-kaoshi"></i>会议动态</ul></div>
-		<div class="m_newp3 link2">
-		<ul>
-			
-				<li><span><b>恒星</b> 开户7月党小组会议直播直播</span><em>+606</em></li>
-			
+						<li>
+							<a href="./../live/view/id/90.html" title="7月党小组会议直播" target="_blank">
+								<img src="./../../upload/admin/20200922/2b93dd5b271716ac2fe7333534c9e0b5.jpg" />
+								<span class="livestatus green">直播中</span>
 
-				<li><span><b>恒星</b> 开户6月党小组会议直播直播</span><em>+393</em></li>
-			
+								<b>7月党小组会议直播</b>
+								<span><em><i class="iconfont icon-shijian1"></i>时间：2020-08-04</em></span>
+							</a>
+						</li>
 
-				<li><span><b>恒星</b> 开户5月党小组会议直播直播</span><em>+969</em></li>
-			
 
-				<li><span><b>魏欢</b> 开户4月党小组会议直播直播</span><em>+1528</em></li>
-			
+						<li>
+							<a href="./../live/view/id/89.html" title="6月党小组会议直播" target="_blank">
+								<img src="./../../upload/admin/20200922/2b93dd5b271716ac2fe7333534c9e0b5.jpg" />
+								<span class="livestatus green">直播中</span>
 
-				<li><span><b>陈治宇</b> 开户3月党小组会议直播直播</span><em>+3558</em></li>
-			
+								<b>6月党小组会议直播</b>
+								<span><em><i class="iconfont icon-shijian1"></i>时间：2020-08-04</em></span>
+							</a>
+						</li>
 
-				<li><span><b>魏欢</b> 开户2月党小组会议直播直播</span><em>+1870</em></li>
-			
-		</ul>
+
+						<li>
+							<a href="./../live/view/id/88.html" title="5月党小组会议直播" target="_blank">
+								<img src="./../../upload/admin/20200922/2b93dd5b271716ac2fe7333534c9e0b5.jpg" />
+								<span class="livestatus danger">重播</span>
+
+								<b>5月党小组会议直播</b>
+								<span><em><i class="iconfont icon-shijian1"></i>时间：2020-08-04</em></span>
+							</a>
+						</li>
+
+
+						<li>
+							<a href="./../live/view/id/87.html" title="4月党小组会议直播" target="_blank">
+								<img src="./../../upload/admin/20200922/2b93dd5b271716ac2fe7333534c9e0b5.jpg" />
+								<span class="livestatus danger">重播</span>
+
+								<b>4月党小组会议直播</b>
+								<span><em><i class="iconfont icon-shijian1"></i>时间：2020-07-09</em></span>
+							</a>
+						</li>
+
+
+						<li>
+							<a href="./../live/view/id/85.html" title="3月党小组会议直播" target="_blank">
+								<img src="./../../upload/admin/20200922/2b93dd5b271716ac2fe7333534c9e0b5.jpg" />
+								<span class="livestatus danger">重播</span>
+
+								<b>3月党小组会议直播</b>
+								<span><em><i class="iconfont icon-shijian1"></i>时间：2020-05-22</em></span>
+							</a>
+						</li>
+
+
+						<li>
+							<a href="./../live/view/id/84.html" title="2月党小组会议直播" target="_blank">
+								<img src="./../../upload/admin/20200922/2b93dd5b271716ac2fe7333534c9e0b5.jpg" />
+								<span class="livestatus danger">重播</span>
+
+								<b>2月党小组会议直播</b>
+								<span><em><i class="iconfont icon-shijian1"></i>时间：2020-05-22</em></span>
+							</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+
+			<div class="w3-right">
+				<div class="mr-mu">
+					<ul><i class="iconfont icon-kaoshi"></i>会议动态</ul>
+				</div>
+				<div class="m_newp3 link2">
+					<ul>
+
+						<li><span><b>恒星</b> 开户7月党小组会议直播直播</span><em>+606</em></li>
+
+
+						<li><span><b>恒星</b> 开户6月党小组会议直播直播</span><em>+393</em></li>
+
+
+						<li><span><b>恒星</b> 开户5月党小组会议直播直播</span><em>+969</em></li>
+
+
+						<li><span><b>魏欢</b> 开户4月党小组会议直播直播</span><em>+1528</em></li>
+
+
+						<li><span><b>陈治宇</b> 开户3月党小组会议直播直播</span><em>+3558</em></li>
+
+
+						<li><span><b>魏欢</b> 开户2月党小组会议直播直播</span><em>+1870</em></li>
+
+					</ul>
+				</div>
+			</div>
 		</div>
-	</div>
-</div>
-<div class="mgtop-15 background-w1">
-	<div class="w3-left">
-		<div class="fdiv mua"><ul><i class="iconfont icon-dangwugongkai"></i><b>学习课件</b></ul><ol><a href="./studylist.html"  target="_blank">更多+</a></ol></div>
-		<div class="tu_k link2">
-		<ul>
-			
-				<li>
-					<a href="./../../13.html" title="华为管理法" target="_blank">
-											<img src="./../../upload/admin/20191206/ee223704b88c42dd4f6ff2db9eb44ba9.jpg" />
-										<b>华为管理法</b>
-					<span><em><i class="iconfont icon-chakan1"></i>199</em><cite><i class="iconfont icon-liuyan"></i>2</cite></span>
-					</a>
-				</li>
-			
+		<div class="mgtop-15 background-w1">
+			<div class="w3-left">
+				<div class="fdiv mua">
+					<ul><i class="iconfont icon-dangwugongkai"></i><b>学习课件</b></ul>
+					<ol><a href="./studylist.html" target="_blank">更多+</a></ol>
+				</div>
+				<div class="tu_k link2">
+					<ul>
 
-				<li>
-					<a href="./../../12.html" title="金字塔原理" target="_blank">
-											<img src="./../../upload/admin/20191206/f506b2ee7e0f88608f14afe83fce2f6e.jpg" />
-										<b>金字塔原理</b>
-					<span><em><i class="iconfont icon-chakan1"></i>102</em><cite><i class="iconfont icon-liuyan"></i>2</cite></span>
-					</a>
-				</li>
-			
+						<li>
+							<a href="./../../13.html" title="华为管理法" target="_blank">
+								<img src="./../../upload/admin/20191206/ee223704b88c42dd4f6ff2db9eb44ba9.jpg" />
+								<b>华为管理法</b>
+								<span><em><i class="iconfont icon-chakan1"></i>199</em><cite><i
+											class="iconfont icon-liuyan"></i>2</cite></span>
+							</a>
+						</li>
 
-				<li>
-					<a href="./../../11.html" title=" 以奋斗者为本" target="_blank">
-											<img src="./../../upload/admin/20191206/7e3739e88f24ca02021445ebcd4711c6.jpg" />
-										<b> 以奋斗者为本</b>
-					<span><em><i class="iconfont icon-chakan1"></i>220</em><cite><i class="iconfont icon-liuyan"></i>0</cite></span>
-					</a>
-				</li>
-			
 
-				<li>
-					<a href="./../../10.html" title="哈佛情商课" target="_blank">
-											<img src="./../../upload/admin/20191206/f61d7553b65d928825494247993783f2.jpg" />
-										<b>哈佛情商课</b>
-					<span><em><i class="iconfont icon-chakan1"></i>125</em><cite><i class="iconfont icon-liuyan"></i>3</cite></span>
-					</a>
-				</li>
-			
+						<li>
+							<a href="./../../12.html" title="金字塔原理" target="_blank">
+								<img src="./../../upload/admin/20191206/f506b2ee7e0f88608f14afe83fce2f6e.jpg" />
+								<b>金字塔原理</b>
+								<span><em><i class="iconfont icon-chakan1"></i>102</em><cite><i
+											class="iconfont icon-liuyan"></i>2</cite></span>
+							</a>
+						</li>
 
-				<li>
-					<a href="./../../9.html" title="隐形冠军" target="_blank">
-											<img src="./../../upload/admin/20191206/129e739d0eb60fa2c816a44e5b041f49.jpg" />
-										<b>隐形冠军</b>
-					<span><em><i class="iconfont icon-chakan1"></i>278</em><cite><i class="iconfont icon-liuyan"></i>2</cite></span>
-					</a>
-				</li>
-			
 
-				<li>
-					<a href="./../../8.html" title="G20背后的红色身影" target="_blank">
-											<img src="./../../upload/admin/20191202/c6141a96d6cdf8f7ac84e6420f1d67b8.jpg" />
-										<b>G20背后的红色身影</b>
-					<span><em><i class="iconfont icon-chakan1"></i>130</em><cite><i class="iconfont icon-liuyan"></i>7</cite></span>
-					</a>
-				</li>
-			
+						<li>
+							<a href="./../../11.html" title=" 以奋斗者为本" target="_blank">
+								<img src="./../../upload/admin/20191206/7e3739e88f24ca02021445ebcd4711c6.jpg" />
+								<b> 以奋斗者为本</b>
+								<span><em><i class="iconfont icon-chakan1"></i>220</em><cite><i
+											class="iconfont icon-liuyan"></i>0</cite></span>
+							</a>
+						</li>
 
-				<li>
-					<a href="./../../6.html" title="十九大党章微学堂" target="_blank">
-											<img src="./../../upload/admin/20191202/b2c2d24939876d687f227d3d03982fd1.png" />
-										<b>十九大党章微学堂</b>
-					<span><em><i class="iconfont icon-chakan1"></i>359</em><cite><i class="iconfont icon-liuyan"></i>3</cite></span>
-					</a>
-				</li>
-			
 
-				<li>
-					<a href="./../../5.html" title="企业培训师" target="_blank">
-											<img src="./../../upload/admin/20191206/53e3017b76e79a3ee05d2fffd46ad794.jpg" />
-										<b>企业培训师</b>
-					<span><em><i class="iconfont icon-chakan1"></i>1190</em><cite><i class="iconfont icon-liuyan"></i>9</cite></span>
-					</a>
-				</li>
-			
-		</ul>
+						<li>
+							<a href="./../../10.html" title="哈佛情商课" target="_blank">
+								<img src="./../../upload/admin/20191206/f61d7553b65d928825494247993783f2.jpg" />
+								<b>哈佛情商课</b>
+								<span><em><i class="iconfont icon-chakan1"></i>125</em><cite><i
+											class="iconfont icon-liuyan"></i>3</cite></span>
+							</a>
+						</li>
+
+
+						<li>
+							<a href="./../../9.html" title="隐形冠军" target="_blank">
+								<img src="./../../upload/admin/20191206/129e739d0eb60fa2c816a44e5b041f49.jpg" />
+								<b>隐形冠军</b>
+								<span><em><i class="iconfont icon-chakan1"></i>278</em><cite><i
+											class="iconfont icon-liuyan"></i>2</cite></span>
+							</a>
+						</li>
+
+
+						<li>
+							<a href="./../../8.html" title="G20背后的红色身影" target="_blank">
+								<img src="./../../upload/admin/20191202/c6141a96d6cdf8f7ac84e6420f1d67b8.jpg" />
+								<b>G20背后的红色身影</b>
+								<span><em><i class="iconfont icon-chakan1"></i>130</em><cite><i
+											class="iconfont icon-liuyan"></i>7</cite></span>
+							</a>
+						</li>
+
+
+						<li>
+							<a href="./../../6.html" title="十九大党章微学堂" target="_blank">
+								<img src="./../../upload/admin/20191202/b2c2d24939876d687f227d3d03982fd1.png" />
+								<b>十九大党章微学堂</b>
+								<span><em><i class="iconfont icon-chakan1"></i>359</em><cite><i
+											class="iconfont icon-liuyan"></i>3</cite></span>
+							</a>
+						</li>
+
+
+						<li>
+							<a href="./../../5.html" title="企业培训师" target="_blank">
+								<img src="./../../upload/admin/20191206/53e3017b76e79a3ee05d2fffd46ad794.jpg" />
+								<b>企业培训师</b>
+								<span><em><i class="iconfont icon-chakan1"></i>1190</em><cite><i
+											class="iconfont icon-liuyan"></i>9</cite></span>
+							</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+
+			<div class="w3-right">
+				<div class="mr-mu">
+					<ul><i class="iconfont icon-zhexiantu"></i>课件排行</ul>
+				</div>
+				<div class="m_newp1 link2">
+					<ul>
+
+						<li>
+							<a href="./../../5.html" title="企业培训师" target="_blank">
+								<img src="./../../upload/admin/20191206/53e3017b76e79a3ee05d2fffd46ad794.jpg" />
+								<span>
+									<b>企业培训师</b>
+									<em><i class="iconfont icon-chakan1"></i>1190</em><cite><i
+											class="iconfont icon-liuyan"></i>9</cite>
+								</span>
+							</a>
+						</li>
+
+
+						<li>
+							<a href="./../../6.html" title="十九大党章微学堂" target="_blank">
+								<img src="./../../upload/admin/20191202/b2c2d24939876d687f227d3d03982fd1.png" />
+								<span>
+									<b>十九大党章微学堂</b>
+									<em><i class="iconfont icon-chakan1"></i>359</em><cite><i
+											class="iconfont icon-liuyan"></i>3</cite>
+								</span>
+							</a>
+						</li>
+
+
+						<li>
+							<a href="./../../9.html" title="隐形冠军" target="_blank">
+								<img src="./../../upload/admin/20191206/129e739d0eb60fa2c816a44e5b041f49.jpg" />
+								<span>
+									<b>隐形冠军</b>
+									<em><i class="iconfont icon-chakan1"></i>278</em><cite><i
+											class="iconfont icon-liuyan"></i>2</cite>
+								</span>
+							</a>
+						</li>
+
+
+						<li>
+							<a href="./../../11.html" title=" 以奋斗者为本" target="_blank">
+								<img src="./../../upload/admin/20191206/7e3739e88f24ca02021445ebcd4711c6.jpg" />
+								<span>
+									<b> 以奋斗者为本</b>
+									<em><i class="iconfont icon-chakan1"></i>220</em><cite><i
+											class="iconfont icon-liuyan"></i>0</cite>
+								</span>
+							</a>
+						</li>
+
+
+						<li>
+							<a href="./../../13.html" title="华为管理法" target="_blank">
+								<img src="./../../upload/admin/20191206/ee223704b88c42dd4f6ff2db9eb44ba9.jpg" />
+								<span>
+									<b>华为管理法</b>
+									<em><i class="iconfont icon-chakan1"></i>199</em><cite><i
+											class="iconfont icon-liuyan"></i>2</cite>
+								</span>
+							</a>
+						</li>
+
+
+					</ul>
+				</div>
+			</div>
 		</div>
-	</div>
 
-	<div class="w3-right">
-		<div class="mr-mu"><ul><i class="iconfont icon-zhexiantu"></i>课件排行</ul></div>
-		<div class="m_newp1 link2">
-		<ul>
-			
-				<li>
-					<a href="./../../5.html" title="企业培训师" target="_blank">
-											<img src="./../../upload/admin/20191206/53e3017b76e79a3ee05d2fffd46ad794.jpg" />
-										<span>
-						<b>企业培训师</b>
-						<em><i class="iconfont icon-chakan1"></i>1190</em><cite><i class="iconfont icon-liuyan"></i>9</cite>
-					</span>
-					</a>
-				</li>
-			
+		<div class="mgtop-15 background-w1">
+			<div class="w3-left">
+				<div class="fdiv mua">
+					<ul><i class="iconfont icon-dangwugongkai"></i><b>考试中心</b></ul>
+					<ol><a href="./../kaoshi/projectlist.html" target="_blank">更多+</a></ol>
+				</div>
+				<div class="tu_k link2">
+					<ul>
 
-				<li>
-					<a href="./../../6.html" title="十九大党章微学堂" target="_blank">
-											<img src="./../../upload/admin/20191202/b2c2d24939876d687f227d3d03982fd1.png" />
-										<span>
-						<b>十九大党章微学堂</b>
-						<em><i class="iconfont icon-chakan1"></i>359</em><cite><i class="iconfont icon-liuyan"></i>3</cite>
-					</span>
-					</a>
-				</li>
-			
+						<li>
+							<a href="./../kaoshi/projectview/id/8.html" title="应知应会" target="_blank">
+								<img src="./../../upload/admin/20190301/e374f5cf1f72c1a17f7a4e290969edf6_simg.jpg" />
+								<b>应知应会</b>
+								<span><em><i class="iconfont icon-shijian1"></i>时间：2019-03-01</em></span>
+							</a>
+						</li>
 
-				<li>
-					<a href="./../../9.html" title="隐形冠军" target="_blank">
-											<img src="./../../upload/admin/20191206/129e739d0eb60fa2c816a44e5b041f49.jpg" />
-										<span>
-						<b>隐形冠军</b>
-						<em><i class="iconfont icon-chakan1"></i>278</em><cite><i class="iconfont icon-liuyan"></i>2</cite>
-					</span>
-					</a>
-				</li>
-			
 
-				<li>
-					<a href="./../../11.html" title=" 以奋斗者为本" target="_blank">
-											<img src="./../../upload/admin/20191206/7e3739e88f24ca02021445ebcd4711c6.jpg" />
-										<span>
-						<b> 以奋斗者为本</b>
-						<em><i class="iconfont icon-chakan1"></i>220</em><cite><i class="iconfont icon-liuyan"></i>0</cite>
-					</span>
-					</a>
-				</li>
-			
+						<li>
+							<a href="./../kaoshi/projectview/id/7.html" title="知识考核" target="_blank">
+								<img src="./../../upload/admin/20190301/8a6cee6ab3a02dedaf96262cc38a2ab9_simg.jpg" />
+								<b>知识考核</b>
+								<span><em><i class="iconfont icon-shijian1"></i>时间：2019-03-01</em></span>
+							</a>
+						</li>
 
-				<li>
-					<a href="./../../13.html" title="华为管理法" target="_blank">
-											<img src="./../../upload/admin/20191206/ee223704b88c42dd4f6ff2db9eb44ba9.jpg" />
-										<span>
-						<b>华为管理法</b>
-						<em><i class="iconfont icon-chakan1"></i>199</em><cite><i class="iconfont icon-liuyan"></i>2</cite>
-					</span>
-					</a>
-				</li>
-			
-			
-		</ul>
+
+						<li>
+							<a href="./../kaoshi/projectview/id/6.html" title="陝西省党员普法考试" target="_blank">
+								<img src="./../../upload/admin/20190301/3496cf730a99a4768249aa2901c55db0_simg.jpg" />
+								<b>陝西省党员普法考试</b>
+								<span><em><i class="iconfont icon-shijian1"></i>时间：2019-03-01</em></span>
+							</a>
+						</li>
+
+
+						<li>
+							<a href="./../kaoshi/projectview/id/5.html" title="两学一做党员在线考试" target="_blank">
+								<img src="./../../upload/admin/20190301/373c158fde8bda518143af74ed5c8159_simg.jpg" />
+								<b>两学一做党员在线考试</b>
+								<span><em><i class="iconfont icon-shijian1"></i>时间：2019-03-01</em></span>
+							</a>
+						</li>
+
+
+						<li>
+							<a href="./../kaoshi/projectview/id/4.html" title="十九大党章学习" target="_blank">
+								<img src="./../../upload/admin/20181227/4d338756a94654f76d69f1e2bb9a4255_simg.jpg" />
+								<b>十九大党章学习</b>
+								<span><em><i class="iconfont icon-shijian1"></i>时间：2018-11-21</em></span>
+							</a>
+						</li>
+
+
+						<li>
+							<a href="./../kaoshi/projectview/id/3.html" title="十九大报告-党员知识考察" target="_blank">
+								<img src="./../../upload/admin/20180911/019ed418413b32ae28b0d2ba7ca56a6a_simg.jpg" />
+								<b>十九大报告-党员知识考察</b>
+								<span><em><i class="iconfont icon-shijian1"></i>时间：2018-09-11</em></span>
+							</a>
+						</li>
+
+
+						<li>
+							<a href="./../kaoshi/projectview/id/2.html" title="“学习十九大，共创未来”知识竞赛复习大纲" target="_blank">
+								<img src="./../../upload/admin/20180910/a29533a299350f641289e7631aa6a820_simg.jpg" />
+								<b>“学习十九大，共创未来”知识竞赛复习大纲</b>
+								<span><em><i class="iconfont icon-shijian1"></i>时间：2018-09-10</em></span>
+							</a>
+						</li>
+
+
+						<li>
+							<a href="./../kaoshi/projectview/id/1.html" title="交控集团智慧党建平台-党员应知应会" target="_blank">
+								<img src="./../../upload/admin/20190301/18a9c98ac1e602ebe5914db4eff5a98e_simg.jpg" />
+								<b>交控集团智慧党建平台-党员应知应会</b>
+								<span><em><i class="iconfont icon-shijian1"></i>时间：2018-08-21</em></span>
+							</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+
+			<div class="w3-right">
+				<div class="mr-mu">
+					<ul><i class="iconfont icon-kaoshi"></i>考试动态</ul>
+				</div>
+				<div class="m_newp3 link2">
+					<ul>
+
+						<li><span><b>张三</b> 参加知识考核考试</span><em>+0</em></li>
+
+
+						<li><span><b>张三</b> 参加应知应会考试</span><em>+0</em></li>
+
+
+						<li><span><b>丁俊陶</b> 参加应知应会考试</span><em>+0</em></li>
+
+
+						<li><span><b>高杰</b> 参加两学一做党员在线考试考试</span><em>+0</em></li>
+
+
+						<li><span><b>高杰</b> 参加陝西省党员普法考试考试</span><em>+0</em></li>
+
+
+						<li><span><b>高杰</b> 参加应知应会考试</span><em>+0</em></li>
+
+
+						<li><span><b>杜飞</b> 参加应知应会考试</span><em>+0</em></li>
+
+
+						<li><span><b>李书俊</b> 参加应知应会考试</span><em>+0</em></li>
+
+
+						<li><span><b>周国涛</b> 参加两学一做党员在线考试考试</span><em>+0</em></li>
+
+					</ul>
+				</div>
+			</div>
 		</div>
-	</div>
-</div>
-
-<div class="mgtop-15 background-w1">
-	<div class="w3-left">
-		<div class="fdiv mua"><ul><i class="iconfont icon-dangwugongkai"></i><b>考试中心</b></ul><ol><a href="./../kaoshi/projectlist.html"  target="_blank">更多+</a></ol></div>
-		<div class="tu_k link2">
-		<ul>
-			
-				<li>
-					<a href="./../kaoshi/projectview/id/8.html" title="应知应会" target="_blank">
-											<img src="./../../upload/admin/20190301/e374f5cf1f72c1a17f7a4e290969edf6_simg.jpg" />
-										<b>应知应会</b>
-					<span><em><i class="iconfont icon-shijian1"></i>时间：2019-03-01</em></span>
-					</a>
-				</li>
-			
-
-				<li>
-					<a href="./../kaoshi/projectview/id/7.html" title="知识考核" target="_blank">
-											<img src="./../../upload/admin/20190301/8a6cee6ab3a02dedaf96262cc38a2ab9_simg.jpg" />
-										<b>知识考核</b>
-					<span><em><i class="iconfont icon-shijian1"></i>时间：2019-03-01</em></span>
-					</a>
-				</li>
-			
-
-				<li>
-					<a href="./../kaoshi/projectview/id/6.html" title="陝西省党员普法考试" target="_blank">
-											<img src="./../../upload/admin/20190301/3496cf730a99a4768249aa2901c55db0_simg.jpg" />
-										<b>陝西省党员普法考试</b>
-					<span><em><i class="iconfont icon-shijian1"></i>时间：2019-03-01</em></span>
-					</a>
-				</li>
-			
-
-				<li>
-					<a href="./../kaoshi/projectview/id/5.html" title="两学一做党员在线考试" target="_blank">
-											<img src="./../../upload/admin/20190301/373c158fde8bda518143af74ed5c8159_simg.jpg" />
-										<b>两学一做党员在线考试</b>
-					<span><em><i class="iconfont icon-shijian1"></i>时间：2019-03-01</em></span>
-					</a>
-				</li>
-			
-
-				<li>
-					<a href="./../kaoshi/projectview/id/4.html" title="十九大党章学习" target="_blank">
-											<img src="./../../upload/admin/20181227/4d338756a94654f76d69f1e2bb9a4255_simg.jpg" />
-										<b>十九大党章学习</b>
-					<span><em><i class="iconfont icon-shijian1"></i>时间：2018-11-21</em></span>
-					</a>
-				</li>
-			
-
-				<li>
-					<a href="./../kaoshi/projectview/id/3.html" title="十九大报告-党员知识考察" target="_blank">
-											<img src="./../../upload/admin/20180911/019ed418413b32ae28b0d2ba7ca56a6a_simg.jpg" />
-										<b>十九大报告-党员知识考察</b>
-					<span><em><i class="iconfont icon-shijian1"></i>时间：2018-09-11</em></span>
-					</a>
-				</li>
-			
-
-				<li>
-					<a href="./../kaoshi/projectview/id/2.html" title="“学习十九大，共创未来”知识竞赛复习大纲" target="_blank">
-											<img src="./../../upload/admin/20180910/a29533a299350f641289e7631aa6a820_simg.jpg" />
-										<b>“学习十九大，共创未来”知识竞赛复习大纲</b>
-					<span><em><i class="iconfont icon-shijian1"></i>时间：2018-09-10</em></span>
-					</a>
-				</li>
-			
-
-				<li>
-					<a href="./../kaoshi/projectview/id/1.html" title="交控集团智慧党建平台-党员应知应会" target="_blank">
-											<img src="./../../upload/admin/20190301/18a9c98ac1e602ebe5914db4eff5a98e_simg.jpg" />
-										<b>交控集团智慧党建平台-党员应知应会</b>
-					<span><em><i class="iconfont icon-shijian1"></i>时间：2018-08-21</em></span>
-					</a>
-				</li>
-			
-		</ul>
-		</div>
-	</div>
-
-	<div class="w3-right">
-		<div class="mr-mu"><ul><i class="iconfont icon-kaoshi"></i>考试动态</ul></div>
-		<div class="m_newp3 link2">
-		<ul>
-			
-				<li><span><b>张三</b> 参加知识考核考试</span><em>+0</em></li>
-			
-
-				<li><span><b>张三</b> 参加应知应会考试</span><em>+0</em></li>
-			
-
-				<li><span><b>丁俊陶</b> 参加应知应会考试</span><em>+0</em></li>
-			
-
-				<li><span><b>高杰</b> 参加两学一做党员在线考试考试</span><em>+0</em></li>
-			
-
-				<li><span><b>高杰</b> 参加陝西省党员普法考试考试</span><em>+0</em></li>
-			
-
-				<li><span><b>高杰</b> 参加应知应会考试</span><em>+0</em></li>
-			
-
-				<li><span><b>杜飞</b> 参加应知应会考试</span><em>+0</em></li>
-			
-
-				<li><span><b>李书俊</b> 参加应知应会考试</span><em>+0</em></li>
-			
-
-				<li><span><b>周国涛</b> 参加两学一做党员在线考试考试</span><em>+0</em></li>
-			
-		</ul>
-		</div>
-	</div>
-</div>
-<div class="sr_footer w1min">
-	<div class="w1">
-		<dl class="ft1">
-			<dd><b>陕西交控集团-智慧党建平台</b></dd><dd>企业：陕西交通控股集团有限公司</dd>
-			<dd>电话：029-87832666 传真：029- 87832174</dd><dd>地址：陕西省西安市雁塔区太白南路9号</dd>
-			<dd>陕ICP备2021008491号 陕公网安备 61011302001299号  </dd>
-			<dd>版权所有 © 2021 陕西交通控股集团有限公司 All Rights Reserved</dd>
-		</dl>
-		<!-- <dl class="ft2">
+		<div class="sr_footer w1min">
+			<div class="w1">
+				<dl class="ft1">
+					<dd><b>陕西交控集团-智慧党建平台</b></dd>
+					<dd>企业：陕西交通控股集团有限公司</dd>
+					<dd>电话：029-87832666 传真：029- 87832174</dd>
+					<dd>地址：陕西省西安市雁塔区太白南路9号</dd>
+					<dd>陕ICP备2021008491号 陕公网安备 61011302001299号 </dd>
+					<dd>版权所有 © 2021 陕西交通控股集团有限公司 All Rights Reserved</dd>
+				</dl>
+				<!-- <dl class="ft2">
 			<a href="http://wpa.qq.com/msgrd?v=3&uin=34147588&site=qq&menu=yes" target="_blank" rel="nofollow" class="layui-btn layui-btn-danger layui-btn-radius"><i class="iconfont icon-qq"></i>在线咨询</a>
 		</dl> -->
-		<dl class="ft4">
-			<dd>
-				    		                     <a href="./../../about.html" title="关于我们" target="">
-		                             <i class="iconfont icon-dangwugongkai"></i>关于我们		                         </a>
-		                 		                     <a href="./../../statement.html" title="网站声明" target="">
-		                             <i class="iconfont icon-dangwugongkai"></i>网站声明		                         </a>
-		                 		                     <a href="./../../contact.html" title="联系我们" target="">
-		                             <i class="iconfont icon-dangwugongkai"></i>联系我们		                         </a>
-		                 
-			</dd>	
-		</dl>
-		<dl class="ft3"><img src="./../../upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg" border="0" /></dl>
-	</div>
-</div>
-<ul class="g-navFloat">
-	<!-- <li>
+				<dl class="ft4">
+					<dd>
+						<a href="./../../about.html" title="关于我们" target="">
+							<i class="iconfont icon-dangwugongkai"></i>关于我们 </a>
+						<a href="./../../statement.html" title="网站声明" target="">
+							<i class="iconfont icon-dangwugongkai"></i>网站声明 </a>
+						<a href="./../../contact.html" title="联系我们" target="">
+							<i class="iconfont icon-dangwugongkai"></i>联系我们 </a>
+
+					</dd>
+				</dl>
+				<dl class="ft3"><img src="./../../upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg"
+						border="0" /></dl>
+			</div>
+		</div>
+		<ul class="g-navFloat">
+			<!-- <li>
 		<a href="./https://dj.cnki.io" target="_blank" class="u-tiyan">
 		<p>立</p><p>即</p><p>体</p><p>验</p>
 		</a>
 	</li> -->
-	<li>
-		<a href="http://wpa.qq.com/msgrd?v=3&uin=1151710686&site=qq&menu=yes" target="_blank"><i class="iconfont icon-qq"></i></a>
-	</li>
-	<li>
-		<div class="u-contents content-qr">
-			<img src="./../../upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg">
-			<p>智慧党建平台</p>
-		</div>
-		<a href="javascript:void(0);"><i class="iconfont icon-weixin"></i></a>
-	</li>
-	<li>
-		<div class="u-contents content-tel">
-			<p>029-87832666</p>
-			<p><br /></p>
-		</div>
-		<a href="javascript:void(0);"><i class="iconfont icon-dianhua"></i></a>
-	</li>
-</ul>
-<div style="display:none;"></div>
-<script type="text/javascript">
-	$(".index2_6_con").slide({
-		delayTime: 500,
-		effect: "left",
-		autoPlay: true,
-	});
-	$(".clearfix01 .bj_tab ul li").hover(function(){
-		$(this).find(".icon_bj").removeClass("transform0");
-		$(this).find(".icon_bj").addClass("transform1");
-		
-	},function(){
-		$(this).find(".icon_bj").removeClass("transform1");
-		$(this).find(".icon_bj").addClass("transform0");
-		
-	});
-	$(".bj_img_buttm").find("span").hover(function(){
-		var a=$(this).attr("class");
-		$(".bj01").removeClass("cut");
-		$("#"+a).addClass("cut");
-	});
-</script>
+			<li>
+				<a href="http://wpa.qq.com/msgrd?v=3&uin=1151710686&site=qq&menu=yes" target="_blank"><i
+						class="iconfont icon-qq"></i></a>
+			</li>
+			<li>
+				<div class="u-contents content-qr">
+					<img src="./../../upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg">
+					<p>智慧党建平台</p>
+				</div>
+				<a href="javascript:void(0);"><i class="iconfont icon-weixin"></i></a>
+			</li>
+			<li>
+				<div class="u-contents content-tel">
+					<p>029-87832666</p>
+					<p><br /></p>
+				</div>
+				<a href="javascript:void(0);"><i class="iconfont icon-dianhua"></i></a>
+			</li>
+		</ul>
+		<div style="display:none;"></div>
+		<script type="text/javascript">
+			$(".index2_6_con").slide({
+				delayTime: 500,
+				effect: "left",
+				autoPlay: true,
+			});
+			$(".clearfix01 .bj_tab ul li").hover(function () {
+				$(this).find(".icon_bj").removeClass("transform0");
+				$(this).find(".icon_bj").addClass("transform1");
 
-<script src="./../../static/js/wind.js"></script>
-<script src="./../../themes/zqdj_public/public/assets/simpleboot3/bootstrap/js/bootstrap.min.js"></script>
-<script src="./../../static/js/frontend.js"></script>
-<!--gotop start-->
-<script>	
-	$(function(){		
-		$.post("/user/index/islogin.html",{},function(data){
-			if(data.code==1){
-				$("#ucenterlogin .user-nickname").text(data.data.user.user_login);
-				$("#ucenterlogin .login").show();
-                $("#ucenterlogin .offline").hide();
-			}
-			if(data.code==0){
-                $("#ucenterlogin .login").hide();
-				$("#ucenterlogin .offline").show();
-			}
-		});
-	});
-</script> 
-<!--gotop end--> 
-<!-- 
+			}, function () {
+				$(this).find(".icon_bj").removeClass("transform1");
+				$(this).find(".icon_bj").addClass("transform0");
+
+			});
+			$(".bj_img_buttm").find("span").hover(function () {
+				var a = $(this).attr("class");
+				$(".bj01").removeClass("cut");
+				$("#" + a).addClass("cut");
+			});
+		</script>
+
+		<script src="./../../static/js/wind.js"></script>
+		<script src="./../../themes/zqdj_public/public/assets/simpleboot3/bootstrap/js/bootstrap.min.js"></script>
+		<script src="./../../static/js/frontend.js"></script>
+		<!--gotop start-->
+		<script>
+			$(function () {
+				$.post("/user/index/islogin.html", {}, function (data) {
+					if (data.code == 1) {
+						$("#ucenterlogin .user-nickname").text(data.data.user.user_login);
+						$("#ucenterlogin .login").show();
+						$("#ucenterlogin .offline").hide();
+					}
+					if (data.code == 0) {
+						$("#ucenterlogin .login").hide();
+						$("#ucenterlogin .offline").show();
+					}
+				});
+			});
+		</script>
+		<!--gotop end-->
+		<!-- 
 <ul id="side-bar" class="side-pannel side-bar">
   <span><img src="/upload/imgs/djwx.jpg"><i>党建小程序</i></span>
   <span><img src="/upload/imgs/djapp.jpg"><i>党建APP</i></span>
   <span><img src="/upload/imgs/djvideo.jpg"><i>视频介绍</i></span>
 </ul> -->
-<script>
-	$(function(){
-		$(window).scroll(function(){
-			if($(window).scrollTop()>100){  //距顶部多少像素时，出现返回顶部按钮
-				$("#side-bar .gotop").fadeIn();	
-			}
-			else{
-				$("#side-bar .gotop").hide();
-			}
-		});
-		$("#side-bar .gotop").click(function(){
-			$('html,body').animate({'scrollTop':0},500); //返回顶部动画 数值越小时间越短
-		});
-	});
-</script>
-</div></body>
+		<script>
+			$(function () {
+				$(window).scroll(function () {
+					if ($(window).scrollTop() > 100) { //距顶部多少像素时，出现返回顶部按钮
+						$("#side-bar .gotop").fadeIn();
+					} else {
+						$("#side-bar .gotop").hide();
+					}
+				});
+				$("#side-bar .gotop").click(function () {
+					$('html,body').animate({
+						'scrollTop': 0
+					}, 500); //返回顶部动画 数值越小时间越短
+				});
+			});
+		</script>
+	</div>
+</body>
+
 </html>

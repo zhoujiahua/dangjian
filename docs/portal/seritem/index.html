@@ -11,7 +11,8 @@
     <script src="./../../static/js/jquery.js"></script>
     <script src="./../../themes/zqdj_public/public/assets/zqdj_public/js/jquery.SuperSlide.js"></script>
     <link rel="stylesheet" href="./../../themes/zqdj_public/public/assets/zqdj_public/js/layui/css/layui.css"
-        media="all"><link rel="stylesheet" href="/static/css/reset.css">
+        media="all">
+    <link rel="stylesheet" href="/static/css/reset.css">
     <script src="./../../themes/zqdj_public/public/assets/zqdj_public/js/layui/layui.js"></script>
 
     <script type="text/javascript">
@@ -32,333 +33,353 @@
 </head>
 
 <body>
-	<div class="wrapper">
+    <div class="wrapper">
 
-    <!--top区域 start-->
-    <div class="top_x w1min">
-        <div class="w1">
-            <div class="topx_left">
-                <div class="topx_logo"><img src="/themes/zqdj_public/public/assets/zqdj_public/imgs/header_logo.png">
-                </div>
-                <div class="topx_zi">
-                    <h1>智慧党建云平台</h1>
-                </div>
-            </div>
-            <div class="topx_right" id="ucenterlogin">
-                <dl class="login" style="display:none;">
-                    你好, <span class="user-nickname"></span>
-                    <a href="/user/profile/center.html"><i class="iconfont icon-user"></i>党员中心</a>
-                    <a href="/user/index/logout.html">&nbsp;&nbsp;退出登录</a>
-                </dl>
-                <dl class="offline" style="">
-                    <a href="/user/login/index.html" class="signin"><i class="iconfont icon-gongchandang"></i>登录</a>
-                </dl>
-                <div class="top-search">
-                    <form method="post" action="/portal/search/index.html" target="_blank">
-                        <input type="text" name="keyword" required="" lay-verify="required" placeholder="请输入标题"
-                            autocomplete="off" class="layui-input">
-                        <button class="layui-btn layui-bg-orange" lay-submit="" lay-filter="formDemo"><i
-                                class="iconfont icon-xiazai15"></i>搜索</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="lang_mu w1min">
-        <ul class="layui-nav w1" lay-filter="">
-            <li class="layui-nav-item">
-                <a href="/" target="">
-                    <b>首页</b>
-                </a>
-            </li>
-            <li class="layui-nav-item">
-                <a href="/dongtai.html" target="">
-                    <b>党建动态</b>
-                </a>
-            </li>
-            <li class="layui-nav-item">
-                <a href="/portal/special/index.html" target="">
-                    <b>党建专题</b>
-                </a>
-            </li>
-            <li class="layui-nav-item layui-this">
-                <a href="/portal/seritem/index.html" target="">
-                    <b>志愿活动</b>
-                </a>
-            </li>
-            <li class="layui-nav-item">
-                <a href="/portal/activity/index.html" target="">
-                    <b>党日活动</b>
-                </a>
-            </li>
-            <li class="layui-nav-item">
-                <a href="/portal/study/index.html" target="">
-                    <b>党建赋能</b>
-                </a>
-            </li>
-            <li class="layui-nav-item">
-                <a href="/portal/sanhui/index.html" target="">
-                    <b>三会一课</b>
-                </a>
-            </li>
-            <li class="layui-nav-item">
-                <a href="/portal/wenjuan/wenjuanlist.html" target="">
-                    <b>问卷调查</b>
-                </a>
-            </li>
-            <li class="layui-nav-item">
-                <a href="/portal/score/index.html" target="">
-                    <b>积分统计</b>
-                </a>
-            </li>
-            <li class="layui-nav-item">
-                <a href="/jcdjdsj.html" target="">
-                    <b>基层党建</b>
-                </a>
-            </li>
-        </ul>
-        <script>
-            //注意：导航 依赖 element 模块，否则无法进行功能性操作
-            layui.use('element', function () {
-                var element = layui.element;
-            });
-        </script>
-    </div>
-
-    <!--top区域 end-->
-    <div class="w1 banne1 mgtop-15"><img src="/upload/admin/20181120/b02187c3e779476c3d555e59ccdcb415.jpg"></div>
-
-    <div class="mgtop-15 background-w1">
-        <div class="fdiv mua">
-            <ul><i class="iconfont icon-dangwugongkai"></i><b>志愿服务</b></ul>
-            <ol>
-                当前位置：<a href="/">首页</a> &gt;
-                <a href="/portal/seritem/index.html">志愿服务</a>
-            </ol>
-        </div>
-        <form class="layui-form" action="/portal/seritem/index.html" method="post">
-            <div class="layui-form-item" id="layui-form-item">
-                <div class="so-mu layui-btn layui-bg-red layui-btn-lg"><i class="iconfont icon-gongchandang"></i>组织生活
-                </div>
-                <div>
-                    <label>选择组织：</label>
-                    <select name="parentid" id="parentid" lay-filter="parentid" lay-search="" class="">
-                        <option value="0">全部</option>
-                        <option value="1">交控集团党委</option>
-                        <option value="2">&nbsp;&nbsp;&nbsp;&nbsp;├─交控集团园区委员会</option>
-                        <option value="3">&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;├─开发区经开实业支部</option>
-                        <option value="4">&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;└─红衣鸟党支部</option>
-                        <option value="14">&nbsp;&nbsp;&nbsp;&nbsp;├─企业一支部委员会</option>
-                        <option value="15">&nbsp;&nbsp;&nbsp;&nbsp;├─事务保障中心委员会</option>
-                        <option value="16">&nbsp;&nbsp;&nbsp;&nbsp;├─离退休党总支</option>
-                        <option value="17">&nbsp;&nbsp;&nbsp;&nbsp;├─企业二支部</option>
-                        <option value="22">&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;├─第一总支
-                        </option>
-                        <option value="23">&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;└─第二总支
-                        </option>
-                        <option value="18">&nbsp;&nbsp;&nbsp;&nbsp;├─国际旅游学院</option>
-                        <option value="20">&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;├─联合第一总支部</option>
-                        <option value="21">&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;└─联合第二总支部</option>
-                        <option value="19">&nbsp;&nbsp;&nbsp;&nbsp;└─师生事务保障中心</option>
-                        <option value="24">交控集团党委</option>
-                    </select>
-                    <div class="layui-form-select">
-                        <div class="layui-select-title"><input type="text" placeholder="请选择" value="全部"
-                                class="layui-input"><i class="layui-edge"></i></div>
-                        <dl class="layui-anim layui-anim-upbit">
-                            <dd lay-value="0" class="layui-this">全部</dd>
-                            <dd lay-value="1" class="">交控集团党委</dd>
-                            <dd lay-value="2" class="">&nbsp;&nbsp;&nbsp;&nbsp;├─交控集团园区委员会</dd>
-                            <dd lay-value="3" class="">&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;├─开发区经开实业支部</dd>
-                            <dd lay-value="4" class="">&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;└─红衣鸟党支部</dd>
-                            <dd lay-value="14" class="">&nbsp;&nbsp;&nbsp;&nbsp;├─企业一支部委员会</dd>
-                            <dd lay-value="15" class="">&nbsp;&nbsp;&nbsp;&nbsp;├─事务保障中心委员会</dd>
-                            <dd lay-value="16" class="">&nbsp;&nbsp;&nbsp;&nbsp;├─离退休党总支</dd>
-                            <dd lay-value="17" class="">&nbsp;&nbsp;&nbsp;&nbsp;├─企业二支部</dd>
-                            <dd lay-value="22" class="">
-                                &nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;├─第一总支</dd>
-                            <dd lay-value="23" class="">
-                                &nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;└─第二总支</dd>
-                            <dd lay-value="18" class="">&nbsp;&nbsp;&nbsp;&nbsp;├─国际旅游学院</dd>
-                            <dd lay-value="20" class="">
-                                &nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;├─联合第一总支部</dd>
-                            <dd lay-value="21" class="">
-                                &nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;└─联合第二总支部</dd>
-                            <dd lay-value="19" class="">&nbsp;&nbsp;&nbsp;&nbsp;└─师生事务保障中心</dd>
-                            <dd lay-value="24" class="">交控集团党委</dd>
-                        </dl>
+        <!--top区域 start-->
+        <div class="top_x w1min">
+            <div class="w1">
+                <div class="topx_left">
+                    <div class="topx_logo"><img
+                            src="/themes/zqdj_public/public/assets/zqdj_public/imgs/header_logo.png">
+                    </div>
+                    <div class="topx_zi">
+                        <h1>智慧党建云平台</h1>
                     </div>
                 </div>
-                <div>
-                    <label>选择分类：</label>
-                    <select name="cateid" lay-search="">
-                        <option value="0">全部</option>
-                        <option value="8">便民便利</option>
-                        <option value="9">扶贫帮困</option>
-                        <option value="10">治安维稳</option>
-                        <option value="11">咨询辅导</option>
-                        <option value="12">爱心捐赠</option>
-                        <option value="14">宣传教育</option>
-                        <option value="15">其他类别</option>
-                    </select>
-                    <div class="layui-form-select">
-                        <div class="layui-select-title"><input type="text" placeholder="请选择" value="全部"
-                                class="layui-input"><i class="layui-edge"></i></div>
-                        <dl class="layui-anim layui-anim-upbit">
-                            <dd lay-value="0" class="layui-this">全部</dd>
-                            <dd lay-value="8" class="">便民便利</dd>
-                            <dd lay-value="9" class="">扶贫帮困</dd>
-                            <dd lay-value="10" class="">治安维稳</dd>
-                            <dd lay-value="11" class="">咨询辅导</dd>
-                            <dd lay-value="12" class="">爱心捐赠</dd>
-                            <dd lay-value="14" class="">宣传教育</dd>
-                            <dd lay-value="15" class="">其他类别</dd>
-                        </dl>
+                <div class="topx_right" id="ucenterlogin">
+                    <dl class="login" style="display:none;">
+                        你好, <span class="user-nickname"></span>
+                        <a href="/user/profile/center.html"><i class="iconfont icon-user"></i>党员中心</a>
+                        <a href="/user/index/logout.html">&nbsp;&nbsp;退出登录</a>
+                    </dl>
+                    <dl class="offline" style="">
+                        <a href="/user/login/index.html" class="signin"><i class="iconfont icon-gongchandang"></i>登录</a>
+                    </dl>
+                    <div class="top-search">
+                        <form method="post" action="/portal/search/index.html" target="_blank">
+                            <input type="text" name="keyword" required="" lay-verify="required" placeholder="请输入标题"
+                                autocomplete="off" class="layui-input">
+                            <button class="layui-btn layui-bg-orange" lay-submit="" lay-filter="formDemo"><i
+                                    class="iconfont icon-xiazai15"></i>搜索</button>
+                        </form>
                     </div>
                 </div>
-                <div><button class="layui-btn layui-btn-danger" type="submit" lay-filter="formDemo"><i
-                            class="iconfont icon-xiazai15"></i>检索</button></div>
             </div>
-        </form>
-        <script>
-            //Demo
-            layui.use('form', function () {
-                var form = layui.form;
-
-            });
-        </script>
-        <div class="layui-form" id="layui-form">
-            <table class="layui-table">
-                <colgroup>
-                    <col width="120">
-                    <col width="320">
-                    <col width="320">
-                    <col width="320">
-                    <col width="120">
-                    <col width="80">
-                    <col>
-                </colgroup>
-                <thead>
-                    <tr>
-                        <th>缩略图</th>
-                        <th><i class="iconfont icon-gongchandang"></i>组织名称</th>
-                        <th><i class="iconfont icon-dangjiangongzuo"></i>活动名称</th>
-                        <th><i class="iconfont icon-dangdaibiaogongzuoshi"></i>活动地点</th>
-                        <th><i class="iconfont icon-shijian1"></i>活动时间</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-
-                    <tr>
-                        <td>
-                            <img src="/upload/portal/20190301/265fe4e2e56aebaf98d8a75f0fb30f2a.jpg">
-                        </td>
-                        <td>离退休党总支</td>
-                        <td><a target="_blank" href="/portal/seritem/detailed/id/9.html">可耕地</a></td>
-                        <td>可耕地</td>
-                        <td>2019-04-10 16:00:23</td>
-                        <td><em><i class="iconfont icon-chakan1"></i>297</em><cite><i
-                                    class="iconfont icon-liuyan"></i>3</cite></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="/upload/default/20190227/4137ac9c0788c6ea097621db50abdb51.jpg">
-                        </td>
-                        <td>交控集团园区委员会</td>
-                        <td><a target="_blank" href="/portal/seritem/detailed/id/7.html">党组织主题党日-组织活动</a></td>
-                        <td>党委会议室</td>
-                        <td>2019-07-31 11:20:34</td>
-                        <td><em><i class="iconfont icon-chakan1"></i>381</em><cite><i
-                                    class="iconfont icon-liuyan"></i>2</cite></td>
-                    </tr>
-                </tbody>
-            </table>
         </div>
-        <ul class="xwpages"></ul>
-    </div>
+        <div class="lang_mu w1min">
+            <ul class="layui-nav w1" lay-filter="">
+                <li class="layui-nav-item">
+                    <a href="/" target="">
+                        <b>首页</b>
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/dongtai.html" target="">
+                        <b>党建动态</b>
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/portal/special/index.html" target="">
+                        <b>党建专题</b>
+                    </a>
+                </li>
+                <li class="layui-nav-item layui-this">
+                    <a href="/portal/seritem/index.html" target="">
+                        <b>志愿活动</b>
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/portal/drhd/index.html" target="">
+                        <b>党日活动</b>
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/portal/txth/index.html" target="">
+                        <b>谈心谈话</b>
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/portal/mzpy/index.html" target="">
+                        <b>民主评议</b>
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/portal/dangwu/index.html" target="">
+                        <b>换届情况</b>
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/portal/study/index.html" target="">
+                        <b>党建赋能</b>
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/portal/sanhui/index.html" target="">
+                        <b>三会一课</b>
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/portal/wenjuan/wenjuanlist.html" target="">
+                        <b>问卷调查</b>
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/portal/score/index.html" target="">
+                        <b>积分统计</b>
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/jcdjdsj.html" target="">
+                        <b>基层党建</b>
+                    </a>
+                </li>
+            </ul>
+            <script>
+                //注意：导航 依赖 element 模块，否则无法进行功能性操作
+                layui.use('element', function () {
+                    var element = layui.element;
+                });
+            </script>
+        </div>
 
-    <div class="sr_footer w1min">
-        <div class="w1">
-            <dl class="ft1">
-                <dd><b>陕西交控集团-智慧党建平台</b></dd>
-                <dd>企业：陕西交通控股集团有限公司</dd>
-                <dd>电话：029-87832666 传真：029- 87832174</dd>
-                <dd>地址：陕西省西安市雁塔区太白南路9号</dd>
-                <dd>陕ICP备2021008491号 陕公网安备 61011302001299号 </dd>
-                <dd>版权所有 © 2021 陕西交通控股集团有限公司 All Rights Reserved</dd>
-            </dl>
-            <!-- <dl class="ft2">
+        <!--top区域 end-->
+        <div class="w1 banne1 mgtop-15"><img src="/upload/admin/20181120/b02187c3e779476c3d555e59ccdcb415.jpg"></div>
+
+        <div class="mgtop-15 background-w1">
+            <div class="fdiv mua">
+                <ul><i class="iconfont icon-dangwugongkai"></i><b>志愿服务</b></ul>
+                <ol>
+                    当前位置：<a href="/">首页</a> &gt;
+                    <a href="/portal/seritem/index.html">志愿服务</a>
+                </ol>
+            </div>
+            <form class="layui-form" action="/portal/seritem/index.html" method="post">
+                <div class="layui-form-item" id="layui-form-item">
+                    <div class="so-mu layui-btn layui-bg-red layui-btn-lg"><i
+                            class="iconfont icon-gongchandang"></i>组织生活
+                    </div>
+                    <div>
+                        <label>选择组织：</label>
+                        <select name="parentid" id="parentid" lay-filter="parentid" lay-search="" class="">
+                            <option value="0">全部</option>
+                            <option value="1">交控集团党委</option>
+                            <option value="2">&nbsp;&nbsp;&nbsp;&nbsp;├─交控集团园区委员会</option>
+                            <option value="3">&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;├─开发区经开实业支部</option>
+                            <option value="4">&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;└─红衣鸟党支部</option>
+                            <option value="14">&nbsp;&nbsp;&nbsp;&nbsp;├─企业一支部委员会</option>
+                            <option value="15">&nbsp;&nbsp;&nbsp;&nbsp;├─事务保障中心委员会</option>
+                            <option value="16">&nbsp;&nbsp;&nbsp;&nbsp;├─离退休党总支</option>
+                            <option value="17">&nbsp;&nbsp;&nbsp;&nbsp;├─企业二支部</option>
+                            <option value="22">&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;├─第一总支
+                            </option>
+                            <option value="23">&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;└─第二总支
+                            </option>
+                            <option value="18">&nbsp;&nbsp;&nbsp;&nbsp;├─国际旅游学院</option>
+                            <option value="20">&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;├─联合第一总支部</option>
+                            <option value="21">&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;└─联合第二总支部</option>
+                            <option value="19">&nbsp;&nbsp;&nbsp;&nbsp;└─师生事务保障中心</option>
+                            <option value="24">交控集团党委</option>
+                        </select>
+                        <div class="layui-form-select">
+                            <div class="layui-select-title"><input type="text" placeholder="请选择" value="全部"
+                                    class="layui-input"><i class="layui-edge"></i></div>
+                            <dl class="layui-anim layui-anim-upbit">
+                                <dd lay-value="0" class="layui-this">全部</dd>
+                                <dd lay-value="1" class="">交控集团党委</dd>
+                                <dd lay-value="2" class="">&nbsp;&nbsp;&nbsp;&nbsp;├─交控集团园区委员会</dd>
+                                <dd lay-value="3" class="">&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;├─开发区经开实业支部
+                                </dd>
+                                <dd lay-value="4" class="">&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;└─红衣鸟党支部
+                                </dd>
+                                <dd lay-value="14" class="">&nbsp;&nbsp;&nbsp;&nbsp;├─企业一支部委员会</dd>
+                                <dd lay-value="15" class="">&nbsp;&nbsp;&nbsp;&nbsp;├─事务保障中心委员会</dd>
+                                <dd lay-value="16" class="">&nbsp;&nbsp;&nbsp;&nbsp;├─离退休党总支</dd>
+                                <dd lay-value="17" class="">&nbsp;&nbsp;&nbsp;&nbsp;├─企业二支部</dd>
+                                <dd lay-value="22" class="">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;├─第一总支</dd>
+                                <dd lay-value="23" class="">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;└─第二总支</dd>
+                                <dd lay-value="18" class="">&nbsp;&nbsp;&nbsp;&nbsp;├─国际旅游学院</dd>
+                                <dd lay-value="20" class="">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;├─联合第一总支部</dd>
+                                <dd lay-value="21" class="">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;└─联合第二总支部</dd>
+                                <dd lay-value="19" class="">&nbsp;&nbsp;&nbsp;&nbsp;└─师生事务保障中心</dd>
+                                <dd lay-value="24" class="">交控集团党委</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div>
+                        <label>选择分类：</label>
+                        <select name="cateid" lay-search="">
+                            <option value="0">全部</option>
+                            <option value="8">便民便利</option>
+                            <option value="9">扶贫帮困</option>
+                            <option value="10">治安维稳</option>
+                            <option value="11">咨询辅导</option>
+                            <option value="12">爱心捐赠</option>
+                            <option value="14">宣传教育</option>
+                            <option value="15">其他类别</option>
+                        </select>
+                        <div class="layui-form-select">
+                            <div class="layui-select-title"><input type="text" placeholder="请选择" value="全部"
+                                    class="layui-input"><i class="layui-edge"></i></div>
+                            <dl class="layui-anim layui-anim-upbit">
+                                <dd lay-value="0" class="layui-this">全部</dd>
+                                <dd lay-value="8" class="">便民便利</dd>
+                                <dd lay-value="9" class="">扶贫帮困</dd>
+                                <dd lay-value="10" class="">治安维稳</dd>
+                                <dd lay-value="11" class="">咨询辅导</dd>
+                                <dd lay-value="12" class="">爱心捐赠</dd>
+                                <dd lay-value="14" class="">宣传教育</dd>
+                                <dd lay-value="15" class="">其他类别</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div><button class="layui-btn layui-btn-danger" type="submit" lay-filter="formDemo"><i
+                                class="iconfont icon-xiazai15"></i>检索</button></div>
+                </div>
+            </form>
+            <script>
+                //Demo
+                layui.use('form', function () {
+                    var form = layui.form;
+
+                });
+            </script>
+            <div class="layui-form" id="layui-form">
+                <table class="layui-table">
+                    <colgroup>
+                        <col width="120">
+                        <col width="320">
+                        <col width="320">
+                        <col width="320">
+                        <col width="120">
+                        <col width="80">
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>缩略图</th>
+                            <th><i class="iconfont icon-gongchandang"></i>组织名称</th>
+                            <th><i class="iconfont icon-dangjiangongzuo"></i>活动名称</th>
+                            <th><i class="iconfont icon-dangdaibiaogongzuoshi"></i>活动地点</th>
+                            <th><i class="iconfont icon-shijian1"></i>活动时间</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td>
+                                <img src="/upload/portal/20190301/265fe4e2e56aebaf98d8a75f0fb30f2a.jpg">
+                            </td>
+                            <td>离退休党总支</td>
+                            <td><a target="_blank" href="/portal/seritem/detailed/id/9.html">可耕地</a></td>
+                            <td>可耕地</td>
+                            <td>2019-04-10 16:00:23</td>
+                            <td><em><i class="iconfont icon-chakan1"></i>297</em><cite><i
+                                        class="iconfont icon-liuyan"></i>3</cite></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="/upload/default/20190227/4137ac9c0788c6ea097621db50abdb51.jpg">
+                            </td>
+                            <td>交控集团园区委员会</td>
+                            <td><a target="_blank" href="/portal/seritem/detailed/id/7.html">党组织主题党日-组织活动</a></td>
+                            <td>党委会议室</td>
+                            <td>2019-07-31 11:20:34</td>
+                            <td><em><i class="iconfont icon-chakan1"></i>381</em><cite><i
+                                        class="iconfont icon-liuyan"></i>2</cite></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <ul class="xwpages"></ul>
+        </div>
+
+        <div class="sr_footer w1min">
+            <div class="w1">
+                <dl class="ft1">
+                    <dd><b>陕西交控集团-智慧党建平台</b></dd>
+                    <dd>企业：陕西交通控股集团有限公司</dd>
+                    <dd>电话：029-87832666 传真：029- 87832174</dd>
+                    <dd>地址：陕西省西安市雁塔区太白南路9号</dd>
+                    <dd>陕ICP备2021008491号 陕公网安备 61011302001299号 </dd>
+                    <dd>版权所有 © 2021 陕西交通控股集团有限公司 All Rights Reserved</dd>
+                </dl>
+                <!-- <dl class="ft2">
 			<a href="http://wpa.qq.com/msgrd?v=3&uin=34147588&site=qq&menu=yes" target="_blank" rel="nofollow" class="layui-btn layui-btn-danger layui-btn-radius"><i class="iconfont icon-qq"></i>在线咨询</a>
 		</dl> -->
-            <dl class="ft4">
-                <dd>
-                    <a href="./about.html" title="关于我们" target="">
-                        <i class="iconfont icon-dangwugongkai"></i>关于我们 </a>
-                    <a href="./statement.html" title="网站声明" target="">
-                        <i class="iconfont icon-dangwugongkai"></i>网站声明 </a>
-                    <a href="./contact.html" title="联系我们" target="">
-                        <i class="iconfont icon-dangwugongkai"></i>联系我们 </a>
+                <dl class="ft4">
+                    <dd>
+                        <a href="./about.html" title="关于我们" target="">
+                            <i class="iconfont icon-dangwugongkai"></i>关于我们 </a>
+                        <a href="./statement.html" title="网站声明" target="">
+                            <i class="iconfont icon-dangwugongkai"></i>网站声明 </a>
+                        <a href="./contact.html" title="联系我们" target="">
+                            <i class="iconfont icon-dangwugongkai"></i>联系我们 </a>
 
-                </dd>
-            </dl>
-            <dl class="ft3"><img src="/upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg" border="0" /></dl>
+                    </dd>
+                </dl>
+                <dl class="ft3"><img src="/upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg" border="0" />
+                </dl>
+            </div>
         </div>
-    </div>
 
-    <ul class="g-navFloat">
-        <!-- <li>
+        <ul class="g-navFloat">
+            <!-- <li>
             <a href="http://www.dangjiancms.com/" target="_blank" class="u-tiyan">
             <p>立</p><p>即</p><p>体</p><p>验</p>
             </a>
         </li> -->
-        <li>
-            <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=123&amp;site=qq&amp;menu=yes" target="_blank"><i
-                    class="iconfont icon-qq"></i></a>
-        </li>
-        <li>
-            <div class="u-contents content-qr">
-                <img src="http://demo.dangjiancms.com/upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg">
-                <p>智慧党建云平台</p>
-            </div>
-            <a href="javascript:void(0);"><i class="iconfont icon-weixin"></i></a>
-        </li>
-        <li>
-            <div class="u-contents content-tel">
-                <p>咨询专线：</p>
-                <p><br></p>
-            </div>
-            <a href="javascript:void(0);"><i class="iconfont icon-dianhua"></i></a>
-        </li>
-    </ul>
-    <div style="display:none;"></div>
-    <script type="text/javascript">
-        $(".index2_6_con").slide({
-            delayTime: 500,
-            effect: "left",
-            autoPlay: true,
-        });
-        $(".clearfix01 .bj_tab ul li").hover(function () {
-            $(this).find(".icon_bj").removeClass("transform0");
-            $(this).find(".icon_bj").addClass("transform1");
+            <li>
+                <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=123&amp;site=qq&amp;menu=yes" target="_blank"><i
+                        class="iconfont icon-qq"></i></a>
+            </li>
+            <li>
+                <div class="u-contents content-qr">
+                    <img src="http://demo.dangjiancms.com/upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg">
+                    <p>智慧党建云平台</p>
+                </div>
+                <a href="javascript:void(0);"><i class="iconfont icon-weixin"></i></a>
+            </li>
+            <li>
+                <div class="u-contents content-tel">
+                    <p>咨询专线：</p>
+                    <p><br></p>
+                </div>
+                <a href="javascript:void(0);"><i class="iconfont icon-dianhua"></i></a>
+            </li>
+        </ul>
+        <div style="display:none;"></div>
+        <script type="text/javascript">
+            $(".index2_6_con").slide({
+                delayTime: 500,
+                effect: "left",
+                autoPlay: true,
+            });
+            $(".clearfix01 .bj_tab ul li").hover(function () {
+                $(this).find(".icon_bj").removeClass("transform0");
+                $(this).find(".icon_bj").addClass("transform1");
 
-        }, function () {
-            $(this).find(".icon_bj").removeClass("transform1");
-            $(this).find(".icon_bj").addClass("transform0");
+            }, function () {
+                $(this).find(".icon_bj").removeClass("transform1");
+                $(this).find(".icon_bj").addClass("transform0");
 
-        });
-        $(".bj_img_buttm").find("span").hover(function () {
-            var a = $(this).attr("class");
-            $(".bj01").removeClass("cut");
-            $("#" + a).addClass("cut");
-        });
-    </script>
+            });
+            $(".bj_img_buttm").find("span").hover(function () {
+                var a = $(this).attr("class");
+                $(".bj01").removeClass("cut");
+                $("#" + a).addClass("cut");
+            });
+        </script>
 
-    <script src="/static/js/wind.js"></script>
-    <script src="/themes/zqdj_public/public/assets/simpleboot3/bootstrap/js/bootstrap.min.js"></script>
-    <script src="/static/js/frontend.js"></script>
-    <!--gotop start-->
-    <!-- <script>
+        <script src="/static/js/wind.js"></script>
+        <script src="/themes/zqdj_public/public/assets/simpleboot3/bootstrap/js/bootstrap.min.js"></script>
+        <script src="/static/js/frontend.js"></script>
+        <!--gotop start-->
+        <!-- <script>
         $(function () {
             $.post("/user/index/islogin.html", {}, function (data) {
                 if (data.code == 1) {
@@ -373,30 +394,31 @@
             });
         });
     </script> -->
-    <!--gotop end-->
-    <!-- 
+        <!--gotop end-->
+        <!-- 
     <ul id="side-bar" class="side-pannel side-bar">
       <span><img src="/upload/imgs/djwx.jpg"><i>党建小程序</i></span>
       <span><img src="/upload/imgs/djapp.jpg"><i>党建APP</i></span>
       <span><img src="/upload/imgs/djvideo.jpg"><i>视频介绍</i></span>
     </ul> -->
-    <script>
-        $(function () {
-            $(window).scroll(function () {
-                if ($(window).scrollTop() > 100) { //距顶部多少像素时，出现返回顶部按钮
-                    $("#side-bar .gotop").fadeIn();
-                } else {
-                    $("#side-bar .gotop").hide();
-                }
+        <script>
+            $(function () {
+                $(window).scroll(function () {
+                    if ($(window).scrollTop() > 100) { //距顶部多少像素时，出现返回顶部按钮
+                        $("#side-bar .gotop").fadeIn();
+                    } else {
+                        $("#side-bar .gotop").hide();
+                    }
+                });
+                $("#side-bar .gotop").click(function () {
+                    $('html,body').animate({
+                        'scrollTop': 0
+                    }, 500); //返回顶部动画 数值越小时间越短
+                });
             });
-            $("#side-bar .gotop").click(function () {
-                $('html,body').animate({
-                    'scrollTop': 0
-                }, 500); //返回顶部动画 数值越小时间越短
-            });
-        });
-    </script>
+        </script>
 
-</div></body>
+    </div>
+</body>
 
 </html>

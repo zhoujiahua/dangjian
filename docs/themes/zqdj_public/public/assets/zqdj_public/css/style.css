@@ -356,7 +356,7 @@ a:hover {
 	width: 100%;
 }
 
-.nmuz span {
+.nmuz li {
 	float: left;
 	clear: both;
 	width: 200px;
@@ -386,6 +386,12 @@ a:hover {
 	color: #fff;
 }
 
+.nmuz a.active {
+	background: #f0352b url(../imgc/lia.png) no-repeat 15px;
+	padding-left: 30px;
+	display: block;
+	color: #fff;
+}
 
 /* 顶部 */
 .top_iframe {
@@ -3780,9 +3786,6 @@ li.banner-search::after {
 	padding-right: 10px
 }
 
-
-
-
 .mub {
 	background: url(../imgc/t2.gif) repeat-x bottom;
 	height: 40px;
@@ -3790,8 +3793,8 @@ li.banner-search::after {
 	clear: both
 }
 
-.mub ul {
-	border-bottom: 4px #dd0506 solid;
+.mub h5 {
+	border-bottom: 2px #dd0506 solid;
 	font-size: 17px;
 	font-weight: bold;
 	height: 37px;

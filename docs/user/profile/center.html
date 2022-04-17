@@ -1,18 +1,201 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>正在登录，请等待...</title>
-    <script>
-        window.location.href = "/user/login/index.html"
-    </script>
+    <title>联系我们</title>
+    <meta name="keywords" content="联系我们">
+    <meta name="description" content="联系我们">
+    <link href="https://at.alicdn.com/t/font_759613_byou54gk0v7.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./../../themes/zqdj_public/public/assets/zqdj_public/css/style.css" />
+    <link rel="stylesheet" href="./../../themes/zqdj_public/public/assets/zqdj_public/js/layui/css/layui.css"
+        media="all">
+    <link rel="stylesheet" href="./../../static/css/reset.css">
+
+
 </head>
 
 <body>
-    <h3>正在登录，请等待...</h3>
+    <div class="wrapper">
+
+        <!--top区域 start-->
+        <div class="top_x w1min">
+            <div class="w1">
+                <div class="topx_left">
+                    <div class="topx_logo"><img
+                            src="/themes/zqdj_public/public/assets/zqdj_public/imgs/header_logo.png" /></div>
+                    <div class="topx_zi">
+                        <h1>陕西交控集团-智慧党建平台</h1>
+                    </div>
+                </div>
+                <div class="topx_right" id="ucenterlogin">
+                    <dl class="login" style="display:none;">
+                        你好,丁俊陶 <span class="user-nickname"></span>
+                        <a href="/user/profile/center.html"><i class="iconfont icon-user"></i>党员中心</a>
+                        <a href="javascript:void(0);" id="logout">&nbsp;&nbsp;退出登录</a>
+                    </dl>
+                    <dl class="offline" style="display:none;">
+                        <a href="/user/login/index.html" class="signin"><i class="iconfont icon-gongchandang"></i>登录</a>
+                    </dl>
+                    <div class="top-search">
+                        <form method="post" action="/portal/search/index.html" target="_blank">
+                            <input type="text" name="keyword" required lay-verify="required" placeholder="请输入标题"
+                                autocomplete="off" class="layui-input">
+                            <button class="layui-btn layui-bg-orange" lay-submit lay-filter="formDemo"><i
+                                    class="iconfont icon-xiazai15"></i>搜索</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lang_mu w1min">
+            <ul class="layui-nav w1" lay-filter="">
+                <li class="layui-nav-item">
+                    <a href="/" target="">
+                        <b>首页</b>
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/dongtai.html" target="">
+                        <b>党建动态</b>
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/portal/special/index.html" target="">
+                        <b>党建专题</b>
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/portal/seritem/index.html" target="">
+                        <b>志愿活动</b>
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/portal/activity/index.html" target="">
+                        <b>党日活动</b>
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/portal/study/index.html" target="">
+                        <b>党建赋能</b>
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/portal/sanhui/index.html" target="">
+                        <b>三会一课</b>
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/portal/wenjuan/wenjuanlist.html" target="">
+                        <b>问卷调查</b>
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/portal/score/index.html" target="">
+                        <b>积分统计</b>
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/jcdjdsj.html" target="">
+                        <b>基层党建</b>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+        <!--top区域 end-->
+        <div class="w1 banne1 mgtop-15"><img src="/upload/admin/20181120/b02187c3e779476c3d555e59ccdcb415.jpg"></div>
+
+        <div class="mgtop-15 background-w1">
+
+            <div class="nab-left">
+                <div class="nmuz">
+                    <ul class="nmuz-ul">
+                        <li><a href="javascript:void(0);" class="active" title="学习记录">学习记录</a></li>
+                        <li><a href="javascript:void(0);" title="我的活动">我的活动</a></li>
+                        <li><a href="javascript:void(0);" title="党费缴纳">党费缴纳</a></li>
+                        <li><a href="javascript:void(0);" title="思想汇报">思想汇报</a></li>
+                        <li><a href="javascript:void(0);" title="我的组织">我的组织</a></li>
+                        <li><a href="javascript:void(0);" title="我的答题">我的答题</a></li>
+                        <li><a href="javascript:void(0);" title="我的留言">我的留言</a></li>
+                        <li><a href="javascript:void(0);" title="我的下载">我的下载</a></li>
+                        <li><a href="javascript:void(0);" title="我的收藏">我的收藏</a></li>
+                        <li><a href="javascript:void(0);" title="我的党分">我的党分</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="nab-right nab-tab">
+                <div class="fdiv mub">
+                    <h5>学习记录</h5>
+                </div>
+                <div class="listn imgk">
+                    学习记录
+                </div>
+            </div>
+        </div>
+
+        <div class="sr_footer w1min">
+            <div class="w1">
+                <dl class="ft1">
+                    <dd><b>陕西交控集团-智慧党建平台</b></dd>
+                    <dd>企业：陕西交通控股集团有限公司</dd>
+                    <dd>电话：029-87832666 传真：029- 87832174</dd>
+                    <dd>地址：陕西省西安市雁塔区太白南路9号</dd>
+                    <dd>陕ICP备2021008491号 陕公网安备 61011302001299号 </dd>
+                    <dd>版权所有 © 2021 陕西交通控股集团有限公司 All Rights Reserved</dd>
+                </dl>
+                <dl class="ft4">
+                    <dd>
+                        <a href="./about.html" title="关于我们" target="">
+                            <i class="iconfont icon-dangwugongkai"></i>关于我们 </a>
+                        <a href="./statement.html" title="网站声明" target="">
+                            <i class="iconfont icon-dangwugongkai"></i>网站声明 </a>
+                        <a href="./contact.html" title="联系我们" target="">
+                            <i class="iconfont icon-dangwugongkai"></i>联系我们 </a>
+
+                    </dd>
+                </dl>
+                <dl class="ft3"><img src="/upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg" border="0" />
+                </dl>
+            </div>
+        </div>
+        <ul class="g-navFloat">
+            <li>
+                <a href="http://wpa.qq.com/msgrd?v=3&uin=1151710686&site=qq&menu=yes" target="_blank"><i
+                        class="iconfont icon-qq"></i></a>
+            </li>
+            <li>
+                <div class="u-contents content-qr">
+                    <img src="/upload/admin/20181120/dabad314b6eeff00fb263ad9a6e21757.jpg">
+                    <p>智慧党建平台</p>
+                </div>
+                <a href="javascript:void(0);"><i class="iconfont icon-weixin"></i></a>
+            </li>
+            <li>
+                <div class="u-contents content-tel">
+                    <p>029-87832666</p>
+                    <p><br /></p>
+                </div>
+                <a href="javascript:void(0);"><i class="iconfont icon-dianhua"></i></a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- JS -->
+    <script src="./../../static/js/jquery.js"></script>
+    <script src="./../../static/js/wind.js"></script>
+    <script src="./../../static/js/frontend.js"></script>
+    <script src="./../../themes/zqdj_public/public/assets/zqdj_public/js/jquery.SuperSlide.js"></script>
+    <script src="./../../themes/zqdj_public/public/assets/zqdj_public/js/layui/layui.js"></script>
+    <script>
+        layui.use('element', function () {
+            var element = layui.element;
+        });
+    </script>
 </body>
 
 </html>
