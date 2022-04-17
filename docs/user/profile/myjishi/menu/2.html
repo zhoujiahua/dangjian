@@ -1,40 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title> 页面自动中...跳转 等待时间：
-        3    </title>
-    <script src="./../../../../static/js/jquery.js"></script>
-    <script src="./../../../../static/js/layer/layer.js"></script>
-</head>
-<body><div class="wrapper">
-    <b id="wait" style='display:none'>3</b>
-    <a id="href" href="./../../../login/index.html" style='display:none'>跳转</a>
-    <script type="text/javascript">
-    $(function() {
-                var mess = "您尚未登录";
-                var err = "您尚未登录";
-                var jumpurl = "/user/login/index.html";
-                var waitSecond = "3";
-                                    var er = err;
-				layer.alert(er, {
-                        icon: 2,
-                        title: err,
-                        success: function(layer) {
-                            var wait = document.getElementById('wait'),
-                                href = document.getElementById('href').href;
-                            var interval = setInterval(function() {
-                                var time = --wait.innerHTML;
-                                if (time <= 0) {
-                                    location.href = href;
-                                    clearInterval(interval);
-                                };
-                            }, 1000);
-                        }
-                    },function(index){
-						location.href = href;
-                 	  	layer.close(index);
-                    });
-                                    })
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>正在登录，请等待...</title>
+    <script>
+        window.location.href = "/user/login/index.html"
     </script>
-</div></body>
+</head>
+
+<body>
+    <h3>正在登录，请等待...</h3>
+</body>
+
 </html>
