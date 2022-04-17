@@ -29,7 +29,7 @@
 			</ul>
 </div>
 <script type="text/javascript">
-jQuery("#nav").slide({ type:"menu", titCell:".nLi", targetCell:".sub",delayTime:300,triggerTime:0,returnDefault:true});
+$("#nav").slide({ type:"menu", titCell:".nLi", targetCell:".sub",delayTime:300,triggerTime:0,returnDefault:true});
 </script>
 <!--/nav-->
 <div class="w1 ">
@@ -44,8 +44,8 @@ jQuery("#nav").slide({ type:"menu", titCell:".nLi", targetCell:".sub",delayTime:
 		<a class="next" href="javascript:void(0)" style="display: inline; opacity: 0.2;"></a>
 	</div>
 	<script>
-	jQuery("#banner_main").hover(function(){ jQuery(this).find(".prev,.next").stop(true,true).fadeTo("show",0.2) },function(){ jQuery(this).find(".prev,.next").fadeOut() });
-	jQuery('#banner_main').slide({ titCell:'.hd ul', mainCell:'#banner ul', autoPlay:true, autoPage:true, delayTime:500,interTime:5000,effect:'fold'});
+	$("#banner_main").hover(function(){ $(this).find(".prev,.next").stop(true,true).fadeTo("show",0.2) },function(){ $(this).find(".prev,.next").fadeOut() });
+	$('#banner_main').slide({ titCell:'.hd ul', mainCell:'#banner ul', autoPlay:true, autoPage:true, delayTime:500,interTime:5000,effect:'fold'});
 	</script>
 	<!--JS幻灯片 结束-->
 </div>

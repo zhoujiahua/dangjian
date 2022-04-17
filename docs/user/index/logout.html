@@ -163,8 +163,8 @@ layui.use('element', function(){
 			<a class="next" href="javascript:void(0)"></a>
 			</div>
 		</div>
-		<script>jQuery("#banner_x").hover(function(){ jQuery(this).find(".prev,.next").stop(true,true).fadeTo("show",0.2) },function(){ jQuery(this).find(".prev,.next").fadeOut() });
-		jQuery('#banner_x').slide({ titCell:'.hd ul', mainCell:'#banner ul', autoPlay:true, autoPage:true, delayTime:500,interTime:6000,effect:'fold'});
+		<script>$("#banner_x").hover(function(){ $(this).find(".prev,.next").stop(true,true).fadeTo("show",0.2) },function(){ $(this).find(".prev,.next").fadeOut() });
+		$('#banner_x').slide({ titCell:'.hd ul', mainCell:'#banner ul', autoPlay:true, autoPage:true, delayTime:500,interTime:6000,effect:'fold'});
 		</script>
 		<!--JS幻灯片 结束-->
 	</div>
@@ -354,7 +354,7 @@ layui.use('element', function(){
 				<a class="next" href="javascript:void(0)"></a>
 			</div>
 			<script type="text/javascript">
-			jQuery(".ladyScroll").slide({ mainCell:".dlList", effect:"leftLoop",vis:4,scroll:1,interTime:10000,delayTime:1000, autoPlay:true});
+			$(".ladyScroll").slide({ mainCell:".dlList", effect:"leftLoop",vis:4,scroll:1,interTime:10000,delayTime:1000, autoPlay:true});
 			</script>	
 		</ol>
 	</div>
@@ -561,7 +561,7 @@ layui.use('element', function(){
 		<a class="next" href="javascript:void(0)"></a>
 	</div>
 	<script type="text/javascript">
-	jQuery(".ladyDcroll").slide({ mainCell:".dlList", effect:"leftLoop",vis:5,scroll:1,interTime:10000,delayTime:1000, autoPlay:true});
+	$(".ladyDcroll").slide({ mainCell:".dlList", effect:"leftLoop",vis:5,scroll:1,interTime:10000,delayTime:1000, autoPlay:true});
 	</script>
 </div>
 
@@ -708,7 +708,7 @@ layui.use('element', function(){
 		<a class="next" href="javascript:void(0)"></a>
 	</div>
 	<script type="text/javascript">
-	jQuery(".ladyTcroll").slide({ mainCell:".dlList", effect:"leftLoop",vis:5,scroll:1,interTime:10000,delayTime:1000, autoPlay:true});
+	$(".ladyTcroll").slide({ mainCell:".dlList", effect:"leftLoop",vis:5,scroll:1,interTime:10000,delayTime:1000, autoPlay:true});
 	</script>
 </div>
 
@@ -763,7 +763,7 @@ layui.use('element', function(){
 </ul>
 <div style="display:none;"></div>
 <script type="text/javascript">
-	jQuery(".index2_6_con").slide({
+	$(".index2_6_con").slide({
 		delayTime: 500,
 		effect: "left",
 		autoPlay: true,
