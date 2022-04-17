@@ -40,11 +40,11 @@
 					<p>陕西交控集团-智慧党建平台-后台登录管理</p>
 				</div>
 				<div class="layadmin-user-login-box layadmin-user-login-body layui-form">
-					<form class="layui-form js-ajax-form" action="/user/login/dologin.html" method="post">
+					<form class="layui-form js-ajax-form" method="post" lay-filter="loginText">
 						<div class="layui-form-item">
 							<label class="layadmin-user-login-icon layui-icon layui-icon-username"
 								for="LAY-user-login-username"></label>
-							<input type="text" required name="username" placeholder="手机号/邮箱"
+							<input type="text" required name="username" placeholder="用户名/手机号/邮箱"
 								id="LAY-user-login-username" class="layui-input">
 						</div>
 						<div class="layui-form-item">
@@ -64,8 +64,8 @@
 							<input type="hidden" name="_captcha_id" value="">
 						</div>
 						<div class="layui-form-item">
-							<button class="layui-btn layui-btn-fluid layui-btn-danger js-ajax-submit" type="submit">登
-								入</button>
+							<button class="layui-btn layui-btn-fluid layui-btn-danger" lay-submit
+								lay-filter="loginForm">立即登录</button>
 						</div>
 						<div class="layui-trans layui-form-item layadmin-user-login-other">
 							<a href="./findpassword.html" class="layadmin-user-jump-change layadmin-link"
@@ -104,12 +104,37 @@
 	</div>
 
 	<!-- JS -->
-	<script src="./../../static/js/jquery.js"></script>
-	<script src="./../../themes/zqdj_public/public/assets/zqdj_public/js/jquery.SuperSlide.js"></script>
 	<script src="./../../themes/zqdj_public/public/assets/zqdj_public/js/layui/layui.js"></script>
-	<script src="./../../static/js/wind.js"></script>
-	<script src="./../../themes/zqdj_public/public/assets/simpleboot3/bootstrap/js/bootstrap.min.js"></script>
-	<script src="./../../static/js/frontend.js"></script>
+	<script>
+		layui.use(['layer', 'form'], function () {
+			var form = layui.form,
+				layer = layui.layer;
+
+			form.val('loginText', {
+				username: '13619992999',
+				password: '123456',
+				captcha: 'hrnb'
+			})
+
+			//监听提交
+			form.on('submit(loginForm)', function (data) {
+				var d = data.field;
+				if (!d.username || !d.password || !d.captcha) {
+					return layer.msg('账号信息有误！', {
+						icon: 2
+					});
+				}
+				layer.msg('登录成功！', {
+					icon: 1,
+					time: 1000
+				}, function () {
+					localStorage.setItem('isLogin', true);
+					window.location.href = "/"
+				})
+				return false;
+			});
+		});
+	</script>
 </body>
 
 </html>
